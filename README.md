@@ -3,7 +3,7 @@
 
 # ShubhLabh AI — India's smartest one-click AI promo planner
 
-*Ab sirf laabh hi laabh.* (Formerly PromoPilot; the repository folder and code modules keep the old name.)
+*Ab sirf laabh hi laabh.* 
 
 An AI promotion planner for Indian grocery chains (ET AI Hackathon, Problem 3). A category manager writes a
 brief in plain words and drops in messy evidence: shelf-tag photos, festival flyers, quick-commerce
