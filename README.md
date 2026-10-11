@@ -158,7 +158,7 @@ require an API key and can incur costs; see `AGENTS.md` before running them.
 | Chronos-2 forecast vs seasonal-naive (600 real series, 14-day horizon) | WAPE 0.364 vs 0.400 | measured (`docs/evidence/chronos.json`) |
 | Gradient-boosting reference model (not in the product) vs seasonal-naive (real data, 14-day holdout) | WAPE 0.341 vs 0.414, improvement CI excludes zero | measured (`docs/evidence/calibration.json`) |
 | Targeted clearance vs flat 10% (real data, out-of-sample) | cuts the flat rule's contribution loss by 62% (CI 36–101%) | model-based back-test, non-randomised |
-| Festival plan vs flat 10% rule (ShubhLabh's reference store, same 200 scenarios) | ₹12,820 vs ₹6,345 expected extra profit (2.0×), P10 ₹10,201 | estimated on ShubhLabh's reference store data (rules-only run, plan_8814a2f6712b433f, `docs/pitch/screens/figures.json`) |
+| Festival plan vs flat 10% rule (ShubhLabh's reference store, same 200 scenarios) | ₹12,820 vs ₹6,345 expected extra profit (2.0×), P10 ₹10,201 | estimated on ShubhLabh's reference store data (rules-only run, plan_8814a2f6712b433f; reproducible on the in-app Proof page) |
 | Rules-only ablation arm (30 scenarios) | 53% correct, 12 false acceptances | measured on frozen scenarios |
 | Guard red-team | 30/30 caught per guard (6 guards), privacy redaction 10/10, 0 false positives on clean controls | measured (self-authored cases) |
 | Live extraction gate (labelled set of 61 files, gpt-4.1-mini) | precision 100% and coverage ≥ 80% on each of the 6 measured types: shelf tag, flyer, app screenshot, WhatsApp image, text PDF, scanned PDF (CSV/Excel tables are imported by column, not part of this gate). Price-list reads are scored against the row they name (adopted with the live run; first-row scoring would give 82% text-PDF and 83% scanned-PDF precision) | measured live (`docs/evidence/extraction-live.json`) |
@@ -175,3 +175,7 @@ model-based estimates, not results from an Indian retailer or an A/B test.*
 `replit.md`. Astra's earlier README is in `docs/history/`.
 
 Data: FreshRetailNet-50K by Dingdong-Inc (CC BY 4.0) is used for calibration only and is not redistributed.
+
+## License
+
+MIT — see [LICENSE](LICENSE). Third-party data and models keep their own licences (FreshRetailNet-50K: CC BY 4.0; Chronos-2: Apache 2.0).
