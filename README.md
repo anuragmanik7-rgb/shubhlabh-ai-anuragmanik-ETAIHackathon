@@ -7,7 +7,7 @@
 
 An AI promotion planner for Indian grocery chains (ET AI Hackathon, Problem 3). A category manager writes a
 brief in plain words and drops in messy evidence: shelf-tag photos, festival flyers, quick-commerce
-screenshots, WhatsApp scheme images, PDFs. PromoPilot reads it, plans with an agent and certifies every
+screenshots, WhatsApp scheme images, PDFs. ShubhLabh AI reads it, plans with an agent and certifies every
 offer before a person approves it.
 
 - **The model does what code can't:** compiles briefs and HQ policies into constraints, reads evidence (with
@@ -21,6 +21,11 @@ offer before a person approves it.
 
 ## One-Click AI Campaign Designer
 Pick a festival (12 templates from Navratri to Holi), optionally drop in any documents, press one button. ShubhLabh reads the documents, forecasts demand with **Chronos-2** (Hugging Face, runs locally on CPU), lets the agent design offers, verifies every one with ShubhLabh's Intelli AI (with a confidence score), and returns a campaign kit in under 2 minutes: calendar, budget by city, channel plan, English/Hindi copy, banners and a printable brief.
+
+## ShubhLabh's Intelli AI (verification agent)
+Our own in-house AI agent. In the background it re-checks every calculation on every offer: MRP, honest % off vs the 30-day low, margin, break-even and budget, plus copy lint and injection quarantine. It then gives a confidence score: a 90% chance of at least a stated extra profit, from the 200-scenario risk check.
+
+Code: `backend/app/guards.py` (guard pack), the CP-SAT solver and the Monte Carlo risk check; API: `/api/v2/guards/price-check`, `/lint`, `/quarantine`.
 
 ## ShubhLabh on WhatsApp (for kirana owners)
 Built for WhatsApp — where India's kiranas already are. Small shop owners message **+1 415 523 8886** on WhatsApp (the first message, "join bright-blanket", is typed in for them by the app's Open WhatsApp button or QR code) — no app, no login, and no need for this website. They send a festival name, an offer to check (*Atta 5kg MRP 280 sell 250 cost 230*), or a photo of a competitor's price tag. Send in your offer — get your promo review within 60 seconds: the MRP rule, honest "% off" against the 30-day low, margin, the extra sales needed to break even, and offer ideas. *Diwali plan budget 40000 Delhi* brings the full festival plan back on WhatsApp. English or Hinglish. You can also try it right inside the app on the **WhatsApp** page. Go-live setup: `docs/WHATSAPP_GO_LIVE.md`, `docs/WHATSAPP.md` and `integrations/`.
