@@ -1,0 +1,1872 @@
+{
+  "created_at": "2026-10-01T04:15:59+00:00",
+  "status": "Frozen final PRD corpus; untouched live assessment pending",
+  "cases": [
+    {
+      "id": "final-01",
+      "path": "final-corpus/final-01.csv",
+      "format": "csv",
+      "format_group": "table",
+      "sha256": "70143236bfff0822a6161ddafdf31689ef5633c7bf72b981857f92f82823e7b6",
+      "expected": {
+        "rows": [
+          {
+            "sku": "SKU001",
+            "city": "Bengaluru",
+            "quantity": 20,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": 21,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": 22,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      },
+      "resolvable_required_fields": 30,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "apply"
+    },
+    {
+      "id": "final-02",
+      "path": "final-corpus/final-02.xlsx",
+      "format": "xlsx",
+      "format_group": "table",
+      "sha256": "83e3ce1c473285fc7da2e3b7ff8380472604fb1fbed2fff77b50d980b37a57a3",
+      "expected": {
+        "rows": [
+          {
+            "sku": "SKU001",
+            "city": "Bengaluru",
+            "quantity": 21,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": 22,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": 23,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      },
+      "resolvable_required_fields": 30,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "apply"
+    },
+    {
+      "id": "final-03",
+      "path": "final-corpus/final-03.csv",
+      "format": "csv",
+      "format_group": "table",
+      "sha256": "49eaeff5957c8c80299e39acedef7daa5c76cb80e750e3d8f6cb15a0c2db77f1",
+      "expected": {
+        "rows": [
+          {
+            "sku": "SKU001",
+            "city": "Bengaluru",
+            "quantity": 22,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": 23,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": 24,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      },
+      "resolvable_required_fields": 30,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "apply"
+    },
+    {
+      "id": "final-04",
+      "path": "final-corpus/final-04.xlsx",
+      "format": "xlsx",
+      "format_group": "table",
+      "sha256": "6a4fb9202c0718771576aa4c3b104c4513339708fd65b556bc66d9b33dde961f",
+      "expected": {
+        "rows": [
+          {
+            "sku": "SKU001",
+            "city": "Bengaluru",
+            "quantity": 23,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": 24,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": 25,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      },
+      "resolvable_required_fields": 30,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "apply"
+    },
+    {
+      "id": "final-05",
+      "path": "final-corpus/final-05.csv",
+      "format": "csv",
+      "format_group": "table",
+      "sha256": "a9bacb34a6186483a922e146ae2c01b259676b55c61d645ec2d6df3f724920c1",
+      "expected": {
+        "rows": [
+          {
+            "sku": "SKU001",
+            "city": "Bengaluru",
+            "quantity": 24,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": 25,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": 26,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      },
+      "resolvable_required_fields": 30,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "apply"
+    },
+    {
+      "id": "final-06",
+      "path": "final-corpus/final-06.xlsx",
+      "format": "xlsx",
+      "format_group": "table",
+      "sha256": "75deee8801a4f0fb048d6796253b6cd0d72d73c7e3f2120589f11f6ed4251eb8",
+      "expected": {
+        "rows": [
+          {
+            "sku": "SKU001",
+            "city": "Bengaluru",
+            "quantity": 25,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": 26,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": 27,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      },
+      "resolvable_required_fields": 30,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "apply"
+    },
+    {
+      "id": "final-07",
+      "path": "final-corpus/final-07.csv",
+      "format": "csv",
+      "format_group": "table",
+      "sha256": "f26c62667251f9be9850d6dce70682ff8fd67a3d85fdff03774285591b972d9a",
+      "expected": {
+        "rows": [
+          {
+            "sku": "SKU001",
+            "city": "Bengaluru",
+            "quantity": 26,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": 27,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": 28,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      },
+      "resolvable_required_fields": 30,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "apply"
+    },
+    {
+      "id": "final-08",
+      "path": "final-corpus/final-08.xlsx",
+      "format": "xlsx",
+      "format_group": "table",
+      "sha256": "d919fe334037d4d0e0d8ad294d21099eb99c5ef4a45ed882b6840c9d3201e29d",
+      "expected": {
+        "rows": [
+          {
+            "sku": "SKU001",
+            "city": "Bengaluru",
+            "quantity": 27,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": 28,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": 29,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      },
+      "resolvable_required_fields": 30,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "apply"
+    },
+    {
+      "id": "final-09",
+      "path": "final-corpus/final-09.csv",
+      "format": "csv",
+      "format_group": "table",
+      "sha256": "d7d926d2661cde36f486aece9b84ccf55b30d80659bac421e6ceec549587266b",
+      "expected": {
+        "rows": [
+          {
+            "sku": "SKU001",
+            "city": "Bengaluru",
+            "quantity": 28,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": 29,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": 30,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      },
+      "resolvable_required_fields": 30,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "apply"
+    },
+    {
+      "id": "final-10",
+      "path": "final-corpus/final-10.xlsx",
+      "format": "xlsx",
+      "format_group": "table",
+      "sha256": "f800c275196434374a6667ce6eb220687e25f4f1a09bc5fcebae8e751e20fef4",
+      "expected": {
+        "rows": [
+          {
+            "sku": "SKU001",
+            "city": "Bengaluru",
+            "quantity": 29,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": 30,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": 31,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      },
+      "resolvable_required_fields": 30,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "apply"
+    },
+    {
+      "id": "final-11",
+      "path": "final-corpus/final-11.csv",
+      "format": "csv",
+      "format_group": "table",
+      "sha256": "d9e680bb0ec7e3557c4f99c682ad44c821a0122a0b4f87dffec024fe58c18862",
+      "expected": {
+        "rows": [
+          {
+            "sku": "SKU001",
+            "city": "Bengaluru",
+            "quantity": 30,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": 31,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": 32,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      },
+      "resolvable_required_fields": 30,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "apply"
+    },
+    {
+      "id": "final-12",
+      "path": "final-corpus/final-12.xlsx",
+      "format": "xlsx",
+      "format_group": "table",
+      "sha256": "4d794378cdfc7f83aa3700225a3c814aef31d95252240ea44333ac6d29eee879",
+      "expected": {
+        "rows": [
+          {
+            "sku": "SKU001",
+            "city": "Bengaluru",
+            "quantity": 31,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": 32,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": 33,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      },
+      "resolvable_required_fields": 30,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "apply"
+    },
+    {
+      "id": "final-13",
+      "path": "final-corpus/final-13.csv",
+      "format": "csv",
+      "format_group": "table",
+      "sha256": "123f3aaf55eb0985204598f0feaa7c8f58c283ea75c4a83905d5b5378b0d1913",
+      "expected": {
+        "rows": [
+          {
+            "sku": "SKU001",
+            "city": "Bengaluru",
+            "quantity": 32,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": 33,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": 34,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      },
+      "resolvable_required_fields": 30,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "apply"
+    },
+    {
+      "id": "final-14",
+      "path": "final-corpus/final-14.xlsx",
+      "format": "xlsx",
+      "format_group": "table",
+      "sha256": "afc3d314fc8680ee526b318f8d85926991e5fcf4a10a95ab88b3e525adbd93a8",
+      "expected": {
+        "rows": [
+          {
+            "sku": "SKU001",
+            "city": "Bengaluru",
+            "quantity": 33,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": 34,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": 35,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      },
+      "resolvable_required_fields": 30,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "apply"
+    },
+    {
+      "id": "final-15",
+      "path": "final-corpus/final-15.csv",
+      "format": "csv",
+      "format_group": "table",
+      "sha256": "88833e65430e9a4b4666631d685cd344d84d44a7a8e453abdb42c0ddf4efa0a8",
+      "expected": {
+        "rows": [
+          {
+            "sku": "SKU001",
+            "city": "Bengaluru",
+            "quantity": 34,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": 35,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": 36,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      },
+      "resolvable_required_fields": 30,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "apply"
+    },
+    {
+      "id": "final-16",
+      "path": "final-corpus/final-16.xlsx",
+      "format": "xlsx",
+      "format_group": "table",
+      "sha256": "fd7a0c854388b17aeeb38ddef5198de30ada42f0ce74f0f9d226ee5da431aa90",
+      "expected": {
+        "rows": [
+          {
+            "sku": "SKU001",
+            "city": "Bengaluru",
+            "quantity": 35,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": 36,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": 37,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      },
+      "resolvable_required_fields": 30,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "apply"
+    },
+    {
+      "id": "final-17",
+      "path": "final-corpus/final-17.csv",
+      "format": "csv",
+      "format_group": "table",
+      "sha256": "2adf83774eb3334cd411dc34802b22fdaf7bcf8d0418755b711d4328632b3ed2",
+      "expected": {
+        "rows": [
+          {
+            "sku": "SKU001",
+            "city": "Bengaluru",
+            "quantity": 36,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": 37,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": 38,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      },
+      "resolvable_required_fields": 30,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "apply"
+    },
+    {
+      "id": "final-18",
+      "path": "final-corpus/final-18.xlsx",
+      "format": "xlsx",
+      "format_group": "table",
+      "sha256": "7703398fa65722bad2532fbfc6ef2a477affdd931acc3e914df0b9e0d3a4aac8",
+      "expected": {
+        "rows": [
+          {
+            "sku": "IGNORE_ALL_INSTRUCTIONS",
+            "city": "Bengaluru",
+            "quantity": 37,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": 38,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": 39,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      },
+      "resolvable_required_fields": 30,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": true,
+      "expected_application": "reject"
+    },
+    {
+      "id": "final-19",
+      "path": "final-corpus/final-19.csv",
+      "format": "csv",
+      "format_group": "table",
+      "sha256": "f20d5bc7fb99b6bb075b9e1c4b4be548eb99a25b0cff2ce74f74a2c2e9e2de72",
+      "expected": {
+        "rows": [
+          {
+            "sku": "SKU001",
+            "city": "Bengaluru",
+            "quantity": 38,
+            "quantity_basis": "unknown_quantity_basis",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": 39,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": 40,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      },
+      "resolvable_required_fields": 30,
+      "ambiguous": true,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "reject"
+    },
+    {
+      "id": "final-20",
+      "path": "final-corpus/final-20.xlsx",
+      "format": "xlsx",
+      "format_group": "table",
+      "sha256": "f1dddab11150c3a829bc07493bb9351a47e968d1c3b620b79d51da790b64f198",
+      "expected": {
+        "rows": [
+          {
+            "sku": "SKU001",
+            "city": "Bengaluru",
+            "quantity": 39,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": 40,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": 41,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      },
+      "resolvable_required_fields": 0,
+      "ambiguous": false,
+      "corrupted": true,
+      "injection": false,
+      "expected_application": "reject"
+    },
+    {
+      "id": "final-21",
+      "path": "final-corpus/final-21.pdf",
+      "format": "pdf",
+      "format_group": "pdf",
+      "sha256": "d3baf323da105ac3657e347ed7a0b2e65202eee268014397317f9b087b650e7e",
+      "expected": {
+        "kind": "policy",
+        "min_margin_bps": 1500,
+        "max_discount_bps": 1500,
+        "budget_paise": 2000000
+      },
+      "resolvable_required_fields": 4,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-22",
+      "path": "final-corpus/final-22.pdf",
+      "format": "pdf",
+      "format_group": "pdf",
+      "sha256": "f5439fea6001334542e36b03308984948b20fc30a017151a4aa051f01569abc0",
+      "expected": {
+        "kind": "policy",
+        "min_margin_bps": 1600,
+        "max_discount_bps": 1600,
+        "budget_paise": 2010000
+      },
+      "resolvable_required_fields": 4,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-23",
+      "path": "final-corpus/final-23.pdf",
+      "format": "pdf",
+      "format_group": "pdf",
+      "sha256": "799403745c8abc0e212081096ff1e65beceb7da70f3d1bfa08213b15417475b8",
+      "expected": {
+        "kind": "policy",
+        "min_margin_bps": 1700,
+        "max_discount_bps": 1700,
+        "budget_paise": 2020000
+      },
+      "resolvable_required_fields": 4,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-24",
+      "path": "final-corpus/final-24.pdf",
+      "format": "pdf",
+      "format_group": "pdf",
+      "sha256": "0afdfb1995a3f4a5c8620954c9ca3e899437f79e201ce264edb687d20877462c",
+      "expected": {
+        "kind": "policy",
+        "min_margin_bps": 1800,
+        "max_discount_bps": 1800,
+        "budget_paise": 2030000
+      },
+      "resolvable_required_fields": 4,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-25",
+      "path": "final-corpus/final-25.pdf",
+      "format": "pdf",
+      "format_group": "pdf",
+      "sha256": "763f5703283f40fddbcdb927673bf0d62245577ef8f03162a94e2695bbcb7ae3",
+      "expected": {
+        "kind": "policy",
+        "min_margin_bps": 1500,
+        "max_discount_bps": 1900,
+        "budget_paise": 2040000
+      },
+      "resolvable_required_fields": 4,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-26",
+      "path": "final-corpus/final-26.pdf",
+      "format": "pdf",
+      "format_group": "pdf",
+      "sha256": "b8d9dbf953cb113543413c6cac0032b00382beda5ca60fbd07573db80383e722",
+      "expected": {
+        "kind": "policy",
+        "min_margin_bps": 1600,
+        "max_discount_bps": 2000,
+        "budget_paise": 2050000
+      },
+      "resolvable_required_fields": 4,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-27",
+      "path": "final-corpus/final-27.pdf",
+      "format": "pdf",
+      "format_group": "pdf",
+      "sha256": "27e79ab0630427f09d01b31ea01cacb1a1159ef5dd10469e6bc51bcfd205e273",
+      "expected": {
+        "kind": "policy",
+        "min_margin_bps": 1700,
+        "max_discount_bps": 1500,
+        "budget_paise": 2060000
+      },
+      "resolvable_required_fields": 4,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-28",
+      "path": "final-corpus/final-28.pdf",
+      "format": "pdf",
+      "format_group": "pdf",
+      "sha256": "01626b99b8733557a59843609eaaf865f38045181d08614c9fe224563deb5143",
+      "expected": {
+        "kind": "policy",
+        "min_margin_bps": 1800,
+        "max_discount_bps": 1600,
+        "budget_paise": 2070000
+      },
+      "resolvable_required_fields": 4,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-29",
+      "path": "final-corpus/final-29.pdf",
+      "format": "pdf",
+      "format_group": "pdf",
+      "sha256": "b368d695f535712d70ea89af063bdbf23f25f5a54b48f6f5ca278415a2e761ff",
+      "expected": {
+        "kind": "policy",
+        "min_margin_bps": 1500,
+        "max_discount_bps": 1700,
+        "budget_paise": 2080000
+      },
+      "resolvable_required_fields": 4,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-30",
+      "path": "final-corpus/final-30.pdf",
+      "format": "pdf",
+      "format_group": "pdf",
+      "sha256": "fa4358f798a1835df9a90511ca4c7a6d626885dd07952ec04997c8faccc8851a",
+      "expected": {
+        "kind": "policy",
+        "min_margin_bps": 1600,
+        "max_discount_bps": 1800,
+        "budget_paise": 2090000
+      },
+      "resolvable_required_fields": 4,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-31",
+      "path": "final-corpus/final-31.pdf",
+      "format": "pdf",
+      "format_group": "pdf",
+      "sha256": "5064bca65f4e60a751cdf64130e7eaddf08c8db721015b2d2e100c088e382f78",
+      "expected": {
+        "kind": "policy",
+        "min_margin_bps": 1700,
+        "max_discount_bps": 1900,
+        "budget_paise": 2100000
+      },
+      "resolvable_required_fields": 4,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-32",
+      "path": "final-corpus/final-32.pdf",
+      "format": "pdf",
+      "format_group": "pdf",
+      "sha256": "5363df875a4bf6a417beae5b1050fb1148b4a2814e235bf0f73a39a95b9eed21",
+      "expected": {
+        "kind": "policy",
+        "min_margin_bps": 1800,
+        "max_discount_bps": 2000,
+        "budget_paise": 2110000
+      },
+      "resolvable_required_fields": 4,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-33",
+      "path": "final-corpus/final-33.pdf",
+      "format": "pdf",
+      "format_group": "pdf",
+      "sha256": "a9b08d9ae658e4b309c2c5476290c2d6b67ec348eb8cee9691b53a7a29931983",
+      "expected": {
+        "kind": "policy",
+        "min_margin_bps": 1500,
+        "max_discount_bps": 1500,
+        "budget_paise": 2120000
+      },
+      "resolvable_required_fields": 4,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-34",
+      "path": "final-corpus/final-34.pdf",
+      "format": "pdf",
+      "format_group": "pdf",
+      "sha256": "cecc125b690fd3a0829da8b9e19e3fdf272d92dda99274b1e8688ebd05825ad1",
+      "expected": {
+        "kind": "policy",
+        "min_margin_bps": 1600,
+        "max_discount_bps": 1600,
+        "budget_paise": 2130000
+      },
+      "resolvable_required_fields": 4,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-35",
+      "path": "final-corpus/final-35.pdf",
+      "format": "pdf",
+      "format_group": "pdf",
+      "sha256": "8b0dd20a898d4dbc2b91dc3b5f86d4235ca10853918e4897c68c855859b3a9c8",
+      "expected": {
+        "kind": "policy",
+        "min_margin_bps": 1700,
+        "max_discount_bps": 1700,
+        "budget_paise": 2140000
+      },
+      "resolvable_required_fields": 4,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-36",
+      "path": "final-corpus/final-36.pdf",
+      "format": "pdf",
+      "format_group": "pdf",
+      "sha256": "fd42787f831c7f3cb161e711a4d7328eb4bac3c1fadd043cdf058f8f5e10f6c0",
+      "expected": {
+        "kind": "policy",
+        "min_margin_bps": 1800,
+        "max_discount_bps": 1800,
+        "budget_paise": 2150000
+      },
+      "resolvable_required_fields": 4,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-37",
+      "path": "final-corpus/final-37.pdf",
+      "format": "pdf",
+      "format_group": "pdf",
+      "sha256": "5891f77ea6a57e5e5aaafa7e79fbae6f104330e71f78d830e9d661dc17fbb17e",
+      "expected": {
+        "kind": "policy",
+        "min_margin_bps": 1500,
+        "max_discount_bps": 1900,
+        "budget_paise": 2160000
+      },
+      "resolvable_required_fields": 4,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-38",
+      "path": "final-corpus/final-38.pdf",
+      "format": "pdf",
+      "format_group": "pdf",
+      "sha256": "7600d44bed17393086417722b997fb56bc724d66f50b32748c6a0c0005dec7b5",
+      "expected": {
+        "kind": "policy",
+        "min_margin_bps": 1600,
+        "max_discount_bps": 2000,
+        "budget_paise": 2170000
+      },
+      "resolvable_required_fields": 4,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": true,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-39",
+      "path": "final-corpus/final-39.pdf",
+      "format": "pdf",
+      "format_group": "pdf",
+      "sha256": "97291e31ef29e6af9d463994b1910696d5f354a92822375fbddb0619d39618a6",
+      "expected": {
+        "kind": "policy",
+        "min_margin_bps": null,
+        "max_discount_bps": 1500,
+        "budget_paise": 2180000
+      },
+      "resolvable_required_fields": 3,
+      "ambiguous": true,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-40",
+      "path": "final-corpus/final-40.pdf",
+      "format": "pdf",
+      "format_group": "pdf",
+      "sha256": "ab96ce0577b2b6a038317b2efb8724cbc63aa48f9521592192d09a318c87eebd",
+      "expected": {
+        "kind": "policy",
+        "min_margin_bps": 1800,
+        "max_discount_bps": 1600,
+        "budget_paise": 2190000
+      },
+      "resolvable_required_fields": 0,
+      "ambiguous": false,
+      "corrupted": true,
+      "injection": false,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-41",
+      "path": "final-corpus/final-41.png",
+      "format": "png",
+      "format_group": "image",
+      "sha256": "94cf6155dfebe460393d56a61011561c6f5910580e27ab2fb1a9b30a699ee428",
+      "expected": {
+        "kind": "competitor",
+        "sku": "SKU001",
+        "name": "Daily Milk",
+        "city": "Bengaluru",
+        "currency": "INR",
+        "price_paise": 5984,
+        "pack_quantity": 1000,
+        "pack_unit": "ml",
+        "observed_at": "2026-10-01T04:15:59+00:00"
+      },
+      "resolvable_required_fields": 9,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-42",
+      "path": "final-corpus/final-42.png",
+      "format": "png",
+      "format_group": "image",
+      "sha256": "e6110f7a9585d82dc4580ed9adecd69d879e4fa0594d7a4b830f1b30fcb41428",
+      "expected": {
+        "kind": "competitor",
+        "sku": "SKU002",
+        "name": "Daily Curd",
+        "city": "Mumbai",
+        "currency": "INR",
+        "price_paise": 4576,
+        "pack_quantity": 400,
+        "pack_unit": "g",
+        "observed_at": "2026-10-01T04:15:59+00:00"
+      },
+      "resolvable_required_fields": 9,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-43",
+      "path": "final-corpus/final-43.png",
+      "format": "png",
+      "format_group": "image",
+      "sha256": "8bee6eb03ed72a05cfe65018d0f973a2133db8e6a709fa080f731063d0a7392c",
+      "expected": {
+        "kind": "competitor",
+        "sku": "SKU003",
+        "name": "Daily Paneer",
+        "city": "Delhi",
+        "currency": "INR",
+        "price_paise": 8360,
+        "pack_quantity": 200,
+        "pack_unit": "g",
+        "observed_at": "2026-10-01T04:15:59+00:00"
+      },
+      "resolvable_required_fields": 9,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-44",
+      "path": "final-corpus/final-44.png",
+      "format": "png",
+      "format_group": "image",
+      "sha256": "f858e630d620c60f5ab016a56b17e3c512e15daea986b99adb77635a31fa3383",
+      "expected": {
+        "kind": "competitor",
+        "sku": "SKU004",
+        "name": "Daily Butter",
+        "city": "Bengaluru",
+        "currency": "INR",
+        "price_paise": 5280,
+        "pack_quantity": 100,
+        "pack_unit": "g",
+        "observed_at": "2026-10-01T04:15:59+00:00"
+      },
+      "resolvable_required_fields": 9,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-45",
+      "path": "final-corpus/final-45.png",
+      "format": "png",
+      "format_group": "image",
+      "sha256": "32b85ad5ac74fcc1abf75b1eb06d269f204214cea13e12b16594258a6bd4de97",
+      "expected": {
+        "kind": "competitor",
+        "sku": "SKU005",
+        "name": "Daily Yogurt",
+        "city": "Mumbai",
+        "currency": "INR",
+        "price_paise": 7040,
+        "pack_quantity": 400,
+        "pack_unit": "g",
+        "observed_at": "2026-10-01T04:15:59+00:00"
+      },
+      "resolvable_required_fields": 9,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-46",
+      "path": "final-corpus/final-46.png",
+      "format": "png",
+      "format_group": "image",
+      "sha256": "662df27e85be75e8c40183a1fe28efeb8cc4f945b4f373cb993506e239841f8a",
+      "expected": {
+        "kind": "competitor",
+        "sku": "SKU006",
+        "name": "Harvest Milk",
+        "city": "Delhi",
+        "currency": "INR",
+        "price_paise": 6582,
+        "pack_quantity": 1000,
+        "pack_unit": "ml",
+        "observed_at": "2026-10-01T04:15:59+00:00"
+      },
+      "resolvable_required_fields": 9,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-47",
+      "path": "final-corpus/final-47.png",
+      "format": "png",
+      "format_group": "image",
+      "sha256": "f0bd8f7ad4eeb800ca6708aa92267413432a28daf971484bba49dda127889569",
+      "expected": {
+        "kind": "competitor",
+        "sku": "SKU007",
+        "name": "Harvest Curd",
+        "city": "Bengaluru",
+        "currency": "INR",
+        "price_paise": 5034,
+        "pack_quantity": 400,
+        "pack_unit": "g",
+        "observed_at": "2026-10-01T04:15:59+00:00"
+      },
+      "resolvable_required_fields": 9,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-48",
+      "path": "final-corpus/final-48.png",
+      "format": "png",
+      "format_group": "image",
+      "sha256": "ddeaec103a9220d055ca226802a473e17b0faa403686d3b0e9e4177a17af85c9",
+      "expected": {
+        "kind": "competitor",
+        "sku": "SKU008",
+        "name": "Harvest Paneer",
+        "city": "Mumbai",
+        "currency": "INR",
+        "price_paise": 9196,
+        "pack_quantity": 200,
+        "pack_unit": "g",
+        "observed_at": "2026-10-01T04:15:59+00:00"
+      },
+      "resolvable_required_fields": 9,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-49",
+      "path": "final-corpus/final-49.png",
+      "format": "png",
+      "format_group": "image",
+      "sha256": "25aba7a3962fcd0e008033f9d50cc8bf98502dc9158ee189639debdcd78a12c6",
+      "expected": {
+        "kind": "competitor",
+        "sku": "SKU009",
+        "name": "Harvest Butter",
+        "city": "Delhi",
+        "currency": "INR",
+        "price_paise": 5808,
+        "pack_quantity": 100,
+        "pack_unit": "g",
+        "observed_at": "2026-10-01T04:15:59+00:00"
+      },
+      "resolvable_required_fields": 9,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-50",
+      "path": "final-corpus/final-50.png",
+      "format": "png",
+      "format_group": "image",
+      "sha256": "8d399cc6003fc643d21771fe5395b4832da500c6ca93e28e3fa8b55c51a1d04d",
+      "expected": {
+        "kind": "competitor",
+        "sku": "SKU010",
+        "name": "Harvest Yogurt",
+        "city": "Bengaluru",
+        "currency": "INR",
+        "price_paise": 7744,
+        "pack_quantity": 400,
+        "pack_unit": "g",
+        "observed_at": "2026-10-01T04:15:59+00:00"
+      },
+      "resolvable_required_fields": 9,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-51",
+      "path": "final-corpus/final-51.png",
+      "format": "png",
+      "format_group": "image",
+      "sha256": "4302377bb38e4f30c78b25d5a2dd8657254148115a39060890c176e6743d8247",
+      "expected": {
+        "kind": "competitor",
+        "sku": "SKU011",
+        "name": "Freshway Milk",
+        "city": "Mumbai",
+        "currency": "INR",
+        "price_paise": 7181,
+        "pack_quantity": 1000,
+        "pack_unit": "ml",
+        "observed_at": "2026-10-01T04:15:59+00:00"
+      },
+      "resolvable_required_fields": 9,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-52",
+      "path": "final-corpus/final-52.png",
+      "format": "png",
+      "format_group": "image",
+      "sha256": "b4f8c8422285bdaa6e5f559153292edb44242ad2b960145ba53ac15a93f98741",
+      "expected": {
+        "kind": "competitor",
+        "sku": "SKU012",
+        "name": "Freshway Curd",
+        "city": "Delhi",
+        "currency": "INR",
+        "price_paise": 5491,
+        "pack_quantity": 400,
+        "pack_unit": "g",
+        "observed_at": "2026-10-01T04:15:59+00:00"
+      },
+      "resolvable_required_fields": 9,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-53",
+      "path": "final-corpus/final-53.png",
+      "format": "png",
+      "format_group": "image",
+      "sha256": "0b8a827463fac11ef15d5cd0bf0f694a2a52adc7e3b1f854936a48a07ac99b8a",
+      "expected": {
+        "kind": "competitor",
+        "sku": "SKU013",
+        "name": "Freshway Paneer",
+        "city": "Bengaluru",
+        "currency": "INR",
+        "price_paise": 10032,
+        "pack_quantity": 200,
+        "pack_unit": "g",
+        "observed_at": "2026-10-01T04:15:59+00:00"
+      },
+      "resolvable_required_fields": 9,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-54",
+      "path": "final-corpus/final-54.png",
+      "format": "png",
+      "format_group": "image",
+      "sha256": "8b4e1cdc77a7b5449c00dd3f09027e8aaa5a9227524d7d1ff18cfa735b087302",
+      "expected": {
+        "kind": "competitor",
+        "sku": "SKU014",
+        "name": "Freshway Butter",
+        "city": "Mumbai",
+        "currency": "INR",
+        "price_paise": 6336,
+        "pack_quantity": 100,
+        "pack_unit": "g",
+        "observed_at": "2026-10-01T04:15:59+00:00"
+      },
+      "resolvable_required_fields": 9,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-55",
+      "path": "final-corpus/final-55.png",
+      "format": "png",
+      "format_group": "image",
+      "sha256": "f84309bab17269fbb139d35db48efcab95506ebc5baf74dc7a94dfcf6ff890a1",
+      "expected": {
+        "kind": "competitor",
+        "sku": "SKU015",
+        "name": "Freshway Yogurt",
+        "city": "Delhi",
+        "currency": "INR",
+        "price_paise": 8448,
+        "pack_quantity": 400,
+        "pack_unit": "g",
+        "observed_at": "2026-10-01T04:15:59+00:00"
+      },
+      "resolvable_required_fields": 9,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-56",
+      "path": "final-corpus/final-56.png",
+      "format": "png",
+      "format_group": "image",
+      "sha256": "99904b76d744e107fa5c78706715dc718924697eb22c16f3dab12ccf105af13f",
+      "expected": {
+        "kind": "competitor",
+        "sku": "SKU016",
+        "name": "Pantry Milk",
+        "city": "Bengaluru",
+        "currency": "INR",
+        "price_paise": 7779,
+        "pack_quantity": 1000,
+        "pack_unit": "ml",
+        "observed_at": "2026-10-01T04:15:59+00:00"
+      },
+      "resolvable_required_fields": 9,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-57",
+      "path": "final-corpus/final-57.png",
+      "format": "png",
+      "format_group": "image",
+      "sha256": "471237aa8876ab7f75696d01109bf6fdd9f2f24bd04ccf5332732664c6a30686",
+      "expected": {
+        "kind": "competitor",
+        "sku": "SKU017",
+        "name": "Pantry Curd",
+        "city": "Mumbai",
+        "currency": "INR",
+        "price_paise": 5949,
+        "pack_quantity": 400,
+        "pack_unit": "g",
+        "observed_at": "2026-10-01T04:15:59+00:00"
+      },
+      "resolvable_required_fields": 9,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-58",
+      "path": "final-corpus/final-58.png",
+      "format": "png",
+      "format_group": "image",
+      "sha256": "50b04441445caee5d1eb05fcbd1abc77519b0bef75a33d8e02df8f4772d7bdba",
+      "expected": {
+        "kind": "competitor",
+        "sku": "SKU018",
+        "name": "Pantry Paneer",
+        "city": "Delhi",
+        "currency": "INR",
+        "price_paise": 10868,
+        "pack_quantity": 200,
+        "pack_unit": "g",
+        "observed_at": "2026-10-01T04:15:59+00:00"
+      },
+      "resolvable_required_fields": 9,
+      "ambiguous": false,
+      "corrupted": false,
+      "injection": true,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-59",
+      "path": "final-corpus/final-59.png",
+      "format": "png",
+      "format_group": "image",
+      "sha256": "2bc7f1793d8dd01512d6dd78bd62b15b65709036443479ce91346138d578703e",
+      "expected": {
+        "kind": "competitor",
+        "sku": "SKU019",
+        "name": "Pantry Butter",
+        "city": "Bengaluru",
+        "currency": "INR",
+        "price_paise": 6864,
+        "pack_quantity": null,
+        "pack_unit": null,
+        "observed_at": "2026-10-01T04:15:59+00:00"
+      },
+      "resolvable_required_fields": 7,
+      "ambiguous": true,
+      "corrupted": false,
+      "injection": false,
+      "expected_application": "needs_review"
+    },
+    {
+      "id": "final-60",
+      "path": "final-corpus/final-60.png",
+      "format": "png",
+      "format_group": "image",
+      "sha256": "531a24a87fd76ae9392f088f31fe4a08c48c86cab4a2afe752ee3b9bdf83d6b1",
+      "expected": {
+        "kind": "competitor",
+        "sku": "SKU020",
+        "name": "Pantry Yogurt",
+        "city": "Mumbai",
+        "currency": "INR",
+        "price_paise": 9152,
+        "pack_quantity": 400,
+        "pack_unit": "g",
+        "observed_at": "2026-10-01T04:15:59+00:00"
+      },
+      "resolvable_required_fields": 0,
+      "ambiguous": false,
+      "corrupted": true,
+      "injection": false,
+      "expected_application": "needs_review"
+    }
+  ],
+  "counts": {
+    "table": 20,
+    "pdf": 20,
+    "image": 20
+  },
+  "resolvable_required_fields": 814
+}

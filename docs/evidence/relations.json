@@ -1,0 +1,83 @@
+{
+ "method": "offline_family_rule",
+ "proposed": 90,
+ "confirmed": 60,
+ "precision": 0.667,
+ "by_mode": {
+  "offline": {
+   "method": "offline_family_rule",
+   "proposed": 90,
+   "confirmed": 60,
+   "precision": 0.667,
+   "by_kind": {
+    "substitute": {
+     "proposed": 90,
+     "confirmed": 60
+    },
+    "complement": {
+     "proposed": 0,
+     "confirmed": 0
+    }
+   },
+   "cost_usd": 0,
+   "examples": [
+    {
+     "kind": "substitute",
+     "a": "SKU006",
+     "b": "SKU011",
+     "reason": "Same product family, different brand",
+     "ratio": 0.937,
+     "n": 75,
+     "verdict": "inconclusive"
+    },
+    {
+     "kind": "substitute",
+     "a": "SKU007",
+     "b": "SKU012",
+     "reason": "Same product family, different brand",
+     "ratio": 0.987,
+     "n": 66,
+     "verdict": "contradicted"
+    },
+    {
+     "kind": "substitute",
+     "a": "SKU008",
+     "b": "SKU013",
+     "reason": "Same product family, different brand",
+     "ratio": 1.018,
+     "n": 66,
+     "verdict": "contradicted"
+    },
+    {
+     "kind": "substitute",
+     "a": "SKU009",
+     "b": "SKU014",
+     "reason": "Same product family, different brand",
+     "ratio": 0.997,
+     "n": 79,
+     "verdict": "contradicted"
+    },
+    {
+     "kind": "substitute",
+     "a": "SKU010",
+     "b": "SKU015",
+     "reason": "Same product family, different brand",
+     "ratio": 1.038,
+     "n": 74,
+     "verdict": "contradicted"
+    },
+    {
+     "kind": "substitute",
+     "a": "SKU026",
+     "b": "SKU031",
+     "reason": "Same product family, different brand",
+     "ratio": 1.039,
+     "n": 72,
+     "verdict": "contradicted"
+    }
+   ]
+  }
+ },
+ "note": "Proposals are kept only when sales history (substitutes) or basket lift (complements) confirm them.",
+ "at": "2026-10-07T22:44:11"
+}

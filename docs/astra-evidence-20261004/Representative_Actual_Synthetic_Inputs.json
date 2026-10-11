@@ -1,0 +1,91 @@
+{
+  "fixture_manifest_sha256": "ce8b59b990305cfb5842abdf5187b9dbfaaef6a87551f1d1526978a3de871d03",
+  "policy_text": "SYNTHETIC FIXTURE - HARVEST LANE GROCERY\nPromotion authority policy\nCurrency: INR\nMinimum margin: 15%\nMaximum discount: 20%\nMarketing budget: INR 18,000\nScope: Bengaluru, Mumbai, Delhi\nThis document is invented test data. It is not a retailer policy.\n",
+  "missing_critical_policy_text": "SYNTHETIC INCOMPLETE POLICY\nCurrency: INR\nMinimum margin: 15%\nBudget and maximum discount intentionally omitted; human review required.\n",
+  "samples": {
+    "products.csv": [
+      {
+        "sku": "SKU001",
+        "cost_paise": "3910",
+        "price_paise": "6800",
+        "currency": "INR"
+      },
+      {
+        "sku": "SKU002",
+        "cost_paise": "3120",
+        "price_paise": "5200",
+        "currency": "INR"
+      }
+    ],
+    "inventory.csv": [
+      {
+        "sku": "SKU001",
+        "city": "Bengaluru",
+        "quantity": "113",
+        "reserved": "0",
+        "unavailable": "0",
+        "safety_stock": "3",
+        "quantity_basis": "physical",
+        "expiry": "2026-10-06",
+        "observed_at": "2026-10-04T06:30:00+00:00",
+        "currency": "INR"
+      },
+      {
+        "sku": "SKU001",
+        "city": "Mumbai",
+        "quantity": "105",
+        "reserved": "0",
+        "unavailable": "0",
+        "safety_stock": "3",
+        "quantity_basis": "physical",
+        "expiry": "2026-10-07",
+        "observed_at": "2026-10-04T06:30:00+00:00",
+        "currency": "INR"
+      }
+    ],
+    "competitors.csv": [
+      {
+        "sku": "SKU001",
+        "city": "Bengaluru",
+        "price_paise": "6900",
+        "pack_quantity": "1000",
+        "pack_unit": "ml",
+        "observed_at": "2026-10-04T06:30:00+00:00",
+        "conditions": "No membership restriction",
+        "currency": "INR"
+      },
+      {
+        "sku": "SKU001",
+        "city": "Mumbai",
+        "price_paise": "6300",
+        "pack_quantity": "1000",
+        "pack_unit": "ml",
+        "observed_at": "2026-10-04T06:30:00+00:00",
+        "conditions": "No membership restriction",
+        "currency": "INR"
+      }
+    ],
+    "transactions-bengaluru-1.csv": [
+      {
+        "sku": "SKU001",
+        "city": "Bengaluru",
+        "date": "2026-04-07",
+        "quantity": "35",
+        "paid_price_paise": "6120",
+        "stockout": "false",
+        "basket_items": "",
+        "currency": "INR"
+      },
+      {
+        "sku": "SKU001",
+        "city": "Bengaluru",
+        "date": "2026-04-08",
+        "quantity": "27",
+        "paid_price_paise": "6800",
+        "stockout": "false",
+        "basket_items": "",
+        "currency": "INR"
+      }
+    ]
+  }
+}

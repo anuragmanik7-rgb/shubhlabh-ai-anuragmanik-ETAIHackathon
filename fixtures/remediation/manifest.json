@@ -1,0 +1,316 @@
+{
+  "schema_version": 1,
+  "seed": 20261004,
+  "scenario_clock_utc": "2026-10-04T06:30:00+00:00",
+  "business_date_ist": "2026-10-04",
+  "label": "Entirely invented Indian grocery test data; not observed commercial data",
+  "provenance": "Original deterministic generator. Product identities use the existing synthetic catalog.",
+  "dimensions": {
+    "products": 120,
+    "cities": 3,
+    "categories": 6,
+    "history_days": 180,
+    "transaction_rows": 64800,
+    "inventory_rows": 360,
+    "competitor_rows": 360,
+    "new_basket_rows": 1620,
+    "stockout_history_rows": 783
+  },
+  "operational_files": [
+    {
+      "path": "products.csv",
+      "kind": "products",
+      "rows": 120
+    },
+    {
+      "path": "inventory.csv",
+      "kind": "inventory",
+      "rows": 360
+    },
+    {
+      "path": "competitors.csv",
+      "kind": "competitor",
+      "rows": 360
+    },
+    {
+      "path": "transactions-bengaluru-1.csv",
+      "kind": "transactions",
+      "rows": 7200
+    },
+    {
+      "path": "transactions-bengaluru-2.csv",
+      "kind": "transactions",
+      "rows": 7200
+    },
+    {
+      "path": "transactions-bengaluru-3.csv",
+      "kind": "transactions",
+      "rows": 7200
+    },
+    {
+      "path": "transactions-mumbai-1.csv",
+      "kind": "transactions",
+      "rows": 7200
+    },
+    {
+      "path": "transactions-mumbai-2.csv",
+      "kind": "transactions",
+      "rows": 7200
+    },
+    {
+      "path": "transactions-mumbai-3.csv",
+      "kind": "transactions",
+      "rows": 7200
+    },
+    {
+      "path": "transactions-delhi-1.csv",
+      "kind": "transactions",
+      "rows": 7200
+    },
+    {
+      "path": "transactions-delhi-2.csv",
+      "kind": "transactions",
+      "rows": 7200
+    },
+    {
+      "path": "transactions-delhi-3.csv",
+      "kind": "transactions",
+      "rows": 7200
+    }
+  ],
+  "evidence_cases": [
+    {
+      "path": "policy.txt",
+      "modality": "text",
+      "expected": {
+        "kind": "policy",
+        "currency": "INR",
+        "min_margin_bps": 1500,
+        "max_discount_bps": 2000,
+        "budget_paise": 1800000
+      },
+      "action": "confirm_policy"
+    },
+    {
+      "path": "policy.pdf",
+      "modality": "pdf",
+      "expected": {
+        "kind": "policy",
+        "currency": "INR",
+        "min_margin_bps": 1500,
+        "max_discount_bps": 2000,
+        "budget_paise": 1800000
+      },
+      "action": "confirm_policy"
+    },
+    {
+      "path": "missing-critical-policy.txt",
+      "modality": "text",
+      "expected": {
+        "kind": "policy",
+        "currency": "INR",
+        "min_margin_bps": 1500
+      },
+      "action": "reject_incomplete"
+    },
+    {
+      "path": "missing-critical-policy.pdf",
+      "modality": "pdf",
+      "expected": {
+        "kind": "policy",
+        "currency": "INR",
+        "min_margin_bps": 1500
+      },
+      "action": "reject_incomplete"
+    },
+    {
+      "path": "injection-policy.txt",
+      "modality": "text",
+      "expected": {
+        "kind": "policy",
+        "currency": "INR",
+        "min_margin_bps": 1500,
+        "max_discount_bps": 2000,
+        "budget_paise": 1800000
+      },
+      "action": "quarantine_instructions"
+    },
+    {
+      "path": "competitor-card.png",
+      "modality": "image",
+      "expected": {
+        "kind": "competitor",
+        "currency": "INR",
+        "sku": "SKU001",
+        "city": "Delhi",
+        "price_paise": 6200,
+        "pack_quantity": 1000,
+        "pack_unit": "ml",
+        "observed_at": "2026-10-04T06:30:00+00:00",
+        "conditions": "No membership restriction"
+      },
+      "action": "human_correction_required"
+    },
+    {
+      "path": "corrupt.pdf",
+      "modality": "pdf",
+      "expected_error": "PDF_FORMAT"
+    },
+    {
+      "path": "corrupt.png",
+      "modality": "image",
+      "expected_error": "IMAGE_FORMAT"
+    }
+  ],
+  "adversarial_imports": [
+    {
+      "path": "invalid-products.csv",
+      "kind": "products",
+      "expected": "rejected"
+    },
+    {
+      "path": "duplicate-products.csv",
+      "kind": "products",
+      "expected": "rejected"
+    },
+    {
+      "path": "malformed-inventory.csv",
+      "kind": "inventory",
+      "expected_error": "TABLE_ROW"
+    },
+    {
+      "path": "duplicate-normalized-transactions.csv",
+      "kind": "transactions",
+      "expected": "rejected"
+    },
+    {
+      "path": "stale-inventory.csv",
+      "kind": "inventory",
+      "expected_error": "STALE_EVENT"
+    }
+  ],
+  "planted_cases": {
+    "negative_margin_sku": "SKU120",
+    "below_margin_floor_sku": "SKU119",
+    "expired_stock_sku": "SKU118",
+    "complement_pairs": {
+      "SKU061": "SKU041",
+      "SKU081": "SKU001",
+      "SKU025": "SKU022"
+    }
+  },
+  "limitations": [
+    "API imports preserve the original 2200 synthetic baskets and append 1620 labeled basket rows.",
+    "Segments, calendar factors, substitute effects and replenishment retain the original assumed seed values; no supported import exists for them.",
+    "Daily rows are invented aggregate sales and one planted co-purchase receipt where basket_items is present, not raw orders.",
+    "Product import updates costs and selling prices, not catalog identity or supplier funding.",
+    "Observed labels assigned by the app describe the uploaded source, not real-world observation.",
+    "A frozen process clock supports repeatable freshness and expiry checks; timings and random record IDs are not deterministic."
+  ],
+  "files": {
+    "competitor-card.png": {
+      "sha256": "321c85bed8132181531b0156f744163ac48e796616d637144e668811f0107e2c",
+      "bytes": 43755
+    },
+    "competitors.csv": {
+      "sha256": "9536087c8dbfbca9dd23c96b85d4f14ba0615d8e44c9df6c68a59d588b0fca12",
+      "bytes": 30210
+    },
+    "corrupt.pdf": {
+      "sha256": "6fbf82f910ec7a1ecfa4d80d811335d052688a5a9c373935d440de1fdfa31d79",
+      "bytes": 30
+    },
+    "corrupt.png": {
+      "sha256": "1e93ce8cbbe24a08a27840e729c3fef75a38ca0ff4368b37fe3badaea9d888d0",
+      "bytes": 22
+    },
+    "duplicate-normalized-transactions.csv": {
+      "sha256": "fb4166edcaf1e9b36ce77a2343a6755566dfc75238abfc662db320bba6d8620b",
+      "bytes": 183
+    },
+    "duplicate-products.csv": {
+      "sha256": "9d11f06ab37e6ae2dc21417edf15173e6062cb1576d61a2a69622a8b021170c9",
+      "bytes": 81
+    },
+    "injection-policy.txt": {
+      "sha256": "c4a45d3f3afaccf68922bcd078541f25ba24a4039f47a0ee126adcf2592934e2",
+      "bytes": 330
+    },
+    "invalid-products.csv": {
+      "sha256": "7c3a79cc345a6f32b0e680968f0910bf383f539b825ed7fc203d02a0d20fb141",
+      "bytes": 42
+    },
+    "inventory.csv": {
+      "sha256": "ebc9e8b48530b2ddaf51b5009ef71d8b3b560b9ec2d2e4a2127391cacf40ee68",
+      "bytes": 27238
+    },
+    "malformed-inventory.csv": {
+      "sha256": "1980894130696803451f20d87b66cd8d6015acca645f6cdce625cf40c9f2c918",
+      "bytes": 47
+    },
+    "mismatched-pack-competitor.csv": {
+      "sha256": "a70f5435389721f4f4abd508da21bff6feb662f07bd799bdefceda9da5df80ec",
+      "bytes": 164
+    },
+    "missing-critical-policy.pdf": {
+      "sha256": "b4ce4750dece717c57f07b174a538d6f03338944243fa8ab5f5d9a66176e6192",
+      "bytes": 1755
+    },
+    "missing-critical-policy.txt": {
+      "sha256": "fa2da731b46940815101bc11be68ab3ffe99e489c1622d3734636af685147ee0",
+      "bytes": 140
+    },
+    "policy.pdf": {
+      "sha256": "81b622b4f5e397b7065118f7a53866b49734932afffce07b4ea6b30167777848",
+      "bytes": 1869
+    },
+    "policy.txt": {
+      "sha256": "f30a319f7f37cee456d80d238ac19919ab2adbf69badca6c25cff63d3aadd27d",
+      "bytes": 259
+    },
+    "products.csv": {
+      "sha256": "757c2d94c5ebff459b78388f02d2c7966b0156f2cf271697d645a00dcc4f9436",
+      "bytes": 2755
+    },
+    "stale-inventory.csv": {
+      "sha256": "6e7671d86ffc6e9f597224486f8b3c88dc504f3a576280cebb994ba5cc19e0fe",
+      "bytes": 174
+    },
+    "transactions-bengaluru-1.csv": {
+      "sha256": "37dd38156e61cce7a9ac815421c978e0f47c68294d2e8240ab5afa96814dc9e7",
+      "bytes": 350769
+    },
+    "transactions-bengaluru-2.csv": {
+      "sha256": "3e272f39ee3cbeb8e8fde4cf496d32aea98fd1d4c80dba14a1bc51d966d9fe52",
+      "bytes": 350666
+    },
+    "transactions-bengaluru-3.csv": {
+      "sha256": "5dc8c1c3d838477232cc7d6df5113d8d07c0e366beafd8e26580da974bd9c28c",
+      "bytes": 350570
+    },
+    "transactions-delhi-1.csv": {
+      "sha256": "cd5865b4f34569ef88c2f5924779889bd28d691dbb294f06c7e4b8e011c98084",
+      "bytes": 322171
+    },
+    "transactions-delhi-2.csv": {
+      "sha256": "ed2dab26fad965de0e6fcc1857a02c5e8047bae0fd8534cedb4cbc0a43eb7706",
+      "bytes": 322101
+    },
+    "transactions-delhi-3.csv": {
+      "sha256": "6dad4cf0b558923150cfebf0f5219de8a64298c4e2e06d74f9c561dfb0178c22",
+      "bytes": 322059
+    },
+    "transactions-mumbai-1.csv": {
+      "sha256": "46e02225b4763e4161e217ed06147c0f52f787489b02889960f965a36702b7b4",
+      "bytes": 328346
+    },
+    "transactions-mumbai-2.csv": {
+      "sha256": "8880774f2f8123bc7d9c9ad45f4fdb077ec0f7289c67f305b3ce780095258ee1",
+      "bytes": 328218
+    },
+    "transactions-mumbai-3.csv": {
+      "sha256": "f0a1ea6839e129b91aad0de95fc31b595fd9423d678dbc50ceb9a2f26efef233",
+      "bytes": 328082
+    }
+  }
+}

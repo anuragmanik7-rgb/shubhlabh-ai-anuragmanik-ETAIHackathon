@@ -1,0 +1,25 @@
+{
+  "application_source_sha256": "e10bba8b06f72c3f1ad0214f319daa9be091727ff628ae8bf24ca52130ab5d51",
+  "frontend_source_sha256": "9490c3497d4cc5056cbd1f7b3e9f020e5930f455ceec3611f0fef0dd37df2925",
+  "full_backend": {
+    "passed": 707,
+    "failed": 0,
+    "errors": 0,
+    "seconds": 329.37
+  },
+  "realistic": {
+    "passed": 73,
+    "failed": 0,
+    "seconds": 134.5823
+  },
+  "typescript": "passed",
+  "ui_component_checks": 13,
+  "solver_retry_ui_checks": 7,
+  "contract_check": "passed",
+  "frontend_build": "direct installed esbuild CLI passed",
+  "browser": "not run; narrow runtime permission pending",
+  "source_only": false,
+  "live_model_calls": 0,
+  "canonical_original_mismatches": [],
+  "previous_version_preserved": true
+}

@@ -1,0 +1,2665 @@
+{
+  "schema_version": 1,
+  "mode": "offline_synthetic",
+  "scenario_clock_utc": "2026-10-04T06:30:00+00:00",
+  "fixture_manifest_sha256": "ce8b59b990305cfb5842abdf5187b9dbfaaef6a87551f1d1526978a3de871d03",
+  "fixture_dimensions": {
+    "products": 120,
+    "cities": 3,
+    "categories": 6,
+    "history_days": 180,
+    "transaction_rows": 64800,
+    "inventory_rows": 360,
+    "competitor_rows": 360,
+    "new_basket_rows": 1620,
+    "stockout_history_rows": 783
+  },
+  "created_at": "2026-10-04T20:31:14.483404+00:00",
+  "checks": [
+    {
+      "name": "import:products.csv",
+      "passed": true,
+      "expected": {
+        "status": "applied",
+        "rows": 120
+      },
+      "observed": {
+        "status": "applied",
+        "rows": 120
+      }
+    },
+    {
+      "name": "import:inventory.csv",
+      "passed": true,
+      "expected": {
+        "status": "applied",
+        "rows": 360
+      },
+      "observed": {
+        "status": "applied",
+        "rows": 360
+      }
+    },
+    {
+      "name": "import:competitors.csv",
+      "passed": true,
+      "expected": {
+        "status": "applied",
+        "rows": 360
+      },
+      "observed": {
+        "status": "applied",
+        "rows": 360
+      }
+    },
+    {
+      "name": "import:transactions-bengaluru-1.csv",
+      "passed": true,
+      "expected": {
+        "status": "applied",
+        "rows": 7200
+      },
+      "observed": {
+        "status": "applied",
+        "rows": 7200
+      }
+    },
+    {
+      "name": "import:transactions-bengaluru-2.csv",
+      "passed": true,
+      "expected": {
+        "status": "applied",
+        "rows": 7200
+      },
+      "observed": {
+        "status": "applied",
+        "rows": 7200
+      }
+    },
+    {
+      "name": "import:transactions-bengaluru-3.csv",
+      "passed": true,
+      "expected": {
+        "status": "applied",
+        "rows": 7200
+      },
+      "observed": {
+        "status": "applied",
+        "rows": 7200
+      }
+    },
+    {
+      "name": "import:transactions-mumbai-1.csv",
+      "passed": true,
+      "expected": {
+        "status": "applied",
+        "rows": 7200
+      },
+      "observed": {
+        "status": "applied",
+        "rows": 7200
+      }
+    },
+    {
+      "name": "import:transactions-mumbai-2.csv",
+      "passed": true,
+      "expected": {
+        "status": "applied",
+        "rows": 7200
+      },
+      "observed": {
+        "status": "applied",
+        "rows": 7200
+      }
+    },
+    {
+      "name": "import:transactions-mumbai-3.csv",
+      "passed": true,
+      "expected": {
+        "status": "applied",
+        "rows": 7200
+      },
+      "observed": {
+        "status": "applied",
+        "rows": 7200
+      }
+    },
+    {
+      "name": "import:transactions-delhi-1.csv",
+      "passed": true,
+      "expected": {
+        "status": "applied",
+        "rows": 7200
+      },
+      "observed": {
+        "status": "applied",
+        "rows": 7200
+      }
+    },
+    {
+      "name": "import:transactions-delhi-2.csv",
+      "passed": true,
+      "expected": {
+        "status": "applied",
+        "rows": 7200
+      },
+      "observed": {
+        "status": "applied",
+        "rows": 7200
+      }
+    },
+    {
+      "name": "import:transactions-delhi-3.csv",
+      "passed": true,
+      "expected": {
+        "status": "applied",
+        "rows": 7200
+      },
+      "observed": {
+        "status": "applied",
+        "rows": 7200
+      }
+    },
+    {
+      "name": "exact_values:products.csv",
+      "passed": true,
+      "expected": 120,
+      "observed": 120
+    },
+    {
+      "name": "exact_values:inventory.csv",
+      "passed": true,
+      "expected": 360,
+      "observed": 360
+    },
+    {
+      "name": "exact_values:competitors.csv",
+      "passed": true,
+      "expected": 360,
+      "observed": 360
+    },
+    {
+      "name": "exact_values:transactions-bengaluru-1.csv",
+      "passed": true,
+      "expected": 7200,
+      "observed": 7200
+    },
+    {
+      "name": "exact_values:transactions-bengaluru-2.csv",
+      "passed": true,
+      "expected": 7200,
+      "observed": 7200
+    },
+    {
+      "name": "exact_values:transactions-bengaluru-3.csv",
+      "passed": true,
+      "expected": 7200,
+      "observed": 7200
+    },
+    {
+      "name": "exact_values:transactions-mumbai-1.csv",
+      "passed": true,
+      "expected": 7200,
+      "observed": 7200
+    },
+    {
+      "name": "exact_values:transactions-mumbai-2.csv",
+      "passed": true,
+      "expected": 7200,
+      "observed": 7200
+    },
+    {
+      "name": "exact_values:transactions-mumbai-3.csv",
+      "passed": true,
+      "expected": 7200,
+      "observed": 7200
+    },
+    {
+      "name": "exact_values:transactions-delhi-1.csv",
+      "passed": true,
+      "expected": 7200,
+      "observed": 7200
+    },
+    {
+      "name": "exact_values:transactions-delhi-2.csv",
+      "passed": true,
+      "expected": 7200,
+      "observed": 7200
+    },
+    {
+      "name": "exact_values:transactions-delhi-3.csv",
+      "passed": true,
+      "expected": 7200,
+      "observed": 7200
+    },
+    {
+      "name": "complete_history_replacement",
+      "passed": true,
+      "expected": "360 series x180 daily rows",
+      "observed": {
+        "series": 360,
+        "daily_rows": 64800
+      }
+    },
+    {
+      "name": "basket_append_count",
+      "passed": true,
+      "expected": 3820,
+      "observed": 3820
+    },
+    {
+      "name": "operational_import_replay",
+      "passed": true,
+      "expected": "same receipt; no duplicate history/baskets/state mutation",
+      "observed": "imp_e9434470942d7ec2cd8e08ca5052"
+    },
+    {
+      "name": "reject:invalid-products.csv",
+      "passed": true,
+      "expected": {
+        "decision": "rejected",
+        "state_unchanged": true
+      },
+      "observed": {
+        "http": 200,
+        "decision": "rejected",
+        "errors": [
+          {
+            "row": 2,
+            "message": "Missing integer value"
+          }
+        ],
+        "state_unchanged": true
+      }
+    },
+    {
+      "name": "reject:duplicate-products.csv",
+      "passed": true,
+      "expected": {
+        "decision": "rejected",
+        "state_unchanged": true
+      },
+      "observed": {
+        "http": 200,
+        "decision": "rejected",
+        "errors": [
+          {
+            "row": 3,
+            "message": "Duplicate product/location/day row; aggregate or reconcile before importing"
+          }
+        ],
+        "state_unchanged": true
+      }
+    },
+    {
+      "name": "reject:malformed-inventory.csv",
+      "passed": true,
+      "expected": {
+        "decision": "TABLE_ROW",
+        "state_unchanged": true
+      },
+      "observed": {
+        "http": 400,
+        "decision": "TABLE_ROW",
+        "errors": null,
+        "state_unchanged": true
+      }
+    },
+    {
+      "name": "reject:duplicate-normalized-transactions.csv",
+      "passed": true,
+      "expected": {
+        "decision": "rejected",
+        "state_unchanged": true
+      },
+      "observed": {
+        "http": 200,
+        "decision": "rejected",
+        "errors": [
+          {
+            "row": 3,
+            "message": "Duplicate product/location/day row; aggregate or reconcile before importing"
+          }
+        ],
+        "state_unchanged": true
+      }
+    },
+    {
+      "name": "reject:stale-inventory.csv",
+      "passed": true,
+      "expected": {
+        "decision": "STALE_EVENT",
+        "state_unchanged": true
+      },
+      "observed": {
+        "http": 409,
+        "decision": "STALE_EVENT",
+        "errors": null,
+        "state_unchanged": true
+      }
+    },
+    {
+      "name": "unconfirmed_no_mutation:policy.txt",
+      "passed": true,
+      "expected": "evidence upload never changes authoritative state",
+      "observed": true
+    },
+    {
+      "name": "unconfirmed_no_mutation:policy.pdf",
+      "passed": true,
+      "expected": "evidence upload never changes authoritative state",
+      "observed": true
+    },
+    {
+      "name": "policy_confirmation",
+      "passed": true,
+      "expected": "confirmed INR18000 policy",
+      "observed": "confirmed"
+    },
+    {
+      "name": "unconfirmed_no_mutation:missing-critical-policy.txt",
+      "passed": true,
+      "expected": "evidence upload never changes authoritative state",
+      "observed": true
+    },
+    {
+      "name": "incomplete_policy:missing-critical-policy.txt",
+      "passed": true,
+      "expected": "INCOMPLETE_POLICY; state unchanged",
+      "observed": {
+        "code": "INCOMPLETE_POLICY",
+        "message": "Confirm margin, discount and budget before applying",
+        "field_errors": {},
+        "retryable": false,
+        "correlation_id": "err_93cacc1dc23d4322"
+      }
+    },
+    {
+      "name": "unconfirmed_no_mutation:missing-critical-policy.pdf",
+      "passed": true,
+      "expected": "evidence upload never changes authoritative state",
+      "observed": true
+    },
+    {
+      "name": "incomplete_policy:missing-critical-policy.pdf",
+      "passed": true,
+      "expected": "INCOMPLETE_POLICY; state unchanged",
+      "observed": {
+        "code": "INCOMPLETE_POLICY",
+        "message": "Confirm margin, discount and budget before applying",
+        "field_errors": {},
+        "retryable": false,
+        "correlation_id": "err_5dd2aba6acc345fe"
+      }
+    },
+    {
+      "name": "unconfirmed_no_mutation:injection-policy.txt",
+      "passed": true,
+      "expected": "evidence upload never changes authoritative state",
+      "observed": true
+    },
+    {
+      "name": "untrusted_instructions_flagged",
+      "passed": true,
+      "expected": "warning + needs_review",
+      "observed": {
+        "warning": true,
+        "status": "needs_review"
+      }
+    },
+    {
+      "name": "unconfirmed_no_mutation:competitor-card.png",
+      "passed": true,
+      "expected": "evidence upload never changes authoritative state",
+      "observed": true
+    },
+    {
+      "name": "offline_image_abstention",
+      "passed": true,
+      "expected": "no invented price; human review",
+      "observed": {
+        "kind": "unresolved"
+      }
+    },
+    {
+      "name": "image_human_confirmation",
+      "passed": true,
+      "expected": "explicit human-confirmed revision",
+      "observed": {
+        "status": "confirmed",
+        "matching_fields": 9
+      }
+    },
+    {
+      "name": "evidence_reject:corrupt.pdf",
+      "passed": true,
+      "expected": "PDF_FORMAT",
+      "observed": "PDF_FORMAT"
+    },
+    {
+      "name": "evidence_reject:corrupt.png",
+      "passed": true,
+      "expected": "IMAGE_FORMAT",
+      "observed": "IMAGE_FORMAT"
+    },
+    {
+      "name": "tenant_import_isolation",
+      "passed": true,
+      "expected": "other tenant unchanged by imports/corrections",
+      "observed": true
+    },
+    {
+      "name": "csrf_enforced",
+      "passed": true,
+      "expected": 403,
+      "observed": 403
+    },
+    {
+      "name": "profit_plan_validated",
+      "passed": false,
+      "expected": "validated",
+      "observed": "needs_input"
+    },
+    {
+      "name": "zero_budget_safe_no_promotion",
+      "passed": true,
+      "expected": "validated empty plan with zero liability",
+      "observed": {
+        "offers": 0,
+        "liability": 0
+      }
+    },
+    {
+      "name": "hard_infeasibility_escalated",
+      "passed": true,
+      "expected": "needs_input; no constraint relaxed",
+      "observed": "needs_input"
+    },
+    {
+      "name": "strict_margin_no_unsafe_offer",
+      "passed": true,
+      "expected": "validated no-promotion portfolio",
+      "observed": 0
+    },
+    {
+      "name": "no_paid_calls",
+      "passed": true,
+      "expected": "no model usage record",
+      "observed": 0
+    }
+  ],
+  "imports": [
+    {
+      "path": "products.csv",
+      "kind": "products",
+      "expected_rows": 120,
+      "status": "applied",
+      "rows": 120,
+      "errors": [],
+      "seconds": 1.4215,
+      "id": "imp_e14b17f3c1b992cd0a21f0ff2cac"
+    },
+    {
+      "path": "inventory.csv",
+      "kind": "inventory",
+      "expected_rows": 360,
+      "status": "applied",
+      "rows": 360,
+      "errors": [],
+      "seconds": 1.5714,
+      "id": "imp_c885f53fc78a0bb510079b2910b3"
+    },
+    {
+      "path": "competitors.csv",
+      "kind": "competitor",
+      "expected_rows": 360,
+      "status": "applied",
+      "rows": 360,
+      "errors": [],
+      "seconds": 1.3043,
+      "id": "imp_3c8cb548b536992eb398c98e9de8"
+    },
+    {
+      "path": "transactions-bengaluru-1.csv",
+      "kind": "transactions",
+      "expected_rows": 7200,
+      "status": "applied",
+      "rows": 7200,
+      "errors": [],
+      "seconds": 1.6849,
+      "id": "imp_4f455109cb82b2f2df42ccb27b3f"
+    },
+    {
+      "path": "transactions-bengaluru-2.csv",
+      "kind": "transactions",
+      "expected_rows": 7200,
+      "status": "applied",
+      "rows": 7200,
+      "errors": [],
+      "seconds": 1.6398,
+      "id": "imp_fcc1a168c212dd0646816580e4cc"
+    },
+    {
+      "path": "transactions-bengaluru-3.csv",
+      "kind": "transactions",
+      "expected_rows": 7200,
+      "status": "applied",
+      "rows": 7200,
+      "errors": [],
+      "seconds": 4.8904,
+      "id": "imp_71a8a546b8a9868c1a5e82f7a2cc"
+    },
+    {
+      "path": "transactions-mumbai-1.csv",
+      "kind": "transactions",
+      "expected_rows": 7200,
+      "status": "applied",
+      "rows": 7200,
+      "errors": [],
+      "seconds": 5.4698,
+      "id": "imp_fcf8e5a79a81ac7e6c8c16f1a907"
+    },
+    {
+      "path": "transactions-mumbai-2.csv",
+      "kind": "transactions",
+      "expected_rows": 7200,
+      "status": "applied",
+      "rows": 7200,
+      "errors": [],
+      "seconds": 12.5567,
+      "id": "imp_7b2055d61f5be300c4ef07095924"
+    },
+    {
+      "path": "transactions-mumbai-3.csv",
+      "kind": "transactions",
+      "expected_rows": 7200,
+      "status": "applied",
+      "rows": 7200,
+      "errors": [],
+      "seconds": 21.3004,
+      "id": "imp_31e4d24535678cf1bf6658be45fd"
+    },
+    {
+      "path": "transactions-delhi-1.csv",
+      "kind": "transactions",
+      "expected_rows": 7200,
+      "status": "applied",
+      "rows": 7200,
+      "errors": [],
+      "seconds": 16.5179,
+      "id": "imp_6006503abf6b7831b2c5a077c9ee"
+    },
+    {
+      "path": "transactions-delhi-2.csv",
+      "kind": "transactions",
+      "expected_rows": 7200,
+      "status": "applied",
+      "rows": 7200,
+      "errors": [],
+      "seconds": 20.5558,
+      "id": "imp_2f648e01c0379ae3d8c966321953"
+    },
+    {
+      "path": "transactions-delhi-3.csv",
+      "kind": "transactions",
+      "expected_rows": 7200,
+      "status": "applied",
+      "rows": 7200,
+      "errors": [],
+      "seconds": 25.2635,
+      "id": "imp_e9434470942d7ec2cd8e08ca5052"
+    }
+  ],
+  "extraction": [
+    {
+      "path": "policy.txt",
+      "modality": "text",
+      "seconds": 13.2953,
+      "http": 200,
+      "automatic_application": false,
+      "required_fields": 5,
+      "correct_fields": 5,
+      "extracted": {
+        "kind": "policy",
+        "currency": "INR",
+        "min_margin_bps": 1500,
+        "max_discount_bps": 2000,
+        "budget_paise": 1800000
+      },
+      "truth": {
+        "kind": "policy",
+        "currency": "INR",
+        "min_margin_bps": 1500,
+        "max_discount_bps": 2000,
+        "budget_paise": 1800000
+      },
+      "status": "needs_review",
+      "auto_accepted": false
+    },
+    {
+      "path": "policy.pdf",
+      "modality": "pdf",
+      "seconds": 15.7395,
+      "http": 200,
+      "automatic_application": false,
+      "required_fields": 5,
+      "correct_fields": 5,
+      "extracted": {
+        "kind": "policy",
+        "currency": "INR",
+        "min_margin_bps": 1500,
+        "max_discount_bps": 2000,
+        "budget_paise": 1800000
+      },
+      "truth": {
+        "kind": "policy",
+        "currency": "INR",
+        "min_margin_bps": 1500,
+        "max_discount_bps": 2000,
+        "budget_paise": 1800000
+      },
+      "status": "needs_review",
+      "auto_accepted": false
+    },
+    {
+      "path": "missing-critical-policy.txt",
+      "modality": "text",
+      "seconds": 11.4137,
+      "http": 200,
+      "automatic_application": false,
+      "required_fields": 3,
+      "correct_fields": 3,
+      "extracted": {
+        "kind": "policy",
+        "currency": "INR",
+        "min_margin_bps": 1500
+      },
+      "truth": {
+        "kind": "policy",
+        "currency": "INR",
+        "min_margin_bps": 1500
+      },
+      "status": "needs_review",
+      "auto_accepted": false
+    },
+    {
+      "path": "missing-critical-policy.pdf",
+      "modality": "pdf",
+      "seconds": 10.831,
+      "http": 200,
+      "automatic_application": false,
+      "required_fields": 3,
+      "correct_fields": 3,
+      "extracted": {
+        "kind": "policy",
+        "currency": "INR",
+        "min_margin_bps": 1500
+      },
+      "truth": {
+        "kind": "policy",
+        "currency": "INR",
+        "min_margin_bps": 1500
+      },
+      "status": "needs_review",
+      "auto_accepted": false
+    },
+    {
+      "path": "injection-policy.txt",
+      "modality": "text",
+      "seconds": 5.0426,
+      "http": 200,
+      "automatic_application": false,
+      "required_fields": 5,
+      "correct_fields": 5,
+      "extracted": {
+        "kind": "policy",
+        "currency": "INR",
+        "min_margin_bps": 1500,
+        "max_discount_bps": 2000,
+        "budget_paise": 1800000
+      },
+      "truth": {
+        "kind": "policy",
+        "currency": "INR",
+        "min_margin_bps": 1500,
+        "max_discount_bps": 2000,
+        "budget_paise": 1800000
+      },
+      "status": "needs_review",
+      "auto_accepted": false
+    },
+    {
+      "path": "competitor-card.png",
+      "modality": "image",
+      "seconds": 11.1958,
+      "http": 200,
+      "automatic_application": false,
+      "required_fields": 9,
+      "correct_fields": 0,
+      "extracted": {
+        "kind": "unresolved"
+      },
+      "truth": {
+        "kind": "competitor",
+        "currency": "INR",
+        "sku": "SKU001",
+        "city": "Delhi",
+        "price_paise": 6200,
+        "pack_quantity": 1000,
+        "pack_unit": "ml",
+        "observed_at": "2026-10-04T06:30:00+00:00",
+        "conditions": "No membership restriction"
+      },
+      "status": "needs_review",
+      "auto_accepted": false,
+      "human_confirmation": {
+        "status": "confirmed",
+        "matching_fields": 9
+      }
+    },
+    {
+      "path": "corrupt.pdf",
+      "modality": "pdf",
+      "seconds": 11.0352,
+      "http": 400,
+      "automatic_application": false,
+      "expected_error": "PDF_FORMAT",
+      "error": "PDF_FORMAT"
+    },
+    {
+      "path": "corrupt.png",
+      "modality": "image",
+      "seconds": 15.9038,
+      "http": 400,
+      "automatic_application": false,
+      "expected_error": "IMAGE_FORMAT",
+      "error": "IMAGE_FORMAT"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "profit",
+      "brief": {
+        "title": "Synthetic evaluation: profit",
+        "mode": "offline",
+        "scenarios": 40,
+        "seed": 261004,
+        "horizon": 3,
+        "budget_paise": 500000
+      },
+      "run_id": "run_e28b2d0bd0a06eba",
+      "state": "needs_input",
+      "seconds": 100.1289,
+      "error": null
+    },
+    {
+      "name": "zero-budget",
+      "brief": {
+        "title": "Synthetic evaluation: zero-budget",
+        "mode": "offline",
+        "scenarios": 40,
+        "seed": 261004,
+        "horizon": 3,
+        "budget_paise": 0,
+        "cities": [
+          "Delhi"
+        ]
+      },
+      "run_id": "run_8af41d2b16b5d2b0",
+      "state": "validated",
+      "seconds": 110.4949,
+      "error": null,
+      "plan_id": "plan_30e2cbadc0564530",
+      "offers": 0,
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "liability_paise": 0,
+        "allocation": {},
+        "checks": [
+          "item margin",
+          "discount ceiling",
+          "stock and expiry",
+          "maximum liability",
+          "overlap",
+          "channel and city",
+          "freshness"
+        ],
+        "batch_allocation": {},
+        "clearance_units": 0,
+        "offer_clearance_units": {},
+        "evidence_status": "derived"
+      },
+      "solver": {
+        "status": "OPTIMAL",
+        "objective_paise": 0,
+        "bound_paise": 0,
+        "gap": 0.0,
+        "interactions": 0,
+        "wall_seconds": 0.529,
+        "objective_definition": "Expected incremental contribution minus lambda times downside shortfall; clearance objective also includes disclosed 500 paise/unit priority"
+      },
+      "simulation": {
+        "baseline": {
+          "contribution_paise": 26123075,
+          "revenue_paise": 72966754,
+          "spend_paise": 0,
+          "clearance_units": 0.0,
+          "stockout_rate": 0.0667,
+          "units": 6816.4
+        },
+        "optimized": {
+          "contribution_paise": 26123075,
+          "revenue_paise": 72966754,
+          "spend_paise": 0,
+          "clearance_units": 0.0,
+          "stockout_rate": 0.0667,
+          "units": 6816.4
+        },
+        "incremental_contribution_paise": 0,
+        "p10_paise": 0,
+        "p50_paise": 0,
+        "p90_paise": 0,
+        "downside_probability": 0.0,
+        "scenarios": 40,
+        "seed": 261004,
+        "distribution": [
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 40
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          }
+        ],
+        "assumptions": [
+          "Correlated category demand",
+          "Price-response uncertainty \u00b130%",
+          "Comparable competitor price moves \u22125% to +2%",
+          "Coupon redemption 65\u2013100%",
+          "Declared substitute effects",
+          "FEFO expiry and variable replenishment"
+        ],
+        "sensitivity": {
+          "low_response": 0,
+          "central": 0,
+          "high_response": 0,
+          "fragile": false
+        },
+        "evidence_status": "simulated",
+        "clearance_probability": 1.0,
+        "risk_objective_paise": 0,
+        "daily_units": [
+          21.40185138894449,
+          18.8065711899667,
+          16.594723287392448
+        ],
+        "selection_comparison": {
+          "selected": "solver_candidate",
+          "selection_seed": 365733,
+          "report_seed": 261004,
+          "scenarios": 40,
+          "rule_validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          },
+          "reason": "Comparison skipped: clearance objective, infeasible rule or no rule offers"
+        },
+        "rule_baseline": {
+          "contribution_paise": 26123075,
+          "revenue_paise": 72966754,
+          "spend_paise": 0,
+          "clearance_units": 0.0,
+          "stockout_rate": 0.0667,
+          "units": 6816.4
+        },
+        "rule_offers": [],
+        "alternatives": [
+          {
+            "objective": "profit",
+            "offers": 0,
+            "incremental_contribution_paise": 0,
+            "spend_paise": 0,
+            "clearance_units": 0.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "objective": "clearance",
+            "offers": 0,
+            "incremental_contribution_paise": 0,
+            "spend_paise": 0,
+            "clearance_units": 0.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "objective": "conservative",
+            "offers": 0,
+            "incremental_contribution_paise": 0,
+            "spend_paise": 0,
+            "clearance_units": 0.0,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      "forecast_metrics": {
+        "chosen": "poisson",
+        "wape": {
+          "seasonal_naive": {
+            "dev": 0.2099,
+            "test": 0.2033
+          },
+          "poisson": {
+            "dev": 0.182,
+            "test": 0.2045
+          }
+        },
+        "split": {
+          "train_days": 124,
+          "development_days": 28,
+          "test_days": 28
+        },
+        "grouped_test_metrics": {
+          "city": {
+            "Bengaluru": {
+              "wape": 0.2023,
+              "bias": 0.0747,
+              "baseline_wape": 0.2017,
+              "points": 3319
+            },
+            "Delhi": {
+              "wape": 0.2041,
+              "bias": 0.0756,
+              "baseline_wape": 0.2037,
+              "points": 3318
+            },
+            "Mumbai": {
+              "wape": 0.2076,
+              "bias": 0.0781,
+              "baseline_wape": 0.2047,
+              "points": 3318
+            }
+          },
+          "category": {
+            "Beverages": {
+              "wape": 0.2066,
+              "bias": 0.072,
+              "baseline_wape": 0.206,
+              "points": 1662
+            },
+            "Breakfast": {
+              "wape": 0.2062,
+              "bias": 0.0781,
+              "baseline_wape": 0.2048,
+              "points": 1659
+            },
+            "Dairy & fresh": {
+              "wape": 0.2,
+              "bias": 0.0755,
+              "baseline_wape": 0.1983,
+              "points": 1659
+            },
+            "Home essentials": {
+              "wape": 0.2016,
+              "bias": 0.0748,
+              "baseline_wape": 0.1999,
+              "points": 1657
+            },
+            "Snacks": {
+              "wape": 0.2095,
+              "bias": 0.0782,
+              "baseline_wape": 0.2088,
+              "points": 1661
+            },
+            "Staples": {
+              "wape": 0.204,
+              "bias": 0.0758,
+              "baseline_wape": 0.2032,
+              "points": 1657
+            }
+          }
+        },
+        "prediction_intervals": {
+          "nominal_coverage": 0.8,
+          "empirical_test_coverage": 0.7721,
+          "mean_test_width_units": 9.6,
+          "calibration": "Development-period normalized absolute residual quantile; empirical coverage measured on temporal test",
+          "status": "Measured on synthetic rolling one-step holdout; scenario ranges are separate"
+        },
+        "claim": "Predictive accuracy on Mixed imported and synthetic demo data; price response is an association, not causal uplift",
+        "snapshot_id": "57a5aa5ea7556a29"
+      },
+      "mechanisms": [],
+      "offer_cities": [],
+      "screening": {
+        "excluded": [
+          {
+            "sku": "SKU119",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU120",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU002",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 14600
+          },
+          {
+            "sku": "SKU003",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 25959
+          },
+          {
+            "sku": "SKU004",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 13206
+          },
+          {
+            "sku": "SKU005",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 24215
+          },
+          {
+            "sku": "SKU006",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 22413
+          },
+          {
+            "sku": "SKU007",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 16216
+          },
+          {
+            "sku": "SKU008",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 24323
+          },
+          {
+            "sku": "SKU009",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 14926
+          },
+          {
+            "sku": "SKU010",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 27470
+          },
+          {
+            "sku": "SKU011",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 26107
+          },
+          {
+            "sku": "SKU012",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 15272
+          },
+          {
+            "sku": "SKU013",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 27781
+          },
+          {
+            "sku": "SKU014",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 16962
+          },
+          {
+            "sku": "SKU016",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 23160
+          },
+          {
+            "sku": "SKU017",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 17936
+          },
+          {
+            "sku": "SKU019",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 19356
+          },
+          {
+            "sku": "SKU021",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 23541
+          },
+          {
+            "sku": "SKU023",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 14252
+          },
+          {
+            "sku": "SKU024",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 20597
+          },
+          {
+            "sku": "SKU025",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 9016
+          },
+          {
+            "sku": "SKU026",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 27818
+          },
+          {
+            "sku": "SKU027",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 11479
+          },
+          {
+            "sku": "SKU028",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 13243
+          },
+          {
+            "sku": "SKU029",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 24569
+          },
+          {
+            "sku": "SKU030",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 10491
+          },
+          {
+            "sku": "SKU032",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 10866
+          },
+          {
+            "sku": "SKU033",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 14923
+          },
+          {
+            "sku": "SKU034",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 27457
+          },
+          {
+            "sku": "SKU035",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 12397
+          },
+          {
+            "sku": "SKU036",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 28571
+          },
+          {
+            "sku": "SKU037",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 12259
+          },
+          {
+            "sku": "SKU038",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 17070
+          },
+          {
+            "sku": "SKU040",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 11536
+          },
+          {
+            "sku": "SKU042",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 13716
+          },
+          {
+            "sku": "SKU043",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 7132
+          },
+          {
+            "sku": "SKU044",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 13767
+          },
+          {
+            "sku": "SKU045",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 12502
+          },
+          {
+            "sku": "SKU046",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 11310
+          },
+          {
+            "sku": "SKU047",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 16123
+          },
+          {
+            "sku": "SKU048",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 6651
+          },
+          {
+            "sku": "SKU049",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 15777
+          },
+          {
+            "sku": "SKU050",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 14578
+          },
+          {
+            "sku": "SKU051",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 12765
+          },
+          {
+            "sku": "SKU052",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 14869
+          },
+          {
+            "sku": "SKU053",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 7898
+          },
+          {
+            "sku": "SKU054",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 18419
+          },
+          {
+            "sku": "SKU055",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 16589
+          },
+          {
+            "sku": "SKU056",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 11606
+          },
+          {
+            "sku": "SKU057",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 16345
+          },
+          {
+            "sku": "SKU058",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 9179
+          },
+          {
+            "sku": "SKU059",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 21146
+          },
+          {
+            "sku": "SKU060",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 15061
+          },
+          {
+            "sku": "SKU061",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 24977
+          },
+          {
+            "sku": "SKU062",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 19625
+          },
+          {
+            "sku": "SKU063",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 15062
+          },
+          {
+            "sku": "SKU064",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 6561
+          },
+          {
+            "sku": "SKU065",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 23008
+          },
+          {
+            "sku": "SKU067",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 22449
+          },
+          {
+            "sku": "SKU068",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 14209
+          },
+          {
+            "sku": "SKU069",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 7494
+          },
+          {
+            "sku": "SKU070",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 25641
+          },
+          {
+            "sku": "SKU072",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 20979
+          },
+          {
+            "sku": "SKU073",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 16325
+          },
+          {
+            "sku": "SKU074",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 8678
+          },
+          {
+            "sku": "SKU077",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 24281
+          },
+          {
+            "sku": "SKU078",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 18211
+          },
+          {
+            "sku": "SKU079",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 9731
+          },
+          {
+            "sku": "SKU080",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 27712
+          },
+          {
+            "sku": "SKU081",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 22604
+          },
+          {
+            "sku": "SKU082",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 16911
+          },
+          {
+            "sku": "SKU084",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 6784
+          },
+          {
+            "sku": "SKU085",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 23381
+          },
+          {
+            "sku": "SKU086",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 25904
+          },
+          {
+            "sku": "SKU087",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 19511
+          },
+          {
+            "sku": "SKU089",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 8247
+          },
+          {
+            "sku": "SKU090",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 27182
+          },
+          {
+            "sku": "SKU092",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 18611
+          },
+          {
+            "sku": "SKU094",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 9312
+          },
+          {
+            "sku": "SKU096",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 27341
+          },
+          {
+            "sku": "SKU097",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 21174
+          },
+          {
+            "sku": "SKU099",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 10347
+          },
+          {
+            "sku": "SKU101",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 10298
+          },
+          {
+            "sku": "SKU102",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 24036
+          },
+          {
+            "sku": "SKU103",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 8035
+          },
+          {
+            "sku": "SKU104",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 5155
+          },
+          {
+            "sku": "SKU105",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 14321
+          },
+          {
+            "sku": "SKU106",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 12132
+          },
+          {
+            "sku": "SKU107",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 28388
+          },
+          {
+            "sku": "SKU108",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 7440
+          },
+          {
+            "sku": "SKU109",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 5773
+          },
+          {
+            "sku": "SKU110",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 16838
+          },
+          {
+            "sku": "SKU111",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 13197
+          },
+          {
+            "sku": "SKU112",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 26919
+          },
+          {
+            "sku": "SKU113",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 8883
+          },
+          {
+            "sku": "SKU114",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 6761
+          },
+          {
+            "sku": "SKU115",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 19007
+          },
+          {
+            "sku": "SKU116",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 12428
+          },
+          {
+            "sku": "SKU118",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 10488
+          }
+        ],
+        "rejected": [
+          {
+            "sku": "SKU041",
+            "city": "Delhi",
+            "mechanism": "coupon",
+            "reason": "Actual fixed coupon discount exceeds or misstates the authorized percentage; Discount above ceiling"
+          },
+          {
+            "sku": "SKU041",
+            "city": "Delhi",
+            "mechanism": "coupon",
+            "reason": "Actual fixed coupon discount exceeds or misstates the authorized percentage; Discount above ceiling"
+          },
+          {
+            "sku": "SKU041",
+            "city": "Delhi",
+            "mechanism": "coupon",
+            "reason": "Actual fixed coupon discount exceeds or misstates the authorized percentage; Discount above ceiling"
+          },
+          {
+            "sku": "SKU041",
+            "city": "Delhi",
+            "mechanism": "coupon",
+            "reason": "Actual fixed coupon discount exceeds or misstates the authorized percentage; Discount above ceiling"
+          },
+          {
+            "sku": "SKU039",
+            "city": "Delhi",
+            "mechanism": "markdown",
+            "reason": "SKU039: margin 13.75% below 15.00%"
+          },
+          {
+            "sku": "SKU039",
+            "city": "Delhi",
+            "mechanism": "markdown",
+            "reason": "SKU039: margin 13.75% below 15.00%"
+          },
+          {
+            "sku": "SKU039",
+            "city": "Delhi",
+            "mechanism": "markdown",
+            "reason": "SKU039: margin 13.75% below 15.00%"
+          },
+          {
+            "sku": "SKU039",
+            "city": "Delhi",
+            "mechanism": "markdown",
+            "reason": "SKU039: margin 13.75% below 15.00%"
+          }
+        ],
+        "shortlist": [
+          "SKU022",
+          "SKU001",
+          "SKU041",
+          "SKU098",
+          "SKU093",
+          "SKU083",
+          "SKU088",
+          "SKU071",
+          "SKU015",
+          "SKU018",
+          "SKU031",
+          "SKU076",
+          "SKU039",
+          "SKU095",
+          "SKU117",
+          "SKU075",
+          "SKU020",
+          "SKU066",
+          "SKU091",
+          "SKU100"
+        ],
+        "candidate_count": 293,
+        "scope": "Finite retained candidate set; full 120-SKU portfolio simulated"
+      }
+    },
+    {
+      "name": "infeasible-clearance",
+      "brief": {
+        "title": "Synthetic evaluation: infeasible-clearance",
+        "mode": "offline",
+        "scenarios": 40,
+        "seed": 261004,
+        "horizon": 3,
+        "budget_paise": 0,
+        "clearance_target": 5000,
+        "clearance_hard": true,
+        "objective": "clearance",
+        "cities": [
+          "Delhi"
+        ]
+      },
+      "run_id": "run_a84871aa3c09a478",
+      "state": "needs_input",
+      "seconds": 80.8898,
+      "error": null
+    },
+    {
+      "name": "strict-margin",
+      "brief": {
+        "title": "Synthetic evaluation: strict-margin",
+        "mode": "offline",
+        "scenarios": 40,
+        "seed": 261004,
+        "horizon": 3,
+        "budget_paise": 500000,
+        "min_margin_bps": 9000,
+        "cities": [
+          "Delhi"
+        ]
+      },
+      "run_id": "run_ba0b808c256f2f5e",
+      "state": "validated",
+      "seconds": 119.8331,
+      "error": null,
+      "plan_id": "plan_bf9ebaf645e848eb",
+      "offers": 0,
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "liability_paise": 0,
+        "allocation": {},
+        "checks": [
+          "item margin",
+          "discount ceiling",
+          "stock and expiry",
+          "maximum liability",
+          "overlap",
+          "channel and city",
+          "freshness"
+        ],
+        "batch_allocation": {},
+        "clearance_units": 0,
+        "offer_clearance_units": {},
+        "evidence_status": "derived"
+      },
+      "solver": {
+        "status": "OPTIMAL",
+        "objective_paise": 0,
+        "bound_paise": 0,
+        "gap": 0,
+        "interactions": 0
+      },
+      "simulation": {
+        "baseline": {
+          "contribution_paise": 26123075,
+          "revenue_paise": 72966754,
+          "spend_paise": 0,
+          "clearance_units": 0.0,
+          "stockout_rate": 0.0667,
+          "units": 6816.4
+        },
+        "optimized": {
+          "contribution_paise": 26123075,
+          "revenue_paise": 72966754,
+          "spend_paise": 0,
+          "clearance_units": 0.0,
+          "stockout_rate": 0.0667,
+          "units": 6816.4
+        },
+        "incremental_contribution_paise": 0,
+        "p10_paise": 0,
+        "p50_paise": 0,
+        "p90_paise": 0,
+        "downside_probability": 0.0,
+        "scenarios": 40,
+        "seed": 261004,
+        "distribution": [
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 40
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          }
+        ],
+        "assumptions": [
+          "Correlated category demand",
+          "Price-response uncertainty \u00b130%",
+          "Comparable competitor price moves \u22125% to +2%",
+          "Coupon redemption 65\u2013100%",
+          "Declared substitute effects",
+          "FEFO expiry and variable replenishment"
+        ],
+        "sensitivity": {
+          "low_response": 0,
+          "central": 0,
+          "high_response": 0,
+          "fragile": false
+        },
+        "evidence_status": "simulated",
+        "clearance_probability": 1.0,
+        "risk_objective_paise": 0,
+        "daily_units": [
+          21.40185138894449,
+          18.8065711899667,
+          16.594723287392448
+        ],
+        "selection_comparison": {
+          "selected": "solver_candidate",
+          "selection_seed": 365733,
+          "report_seed": 261004,
+          "scenarios": 40,
+          "rule_validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          },
+          "reason": "Comparison skipped: clearance objective, infeasible rule or no rule offers"
+        },
+        "rule_baseline": {
+          "contribution_paise": 26123075,
+          "revenue_paise": 72966754,
+          "spend_paise": 0,
+          "clearance_units": 0.0,
+          "stockout_rate": 0.0667,
+          "units": 6816.4
+        },
+        "rule_offers": [],
+        "alternatives": [
+          {
+            "objective": "profit",
+            "offers": 0,
+            "incremental_contribution_paise": 0,
+            "spend_paise": 0,
+            "clearance_units": 0.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "objective": "clearance",
+            "offers": 0,
+            "incremental_contribution_paise": 0,
+            "spend_paise": 0,
+            "clearance_units": 0.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "objective": "conservative",
+            "offers": 0,
+            "incremental_contribution_paise": 0,
+            "spend_paise": 0,
+            "clearance_units": 0.0,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      "forecast_metrics": {
+        "chosen": "poisson",
+        "wape": {
+          "seasonal_naive": {
+            "dev": 0.2099,
+            "test": 0.2033
+          },
+          "poisson": {
+            "dev": 0.182,
+            "test": 0.2045
+          }
+        },
+        "split": {
+          "train_days": 124,
+          "development_days": 28,
+          "test_days": 28
+        },
+        "grouped_test_metrics": {
+          "city": {
+            "Bengaluru": {
+              "wape": 0.2023,
+              "bias": 0.0747,
+              "baseline_wape": 0.2017,
+              "points": 3319
+            },
+            "Delhi": {
+              "wape": 0.2041,
+              "bias": 0.0756,
+              "baseline_wape": 0.2037,
+              "points": 3318
+            },
+            "Mumbai": {
+              "wape": 0.2076,
+              "bias": 0.0781,
+              "baseline_wape": 0.2047,
+              "points": 3318
+            }
+          },
+          "category": {
+            "Beverages": {
+              "wape": 0.2066,
+              "bias": 0.072,
+              "baseline_wape": 0.206,
+              "points": 1662
+            },
+            "Breakfast": {
+              "wape": 0.2062,
+              "bias": 0.0781,
+              "baseline_wape": 0.2048,
+              "points": 1659
+            },
+            "Dairy & fresh": {
+              "wape": 0.2,
+              "bias": 0.0755,
+              "baseline_wape": 0.1983,
+              "points": 1659
+            },
+            "Home essentials": {
+              "wape": 0.2016,
+              "bias": 0.0748,
+              "baseline_wape": 0.1999,
+              "points": 1657
+            },
+            "Snacks": {
+              "wape": 0.2095,
+              "bias": 0.0782,
+              "baseline_wape": 0.2088,
+              "points": 1661
+            },
+            "Staples": {
+              "wape": 0.204,
+              "bias": 0.0758,
+              "baseline_wape": 0.2032,
+              "points": 1657
+            }
+          }
+        },
+        "prediction_intervals": {
+          "nominal_coverage": 0.8,
+          "empirical_test_coverage": 0.7721,
+          "mean_test_width_units": 9.6,
+          "calibration": "Development-period normalized absolute residual quantile; empirical coverage measured on temporal test",
+          "status": "Measured on synthetic rolling one-step holdout; scenario ranges are separate"
+        },
+        "claim": "Predictive accuracy on Mixed imported and synthetic demo data; price response is an association, not causal uplift",
+        "snapshot_id": "57a5aa5ea7556a29"
+      },
+      "mechanisms": [],
+      "offer_cities": [],
+      "screening": {
+        "excluded": [
+          {
+            "sku": "SKU001",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU002",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU003",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU004",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU005",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU006",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU007",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU008",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU009",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU010",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU011",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU012",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU013",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU014",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU015",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU016",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU017",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU018",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU019",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU020",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU021",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU022",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU023",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU024",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU025",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU026",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU027",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU028",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU029",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU030",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU031",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU032",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU033",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU034",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU035",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU036",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU037",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU038",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU039",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU040",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU041",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU042",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU043",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU044",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU045",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU046",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU047",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU048",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU049",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU050",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU051",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU052",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU053",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU054",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU055",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU056",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU057",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU058",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU059",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU060",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU061",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU062",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU063",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU064",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU065",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU066",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU067",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU068",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU069",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU070",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU071",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU072",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU073",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU074",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU075",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU076",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU077",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU078",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU079",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU080",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU081",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU082",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU083",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU084",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU085",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU086",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU087",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU088",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU089",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU090",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU091",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU092",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU093",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU094",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU095",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU096",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU097",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU098",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU099",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU100",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU101",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU102",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU103",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU104",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU105",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU106",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU107",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU108",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU109",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU110",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU111",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU112",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU113",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU114",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU115",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU116",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU117",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU118",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU119",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU120",
+            "reason": "Baseline contribution margin below required floor"
+          }
+        ],
+        "rejected": [],
+        "shortlist": [],
+        "candidate_count": 0,
+        "scope": "Finite retained candidate set; full 120-SKU portfolio simulated"
+      }
+    }
+  ],
+  "limits": [
+    "API imports preserve the original 2200 synthetic baskets and append 1620 labeled basket rows.",
+    "Segments, calendar factors, substitute effects and replenishment retain the original assumed seed values; no supported import exists for them.",
+    "Daily rows are invented aggregate sales and one planted co-purchase receipt where basket_items is present, not raw orders.",
+    "Product import updates costs and selling prices, not catalog identity or supplier funding.",
+    "Observed labels assigned by the app describe the uploaded source, not real-world observation.",
+    "A frozen process clock supports repeatable freshness and expiry checks; timings and random record IDs are not deterministic.",
+    "No external model, real retailer, PostgreSQL or public deployment was exercised.",
+    "Business figures are scenario simulations, not measured commercial uplift.",
+    "No organizer numeric scoring weights are specified; this report supplies evidence only."
+  ],
+  "artifacts": {
+    "database": "C:\\Users\\AnuragManik7\\Documents\\Codex\\2026-10-01\\task-4\\astra-20261005T014009\\realistic-complete-02\\realistic.sqlite3",
+    "fixture_folder": "C:\\Users\\AnuragManik7\\Documents\\Codex\\2026-10-01\\task-4\\astra-20261005T014009\\promopilot\\fixtures\\remediation"
+  },
+  "tenant_id": "demo_89c49aedd99d464e",
+  "persisted_value_accuracy": [
+    {
+      "path": "products.csv",
+      "rows": 120,
+      "matching_rows": 120,
+      "fields": 240,
+      "matching_fields": 240
+    },
+    {
+      "path": "inventory.csv",
+      "rows": 360,
+      "matching_rows": 360,
+      "fields": 2160,
+      "matching_fields": 2160
+    },
+    {
+      "path": "competitors.csv",
+      "rows": 360,
+      "matching_rows": 360,
+      "fields": 1800,
+      "matching_fields": 1800
+    },
+    {
+      "path": "transactions-bengaluru-1.csv",
+      "rows": 7200,
+      "matching_rows": 7200,
+      "fields": 28800,
+      "matching_fields": 28800
+    },
+    {
+      "path": "transactions-bengaluru-2.csv",
+      "rows": 7200,
+      "matching_rows": 7200,
+      "fields": 28800,
+      "matching_fields": 28800
+    },
+    {
+      "path": "transactions-bengaluru-3.csv",
+      "rows": 7200,
+      "matching_rows": 7200,
+      "fields": 28800,
+      "matching_fields": 28800
+    },
+    {
+      "path": "transactions-mumbai-1.csv",
+      "rows": 7200,
+      "matching_rows": 7200,
+      "fields": 28800,
+      "matching_fields": 28800
+    },
+    {
+      "path": "transactions-mumbai-2.csv",
+      "rows": 7200,
+      "matching_rows": 7200,
+      "fields": 28800,
+      "matching_fields": 28800
+    },
+    {
+      "path": "transactions-mumbai-3.csv",
+      "rows": 7200,
+      "matching_rows": 7200,
+      "fields": 28800,
+      "matching_fields": 28800
+    },
+    {
+      "path": "transactions-delhi-1.csv",
+      "rows": 7200,
+      "matching_rows": 7200,
+      "fields": 28800,
+      "matching_fields": 28800
+    },
+    {
+      "path": "transactions-delhi-2.csv",
+      "rows": 7200,
+      "matching_rows": 7200,
+      "fields": 28800,
+      "matching_fields": 28800
+    },
+    {
+      "path": "transactions-delhi-3.csv",
+      "rows": 7200,
+      "matching_rows": 7200,
+      "fields": 28800,
+      "matching_fields": 28800
+    }
+  ],
+  "final_state": {
+    "plan_count": 2,
+    "order_count": 0,
+    "event_count": 0,
+    "evidence_count": 8,
+    "spent_paise": 0,
+    "reserved_budget_paise": 0
+  },
+  "seconds": 1094.5175,
+  "extraction_by_modality": {
+    "text": {
+      "valid_cases": 3,
+      "correct_fields": 13,
+      "required_fields": 13,
+      "corrupt_cases": 0,
+      "expected_rejections": 0,
+      "auto_accepted": 0,
+      "field_accuracy": 1.0
+    },
+    "pdf": {
+      "valid_cases": 2,
+      "correct_fields": 8,
+      "required_fields": 8,
+      "corrupt_cases": 1,
+      "expected_rejections": 1,
+      "auto_accepted": 0,
+      "field_accuracy": 1.0
+    },
+    "image": {
+      "valid_cases": 1,
+      "correct_fields": 0,
+      "required_fields": 9,
+      "corrupt_cases": 1,
+      "expected_rejections": 1,
+      "auto_accepted": 0,
+      "field_accuracy": 0.0
+    }
+  },
+  "summary": {
+    "checks": 53,
+    "passed": 52,
+    "failed": 1,
+    "completed": true,
+    "claim": "Crafted offline synthetic operational evidence; neither D3 reliability nor real commercial uplift nor an official competition score."
+  }
+}

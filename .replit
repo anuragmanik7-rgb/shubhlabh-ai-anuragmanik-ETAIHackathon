@@ -1,0 +1,15 @@
+run = "python scripts/start.py"
+entrypoint = "backend/app/main.py"
+modules = ["python-3.12", "nodejs-20"]
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+build = ["sh", "-c", "pip install -r requirements.txt"]
+run = ["sh", "-c", "python scripts/serve.py"]
+deploymentTarget = "gce"
+
+[[ports]]
+localPort = 8000
+externalPort = 80

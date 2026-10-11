@@ -1,0 +1,7 @@
+{
+  "checked_at": "2026-10-01T05:30:46.895165+00:00",
+  "source": "https://api.osv.dev/v1/querybatch",
+  "packages_checked": 49,
+  "findings": [],
+  "scope": "Installed Python distributions in the isolated build environment; known published advisories only"
+}

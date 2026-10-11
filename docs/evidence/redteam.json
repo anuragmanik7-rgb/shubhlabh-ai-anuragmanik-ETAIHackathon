@@ -1,0 +1,51 @@
+{
+ "by_guard": {
+  "dark_pattern_lint": {
+   "cases": 30,
+   "caught": 30,
+   "caught_without_certificate": 27,
+   "clean_controls": 10,
+   "false_positives": 0
+  },
+  "injection_quarantine": {
+   "cases": 30,
+   "caught": 30,
+   "clean_controls": 10,
+   "false_positives": 0
+  },
+  "mrp_guard": {
+   "cases": 30,
+   "caught": 30,
+   "clean_controls": 15,
+   "false_positives": 0
+  },
+  "prior_price_claims": {
+   "cases": 30,
+   "caught": 30,
+   "clean_controls": 30,
+   "false_positives": 0
+  },
+  "same_price_rule": {
+   "cases": 30,
+   "caught": 30,
+   "clean_controls": 3,
+   "false_positives": 0
+  },
+  "number_check": {
+   "cases": 30,
+   "caught": 30,
+   "clean_controls": 3,
+   "false_positives": 0
+  },
+  "pii_redaction": {
+   "cases": 10,
+   "caught": 10
+  }
+ },
+ "total_cases": 190,
+ "total_caught": 190,
+ "catch_rate": 1.0,
+ "false_positives": 0,
+ "note": "Deterministic guards on hand-written and generated red-team cases. Clean controls measure false positives.",
+ "at": "2026-10-07T22:37:35"
+}

@@ -1,0 +1,18 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.pyc
+frontend/node_modules/
+frontend/*.tsbuildinfo
+data/
+test-artifacts/
+playwright-artifacts/
+*.log
+
+# QA renders of the pitch deck (regenerate with docs/pitch/build/render.ps1)
+docs/pitch/build/render/
+
+# Owner store photos/frames (people in public places): kept local, not in the repo
+docs/pitch/store_media/

@@ -1,0 +1,18 @@
+{
+ "dataset": "FreshRetailNet-50K (CC BY 4.0)",
+ "model": "amazon/chronos-2",
+ "series": 600,
+ "horizon_days": 14,
+ "setting": "zero-shot, one forecast origin, multi-step; discount and promotion-activity as known covariates; uncensored days",
+ "wape": {
+  "chronos_2": 0.3637,
+  "seasonal_naive": 0.3997
+ },
+ "p10_p90_coverage": 0.7581,
+ "seconds": 19.9,
+ "at": "2026-10-08T02:40:50",
+ "gradient_boosting_reference": {
+  "seasonal_naive": 0.4135,
+  "gradient_boosting": 0.3408
+ }
+}

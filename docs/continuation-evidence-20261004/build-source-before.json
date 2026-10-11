@@ -1,0 +1,13 @@
+{
+  "sources": {
+    "frontend/src/api.ts": "4a4d34882267e7b6f2f4ab2e1b538ccf59531a77834457a2efbd71baeb10c3e0",
+    "frontend/src/App.tsx": "29cad0571cf7737b7309d2386b8ecba6b951df057cd2d0c3c539d343fd6be814",
+    "frontend/src/AuthorityEditor.tsx": "db90842d723691ebd4eccea38898976e3f778354d837c28547819c130fa358c6",
+    "frontend/src/contracts.ts": "b07498fbad2275d89f2e01f30cdc21bdf120bdd77c501fc37ae35c190c5878b8",
+    "frontend/src/main.tsx": "660c19ace773014e29044cde6c524541e39091729fff206704543277e8036d4a",
+    "frontend/src/style.css": "744508aaf3ab731d315eaddbedd538bd1137c91fcff54becb80bfa9328ecf6f7",
+    "frontend/src/ui-state.ts": "b42bda1b5600d2791a1fe9b1408c6f72ef30e14eb2cfce3650ff05a35c8c6e7e"
+  },
+  "frontend_source_sha256": "9490c3497d4cc5056cbd1f7b3e9f020e5930f455ceec3611f0fef0dd37df2925",
+  "method": "Installed esbuild0.28.2 CLI; one-shot build, no watch/rebuild, new output directory, no Vite temp-config loader"
+}

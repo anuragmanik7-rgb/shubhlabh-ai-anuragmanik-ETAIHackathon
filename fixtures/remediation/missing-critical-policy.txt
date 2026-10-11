@@ -1,0 +1,4 @@
+SYNTHETIC INCOMPLETE POLICY
+Currency: INR
+Minimum margin: 15%
+Budget and maximum discount intentionally omitted; human review required.

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="5" time="10.581" timestamp="2026-10-05T03:22:12.922982+05:30" hostname="Manik"><testcase classname="tests.test_solver_timeout" name="test_timeout_retries_only_solver_and_preserves_brief_and_evidence" time="0.748" /><testcase classname="tests.test_solver_timeout" name="test_repeated_timeouts_have_three_durable_attempts_and_no_publication" time="0.569" /><testcase classname="tests.test_solver_timeout" name="test_interrupted_solver_attempt_is_counted_before_work" time="0.616" /><testcase classname="tests.test_solver_timeout" name="test_proven_infeasibility_still_requires_input" time="0.556" /><testcase classname="tests.test_solver_timeout" name="test_api_exposes_timeout_and_preserved_retry_contract" time="3.081"><failure message="assert 202 == 200&#10; +  where 202 = &lt;Response [202 Accepted]&gt;.status_code">scenario = (&lt;backend.app.persistence.Store object at 0x00000268AFB95A60&gt;, {'id': 'run_0f6bb4d9ac168242', 'plan_id': 'plan_3d32270...engaluru'], 'objective': 'profit', ...}, 'parent_id': None, ...}, {'forecast': 1, 'relationships': 1, 'candidates': 1})
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x00000268B49CCE30&gt;
+
+    def test_api_exposes_timeout_and_preserved_retry_contract(scenario,monkeypatch):
+        from fastapi.testclient import TestClient
+        from backend.app.main import create_app
+        store,_,_=scenario;reduced=store.get('t','state','retailer')
+        app=create_app(str(store.engine.url))
+        monkeypatch.setattr(flow,'optimize',lambda *args,**kwargs:unknown())
+        with TestClient(app) as client:
+            session=client.get('/api/v1/session').json()
+            client.headers['x-csrf-token']=session['csrf']
+            app.state.store.mutate(session['tenant'],'state','retailer',lambda target,conn:target.update(copy.deepcopy(reduced)))
+            created=client.post('/api/v1/plans',json={'cities':['Bengaluru'],'mechanisms':['markdown'],'horizon':3,'scenarios':20,'mode':'offline'})
+&gt;           assert created.status_code==200
+E           assert 202 == 200
+E            +  where 202 = &lt;Response [202 Accepted]&gt;.status_code
+
+tests\test_solver_timeout.py:119: AssertionError</failure></testcase></testsuite></testsuites>

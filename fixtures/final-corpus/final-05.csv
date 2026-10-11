@@ -1,0 +1,4 @@
+sku,city,quantity,quantity_basis,reserved,unavailable,safety_stock,expiry,observed_at,currency
+SKU001,Bengaluru,24,physical,0,0,2,2026-10-21,2026-10-01T04:15:59+00:00,INR
+SKU002,Mumbai,25,physical,0,0,2,2026-10-21,2026-10-01T04:15:59+00:00,INR
+SKU003,Delhi,26,physical,0,0,2,2026-10-21,2026-10-01T04:15:59+00:00,INR

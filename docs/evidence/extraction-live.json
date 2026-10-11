@@ -1,0 +1,1914 @@
+{
+ "mode": "live",
+ "model": "gpt-4.1-mini",
+ "at": "2026-10-10T08:34:03",
+ "set": "synthetic",
+ "gate": "precision 100% and coverage >= 80% per input type",
+ "d3_claim_allowed": true,
+ "by_type": {
+  "shelf_tag": {
+   "files": 10,
+   "critical_fields": 30,
+   "precision": 1.0,
+   "coverage": 1.0,
+   "raw_accuracy": 1.0,
+   "match_accuracy": 1.0,
+   "gate_passed": true,
+   "cost_usd": 0.0,
+   "seconds_per_file": 1.39,
+   "accepted_errors": []
+  },
+  "flyer": {
+   "files": 10,
+   "critical_fields": 30,
+   "precision": 1.0,
+   "coverage": 1.0,
+   "raw_accuracy": 1.0,
+   "match_accuracy": 1.0,
+   "gate_passed": true,
+   "cost_usd": 0.0,
+   "seconds_per_file": 2.16,
+   "accepted_errors": []
+  },
+  "qc_screenshot": {
+   "files": 10,
+   "critical_fields": 30,
+   "precision": 1.0,
+   "coverage": 1.0,
+   "raw_accuracy": 1.0,
+   "match_accuracy": 1.0,
+   "gate_passed": true,
+   "cost_usd": 0.0,
+   "seconds_per_file": 1.22,
+   "accepted_errors": []
+  },
+  "whatsapp_scheme": {
+   "files": 10,
+   "critical_fields": 30,
+   "precision": 1.0,
+   "coverage": 1.0,
+   "raw_accuracy": 1.0,
+   "match_accuracy": 1.0,
+   "gate_passed": true,
+   "cost_usd": 0.0,
+   "seconds_per_file": 2.45,
+   "accepted_errors": []
+  },
+  "text_pdf": {
+   "files": 11,
+   "critical_fields": 33,
+   "precision": 1.0,
+   "coverage": 1.0,
+   "raw_accuracy": 1.0,
+   "match_accuracy": 1.0,
+   "gate_passed": true,
+   "cost_usd": 0.0,
+   "seconds_per_file": 0.2,
+   "accepted_errors": []
+  },
+  "scanned_pdf": {
+   "files": 10,
+   "critical_fields": 30,
+   "precision": 1.0,
+   "coverage": 1.0,
+   "raw_accuracy": 1.0,
+   "match_accuracy": 1.0,
+   "gate_passed": true,
+   "cost_usd": 0.0,
+   "seconds_per_file": 3.23,
+   "accepted_errors": []
+  }
+ },
+ "rows": [
+  {
+   "file": "synthetic/shelf_tag_00.jpg",
+   "type": "shelf_tag",
+   "difficulty": 0,
+   "fields": {
+    "offer_price_inr": {
+     "got": 53.0,
+     "truth": 53.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 62.0,
+     "truth": 62.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "1000 g",
+     "truth": "1000 g",
+     "status": "accepted",
+     "confidence": 0.93,
+     "correct": true
+    }
+   },
+   "match": "SKU030",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/shelf_tag_01.jpg",
+   "type": "shelf_tag",
+   "difficulty": 1,
+   "fields": {
+    "offer_price_inr": {
+     "got": 111.0,
+     "truth": 111.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 121.0,
+     "truth": 121.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "500 ml",
+     "truth": "500 ml",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU111",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/shelf_tag_02.jpg",
+   "type": "shelf_tag",
+   "difficulty": 1,
+   "fields": {
+    "offer_price_inr": {
+     "got": 84.0,
+     "truth": 84.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 96.0,
+     "truth": 96.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "500 g",
+     "truth": "500 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU023",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/shelf_tag_03.jpg",
+   "type": "shelf_tag",
+   "difficulty": 2,
+   "fields": {
+    "offer_price_inr": {
+     "got": 128.0,
+     "truth": 128.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 135.0,
+     "truth": 135.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "200 g",
+     "truth": "200 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU085",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/shelf_tag_04.jpg",
+   "type": "shelf_tag",
+   "difficulty": 2,
+   "fields": {
+    "offer_price_inr": {
+     "got": 62.0,
+     "truth": 62.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 65.0,
+     "truth": 65.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "400 g",
+     "truth": "400 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU007",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/shelf_tag_05.jpg",
+   "type": "shelf_tag",
+   "difficulty": 2,
+   "fields": {
+    "offer_price_inr": {
+     "got": 63.0,
+     "truth": 63.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 68.0,
+     "truth": 68.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "200 g",
+     "truth": "200 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU050",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/shelf_tag_06.jpg",
+   "type": "shelf_tag",
+   "difficulty": 3,
+   "fields": {
+    "offer_price_inr": {
+     "got": 55.0,
+     "truth": 55.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 62.0,
+     "truth": 62.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "200 g",
+     "truth": "200 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU045",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/shelf_tag_07.jpg",
+   "type": "shelf_tag",
+   "difficulty": 1,
+   "fields": {
+    "offer_price_inr": {
+     "got": 64.0,
+     "truth": 64.0,
+     "status": "accepted",
+     "confidence": 0.93,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 70.0,
+     "truth": 70.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "400G",
+     "truth": "400 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU012",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/shelf_tag_08.jpg",
+   "type": "shelf_tag",
+   "difficulty": 2,
+   "fields": {
+    "offer_price_inr": {
+     "got": 106.0,
+     "truth": 106.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 118.0,
+     "truth": 118.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "200 g",
+     "truth": "200 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU008",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/shelf_tag_09.jpg",
+   "type": "shelf_tag",
+   "difficulty": 3,
+   "fields": {
+    "offer_price_inr": {
+     "got": 145.0,
+     "truth": 145.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 161.0,
+     "truth": 161.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "1000 ml",
+     "truth": "1000 ml",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU078",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/flyer_00.jpg",
+   "type": "flyer",
+   "difficulty": 0,
+   "fields": {
+    "offer_price_inr": {
+     "got": 180.0,
+     "truth": 180.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 219.0,
+     "truth": 219.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "100 g",
+     "truth": "100 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU080",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/flyer_01.jpg",
+   "type": "flyer",
+   "difficulty": 1,
+   "fields": {
+    "offer_price_inr": {
+     "got": 237.0,
+     "truth": 237.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 263.0,
+     "truth": 263.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "100G",
+     "truth": "100 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU076",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/flyer_02.jpg",
+   "type": "flyer",
+   "difficulty": 1,
+   "fields": {
+    "offer_price_inr": {
+     "got": 94.0,
+     "truth": 94.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 118.0,
+     "truth": 118.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "250 g",
+     "truth": "250 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU087",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/flyer_03.jpg",
+   "type": "flyer",
+   "difficulty": 2,
+   "fields": {
+    "offer_price_inr": {
+     "got": 118.0,
+     "truth": 118.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 124.0,
+     "truth": 124.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "200 g",
+     "truth": "200 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU059",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/flyer_04.jpg",
+   "type": "flyer",
+   "difficulty": 2,
+   "fields": {
+    "offer_price_inr": {
+     "got": 121.0,
+     "truth": 121.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 148.0,
+     "truth": 148.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "500 g",
+     "truth": "500 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU086",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/flyer_05.jpg",
+   "type": "flyer",
+   "difficulty": 2,
+   "fields": {
+    "offer_price_inr": {
+     "got": 113.0,
+     "truth": 113.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 128.0,
+     "truth": 128.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "250 g",
+     "truth": "250 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU092",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/flyer_06.jpg",
+   "type": "flyer",
+   "difficulty": 3,
+   "fields": {
+    "offer_price_inr": {
+     "got": 58.0,
+     "truth": 58.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 68.0,
+     "truth": 68.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "100 g",
+     "truth": "100 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU004",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/flyer_07.jpg",
+   "type": "flyer",
+   "difficulty": 1,
+   "fields": {
+    "offer_price_inr": {
+     "got": 94.0,
+     "truth": 94.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 107.0,
+     "truth": 107.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "200 g",
+     "truth": "200 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU003",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/flyer_08.jpg",
+   "type": "flyer",
+   "difficulty": 2,
+   "fields": {
+    "offer_price_inr": {
+     "got": 205.0,
+     "truth": 205.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 233.0,
+     "truth": 233.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "1000 ml",
+     "truth": "1000 ml",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU039",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/flyer_09.jpg",
+   "type": "flyer",
+   "difficulty": 3,
+   "fields": {
+    "offer_price_inr": {
+     "got": 229.0,
+     "truth": 229.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 269.0,
+     "truth": 269.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "500G",
+     "truth": "500 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU083",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/qc_screenshot_00.jpg",
+   "type": "qc_screenshot",
+   "difficulty": 0,
+   "fields": {
+    "offer_price_inr": {
+     "got": 185.0,
+     "truth": 185.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 247.0,
+     "truth": 247.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "1000ML",
+     "truth": "1000 ml",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU102",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/qc_screenshot_01.jpg",
+   "type": "qc_screenshot",
+   "difficulty": 1,
+   "fields": {
+    "offer_price_inr": {
+     "got": 49.0,
+     "truth": 49.0,
+     "status": "accepted",
+     "confidence": 0.93,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 56.0,
+     "truth": 56.0,
+     "status": "accepted",
+     "confidence": 0.93,
+     "correct": true
+    },
+    "pack": {
+     "got": "400 g",
+     "truth": "400 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU084",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/qc_screenshot_02.jpg",
+   "type": "qc_screenshot",
+   "difficulty": 1,
+   "fields": {
+    "offer_price_inr": {
+     "got": 217.0,
+     "truth": 217.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 247.0,
+     "truth": 247.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "1 L",
+     "truth": "1000 ml",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU102",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/qc_screenshot_03.jpg",
+   "type": "qc_screenshot",
+   "difficulty": 2,
+   "fields": {
+    "offer_price_inr": {
+     "got": 260.0,
+     "truth": 260.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 296.0,
+     "truth": 296.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "1 L",
+     "truth": "1000 ml",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU112",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/qc_screenshot_04.jpg",
+   "type": "qc_screenshot",
+   "difficulty": 2,
+   "fields": {
+    "offer_price_inr": {
+     "got": 272.0,
+     "truth": 272.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 296.0,
+     "truth": 296.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "500G",
+     "truth": "500 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU088",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/qc_screenshot_05.jpg",
+   "type": "qc_screenshot",
+   "difficulty": 2,
+   "fields": {
+    "offer_price_inr": {
+     "got": 252.0,
+     "truth": 252.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 296.0,
+     "truth": 296.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "500 g",
+     "truth": "500 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU088",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/qc_screenshot_06.jpg",
+   "type": "qc_screenshot",
+   "difficulty": 3,
+   "fields": {
+    "offer_price_inr": {
+     "got": 61.0,
+     "truth": 61.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 81.0,
+     "truth": 81.0,
+     "status": "accepted",
+     "confidence": 0.93,
+     "correct": true
+    },
+    "pack": {
+     "got": "200G",
+     "truth": "200 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU060",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/qc_screenshot_07.jpg",
+   "type": "qc_screenshot",
+   "difficulty": 1,
+   "fields": {
+    "offer_price_inr": {
+     "got": 51.0,
+     "truth": 51.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 68.0,
+     "truth": 68.0,
+     "status": "accepted",
+     "confidence": 0.93,
+     "correct": true
+    },
+    "pack": {
+     "got": "1000ML",
+     "truth": "1000 ml",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU064",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/qc_screenshot_08.jpg",
+   "type": "qc_screenshot",
+   "difficulty": 2,
+   "fields": {
+    "offer_price_inr": {
+     "got": 94.0,
+     "truth": 94.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 118.0,
+     "truth": 118.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "200 g",
+     "truth": "200 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU008",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/qc_screenshot_09.jpg",
+   "type": "qc_screenshot",
+   "difficulty": 3,
+   "fields": {
+    "offer_price_inr": {
+     "got": 55.0,
+     "truth": 55.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 73.0,
+     "truth": 73.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "400 g",
+     "truth": "400 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU099",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/whatsapp_scheme_00.jpg",
+   "type": "whatsapp_scheme",
+   "difficulty": 0,
+   "fields": {
+    "offer_price_inr": {
+     "got": 151.0,
+     "truth": 151.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 168.0,
+     "truth": 168.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "100 g",
+     "truth": "100 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU065",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/whatsapp_scheme_01.jpg",
+   "type": "whatsapp_scheme",
+   "difficulty": 1,
+   "fields": {
+    "offer_price_inr": {
+     "got": 159.0,
+     "truth": 159.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 173.0,
+     "truth": 173.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "250 g",
+     "truth": "250 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU067",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/whatsapp_scheme_02.jpg",
+   "type": "whatsapp_scheme",
+   "difficulty": 1,
+   "fields": {
+    "offer_price_inr": {
+     "got": 61.0,
+     "truth": 61.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 68.0,
+     "truth": 68.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "400G",
+     "truth": "400 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU094",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/whatsapp_scheme_03.jpg",
+   "type": "whatsapp_scheme",
+   "difficulty": 2,
+   "fields": {
+    "offer_price_inr": {
+     "got": 86.0,
+     "truth": 86.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 107.0,
+     "truth": 107.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "250 g",
+     "truth": "250 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU082",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/whatsapp_scheme_04.jpg",
+   "type": "whatsapp_scheme",
+   "difficulty": 2,
+   "fields": {
+    "offer_price_inr": {
+     "got": 322.0,
+     "truth": 322.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 350.0,
+     "truth": 350.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "500G",
+     "truth": "500 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU098",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/whatsapp_scheme_05.jpg",
+   "type": "whatsapp_scheme",
+   "difficulty": 2,
+   "fields": {
+    "offer_price_inr": {
+     "got": 71.0,
+     "truth": 71.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 81.0,
+     "truth": 81.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "200 g",
+     "truth": "200 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU047",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/whatsapp_scheme_06.jpg",
+   "type": "whatsapp_scheme",
+   "difficulty": 3,
+   "fields": {
+    "offer_price_inr": {
+     "got": 91.0,
+     "truth": 91.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 96.0,
+     "truth": 96.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "500 g",
+     "truth": "500 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU023",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/whatsapp_scheme_07.jpg",
+   "type": "whatsapp_scheme",
+   "difficulty": 1,
+   "fields": {
+    "offer_price_inr": {
+     "got": 53.0,
+     "truth": 53.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 59.0,
+     "truth": 59.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "400 g",
+     "truth": "400 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU002",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/whatsapp_scheme_08.jpg",
+   "type": "whatsapp_scheme",
+   "difficulty": 2,
+   "fields": {
+    "offer_price_inr": {
+     "got": 145.0,
+     "truth": 145.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 161.0,
+     "truth": 161.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "1 L",
+     "truth": "1000 ml",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU078",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/whatsapp_scheme_09.jpg",
+   "type": "whatsapp_scheme",
+   "difficulty": 3,
+   "fields": {
+    "offer_price_inr": {
+     "got": 65.0,
+     "truth": 65.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 81.0,
+     "truth": 81.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "200 g",
+     "truth": "200 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU060",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/text_pdf_00.pdf",
+   "type": "text_pdf",
+   "difficulty": 0,
+   "fields": {
+    "offer_price_inr": {
+     "got": 55.0,
+     "truth": 55.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 61.0,
+     "truth": 61.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "200 g",
+     "truth": "200 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU051",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/text_pdf_01.pdf",
+   "type": "text_pdf",
+   "difficulty": 0,
+   "fields": {
+    "offer_price_inr": {
+     "got": 155.0,
+     "truth": 155.0,
+     "status": "accepted",
+     "confidence": 0.93,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 189.0,
+     "truth": 189.0,
+     "status": "accepted",
+     "confidence": 0.93,
+     "correct": true
+    },
+    "pack": {
+     "got": "1000 g",
+     "truth": "1000 g",
+     "status": "accepted",
+     "confidence": 0.93,
+     "correct": true
+    }
+   },
+   "match": "SKU031",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/text_pdf_02.pdf",
+   "type": "text_pdf",
+   "difficulty": 0,
+   "fields": {
+    "offer_price_inr": {
+     "got": 51.0,
+     "truth": 51.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 68.0,
+     "truth": 68.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "400 g",
+     "truth": "400 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU094",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/text_pdf_03.pdf",
+   "type": "text_pdf",
+   "difficulty": 0,
+   "fields": {
+    "offer_price_inr": {
+     "got": 61.0,
+     "truth": 61.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 81.0,
+     "truth": 81.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "1000 ml",
+     "truth": "1000 ml",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU074",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/text_pdf_04.pdf",
+   "type": "text_pdf",
+   "difficulty": 0,
+   "fields": {
+    "offer_price_inr": {
+     "got": 59.0,
+     "truth": 59.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 74.0,
+     "truth": 74.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "100 g",
+     "truth": "100 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU009",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/text_pdf_05.pdf",
+   "type": "text_pdf",
+   "difficulty": 0,
+   "fields": {
+    "offer_price_inr": {
+     "got": 121.0,
+     "truth": 121.0,
+     "status": "accepted",
+     "confidence": 0.93,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 161.0,
+     "truth": 161.0,
+     "status": "accepted",
+     "confidence": 0.93,
+     "correct": true
+    },
+    "pack": {
+     "got": "1000 ml",
+     "truth": "1000 ml",
+     "status": "accepted",
+     "confidence": 0.93,
+     "correct": true
+    }
+   },
+   "match": "SKU078",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/text_pdf_06.pdf",
+   "type": "text_pdf",
+   "difficulty": 0,
+   "fields": {
+    "offer_price_inr": {
+     "got": 125.0,
+     "truth": 125.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 132.0,
+     "truth": 132.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "500 ml",
+     "truth": "500 ml",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU116",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/text_pdf_07.pdf",
+   "type": "text_pdf",
+   "difficulty": 0,
+   "fields": {
+    "offer_price_inr": {
+     "got": 129.0,
+     "truth": 129.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 161.0,
+     "truth": 161.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "1000 ml",
+     "truth": "1000 ml",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU078",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/text_pdf_08.pdf",
+   "type": "text_pdf",
+   "difficulty": 0,
+   "fields": {
+    "offer_price_inr": {
+     "got": 61.0,
+     "truth": 61.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 66.0,
+     "truth": 66.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "200 g",
+     "truth": "200 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU056",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/text_pdf_09.pdf",
+   "type": "text_pdf",
+   "difficulty": 0,
+   "fields": {
+    "offer_price_inr": {
+     "got": 45.0,
+     "truth": 45.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 56.0,
+     "truth": 56.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "400 g",
+     "truth": "400 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU084",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/scanned_pdf_00.pdf",
+   "type": "scanned_pdf",
+   "difficulty": 1,
+   "fields": {
+    "offer_price_inr": {
+     "got": 75.0,
+     "truth": 75.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 88.0,
+     "truth": 88.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "100 pc",
+     "truth": "100 pc",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU119",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/scanned_pdf_01.pdf",
+   "type": "scanned_pdf",
+   "difficulty": 1,
+   "fields": {
+    "offer_price_inr": {
+     "got": 188.0,
+     "truth": 188.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 198.0,
+     "truth": 198.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "1000 ml",
+     "truth": "1000 ml",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU029",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/scanned_pdf_02.pdf",
+   "type": "scanned_pdf",
+   "difficulty": 1,
+   "fields": {
+    "offer_price_inr": {
+     "got": 80.0,
+     "truth": 80.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 84.0,
+     "truth": 84.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "1000 ml",
+     "truth": "1000 ml",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU006",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/scanned_pdf_03.pdf",
+   "type": "scanned_pdf",
+   "difficulty": 1,
+   "fields": {
+    "offer_price_inr": {
+     "got": 214.0,
+     "truth": 214.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 233.0,
+     "truth": 233.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "1000 ml",
+     "truth": "1000 ml",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU039",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/scanned_pdf_04.pdf",
+   "type": "scanned_pdf",
+   "difficulty": 1,
+   "fields": {
+    "offer_price_inr": {
+     "got": 104.0,
+     "truth": 104.0,
+     "status": "accepted",
+     "confidence": 0.93,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 139.0,
+     "truth": 139.0,
+     "status": "accepted",
+     "confidence": 0.93,
+     "correct": true
+    },
+    "pack": {
+     "got": "200 g",
+     "truth": "200 g",
+     "status": "accepted",
+     "confidence": 0.93,
+     "correct": true
+    }
+   },
+   "match": "SKU018",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/scanned_pdf_05.pdf",
+   "type": "scanned_pdf",
+   "difficulty": 1,
+   "fields": {
+    "offer_price_inr": {
+     "got": 126.0,
+     "truth": 126.0,
+     "status": "accepted",
+     "confidence": 0.93,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 168.0,
+     "truth": 168.0,
+     "status": "accepted",
+     "confidence": 0.93,
+     "correct": true
+    },
+    "pack": {
+     "got": "100 g",
+     "truth": "100 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU065",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/scanned_pdf_06.pdf",
+   "type": "scanned_pdf",
+   "difficulty": 1,
+   "fields": {
+    "offer_price_inr": {
+     "got": 109.0,
+     "truth": 109.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 124.0,
+     "truth": 124.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "500 g",
+     "truth": "500 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU038",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/scanned_pdf_07.pdf",
+   "type": "scanned_pdf",
+   "difficulty": 1,
+   "fields": {
+    "offer_price_inr": {
+     "got": 68.0,
+     "truth": 68.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 74.0,
+     "truth": 74.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "1000 ml",
+     "truth": "1000 ml",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU069",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/scanned_pdf_08.pdf",
+   "type": "scanned_pdf",
+   "difficulty": 1,
+   "fields": {
+    "offer_price_inr": {
+     "got": 88.0,
+     "truth": 88.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 96.0,
+     "truth": 96.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "500 g",
+     "truth": "500 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU023",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/scanned_pdf_09.pdf",
+   "type": "scanned_pdf",
+   "difficulty": 1,
+   "fields": {
+    "offer_price_inr": {
+     "got": 56.0,
+     "truth": 56.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 74.0,
+     "truth": 74.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "1000 ml",
+     "truth": "1000 ml",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU069",
+   "quarantined": false
+  },
+  {
+   "file": "synthetic/booby_trapped_competitor.pdf",
+   "type": "text_pdf",
+   "difficulty": 0,
+   "fields": {
+    "offer_price_inr": {
+     "got": 42.0,
+     "truth": 42.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "mrp_inr": {
+     "got": 51.0,
+     "truth": 51.0,
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    },
+    "pack": {
+     "got": "200 g",
+     "truth": "200 g",
+     "status": "accepted",
+     "confidence": 0.97,
+     "correct": true
+    }
+   },
+   "match": "SKU041",
+   "quarantined": true
+  }
+ ]
+}

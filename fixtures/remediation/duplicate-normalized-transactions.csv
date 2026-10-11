@@ -1,0 +1,3 @@
+sku,city,date,quantity,paid_price_paise,stockout,basket_items
+SKU001,Delhi,2026-10-03,1,6800,false,SKU001|SKU081
+SKU001,Delhi,2026-10-03T12:00:00+05:30,99,6800,false,SKU001|SKU081

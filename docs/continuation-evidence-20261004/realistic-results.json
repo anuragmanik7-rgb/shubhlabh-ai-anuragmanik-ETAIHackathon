@@ -1,0 +1,5156 @@
+{
+  "schema_version": 1,
+  "mode": "offline_synthetic",
+  "scenario_clock_utc": "2026-10-04T06:30:00+00:00",
+  "fixture_manifest_sha256": "ce8b59b990305cfb5842abdf5187b9dbfaaef6a87551f1d1526978a3de871d03",
+  "fixture_dimensions": {
+    "products": 120,
+    "cities": 3,
+    "categories": 6,
+    "history_days": 180,
+    "transaction_rows": 64800,
+    "inventory_rows": 360,
+    "competitor_rows": 360,
+    "new_basket_rows": 1620,
+    "stockout_history_rows": 783
+  },
+  "created_at": "2026-10-04T22:01:56.133034+00:00",
+  "checks": [
+    {
+      "name": "import:products.csv",
+      "passed": true,
+      "expected": {
+        "status": "applied",
+        "rows": 120
+      },
+      "observed": {
+        "status": "applied",
+        "rows": 120
+      }
+    },
+    {
+      "name": "import:inventory.csv",
+      "passed": true,
+      "expected": {
+        "status": "applied",
+        "rows": 360
+      },
+      "observed": {
+        "status": "applied",
+        "rows": 360
+      }
+    },
+    {
+      "name": "import:competitors.csv",
+      "passed": true,
+      "expected": {
+        "status": "applied",
+        "rows": 360
+      },
+      "observed": {
+        "status": "applied",
+        "rows": 360
+      }
+    },
+    {
+      "name": "import:transactions-bengaluru-1.csv",
+      "passed": true,
+      "expected": {
+        "status": "applied",
+        "rows": 7200
+      },
+      "observed": {
+        "status": "applied",
+        "rows": 7200
+      }
+    },
+    {
+      "name": "import:transactions-bengaluru-2.csv",
+      "passed": true,
+      "expected": {
+        "status": "applied",
+        "rows": 7200
+      },
+      "observed": {
+        "status": "applied",
+        "rows": 7200
+      }
+    },
+    {
+      "name": "import:transactions-bengaluru-3.csv",
+      "passed": true,
+      "expected": {
+        "status": "applied",
+        "rows": 7200
+      },
+      "observed": {
+        "status": "applied",
+        "rows": 7200
+      }
+    },
+    {
+      "name": "import:transactions-mumbai-1.csv",
+      "passed": true,
+      "expected": {
+        "status": "applied",
+        "rows": 7200
+      },
+      "observed": {
+        "status": "applied",
+        "rows": 7200
+      }
+    },
+    {
+      "name": "import:transactions-mumbai-2.csv",
+      "passed": true,
+      "expected": {
+        "status": "applied",
+        "rows": 7200
+      },
+      "observed": {
+        "status": "applied",
+        "rows": 7200
+      }
+    },
+    {
+      "name": "import:transactions-mumbai-3.csv",
+      "passed": true,
+      "expected": {
+        "status": "applied",
+        "rows": 7200
+      },
+      "observed": {
+        "status": "applied",
+        "rows": 7200
+      }
+    },
+    {
+      "name": "import:transactions-delhi-1.csv",
+      "passed": true,
+      "expected": {
+        "status": "applied",
+        "rows": 7200
+      },
+      "observed": {
+        "status": "applied",
+        "rows": 7200
+      }
+    },
+    {
+      "name": "import:transactions-delhi-2.csv",
+      "passed": true,
+      "expected": {
+        "status": "applied",
+        "rows": 7200
+      },
+      "observed": {
+        "status": "applied",
+        "rows": 7200
+      }
+    },
+    {
+      "name": "import:transactions-delhi-3.csv",
+      "passed": true,
+      "expected": {
+        "status": "applied",
+        "rows": 7200
+      },
+      "observed": {
+        "status": "applied",
+        "rows": 7200
+      }
+    },
+    {
+      "name": "exact_values:products.csv",
+      "passed": true,
+      "expected": 120,
+      "observed": 120
+    },
+    {
+      "name": "exact_values:inventory.csv",
+      "passed": true,
+      "expected": 360,
+      "observed": 360
+    },
+    {
+      "name": "exact_values:competitors.csv",
+      "passed": true,
+      "expected": 360,
+      "observed": 360
+    },
+    {
+      "name": "exact_values:transactions-bengaluru-1.csv",
+      "passed": true,
+      "expected": 7200,
+      "observed": 7200
+    },
+    {
+      "name": "exact_values:transactions-bengaluru-2.csv",
+      "passed": true,
+      "expected": 7200,
+      "observed": 7200
+    },
+    {
+      "name": "exact_values:transactions-bengaluru-3.csv",
+      "passed": true,
+      "expected": 7200,
+      "observed": 7200
+    },
+    {
+      "name": "exact_values:transactions-mumbai-1.csv",
+      "passed": true,
+      "expected": 7200,
+      "observed": 7200
+    },
+    {
+      "name": "exact_values:transactions-mumbai-2.csv",
+      "passed": true,
+      "expected": 7200,
+      "observed": 7200
+    },
+    {
+      "name": "exact_values:transactions-mumbai-3.csv",
+      "passed": true,
+      "expected": 7200,
+      "observed": 7200
+    },
+    {
+      "name": "exact_values:transactions-delhi-1.csv",
+      "passed": true,
+      "expected": 7200,
+      "observed": 7200
+    },
+    {
+      "name": "exact_values:transactions-delhi-2.csv",
+      "passed": true,
+      "expected": 7200,
+      "observed": 7200
+    },
+    {
+      "name": "exact_values:transactions-delhi-3.csv",
+      "passed": true,
+      "expected": 7200,
+      "observed": 7200
+    },
+    {
+      "name": "complete_history_replacement",
+      "passed": true,
+      "expected": "360 series x180 daily rows",
+      "observed": {
+        "series": 360,
+        "daily_rows": 64800
+      }
+    },
+    {
+      "name": "basket_append_count",
+      "passed": true,
+      "expected": 3820,
+      "observed": 3820
+    },
+    {
+      "name": "operational_import_replay",
+      "passed": true,
+      "expected": "same receipt; no duplicate history/baskets/state mutation",
+      "observed": "imp_e9434470942d7ec2cd8e08ca5052"
+    },
+    {
+      "name": "reject:invalid-products.csv",
+      "passed": true,
+      "expected": {
+        "decision": "rejected",
+        "state_unchanged": true
+      },
+      "observed": {
+        "http": 200,
+        "decision": "rejected",
+        "errors": [
+          {
+            "row": 2,
+            "message": "Missing integer value"
+          }
+        ],
+        "state_unchanged": true
+      }
+    },
+    {
+      "name": "reject:duplicate-products.csv",
+      "passed": true,
+      "expected": {
+        "decision": "rejected",
+        "state_unchanged": true
+      },
+      "observed": {
+        "http": 200,
+        "decision": "rejected",
+        "errors": [
+          {
+            "row": 3,
+            "message": "Duplicate product/location/day row; aggregate or reconcile before importing"
+          }
+        ],
+        "state_unchanged": true
+      }
+    },
+    {
+      "name": "reject:malformed-inventory.csv",
+      "passed": true,
+      "expected": {
+        "decision": "TABLE_ROW",
+        "state_unchanged": true
+      },
+      "observed": {
+        "http": 400,
+        "decision": "TABLE_ROW",
+        "errors": null,
+        "state_unchanged": true
+      }
+    },
+    {
+      "name": "reject:duplicate-normalized-transactions.csv",
+      "passed": true,
+      "expected": {
+        "decision": "rejected",
+        "state_unchanged": true
+      },
+      "observed": {
+        "http": 200,
+        "decision": "rejected",
+        "errors": [
+          {
+            "row": 3,
+            "message": "Duplicate product/location/day row; aggregate or reconcile before importing"
+          }
+        ],
+        "state_unchanged": true
+      }
+    },
+    {
+      "name": "reject:stale-inventory.csv",
+      "passed": true,
+      "expected": {
+        "decision": "STALE_EVENT",
+        "state_unchanged": true
+      },
+      "observed": {
+        "http": 409,
+        "decision": "STALE_EVENT",
+        "errors": null,
+        "state_unchanged": true
+      }
+    },
+    {
+      "name": "unconfirmed_no_mutation:policy.txt",
+      "passed": true,
+      "expected": "evidence upload never changes authoritative state",
+      "observed": true
+    },
+    {
+      "name": "unconfirmed_no_mutation:policy.pdf",
+      "passed": true,
+      "expected": "evidence upload never changes authoritative state",
+      "observed": true
+    },
+    {
+      "name": "policy_confirmation",
+      "passed": true,
+      "expected": "confirmed INR18000 policy",
+      "observed": "confirmed"
+    },
+    {
+      "name": "unconfirmed_no_mutation:missing-critical-policy.txt",
+      "passed": true,
+      "expected": "evidence upload never changes authoritative state",
+      "observed": true
+    },
+    {
+      "name": "incomplete_policy:missing-critical-policy.txt",
+      "passed": true,
+      "expected": "INCOMPLETE_POLICY; state unchanged",
+      "observed": {
+        "code": "INCOMPLETE_POLICY",
+        "message": "Confirm margin, discount and budget before applying",
+        "field_errors": {},
+        "retryable": false,
+        "correlation_id": "err_cb19dc2f71bf4e00"
+      }
+    },
+    {
+      "name": "unconfirmed_no_mutation:missing-critical-policy.pdf",
+      "passed": true,
+      "expected": "evidence upload never changes authoritative state",
+      "observed": true
+    },
+    {
+      "name": "incomplete_policy:missing-critical-policy.pdf",
+      "passed": true,
+      "expected": "INCOMPLETE_POLICY; state unchanged",
+      "observed": {
+        "code": "INCOMPLETE_POLICY",
+        "message": "Confirm margin, discount and budget before applying",
+        "field_errors": {},
+        "retryable": false,
+        "correlation_id": "err_af4792cc34b64abd"
+      }
+    },
+    {
+      "name": "unconfirmed_no_mutation:injection-policy.txt",
+      "passed": true,
+      "expected": "evidence upload never changes authoritative state",
+      "observed": true
+    },
+    {
+      "name": "untrusted_instructions_flagged",
+      "passed": true,
+      "expected": "warning + needs_review",
+      "observed": {
+        "warning": true,
+        "status": "needs_review"
+      }
+    },
+    {
+      "name": "unconfirmed_no_mutation:competitor-card.png",
+      "passed": true,
+      "expected": "evidence upload never changes authoritative state",
+      "observed": true
+    },
+    {
+      "name": "offline_image_abstention",
+      "passed": true,
+      "expected": "no invented price; human review",
+      "observed": {
+        "kind": "unresolved"
+      }
+    },
+    {
+      "name": "image_human_confirmation",
+      "passed": true,
+      "expected": "explicit human-confirmed revision",
+      "observed": {
+        "status": "confirmed",
+        "matching_fields": 9
+      }
+    },
+    {
+      "name": "evidence_reject:corrupt.pdf",
+      "passed": true,
+      "expected": "PDF_FORMAT",
+      "observed": "PDF_FORMAT"
+    },
+    {
+      "name": "evidence_reject:corrupt.png",
+      "passed": true,
+      "expected": "IMAGE_FORMAT",
+      "observed": "IMAGE_FORMAT"
+    },
+    {
+      "name": "tenant_import_isolation",
+      "passed": true,
+      "expected": "other tenant unchanged by imports/corrections",
+      "observed": true
+    },
+    {
+      "name": "csrf_enforced",
+      "passed": true,
+      "expected": 403,
+      "observed": 403
+    },
+    {
+      "name": "profit_plan_validated",
+      "passed": true,
+      "expected": "validated",
+      "observed": "validated"
+    },
+    {
+      "name": "expired_and_bad_margin_excluded",
+      "passed": true,
+      "expected": [
+        "SKU118",
+        "SKU119",
+        "SKU120"
+      ],
+      "observed": []
+    },
+    {
+      "name": "independent_constraints",
+      "passed": true,
+      "expected": "no constraint violation",
+      "observed": {
+        "passed": true,
+        "errors": [],
+        "liability_paise": 499410,
+        "allocation": {
+          "SKU011|Bengaluru": 79,
+          "SKU015|Bengaluru": 71,
+          "SKU019|Bengaluru": 68,
+          "SKU005|Bengaluru": 67,
+          "SKU003|Bengaluru": 66,
+          "SKU010|Bengaluru": 66,
+          "SKU016|Bengaluru": 63,
+          "SKU014|Bengaluru": 63,
+          "SKU006|Bengaluru": 27
+        },
+        "checks": [
+          "item margin",
+          "discount ceiling",
+          "stock and expiry",
+          "maximum liability",
+          "overlap",
+          "channel and city",
+          "freshness"
+        ],
+        "batch_allocation": {
+          "SKU011-0-A": 79,
+          "SKU015-0-A": 71,
+          "SKU019-0-A": 68,
+          "SKU005-0-A": 67,
+          "SKU003-0-A": 66,
+          "SKU010-0-A": 66,
+          "SKU016-0-A": 63,
+          "SKU014-0-A": 63,
+          "SKU006-0-A": 27
+        },
+        "clearance_units": 570,
+        "offer_clearance_units": {
+          "805107abaa4d62": 79,
+          "e1d3028484614b": 71,
+          "bca9a725a02c1b": 68,
+          "9420f25609e44c": 67,
+          "4a4823df048216": 66,
+          "b51a50c4621644": 66,
+          "922a4c77fb8e12": 63,
+          "6ca23cccc6432a": 63,
+          "32d2ebfd20abd7": 27
+        },
+        "evidence_status": "derived"
+      }
+    },
+    {
+      "name": "tenant_plan_isolation",
+      "passed": true,
+      "expected": 404,
+      "observed": 404
+    },
+    {
+      "name": "simulation_replay",
+      "passed": true,
+      "expected": "same seeded portfolio statistics",
+      "observed": true
+    },
+    {
+      "name": "exact_approval_required",
+      "passed": true,
+      "expected": "APPROVAL_REQUIRED",
+      "observed": {
+        "code": "APPROVAL_REQUIRED",
+        "message": "Approve this exact revision first",
+        "field_errors": {},
+        "retryable": true,
+        "correlation_id": "err_1c883dda92014c2e"
+      }
+    },
+    {
+      "name": "activation_stock_conservation",
+      "passed": true,
+      "expected": "reservation does not consume physical stock",
+      "observed": true
+    },
+    {
+      "name": "activation_budget_conservation",
+      "passed": true,
+      "expected": 499410,
+      "observed": 499410
+    },
+    {
+      "name": "execution_replay",
+      "passed": true,
+      "expected": "same receipt and no second reservation",
+      "observed": "realistic-execute"
+    },
+    {
+      "name": "checkout_offer_available",
+      "passed": true,
+      "expected": "at least one current-day feasible offer",
+      "observed": "805107abaa4d62"
+    },
+    {
+      "name": "segment_enforced",
+      "passed": true,
+      "expected": "403; no stock or money change",
+      "observed": {
+        "code": "SEGMENT_INELIGIBLE",
+        "message": "Customer segment is not eligible",
+        "field_errors": {},
+        "retryable": false,
+        "correlation_id": "err_8f24f80002dc4703"
+      }
+    },
+    {
+      "name": "checkout_stock_conservation",
+      "passed": true,
+      "expected": 1,
+      "observed": 1
+    },
+    {
+      "name": "checkout_financial_conservation",
+      "passed": true,
+      "expected": {
+        "discount_paise": 820,
+        "spent_delta": 820,
+        "reserved_delta": 820
+      },
+      "observed": {
+        "discount_paise": 820,
+        "spent_delta": 820,
+        "reserved_delta": 820
+      }
+    },
+    {
+      "name": "checkout_replay",
+      "passed": true,
+      "expected": "same receipt, exactly one debit",
+      "observed": "synthetic-order-1"
+    },
+    {
+      "name": "material_event_pauses_active_plan",
+      "passed": true,
+      "expected": "paused",
+      "observed": "paused"
+    },
+    {
+      "name": "pause_releases_commitments",
+      "passed": true,
+      "expected": {
+        "reserved_money": 0,
+        "reserved_units": 0
+      },
+      "observed": {
+        "reserved_money": 0,
+        "reserved_units": 0
+      }
+    },
+    {
+      "name": "pause_preserves_sunk_cost",
+      "passed": true,
+      "expected": 18820,
+      "observed": 18820
+    },
+    {
+      "name": "event_idempotency",
+      "passed": true,
+      "expected": "one event, one replan",
+      "observed": {
+        "duplicate": true,
+        "same_run": true
+      }
+    },
+    {
+      "name": "event_replan_completed",
+      "passed": true,
+      "expected": "validated",
+      "observed": "validated"
+    },
+    {
+      "name": "changed_fact_changes_decision",
+      "passed": true,
+      "expected": {
+        "different_offer_set": true,
+        "out_of_stock_offers": []
+      },
+      "observed": {
+        "different_offer_set": true,
+        "out_of_stock_offers": []
+      }
+    },
+    {
+      "name": "revised_plan_requires_approval",
+      "passed": true,
+      "expected": "awaiting_approval",
+      "observed": "awaiting_approval"
+    },
+    {
+      "name": "zero_budget_safe_no_promotion",
+      "passed": true,
+      "expected": "validated empty plan with zero liability",
+      "observed": {
+        "offers": 0,
+        "liability": 0
+      }
+    },
+    {
+      "name": "hard_infeasibility_escalated",
+      "passed": true,
+      "expected": "needs_input; no constraint relaxed",
+      "observed": "needs_input"
+    },
+    {
+      "name": "strict_margin_no_unsafe_offer",
+      "passed": true,
+      "expected": "validated no-promotion portfolio",
+      "observed": 0
+    },
+    {
+      "name": "no_paid_calls",
+      "passed": true,
+      "expected": "no model usage record",
+      "observed": 0
+    }
+  ],
+  "imports": [
+    {
+      "path": "products.csv",
+      "kind": "products",
+      "expected_rows": 120,
+      "status": "applied",
+      "rows": 120,
+      "errors": [],
+      "seconds": 1.3836,
+      "id": "imp_e14b17f3c1b992cd0a21f0ff2cac"
+    },
+    {
+      "path": "inventory.csv",
+      "kind": "inventory",
+      "expected_rows": 360,
+      "status": "applied",
+      "rows": 360,
+      "errors": [],
+      "seconds": 1.5364,
+      "id": "imp_c885f53fc78a0bb510079b2910b3"
+    },
+    {
+      "path": "competitors.csv",
+      "kind": "competitor",
+      "expected_rows": 360,
+      "status": "applied",
+      "rows": 360,
+      "errors": [],
+      "seconds": 1.29,
+      "id": "imp_3c8cb548b536992eb398c98e9de8"
+    },
+    {
+      "path": "transactions-bengaluru-1.csv",
+      "kind": "transactions",
+      "expected_rows": 7200,
+      "status": "applied",
+      "rows": 7200,
+      "errors": [],
+      "seconds": 1.5916,
+      "id": "imp_4f455109cb82b2f2df42ccb27b3f"
+    },
+    {
+      "path": "transactions-bengaluru-2.csv",
+      "kind": "transactions",
+      "expected_rows": 7200,
+      "status": "applied",
+      "rows": 7200,
+      "errors": [],
+      "seconds": 1.5569,
+      "id": "imp_fcc1a168c212dd0646816580e4cc"
+    },
+    {
+      "path": "transactions-bengaluru-3.csv",
+      "kind": "transactions",
+      "expected_rows": 7200,
+      "status": "applied",
+      "rows": 7200,
+      "errors": [],
+      "seconds": 1.5807,
+      "id": "imp_71a8a546b8a9868c1a5e82f7a2cc"
+    },
+    {
+      "path": "transactions-mumbai-1.csv",
+      "kind": "transactions",
+      "expected_rows": 7200,
+      "status": "applied",
+      "rows": 7200,
+      "errors": [],
+      "seconds": 1.4573,
+      "id": "imp_fcf8e5a79a81ac7e6c8c16f1a907"
+    },
+    {
+      "path": "transactions-mumbai-2.csv",
+      "kind": "transactions",
+      "expected_rows": 7200,
+      "status": "applied",
+      "rows": 7200,
+      "errors": [],
+      "seconds": 1.5627,
+      "id": "imp_7b2055d61f5be300c4ef07095924"
+    },
+    {
+      "path": "transactions-mumbai-3.csv",
+      "kind": "transactions",
+      "expected_rows": 7200,
+      "status": "applied",
+      "rows": 7200,
+      "errors": [],
+      "seconds": 1.6473,
+      "id": "imp_31e4d24535678cf1bf6658be45fd"
+    },
+    {
+      "path": "transactions-delhi-1.csv",
+      "kind": "transactions",
+      "expected_rows": 7200,
+      "status": "applied",
+      "rows": 7200,
+      "errors": [],
+      "seconds": 1.6682,
+      "id": "imp_6006503abf6b7831b2c5a077c9ee"
+    },
+    {
+      "path": "transactions-delhi-2.csv",
+      "kind": "transactions",
+      "expected_rows": 7200,
+      "status": "applied",
+      "rows": 7200,
+      "errors": [],
+      "seconds": 1.6329,
+      "id": "imp_2f648e01c0379ae3d8c966321953"
+    },
+    {
+      "path": "transactions-delhi-3.csv",
+      "kind": "transactions",
+      "expected_rows": 7200,
+      "status": "applied",
+      "rows": 7200,
+      "errors": [],
+      "seconds": 1.6578,
+      "id": "imp_e9434470942d7ec2cd8e08ca5052"
+    }
+  ],
+  "extraction": [
+    {
+      "path": "policy.txt",
+      "modality": "text",
+      "seconds": 0.7029,
+      "http": 200,
+      "automatic_application": false,
+      "required_fields": 5,
+      "correct_fields": 5,
+      "extracted": {
+        "kind": "policy",
+        "currency": "INR",
+        "min_margin_bps": 1500,
+        "max_discount_bps": 2000,
+        "budget_paise": 1800000
+      },
+      "truth": {
+        "kind": "policy",
+        "currency": "INR",
+        "min_margin_bps": 1500,
+        "max_discount_bps": 2000,
+        "budget_paise": 1800000
+      },
+      "status": "needs_review",
+      "auto_accepted": false
+    },
+    {
+      "path": "policy.pdf",
+      "modality": "pdf",
+      "seconds": 0.7332,
+      "http": 200,
+      "automatic_application": false,
+      "required_fields": 5,
+      "correct_fields": 5,
+      "extracted": {
+        "kind": "policy",
+        "currency": "INR",
+        "min_margin_bps": 1500,
+        "max_discount_bps": 2000,
+        "budget_paise": 1800000
+      },
+      "truth": {
+        "kind": "policy",
+        "currency": "INR",
+        "min_margin_bps": 1500,
+        "max_discount_bps": 2000,
+        "budget_paise": 1800000
+      },
+      "status": "needs_review",
+      "auto_accepted": false
+    },
+    {
+      "path": "missing-critical-policy.txt",
+      "modality": "text",
+      "seconds": 0.7315,
+      "http": 200,
+      "automatic_application": false,
+      "required_fields": 3,
+      "correct_fields": 3,
+      "extracted": {
+        "kind": "policy",
+        "currency": "INR",
+        "min_margin_bps": 1500
+      },
+      "truth": {
+        "kind": "policy",
+        "currency": "INR",
+        "min_margin_bps": 1500
+      },
+      "status": "needs_review",
+      "auto_accepted": false
+    },
+    {
+      "path": "missing-critical-policy.pdf",
+      "modality": "pdf",
+      "seconds": 0.7237,
+      "http": 200,
+      "automatic_application": false,
+      "required_fields": 3,
+      "correct_fields": 3,
+      "extracted": {
+        "kind": "policy",
+        "currency": "INR",
+        "min_margin_bps": 1500
+      },
+      "truth": {
+        "kind": "policy",
+        "currency": "INR",
+        "min_margin_bps": 1500
+      },
+      "status": "needs_review",
+      "auto_accepted": false
+    },
+    {
+      "path": "injection-policy.txt",
+      "modality": "text",
+      "seconds": 0.5649,
+      "http": 200,
+      "automatic_application": false,
+      "required_fields": 5,
+      "correct_fields": 5,
+      "extracted": {
+        "kind": "policy",
+        "currency": "INR",
+        "min_margin_bps": 1500,
+        "max_discount_bps": 2000,
+        "budget_paise": 1800000
+      },
+      "truth": {
+        "kind": "policy",
+        "currency": "INR",
+        "min_margin_bps": 1500,
+        "max_discount_bps": 2000,
+        "budget_paise": 1800000
+      },
+      "status": "needs_review",
+      "auto_accepted": false
+    },
+    {
+      "path": "competitor-card.png",
+      "modality": "image",
+      "seconds": 0.7836,
+      "http": 200,
+      "automatic_application": false,
+      "required_fields": 9,
+      "correct_fields": 0,
+      "extracted": {
+        "kind": "unresolved"
+      },
+      "truth": {
+        "kind": "competitor",
+        "currency": "INR",
+        "sku": "SKU001",
+        "city": "Delhi",
+        "price_paise": 6200,
+        "pack_quantity": 1000,
+        "pack_unit": "ml",
+        "observed_at": "2026-10-04T06:30:00+00:00",
+        "conditions": "No membership restriction"
+      },
+      "status": "needs_review",
+      "auto_accepted": false,
+      "human_confirmation": {
+        "status": "confirmed",
+        "matching_fields": 9
+      }
+    },
+    {
+      "path": "corrupt.pdf",
+      "modality": "pdf",
+      "seconds": 0.6915,
+      "http": 400,
+      "automatic_application": false,
+      "expected_error": "PDF_FORMAT",
+      "error": "PDF_FORMAT"
+    },
+    {
+      "path": "corrupt.png",
+      "modality": "image",
+      "seconds": 0.82,
+      "http": 400,
+      "automatic_application": false,
+      "expected_error": "IMAGE_FORMAT",
+      "error": "IMAGE_FORMAT"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "profit",
+      "brief": {
+        "title": "Synthetic evaluation: profit",
+        "mode": "offline",
+        "scenarios": 40,
+        "seed": 261004,
+        "horizon": 3,
+        "budget_paise": 500000
+      },
+      "run_id": "run_391ceb10cffe1eba",
+      "state": "validated",
+      "seconds": 13.0743,
+      "error": null,
+      "plan_id": "plan_8dc0f317805a4bc0",
+      "offers": 9,
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "liability_paise": 499410,
+        "allocation": {
+          "SKU011|Bengaluru": 79,
+          "SKU015|Bengaluru": 71,
+          "SKU019|Bengaluru": 68,
+          "SKU005|Bengaluru": 67,
+          "SKU003|Bengaluru": 66,
+          "SKU010|Bengaluru": 66,
+          "SKU016|Bengaluru": 63,
+          "SKU014|Bengaluru": 63,
+          "SKU006|Bengaluru": 27
+        },
+        "checks": [
+          "item margin",
+          "discount ceiling",
+          "stock and expiry",
+          "maximum liability",
+          "overlap",
+          "channel and city",
+          "freshness"
+        ],
+        "batch_allocation": {
+          "SKU011-0-A": 79,
+          "SKU015-0-A": 71,
+          "SKU019-0-A": 68,
+          "SKU005-0-A": 67,
+          "SKU003-0-A": 66,
+          "SKU010-0-A": 66,
+          "SKU016-0-A": 63,
+          "SKU014-0-A": 63,
+          "SKU006-0-A": 27
+        },
+        "clearance_units": 570,
+        "offer_clearance_units": {
+          "805107abaa4d62": 79,
+          "e1d3028484614b": 71,
+          "bca9a725a02c1b": 68,
+          "9420f25609e44c": 67,
+          "4a4823df048216": 66,
+          "b51a50c4621644": 66,
+          "922a4c77fb8e12": 63,
+          "6ca23cccc6432a": 63,
+          "32d2ebfd20abd7": 27
+        },
+        "evidence_status": "derived"
+      },
+      "solver": {
+        "status": "SIMULATION_SELECTED_RULE",
+        "objective_paise": null,
+        "bound_paise": null,
+        "gap": null,
+        "candidate_solver": {
+          "status": "OPTIMAL",
+          "objective_paise": 209132,
+          "bound_paise": 209132,
+          "gap": 0.0,
+          "interactions": 648,
+          "wall_seconds": 0.264,
+          "objective_definition": "Expected incremental contribution minus lambda times downside shortfall; clearance objective also includes disclosed 500 paise/unit priority"
+        }
+      },
+      "simulation": {
+        "baseline": {
+          "contribution_paise": 67139132,
+          "revenue_paise": 195014448,
+          "spend_paise": 0,
+          "clearance_units": 1626.8,
+          "stockout_rate": 0.0667,
+          "units": 18221.3
+        },
+        "optimized": {
+          "contribution_paise": 67874975,
+          "revenue_paise": 195816039,
+          "spend_paise": 410861,
+          "clearance_units": 1767.7,
+          "stockout_rate": 0.0683,
+          "units": 18362.2
+        },
+        "incremental_contribution_paise": 735843,
+        "p10_paise": 602405,
+        "p50_paise": 745626,
+        "p90_paise": 864674,
+        "downside_probability": 0.0,
+        "scenarios": 40,
+        "seed": 261004,
+        "distribution": [
+          {
+            "value_paise": 367973,
+            "count": 2
+          },
+          {
+            "value_paise": 402829,
+            "count": 0
+          },
+          {
+            "value_paise": 437685,
+            "count": 0
+          },
+          {
+            "value_paise": 472541,
+            "count": 0
+          },
+          {
+            "value_paise": 507397,
+            "count": 0
+          },
+          {
+            "value_paise": 542253,
+            "count": 1
+          },
+          {
+            "value_paise": 577109,
+            "count": 1
+          },
+          {
+            "value_paise": 611964,
+            "count": 1
+          },
+          {
+            "value_paise": 646820,
+            "count": 3
+          },
+          {
+            "value_paise": 681676,
+            "count": 1
+          },
+          {
+            "value_paise": 716532,
+            "count": 9
+          },
+          {
+            "value_paise": 751388,
+            "count": 6
+          },
+          {
+            "value_paise": 786244,
+            "count": 4
+          },
+          {
+            "value_paise": 821100,
+            "count": 5
+          },
+          {
+            "value_paise": 855956,
+            "count": 3
+          },
+          {
+            "value_paise": 890812,
+            "count": 3
+          },
+          {
+            "value_paise": 925668,
+            "count": 0
+          },
+          {
+            "value_paise": 960524,
+            "count": 1
+          }
+        ],
+        "assumptions": [
+          "Correlated category demand",
+          "Price-response uncertainty \u00b130%",
+          "Comparable competitor price moves \u22125% to +2%",
+          "Coupon redemption 65\u2013100%",
+          "Declared substitute effects",
+          "FEFO expiry and variable replenishment"
+        ],
+        "sensitivity": {
+          "low_response": 602405,
+          "central": 735843,
+          "high_response": 864674,
+          "fragile": false
+        },
+        "evidence_status": "simulated",
+        "clearance_probability": 1.0,
+        "risk_objective_paise": 735843,
+        "daily_units": [
+          19.03421110115456,
+          16.76369869025554,
+          15.20806784104006
+        ],
+        "repair": "Feasible flat-discount rule selected using separate selection scenarios; no solver-optimality claim for this portfolio",
+        "selection_comparison": {
+          "selected": "flat_discount_rule",
+          "selection_seed": 365733,
+          "report_seed": 261004,
+          "scenarios": 40,
+          "rule_validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 499410,
+            "allocation": {
+              "SKU011|Bengaluru": 79,
+              "SKU015|Bengaluru": 71,
+              "SKU019|Bengaluru": 68,
+              "SKU005|Bengaluru": 67,
+              "SKU003|Bengaluru": 66,
+              "SKU010|Bengaluru": 66,
+              "SKU016|Bengaluru": 63,
+              "SKU014|Bengaluru": 63,
+              "SKU006|Bengaluru": 27
+            },
+            "batch_allocation": {
+              "SKU011-0-A": 79,
+              "SKU015-0-A": 71,
+              "SKU019-0-A": 68,
+              "SKU005-0-A": 67,
+              "SKU003-0-A": 66,
+              "SKU010-0-A": 66,
+              "SKU016-0-A": 63,
+              "SKU014-0-A": 63,
+              "SKU006-0-A": 27
+            },
+            "clearance_units": 570,
+            "offer_clearance_units": {
+              "805107abaa4d62": 79,
+              "e1d3028484614b": 71,
+              "bca9a725a02c1b": 68,
+              "9420f25609e44c": 67,
+              "4a4823df048216": 66,
+              "b51a50c4621644": 66,
+              "922a4c77fb8e12": 63,
+              "6ca23cccc6432a": 63,
+              "32d2ebfd20abd7": 27
+            },
+            "evidence_status": "derived"
+          },
+          "candidate_risk_objective_paise": 134037,
+          "rule_risk_objective_paise": 708984,
+          "reason": "Feasible rule has higher simulated risk-adjusted contribution on the selection seed"
+        },
+        "rule_baseline": {
+          "contribution_paise": 67874975,
+          "revenue_paise": 195816039,
+          "spend_paise": 410861,
+          "clearance_units": 1767.7,
+          "stockout_rate": 0.0683,
+          "units": 18362.2
+        },
+        "rule_offers": [
+          {
+            "id": "805107abaa4d62",
+            "sku": "SKU011",
+            "skus": [
+              "SKU011"
+            ],
+            "name": "Freshway Milk",
+            "city": "Bengaluru",
+            "channel": "internal_sandbox",
+            "mechanism": "markdown",
+            "discount_bps": 1000,
+            "duration": 3,
+            "start_day": 0,
+            "segment": "Family baskets",
+            "fixed_discount_paise": null,
+            "minimum_basket_paise": 0,
+            "max_redemptions": 79,
+            "expected_units": 65.01,
+            "baseline_units": 39.71,
+            "allocation": {
+              "SKU011|Bengaluru": 79
+            },
+            "price_paise": 7380,
+            "unit_contribution_paise": 2339,
+            "margin_bps": 3169,
+            "liability_paise": 66780,
+            "media_paise": 2000,
+            "incremental_contribution_paise": 24634,
+            "cannibalization_paise": 0,
+            "cannibalization": [],
+            "clearance_units": 79,
+            "competitor_price_paise": 8400,
+            "evidence_status": "simulated",
+            "reason": "Family baskets, Bengaluru: 3 selling days, 31.7% contribution margin; maximum liability capped",
+            "source_refs": [
+              "imp_e9434470942d7ec2cd8e08ca5052",
+              "src_6c23dbaeb4184149",
+              "imp_e14b17f3c1b992cd0a21f0ff2cac",
+              "cmp_ed74c2c244424d85"
+            ]
+          },
+          {
+            "id": "e1d3028484614b",
+            "sku": "SKU015",
+            "skus": [
+              "SKU015"
+            ],
+            "name": "Freshway Yogurt",
+            "city": "Bengaluru",
+            "channel": "internal_sandbox",
+            "mechanism": "markdown",
+            "discount_bps": 1000,
+            "duration": 3,
+            "start_day": 0,
+            "segment": "Family baskets",
+            "fixed_discount_paise": null,
+            "minimum_basket_paise": 0,
+            "max_redemptions": 71,
+            "expected_units": 58.72,
+            "baseline_units": 39.1,
+            "allocation": {
+              "SKU015|Bengaluru": 71
+            },
+            "price_paise": 8640,
+            "unit_contribution_paise": 2976,
+            "margin_bps": 3444,
+            "liability_paise": 70160,
+            "media_paise": 2000,
+            "incremental_contribution_paise": 18857,
+            "cannibalization_paise": 0,
+            "cannibalization": [],
+            "clearance_units": 71,
+            "competitor_price_paise": 9800,
+            "evidence_status": "simulated",
+            "reason": "Family baskets, Bengaluru: 3 selling days, 34.4% contribution margin; maximum liability capped",
+            "source_refs": [
+              "imp_e9434470942d7ec2cd8e08ca5052",
+              "src_6c23dbaeb4184149",
+              "imp_e14b17f3c1b992cd0a21f0ff2cac",
+              "cmp_019d9113fc64412b"
+            ]
+          },
+          {
+            "id": "bca9a725a02c1b",
+            "sku": "SKU019",
+            "skus": [
+              "SKU019"
+            ],
+            "name": "Pantry Butter",
+            "city": "Bengaluru",
+            "channel": "internal_sandbox",
+            "mechanism": "markdown",
+            "discount_bps": 1000,
+            "duration": 3,
+            "start_day": 0,
+            "segment": "Family baskets",
+            "fixed_discount_paise": null,
+            "minimum_basket_paise": 0,
+            "max_redemptions": 68,
+            "expected_units": 56.47,
+            "baseline_units": 38.48,
+            "allocation": {
+              "SKU019|Bengaluru": 68
+            },
+            "price_paise": 7020,
+            "unit_contribution_paise": 1638,
+            "margin_bps": 2333,
+            "liability_paise": 55040,
+            "media_paise": 2000,
+            "incremental_contribution_paise": -2552,
+            "cannibalization_paise": 0,
+            "cannibalization": [],
+            "clearance_units": 68,
+            "competitor_price_paise": 8000,
+            "evidence_status": "simulated",
+            "reason": "Family baskets, Bengaluru: 3 selling days, 23.3% contribution margin; maximum liability capped",
+            "source_refs": [
+              "imp_e9434470942d7ec2cd8e08ca5052",
+              "src_6c23dbaeb4184149",
+              "imp_e14b17f3c1b992cd0a21f0ff2cac",
+              "cmp_b537c33051d2489f"
+            ]
+          },
+          {
+            "id": "9420f25609e44c",
+            "sku": "SKU005",
+            "skus": [
+              "SKU005"
+            ],
+            "name": "Daily Yogurt",
+            "city": "Bengaluru",
+            "channel": "internal_sandbox",
+            "mechanism": "markdown",
+            "discount_bps": 1000,
+            "duration": 3,
+            "start_day": 0,
+            "segment": "Family baskets",
+            "fixed_discount_paise": null,
+            "minimum_basket_paise": 0,
+            "max_redemptions": 67,
+            "expected_units": 55.32,
+            "baseline_units": 35.65,
+            "allocation": {
+              "SKU005|Bengaluru": 67
+            },
+            "price_paise": 7200,
+            "unit_contribution_paise": 2480,
+            "margin_bps": 3444,
+            "liability_paise": 55600,
+            "media_paise": 2000,
+            "incremental_contribution_paise": 18259,
+            "cannibalization_paise": 0,
+            "cannibalization": [],
+            "clearance_units": 67,
+            "competitor_price_paise": 8200,
+            "evidence_status": "simulated",
+            "reason": "Family baskets, Bengaluru: 3 selling days, 34.4% contribution margin; maximum liability capped",
+            "source_refs": [
+              "imp_e9434470942d7ec2cd8e08ca5052",
+              "src_6c23dbaeb4184149",
+              "imp_e14b17f3c1b992cd0a21f0ff2cac",
+              "cmp_eda174769d1942d8"
+            ]
+          },
+          {
+            "id": "4a4823df048216",
+            "sku": "SKU003",
+            "skus": [
+              "SKU003"
+            ],
+            "name": "Daily Paneer",
+            "city": "Bengaluru",
+            "channel": "internal_sandbox",
+            "mechanism": "markdown",
+            "discount_bps": 1000,
+            "duration": 3,
+            "start_day": 0,
+            "segment": "Family baskets",
+            "fixed_discount_paise": null,
+            "minimum_basket_paise": 0,
+            "max_redemptions": 66,
+            "expected_units": 54.17,
+            "baseline_units": 37.07,
+            "allocation": {
+              "SKU003|Bengaluru": 66
+            },
+            "price_paise": 8550,
+            "unit_contribution_paise": 2232,
+            "margin_bps": 2610,
+            "liability_paise": 64700,
+            "media_paise": 2000,
+            "incremental_contribution_paise": 948,
+            "cannibalization_paise": 0,
+            "cannibalization": [],
+            "clearance_units": 66,
+            "competitor_price_paise": 9700,
+            "evidence_status": "simulated",
+            "reason": "Family baskets, Bengaluru: 3 selling days, 26.1% contribution margin; maximum liability capped",
+            "source_refs": [
+              "imp_e9434470942d7ec2cd8e08ca5052",
+              "src_6c23dbaeb4184149",
+              "imp_e14b17f3c1b992cd0a21f0ff2cac",
+              "cmp_94d35f3cba5f4652"
+            ]
+          },
+          {
+            "id": "b51a50c4621644",
+            "sku": "SKU010",
+            "skus": [
+              "SKU010"
+            ],
+            "name": "Harvest Yogurt",
+            "city": "Bengaluru",
+            "channel": "internal_sandbox",
+            "mechanism": "markdown",
+            "discount_bps": 1000,
+            "duration": 3,
+            "start_day": 0,
+            "segment": "Family baskets",
+            "fixed_discount_paise": null,
+            "minimum_basket_paise": 0,
+            "max_redemptions": 66,
+            "expected_units": 54.28,
+            "baseline_units": 36.87,
+            "allocation": {
+              "SKU010|Bengaluru": 66
+            },
+            "price_paise": 7920,
+            "unit_contribution_paise": 2728,
+            "margin_bps": 3444,
+            "liability_paise": 60080,
+            "media_paise": 2000,
+            "incremental_contribution_paise": 13037,
+            "cannibalization_paise": 0,
+            "cannibalization": [],
+            "clearance_units": 66,
+            "competitor_price_paise": 9000,
+            "evidence_status": "simulated",
+            "reason": "Family baskets, Bengaluru: 3 selling days, 34.4% contribution margin; maximum liability capped",
+            "source_refs": [
+              "imp_e9434470942d7ec2cd8e08ca5052",
+              "src_6c23dbaeb4184149",
+              "imp_e14b17f3c1b992cd0a21f0ff2cac",
+              "cmp_3774405e55764e4f"
+            ]
+          },
+          {
+            "id": "922a4c77fb8e12",
+            "sku": "SKU016",
+            "skus": [
+              "SKU016"
+            ],
+            "name": "Pantry Milk",
+            "city": "Bengaluru",
+            "channel": "internal_sandbox",
+            "mechanism": "markdown",
+            "discount_bps": 1000,
+            "duration": 3,
+            "start_day": 0,
+            "segment": "Family baskets",
+            "fixed_discount_paise": null,
+            "minimum_basket_paise": 0,
+            "max_redemptions": 63,
+            "expected_units": 52.46,
+            "baseline_units": 33.49,
+            "allocation": {
+              "SKU016|Bengaluru": 63
+            },
+            "price_paise": 7920,
+            "unit_contribution_paise": 2507,
+            "margin_bps": 3165,
+            "liability_paise": 57440,
+            "media_paise": 2000,
+            "incremental_contribution_paise": 16090,
+            "cannibalization_paise": 0,
+            "cannibalization": [],
+            "clearance_units": 63,
+            "competitor_price_paise": 9000,
+            "evidence_status": "simulated",
+            "reason": "Family baskets, Bengaluru: 3 selling days, 31.6% contribution margin; maximum liability capped",
+            "source_refs": [
+              "imp_e9434470942d7ec2cd8e08ca5052",
+              "src_6c23dbaeb4184149",
+              "imp_e14b17f3c1b992cd0a21f0ff2cac",
+              "cmp_c5bb48d5ef8a4148"
+            ]
+          },
+          {
+            "id": "6ca23cccc6432a",
+            "sku": "SKU014",
+            "skus": [
+              "SKU014"
+            ],
+            "name": "Freshway Butter",
+            "city": "Bengaluru",
+            "channel": "internal_sandbox",
+            "mechanism": "markdown",
+            "discount_bps": 1000,
+            "duration": 3,
+            "start_day": 0,
+            "segment": "Family baskets",
+            "fixed_discount_paise": null,
+            "minimum_basket_paise": 0,
+            "max_redemptions": 63,
+            "expected_units": 52.15,
+            "baseline_units": 35.99,
+            "allocation": {
+              "SKU014|Bengaluru": 63
+            },
+            "price_paise": 6480,
+            "unit_contribution_paise": 1512,
+            "margin_bps": 2333,
+            "liability_paise": 47360,
+            "media_paise": 2000,
+            "incremental_contribution_paise": -3480,
+            "cannibalization_paise": 0,
+            "cannibalization": [],
+            "clearance_units": 63,
+            "competitor_price_paise": 7300,
+            "evidence_status": "simulated",
+            "reason": "Family baskets, Bengaluru: 3 selling days, 23.3% contribution margin; maximum liability capped",
+            "source_refs": [
+              "imp_e9434470942d7ec2cd8e08ca5052",
+              "src_6c23dbaeb4184149",
+              "imp_e14b17f3c1b992cd0a21f0ff2cac",
+              "cmp_7191d0fa33ab41f2"
+            ]
+          },
+          {
+            "id": "32d2ebfd20abd7",
+            "sku": "SKU006",
+            "skus": [
+              "SKU006"
+            ],
+            "name": "Harvest Milk",
+            "city": "Bengaluru",
+            "channel": "internal_sandbox",
+            "mechanism": "markdown",
+            "discount_bps": 1000,
+            "duration": 3,
+            "start_day": 0,
+            "segment": "Convenience shoppers",
+            "fixed_discount_paise": null,
+            "minimum_basket_paise": 0,
+            "max_redemptions": 27,
+            "expected_units": 22.17,
+            "baseline_units": 15.5,
+            "allocation": {
+              "SKU006|Bengaluru": 27
+            },
+            "price_paise": 6750,
+            "unit_contribution_paise": 2138,
+            "margin_bps": 3167,
+            "liability_paise": 22250,
+            "media_paise": 2000,
+            "incremental_contribution_paise": -8962,
+            "cannibalization_paise": 9613,
+            "cannibalization": [
+              {
+                "sku": "SKU001",
+                "units": 3.67,
+                "loss_paise": 9613,
+                "status": "assumed"
+              }
+            ],
+            "clearance_units": 27,
+            "competitor_price_paise": 7600,
+            "evidence_status": "simulated",
+            "reason": "Convenience shoppers, Bengaluru: 3 selling days, 31.7% contribution margin; maximum liability capped",
+            "source_refs": [
+              "imp_e9434470942d7ec2cd8e08ca5052",
+              "src_6c23dbaeb4184149",
+              "imp_e14b17f3c1b992cd0a21f0ff2cac",
+              "cmp_e55d3fd8d2924a1c"
+            ]
+          }
+        ],
+        "alternatives": [
+          {
+            "objective": "profit",
+            "offers": 9,
+            "incremental_contribution_paise": 735843,
+            "spend_paise": 410861,
+            "clearance_units": 1767.7,
+            "status": "SIMULATION_SELECTED_RULE"
+          },
+          {
+            "objective": "clearance",
+            "offers": 16,
+            "incremental_contribution_paise": 638647,
+            "spend_paise": 411990,
+            "clearance_units": 1744.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "objective": "conservative",
+            "offers": 14,
+            "incremental_contribution_paise": 144426,
+            "spend_paise": 405550,
+            "clearance_units": 1647.9,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      "forecast_metrics": {
+        "chosen": "poisson",
+        "wape": {
+          "seasonal_naive": {
+            "dev": 0.2099,
+            "test": 0.2033
+          },
+          "poisson": {
+            "dev": 0.182,
+            "test": 0.2045
+          }
+        },
+        "split": {
+          "train_days": 124,
+          "development_days": 28,
+          "test_days": 28
+        },
+        "grouped_test_metrics": {
+          "city": {
+            "Bengaluru": {
+              "wape": 0.2023,
+              "bias": 0.0747,
+              "baseline_wape": 0.2017,
+              "points": 3319
+            },
+            "Delhi": {
+              "wape": 0.2041,
+              "bias": 0.0756,
+              "baseline_wape": 0.2037,
+              "points": 3318
+            },
+            "Mumbai": {
+              "wape": 0.2076,
+              "bias": 0.0781,
+              "baseline_wape": 0.2047,
+              "points": 3318
+            }
+          },
+          "category": {
+            "Beverages": {
+              "wape": 0.2066,
+              "bias": 0.072,
+              "baseline_wape": 0.206,
+              "points": 1662
+            },
+            "Breakfast": {
+              "wape": 0.2062,
+              "bias": 0.0781,
+              "baseline_wape": 0.2048,
+              "points": 1659
+            },
+            "Dairy & fresh": {
+              "wape": 0.2,
+              "bias": 0.0755,
+              "baseline_wape": 0.1983,
+              "points": 1659
+            },
+            "Home essentials": {
+              "wape": 0.2016,
+              "bias": 0.0748,
+              "baseline_wape": 0.1999,
+              "points": 1657
+            },
+            "Snacks": {
+              "wape": 0.2095,
+              "bias": 0.0782,
+              "baseline_wape": 0.2088,
+              "points": 1661
+            },
+            "Staples": {
+              "wape": 0.204,
+              "bias": 0.0758,
+              "baseline_wape": 0.2032,
+              "points": 1657
+            }
+          }
+        },
+        "prediction_intervals": {
+          "nominal_coverage": 0.8,
+          "empirical_test_coverage": 0.7721,
+          "mean_test_width_units": 9.6,
+          "calibration": "Development-period normalized absolute residual quantile; empirical coverage measured on temporal test",
+          "status": "Measured on synthetic rolling one-step holdout; scenario ranges are separate"
+        },
+        "claim": "Predictive accuracy on Mixed imported and synthetic demo data; price response is an association, not causal uplift",
+        "snapshot_id": "17a9c5d6444d5726"
+      },
+      "mechanisms": [
+        "markdown"
+      ],
+      "offer_cities": [
+        "Bengaluru"
+      ],
+      "screening": {
+        "excluded": [
+          {
+            "sku": "SKU119",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU120",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU002",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 69819
+          },
+          {
+            "sku": "SKU004",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 71156
+          },
+          {
+            "sku": "SKU007",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 79695
+          },
+          {
+            "sku": "SKU009",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 81951
+          },
+          {
+            "sku": "SKU012",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 75043
+          },
+          {
+            "sku": "SKU017",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 87718
+          },
+          {
+            "sku": "SKU021",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 62877
+          },
+          {
+            "sku": "SKU023",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 37376
+          },
+          {
+            "sku": "SKU024",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 53774
+          },
+          {
+            "sku": "SKU025",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 23792
+          },
+          {
+            "sku": "SKU026",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 73378
+          },
+          {
+            "sku": "SKU027",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 30507
+          },
+          {
+            "sku": "SKU028",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 35011
+          },
+          {
+            "sku": "SKU029",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 64697
+          },
+          {
+            "sku": "SKU030",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 27581
+          },
+          {
+            "sku": "SKU031",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 82948
+          },
+          {
+            "sku": "SKU032",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 28747
+          },
+          {
+            "sku": "SKU033",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 39879
+          },
+          {
+            "sku": "SKU034",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 73479
+          },
+          {
+            "sku": "SKU035",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 32281
+          },
+          {
+            "sku": "SKU036",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 75840
+          },
+          {
+            "sku": "SKU037",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 32597
+          },
+          {
+            "sku": "SKU038",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 45062
+          },
+          {
+            "sku": "SKU039",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 83102
+          },
+          {
+            "sku": "SKU040",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 30222
+          },
+          {
+            "sku": "SKU042",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 35758
+          },
+          {
+            "sku": "SKU043",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 18741
+          },
+          {
+            "sku": "SKU044",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 36465
+          },
+          {
+            "sku": "SKU045",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 32982
+          },
+          {
+            "sku": "SKU046",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 29562
+          },
+          {
+            "sku": "SKU047",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 42176
+          },
+          {
+            "sku": "SKU048",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 17904
+          },
+          {
+            "sku": "SKU049",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 42260
+          },
+          {
+            "sku": "SKU050",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 38409
+          },
+          {
+            "sku": "SKU051",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 33705
+          },
+          {
+            "sku": "SKU052",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 39301
+          },
+          {
+            "sku": "SKU053",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 20865
+          },
+          {
+            "sku": "SKU054",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 48201
+          },
+          {
+            "sku": "SKU055",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 43350
+          },
+          {
+            "sku": "SKU056",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 30791
+          },
+          {
+            "sku": "SKU057",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 43538
+          },
+          {
+            "sku": "SKU058",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 24139
+          },
+          {
+            "sku": "SKU059",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 56171
+          },
+          {
+            "sku": "SKU060",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 40264
+          },
+          {
+            "sku": "SKU061",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 65924
+          },
+          {
+            "sku": "SKU062",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 52062
+          },
+          {
+            "sku": "SKU063",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 39656
+          },
+          {
+            "sku": "SKU064",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 17238
+          },
+          {
+            "sku": "SKU065",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 60932
+          },
+          {
+            "sku": "SKU066",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 76745
+          },
+          {
+            "sku": "SKU067",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 58862
+          },
+          {
+            "sku": "SKU068",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 37200
+          },
+          {
+            "sku": "SKU069",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 19831
+          },
+          {
+            "sku": "SKU070",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 68836
+          },
+          {
+            "sku": "SKU071",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 89884
+          },
+          {
+            "sku": "SKU072",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 54922
+          },
+          {
+            "sku": "SKU073",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 42883
+          },
+          {
+            "sku": "SKU074",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 22859
+          },
+          {
+            "sku": "SKU075",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 79656
+          },
+          {
+            "sku": "SKU076",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 84134
+          },
+          {
+            "sku": "SKU077",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 64240
+          },
+          {
+            "sku": "SKU078",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 48504
+          },
+          {
+            "sku": "SKU079",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 25932
+          },
+          {
+            "sku": "SKU080",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 73550
+          },
+          {
+            "sku": "SKU081",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 59326
+          },
+          {
+            "sku": "SKU082",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 45707
+          },
+          {
+            "sku": "SKU084",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 18065
+          },
+          {
+            "sku": "SKU085",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 61388
+          },
+          {
+            "sku": "SKU086",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 68875
+          },
+          {
+            "sku": "SKU087",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 51865
+          },
+          {
+            "sku": "SKU089",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 21700
+          },
+          {
+            "sku": "SKU090",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 71816
+          },
+          {
+            "sku": "SKU091",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 76195
+          },
+          {
+            "sku": "SKU092",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 48528
+          },
+          {
+            "sku": "SKU094",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 24969
+          },
+          {
+            "sku": "SKU095",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 82468
+          },
+          {
+            "sku": "SKU096",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 71500
+          },
+          {
+            "sku": "SKU097",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 55721
+          },
+          {
+            "sku": "SKU099",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 27845
+          },
+          {
+            "sku": "SKU100",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 75715
+          },
+          {
+            "sku": "SKU101",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 27282
+          },
+          {
+            "sku": "SKU102",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 63707
+          },
+          {
+            "sku": "SKU103",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 21362
+          },
+          {
+            "sku": "SKU104",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 13595
+          },
+          {
+            "sku": "SKU105",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 37971
+          },
+          {
+            "sku": "SKU106",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 31727
+          },
+          {
+            "sku": "SKU107",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 75895
+          },
+          {
+            "sku": "SKU108",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 19807
+          },
+          {
+            "sku": "SKU109",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 15622
+          },
+          {
+            "sku": "SKU110",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 44599
+          },
+          {
+            "sku": "SKU111",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 35141
+          },
+          {
+            "sku": "SKU112",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 70808
+          },
+          {
+            "sku": "SKU113",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 23405
+          },
+          {
+            "sku": "SKU114",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 17875
+          },
+          {
+            "sku": "SKU115",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 50341
+          },
+          {
+            "sku": "SKU116",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 33714
+          },
+          {
+            "sku": "SKU117",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 80756
+          },
+          {
+            "sku": "SKU118",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 27336
+          }
+        ],
+        "rejected": [
+          {
+            "sku": "SKU041",
+            "city": "Bengaluru",
+            "mechanism": "coupon",
+            "reason": "Actual fixed coupon discount exceeds or misstates the authorized percentage; Discount above ceiling"
+          },
+          {
+            "sku": "SKU041",
+            "city": "Bengaluru",
+            "mechanism": "coupon",
+            "reason": "Actual fixed coupon discount exceeds or misstates the authorized percentage; Discount above ceiling"
+          },
+          {
+            "sku": "SKU041",
+            "city": "Bengaluru",
+            "mechanism": "coupon",
+            "reason": "Actual fixed coupon discount exceeds or misstates the authorized percentage; Discount above ceiling"
+          },
+          {
+            "sku": "SKU041",
+            "city": "Bengaluru",
+            "mechanism": "coupon",
+            "reason": "Actual fixed coupon discount exceeds or misstates the authorized percentage; Discount above ceiling"
+          },
+          {
+            "sku": "SKU041",
+            "city": "Mumbai",
+            "mechanism": "coupon",
+            "reason": "Actual fixed coupon discount exceeds or misstates the authorized percentage; Discount above ceiling"
+          },
+          {
+            "sku": "SKU041",
+            "city": "Mumbai",
+            "mechanism": "coupon",
+            "reason": "Actual fixed coupon discount exceeds or misstates the authorized percentage; Discount above ceiling"
+          },
+          {
+            "sku": "SKU041",
+            "city": "Mumbai",
+            "mechanism": "coupon",
+            "reason": "Actual fixed coupon discount exceeds or misstates the authorized percentage; Discount above ceiling"
+          },
+          {
+            "sku": "SKU041",
+            "city": "Mumbai",
+            "mechanism": "coupon",
+            "reason": "Actual fixed coupon discount exceeds or misstates the authorized percentage; Discount above ceiling"
+          },
+          {
+            "sku": "SKU041",
+            "city": "Delhi",
+            "mechanism": "coupon",
+            "reason": "Actual fixed coupon discount exceeds or misstates the authorized percentage; Discount above ceiling"
+          },
+          {
+            "sku": "SKU041",
+            "city": "Delhi",
+            "mechanism": "coupon",
+            "reason": "Actual fixed coupon discount exceeds or misstates the authorized percentage; Discount above ceiling"
+          },
+          {
+            "sku": "SKU041",
+            "city": "Delhi",
+            "mechanism": "coupon",
+            "reason": "Actual fixed coupon discount exceeds or misstates the authorized percentage; Discount above ceiling"
+          },
+          {
+            "sku": "SKU041",
+            "city": "Delhi",
+            "mechanism": "coupon",
+            "reason": "Actual fixed coupon discount exceeds or misstates the authorized percentage; Discount above ceiling"
+          },
+          {
+            "sku": "SKU019",
+            "city": "Bengaluru",
+            "mechanism": "markdown",
+            "reason": "SKU019: margin 13.75% below 15.00%"
+          },
+          {
+            "sku": "SKU019",
+            "city": "Bengaluru",
+            "mechanism": "markdown",
+            "reason": "SKU019: margin 13.75% below 15.00%"
+          },
+          {
+            "sku": "SKU019",
+            "city": "Bengaluru",
+            "mechanism": "markdown",
+            "reason": "SKU019: margin 13.75% below 15.00%"
+          },
+          {
+            "sku": "SKU019",
+            "city": "Bengaluru",
+            "mechanism": "markdown",
+            "reason": "SKU019: margin 13.75% below 15.00%"
+          },
+          {
+            "sku": "SKU019",
+            "city": "Mumbai",
+            "mechanism": "markdown",
+            "reason": "SKU019: margin 13.75% below 15.00%"
+          },
+          {
+            "sku": "SKU019",
+            "city": "Mumbai",
+            "mechanism": "markdown",
+            "reason": "SKU019: margin 13.75% below 15.00%"
+          },
+          {
+            "sku": "SKU019",
+            "city": "Mumbai",
+            "mechanism": "markdown",
+            "reason": "SKU019: margin 13.75% below 15.00%"
+          },
+          {
+            "sku": "SKU019",
+            "city": "Mumbai",
+            "mechanism": "markdown",
+            "reason": "SKU019: margin 13.75% below 15.00%"
+          },
+          {
+            "sku": "SKU019",
+            "city": "Delhi",
+            "mechanism": "markdown",
+            "reason": "SKU019: margin 13.75% below 15.00%"
+          },
+          {
+            "sku": "SKU019",
+            "city": "Delhi",
+            "mechanism": "markdown",
+            "reason": "SKU019: margin 13.75% below 15.00%"
+          },
+          {
+            "sku": "SKU019",
+            "city": "Delhi",
+            "mechanism": "markdown",
+            "reason": "SKU019: margin 13.75% below 15.00%"
+          },
+          {
+            "sku": "SKU019",
+            "city": "Delhi",
+            "mechanism": "markdown",
+            "reason": "SKU019: margin 13.75% below 15.00%"
+          },
+          {
+            "sku": "SKU014",
+            "city": "Bengaluru",
+            "mechanism": "markdown",
+            "reason": "SKU014: margin 13.75% below 15.00%"
+          },
+          {
+            "sku": "SKU014",
+            "city": "Bengaluru",
+            "mechanism": "markdown",
+            "reason": "SKU014: margin 13.75% below 15.00%"
+          },
+          {
+            "sku": "SKU014",
+            "city": "Bengaluru",
+            "mechanism": "markdown",
+            "reason": "SKU014: margin 13.75% below 15.00%"
+          },
+          {
+            "sku": "SKU014",
+            "city": "Bengaluru",
+            "mechanism": "markdown",
+            "reason": "SKU014: margin 13.75% below 15.00%"
+          },
+          {
+            "sku": "SKU014",
+            "city": "Mumbai",
+            "mechanism": "markdown",
+            "reason": "SKU014: margin 13.75% below 15.00%"
+          },
+          {
+            "sku": "SKU014",
+            "city": "Mumbai",
+            "mechanism": "markdown",
+            "reason": "SKU014: margin 13.75% below 15.00%"
+          },
+          {
+            "sku": "SKU014",
+            "city": "Mumbai",
+            "mechanism": "markdown",
+            "reason": "SKU014: margin 13.75% below 15.00%"
+          },
+          {
+            "sku": "SKU014",
+            "city": "Mumbai",
+            "mechanism": "markdown",
+            "reason": "SKU014: margin 13.75% below 15.00%"
+          },
+          {
+            "sku": "SKU014",
+            "city": "Delhi",
+            "mechanism": "markdown",
+            "reason": "SKU014: margin 13.75% below 15.00%"
+          },
+          {
+            "sku": "SKU014",
+            "city": "Delhi",
+            "mechanism": "markdown",
+            "reason": "SKU014: margin 13.75% below 15.00%"
+          },
+          {
+            "sku": "SKU014",
+            "city": "Delhi",
+            "mechanism": "markdown",
+            "reason": "SKU014: margin 13.75% below 15.00%"
+          },
+          {
+            "sku": "SKU014",
+            "city": "Delhi",
+            "mechanism": "markdown",
+            "reason": "SKU014: margin 13.75% below 15.00%"
+          }
+        ],
+        "shortlist": [
+          "SKU022",
+          "SKU001",
+          "SKU041",
+          "SKU018",
+          "SKU015",
+          "SKU013",
+          "SKU098",
+          "SKU003",
+          "SKU020",
+          "SKU008",
+          "SKU010",
+          "SKU011",
+          "SKU093",
+          "SKU083",
+          "SKU016",
+          "SKU005",
+          "SKU088",
+          "SKU019",
+          "SKU006",
+          "SKU014"
+        ],
+        "candidate_count": 850,
+        "scope": "Finite retained candidate set; full 120-SKU portfolio simulated"
+      }
+    },
+    {
+      "name": "zero-budget",
+      "brief": {
+        "title": "Synthetic evaluation: zero-budget",
+        "mode": "offline",
+        "scenarios": 40,
+        "seed": 261004,
+        "horizon": 3,
+        "budget_paise": 0,
+        "cities": [
+          "Delhi"
+        ]
+      },
+      "run_id": "run_dfa5ff4c1cefc989",
+      "state": "validated",
+      "seconds": 11.4892,
+      "error": null,
+      "plan_id": "plan_b617455ac5914f57",
+      "offers": 0,
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "liability_paise": 0,
+        "allocation": {},
+        "checks": [
+          "item margin",
+          "discount ceiling",
+          "stock and expiry",
+          "maximum liability",
+          "overlap",
+          "channel and city",
+          "freshness"
+        ],
+        "batch_allocation": {},
+        "clearance_units": 0,
+        "offer_clearance_units": {},
+        "evidence_status": "derived"
+      },
+      "solver": {
+        "status": "OPTIMAL",
+        "objective_paise": 0,
+        "bound_paise": 0,
+        "gap": 0.0,
+        "interactions": 0,
+        "wall_seconds": 0.009,
+        "objective_definition": "Expected incremental contribution minus lambda times downside shortfall; clearance objective also includes disclosed 500 paise/unit priority"
+      },
+      "simulation": {
+        "baseline": {
+          "contribution_paise": 26123075,
+          "revenue_paise": 72966754,
+          "spend_paise": 0,
+          "clearance_units": 0.0,
+          "stockout_rate": 0.0667,
+          "units": 6816.4
+        },
+        "optimized": {
+          "contribution_paise": 26123075,
+          "revenue_paise": 72966754,
+          "spend_paise": 0,
+          "clearance_units": 0.0,
+          "stockout_rate": 0.0667,
+          "units": 6816.4
+        },
+        "incremental_contribution_paise": 0,
+        "p10_paise": 0,
+        "p50_paise": 0,
+        "p90_paise": 0,
+        "downside_probability": 0.0,
+        "scenarios": 40,
+        "seed": 261004,
+        "distribution": [
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 40
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          }
+        ],
+        "assumptions": [
+          "Correlated category demand",
+          "Price-response uncertainty \u00b130%",
+          "Comparable competitor price moves \u22125% to +2%",
+          "Coupon redemption 65\u2013100%",
+          "Declared substitute effects",
+          "FEFO expiry and variable replenishment"
+        ],
+        "sensitivity": {
+          "low_response": 0,
+          "central": 0,
+          "high_response": 0,
+          "fragile": false
+        },
+        "evidence_status": "simulated",
+        "clearance_probability": 1.0,
+        "risk_objective_paise": 0,
+        "daily_units": [
+          21.40185138894449,
+          18.8065711899667,
+          16.594723287392448
+        ],
+        "selection_comparison": {
+          "selected": "solver_candidate",
+          "selection_seed": 365733,
+          "report_seed": 261004,
+          "scenarios": 40,
+          "rule_validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          },
+          "reason": "Comparison skipped: clearance objective, infeasible rule or no rule offers"
+        },
+        "rule_baseline": {
+          "contribution_paise": 26123075,
+          "revenue_paise": 72966754,
+          "spend_paise": 0,
+          "clearance_units": 0.0,
+          "stockout_rate": 0.0667,
+          "units": 6816.4
+        },
+        "rule_offers": [],
+        "alternatives": [
+          {
+            "objective": "profit",
+            "offers": 0,
+            "incremental_contribution_paise": 0,
+            "spend_paise": 0,
+            "clearance_units": 0.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "objective": "clearance",
+            "offers": 0,
+            "incremental_contribution_paise": 0,
+            "spend_paise": 0,
+            "clearance_units": 0.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "objective": "conservative",
+            "offers": 0,
+            "incremental_contribution_paise": 0,
+            "spend_paise": 0,
+            "clearance_units": 0.0,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      "forecast_metrics": {
+        "chosen": "poisson",
+        "wape": {
+          "seasonal_naive": {
+            "dev": 0.2099,
+            "test": 0.2033
+          },
+          "poisson": {
+            "dev": 0.182,
+            "test": 0.2045
+          }
+        },
+        "split": {
+          "train_days": 124,
+          "development_days": 28,
+          "test_days": 28
+        },
+        "grouped_test_metrics": {
+          "city": {
+            "Bengaluru": {
+              "wape": 0.2023,
+              "bias": 0.0747,
+              "baseline_wape": 0.2017,
+              "points": 3319
+            },
+            "Delhi": {
+              "wape": 0.2041,
+              "bias": 0.0756,
+              "baseline_wape": 0.2037,
+              "points": 3318
+            },
+            "Mumbai": {
+              "wape": 0.2076,
+              "bias": 0.0781,
+              "baseline_wape": 0.2047,
+              "points": 3318
+            }
+          },
+          "category": {
+            "Beverages": {
+              "wape": 0.2066,
+              "bias": 0.072,
+              "baseline_wape": 0.206,
+              "points": 1662
+            },
+            "Breakfast": {
+              "wape": 0.2062,
+              "bias": 0.0781,
+              "baseline_wape": 0.2048,
+              "points": 1659
+            },
+            "Dairy & fresh": {
+              "wape": 0.2,
+              "bias": 0.0755,
+              "baseline_wape": 0.1983,
+              "points": 1659
+            },
+            "Home essentials": {
+              "wape": 0.2016,
+              "bias": 0.0748,
+              "baseline_wape": 0.1999,
+              "points": 1657
+            },
+            "Snacks": {
+              "wape": 0.2095,
+              "bias": 0.0782,
+              "baseline_wape": 0.2088,
+              "points": 1661
+            },
+            "Staples": {
+              "wape": 0.204,
+              "bias": 0.0758,
+              "baseline_wape": 0.2032,
+              "points": 1657
+            }
+          }
+        },
+        "prediction_intervals": {
+          "nominal_coverage": 0.8,
+          "empirical_test_coverage": 0.7721,
+          "mean_test_width_units": 9.6,
+          "calibration": "Development-period normalized absolute residual quantile; empirical coverage measured on temporal test",
+          "status": "Measured on synthetic rolling one-step holdout; scenario ranges are separate"
+        },
+        "claim": "Predictive accuracy on Mixed imported and synthetic demo data; price response is an association, not causal uplift",
+        "snapshot_id": "fdd5d592d87dce6a"
+      },
+      "mechanisms": [],
+      "offer_cities": [],
+      "screening": {
+        "excluded": [
+          {
+            "sku": "SKU119",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU120",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU002",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 14600
+          },
+          {
+            "sku": "SKU003",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 25959
+          },
+          {
+            "sku": "SKU004",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 13206
+          },
+          {
+            "sku": "SKU005",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 24215
+          },
+          {
+            "sku": "SKU006",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 22413
+          },
+          {
+            "sku": "SKU007",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 16216
+          },
+          {
+            "sku": "SKU008",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 24323
+          },
+          {
+            "sku": "SKU009",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 14926
+          },
+          {
+            "sku": "SKU010",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 27470
+          },
+          {
+            "sku": "SKU011",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 26107
+          },
+          {
+            "sku": "SKU012",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 15272
+          },
+          {
+            "sku": "SKU013",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 27781
+          },
+          {
+            "sku": "SKU014",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 16962
+          },
+          {
+            "sku": "SKU016",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 23160
+          },
+          {
+            "sku": "SKU017",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 17936
+          },
+          {
+            "sku": "SKU019",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 19356
+          },
+          {
+            "sku": "SKU021",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 23541
+          },
+          {
+            "sku": "SKU023",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 14252
+          },
+          {
+            "sku": "SKU024",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 20597
+          },
+          {
+            "sku": "SKU025",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 9016
+          },
+          {
+            "sku": "SKU026",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 27818
+          },
+          {
+            "sku": "SKU027",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 11479
+          },
+          {
+            "sku": "SKU028",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 13243
+          },
+          {
+            "sku": "SKU029",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 24569
+          },
+          {
+            "sku": "SKU030",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 10491
+          },
+          {
+            "sku": "SKU032",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 10866
+          },
+          {
+            "sku": "SKU033",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 14923
+          },
+          {
+            "sku": "SKU034",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 27457
+          },
+          {
+            "sku": "SKU035",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 12397
+          },
+          {
+            "sku": "SKU036",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 28571
+          },
+          {
+            "sku": "SKU037",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 12259
+          },
+          {
+            "sku": "SKU038",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 17070
+          },
+          {
+            "sku": "SKU040",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 11536
+          },
+          {
+            "sku": "SKU042",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 13716
+          },
+          {
+            "sku": "SKU043",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 7132
+          },
+          {
+            "sku": "SKU044",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 13767
+          },
+          {
+            "sku": "SKU045",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 12502
+          },
+          {
+            "sku": "SKU046",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 11310
+          },
+          {
+            "sku": "SKU047",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 16123
+          },
+          {
+            "sku": "SKU048",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 6651
+          },
+          {
+            "sku": "SKU049",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 15777
+          },
+          {
+            "sku": "SKU050",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 14578
+          },
+          {
+            "sku": "SKU051",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 12765
+          },
+          {
+            "sku": "SKU052",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 14869
+          },
+          {
+            "sku": "SKU053",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 7898
+          },
+          {
+            "sku": "SKU054",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 18419
+          },
+          {
+            "sku": "SKU055",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 16589
+          },
+          {
+            "sku": "SKU056",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 11606
+          },
+          {
+            "sku": "SKU057",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 16345
+          },
+          {
+            "sku": "SKU058",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 9179
+          },
+          {
+            "sku": "SKU059",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 21146
+          },
+          {
+            "sku": "SKU060",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 15061
+          },
+          {
+            "sku": "SKU061",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 24977
+          },
+          {
+            "sku": "SKU062",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 19625
+          },
+          {
+            "sku": "SKU063",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 15062
+          },
+          {
+            "sku": "SKU064",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 6561
+          },
+          {
+            "sku": "SKU065",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 23008
+          },
+          {
+            "sku": "SKU067",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 22449
+          },
+          {
+            "sku": "SKU068",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 14209
+          },
+          {
+            "sku": "SKU069",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 7494
+          },
+          {
+            "sku": "SKU070",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 25641
+          },
+          {
+            "sku": "SKU072",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 20979
+          },
+          {
+            "sku": "SKU073",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 16325
+          },
+          {
+            "sku": "SKU074",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 8678
+          },
+          {
+            "sku": "SKU077",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 24281
+          },
+          {
+            "sku": "SKU078",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 18211
+          },
+          {
+            "sku": "SKU079",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 9731
+          },
+          {
+            "sku": "SKU080",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 27712
+          },
+          {
+            "sku": "SKU081",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 22604
+          },
+          {
+            "sku": "SKU082",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 16911
+          },
+          {
+            "sku": "SKU084",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 6784
+          },
+          {
+            "sku": "SKU085",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 23381
+          },
+          {
+            "sku": "SKU086",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 25904
+          },
+          {
+            "sku": "SKU087",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 19511
+          },
+          {
+            "sku": "SKU089",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 8247
+          },
+          {
+            "sku": "SKU090",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 27182
+          },
+          {
+            "sku": "SKU092",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 18611
+          },
+          {
+            "sku": "SKU094",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 9312
+          },
+          {
+            "sku": "SKU096",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 27341
+          },
+          {
+            "sku": "SKU097",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 21174
+          },
+          {
+            "sku": "SKU099",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 10347
+          },
+          {
+            "sku": "SKU101",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 10298
+          },
+          {
+            "sku": "SKU102",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 24036
+          },
+          {
+            "sku": "SKU103",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 8035
+          },
+          {
+            "sku": "SKU104",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 5155
+          },
+          {
+            "sku": "SKU105",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 14321
+          },
+          {
+            "sku": "SKU106",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 12132
+          },
+          {
+            "sku": "SKU107",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 28388
+          },
+          {
+            "sku": "SKU108",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 7440
+          },
+          {
+            "sku": "SKU109",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 5773
+          },
+          {
+            "sku": "SKU110",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 16838
+          },
+          {
+            "sku": "SKU111",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 13197
+          },
+          {
+            "sku": "SKU112",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 26919
+          },
+          {
+            "sku": "SKU113",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 8883
+          },
+          {
+            "sku": "SKU114",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 6761
+          },
+          {
+            "sku": "SKU115",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 19007
+          },
+          {
+            "sku": "SKU116",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 12428
+          },
+          {
+            "sku": "SKU118",
+            "reason": "Outside bounded 20-product opportunity shortlist",
+            "score": 10488
+          }
+        ],
+        "rejected": [
+          {
+            "sku": "SKU041",
+            "city": "Delhi",
+            "mechanism": "coupon",
+            "reason": "Actual fixed coupon discount exceeds or misstates the authorized percentage; Discount above ceiling"
+          },
+          {
+            "sku": "SKU041",
+            "city": "Delhi",
+            "mechanism": "coupon",
+            "reason": "Actual fixed coupon discount exceeds or misstates the authorized percentage; Discount above ceiling"
+          },
+          {
+            "sku": "SKU041",
+            "city": "Delhi",
+            "mechanism": "coupon",
+            "reason": "Actual fixed coupon discount exceeds or misstates the authorized percentage; Discount above ceiling"
+          },
+          {
+            "sku": "SKU041",
+            "city": "Delhi",
+            "mechanism": "coupon",
+            "reason": "Actual fixed coupon discount exceeds or misstates the authorized percentage; Discount above ceiling"
+          },
+          {
+            "sku": "SKU039",
+            "city": "Delhi",
+            "mechanism": "markdown",
+            "reason": "SKU039: margin 13.75% below 15.00%"
+          },
+          {
+            "sku": "SKU039",
+            "city": "Delhi",
+            "mechanism": "markdown",
+            "reason": "SKU039: margin 13.75% below 15.00%"
+          },
+          {
+            "sku": "SKU039",
+            "city": "Delhi",
+            "mechanism": "markdown",
+            "reason": "SKU039: margin 13.75% below 15.00%"
+          },
+          {
+            "sku": "SKU039",
+            "city": "Delhi",
+            "mechanism": "markdown",
+            "reason": "SKU039: margin 13.75% below 15.00%"
+          }
+        ],
+        "shortlist": [
+          "SKU022",
+          "SKU001",
+          "SKU041",
+          "SKU098",
+          "SKU093",
+          "SKU083",
+          "SKU088",
+          "SKU071",
+          "SKU015",
+          "SKU018",
+          "SKU031",
+          "SKU076",
+          "SKU039",
+          "SKU095",
+          "SKU117",
+          "SKU075",
+          "SKU020",
+          "SKU066",
+          "SKU091",
+          "SKU100"
+        ],
+        "candidate_count": 293,
+        "scope": "Finite retained candidate set; full 120-SKU portfolio simulated"
+      }
+    },
+    {
+      "name": "infeasible-clearance",
+      "brief": {
+        "title": "Synthetic evaluation: infeasible-clearance",
+        "mode": "offline",
+        "scenarios": 40,
+        "seed": 261004,
+        "horizon": 3,
+        "budget_paise": 0,
+        "clearance_target": 5000,
+        "clearance_hard": true,
+        "objective": "clearance",
+        "cities": [
+          "Delhi"
+        ]
+      },
+      "run_id": "run_44672e927d6121ca",
+      "state": "needs_input",
+      "seconds": 7.8615,
+      "error": null
+    },
+    {
+      "name": "strict-margin",
+      "brief": {
+        "title": "Synthetic evaluation: strict-margin",
+        "mode": "offline",
+        "scenarios": 40,
+        "seed": 261004,
+        "horizon": 3,
+        "budget_paise": 500000,
+        "min_margin_bps": 9000,
+        "cities": [
+          "Delhi"
+        ]
+      },
+      "run_id": "run_0fdc5a40db73e75d",
+      "state": "validated",
+      "seconds": 10.8717,
+      "error": null,
+      "plan_id": "plan_87ba8f6527a148f1",
+      "offers": 0,
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "liability_paise": 0,
+        "allocation": {},
+        "checks": [
+          "item margin",
+          "discount ceiling",
+          "stock and expiry",
+          "maximum liability",
+          "overlap",
+          "channel and city",
+          "freshness"
+        ],
+        "batch_allocation": {},
+        "clearance_units": 0,
+        "offer_clearance_units": {},
+        "evidence_status": "derived"
+      },
+      "solver": {
+        "status": "OPTIMAL",
+        "objective_paise": 0,
+        "bound_paise": 0,
+        "gap": 0,
+        "interactions": 0
+      },
+      "simulation": {
+        "baseline": {
+          "contribution_paise": 26123075,
+          "revenue_paise": 72966754,
+          "spend_paise": 0,
+          "clearance_units": 0.0,
+          "stockout_rate": 0.0667,
+          "units": 6816.4
+        },
+        "optimized": {
+          "contribution_paise": 26123075,
+          "revenue_paise": 72966754,
+          "spend_paise": 0,
+          "clearance_units": 0.0,
+          "stockout_rate": 0.0667,
+          "units": 6816.4
+        },
+        "incremental_contribution_paise": 0,
+        "p10_paise": 0,
+        "p50_paise": 0,
+        "p90_paise": 0,
+        "downside_probability": 0.0,
+        "scenarios": 40,
+        "seed": 261004,
+        "distribution": [
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 40
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          },
+          {
+            "value_paise": 0,
+            "count": 0
+          }
+        ],
+        "assumptions": [
+          "Correlated category demand",
+          "Price-response uncertainty \u00b130%",
+          "Comparable competitor price moves \u22125% to +2%",
+          "Coupon redemption 65\u2013100%",
+          "Declared substitute effects",
+          "FEFO expiry and variable replenishment"
+        ],
+        "sensitivity": {
+          "low_response": 0,
+          "central": 0,
+          "high_response": 0,
+          "fragile": false
+        },
+        "evidence_status": "simulated",
+        "clearance_probability": 1.0,
+        "risk_objective_paise": 0,
+        "daily_units": [
+          21.40185138894449,
+          18.8065711899667,
+          16.594723287392448
+        ],
+        "selection_comparison": {
+          "selected": "solver_candidate",
+          "selection_seed": 365733,
+          "report_seed": 261004,
+          "scenarios": 40,
+          "rule_validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          },
+          "reason": "Comparison skipped: clearance objective, infeasible rule or no rule offers"
+        },
+        "rule_baseline": {
+          "contribution_paise": 26123075,
+          "revenue_paise": 72966754,
+          "spend_paise": 0,
+          "clearance_units": 0.0,
+          "stockout_rate": 0.0667,
+          "units": 6816.4
+        },
+        "rule_offers": [],
+        "alternatives": [
+          {
+            "objective": "profit",
+            "offers": 0,
+            "incremental_contribution_paise": 0,
+            "spend_paise": 0,
+            "clearance_units": 0.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "objective": "clearance",
+            "offers": 0,
+            "incremental_contribution_paise": 0,
+            "spend_paise": 0,
+            "clearance_units": 0.0,
+            "status": "OPTIMAL"
+          },
+          {
+            "objective": "conservative",
+            "offers": 0,
+            "incremental_contribution_paise": 0,
+            "spend_paise": 0,
+            "clearance_units": 0.0,
+            "status": "OPTIMAL"
+          }
+        ]
+      },
+      "forecast_metrics": {
+        "chosen": "poisson",
+        "wape": {
+          "seasonal_naive": {
+            "dev": 0.2099,
+            "test": 0.2033
+          },
+          "poisson": {
+            "dev": 0.182,
+            "test": 0.2045
+          }
+        },
+        "split": {
+          "train_days": 124,
+          "development_days": 28,
+          "test_days": 28
+        },
+        "grouped_test_metrics": {
+          "city": {
+            "Bengaluru": {
+              "wape": 0.2023,
+              "bias": 0.0747,
+              "baseline_wape": 0.2017,
+              "points": 3319
+            },
+            "Delhi": {
+              "wape": 0.2041,
+              "bias": 0.0756,
+              "baseline_wape": 0.2037,
+              "points": 3318
+            },
+            "Mumbai": {
+              "wape": 0.2076,
+              "bias": 0.0781,
+              "baseline_wape": 0.2047,
+              "points": 3318
+            }
+          },
+          "category": {
+            "Beverages": {
+              "wape": 0.2066,
+              "bias": 0.072,
+              "baseline_wape": 0.206,
+              "points": 1662
+            },
+            "Breakfast": {
+              "wape": 0.2062,
+              "bias": 0.0781,
+              "baseline_wape": 0.2048,
+              "points": 1659
+            },
+            "Dairy & fresh": {
+              "wape": 0.2,
+              "bias": 0.0755,
+              "baseline_wape": 0.1983,
+              "points": 1659
+            },
+            "Home essentials": {
+              "wape": 0.2016,
+              "bias": 0.0748,
+              "baseline_wape": 0.1999,
+              "points": 1657
+            },
+            "Snacks": {
+              "wape": 0.2095,
+              "bias": 0.0782,
+              "baseline_wape": 0.2088,
+              "points": 1661
+            },
+            "Staples": {
+              "wape": 0.204,
+              "bias": 0.0758,
+              "baseline_wape": 0.2032,
+              "points": 1657
+            }
+          }
+        },
+        "prediction_intervals": {
+          "nominal_coverage": 0.8,
+          "empirical_test_coverage": 0.7721,
+          "mean_test_width_units": 9.6,
+          "calibration": "Development-period normalized absolute residual quantile; empirical coverage measured on temporal test",
+          "status": "Measured on synthetic rolling one-step holdout; scenario ranges are separate"
+        },
+        "claim": "Predictive accuracy on Mixed imported and synthetic demo data; price response is an association, not causal uplift",
+        "snapshot_id": "fdd5d592d87dce6a"
+      },
+      "mechanisms": [],
+      "offer_cities": [],
+      "screening": {
+        "excluded": [
+          {
+            "sku": "SKU001",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU002",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU003",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU004",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU005",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU006",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU007",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU008",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU009",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU010",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU011",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU012",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU013",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU014",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU015",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU016",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU017",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU018",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU019",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU020",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU021",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU022",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU023",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU024",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU025",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU026",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU027",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU028",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU029",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU030",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU031",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU032",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU033",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU034",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU035",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU036",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU037",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU038",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU039",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU040",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU041",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU042",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU043",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU044",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU045",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU046",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU047",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU048",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU049",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU050",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU051",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU052",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU053",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU054",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU055",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU056",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU057",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU058",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU059",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU060",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU061",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU062",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU063",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU064",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU065",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU066",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU067",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU068",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU069",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU070",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU071",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU072",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU073",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU074",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU075",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU076",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU077",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU078",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU079",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU080",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU081",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU082",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU083",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU084",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU085",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU086",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU087",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU088",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU089",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU090",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU091",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU092",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU093",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU094",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU095",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU096",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU097",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU098",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU099",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU100",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU101",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU102",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU103",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU104",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU105",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU106",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU107",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU108",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU109",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU110",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU111",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU112",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU113",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU114",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU115",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU116",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU117",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU118",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU119",
+            "reason": "Baseline contribution margin below required floor"
+          },
+          {
+            "sku": "SKU120",
+            "reason": "Baseline contribution margin below required floor"
+          }
+        ],
+        "rejected": [],
+        "shortlist": [],
+        "candidate_count": 0,
+        "scope": "Finite retained candidate set; full 120-SKU portfolio simulated"
+      }
+    }
+  ],
+  "limits": [
+    "API imports preserve the original 2200 synthetic baskets and append 1620 labeled basket rows.",
+    "Segments, calendar factors, substitute effects and replenishment retain the original assumed seed values; no supported import exists for them.",
+    "Daily rows are invented aggregate sales and one planted co-purchase receipt where basket_items is present, not raw orders.",
+    "Product import updates costs and selling prices, not catalog identity or supplier funding.",
+    "Observed labels assigned by the app describe the uploaded source, not real-world observation.",
+    "A frozen process clock supports repeatable freshness and expiry checks; timings and random record IDs are not deterministic.",
+    "No external model, real retailer, PostgreSQL or public deployment was exercised.",
+    "Business figures are scenario simulations, not measured commercial uplift.",
+    "No organizer numeric scoring weights are specified; this report supplies evidence only."
+  ],
+  "artifacts": {
+    "database": "C:\\Users\\AnuragManik7\\Documents\\Codex\\2026-10-01\\task-4\\continuation-20261004T214336\\realistic-complete-04\\realistic.sqlite3",
+    "fixture_folder": "C:\\Users\\AnuragManik7\\Documents\\Codex\\2026-10-01\\task-4\\continuation-20261004T214336\\promopilot\\fixtures\\remediation"
+  },
+  "tenant_id": "demo_6bb8aefdf2984795",
+  "persisted_value_accuracy": [
+    {
+      "path": "products.csv",
+      "rows": 120,
+      "matching_rows": 120,
+      "fields": 240,
+      "matching_fields": 240
+    },
+    {
+      "path": "inventory.csv",
+      "rows": 360,
+      "matching_rows": 360,
+      "fields": 2160,
+      "matching_fields": 2160
+    },
+    {
+      "path": "competitors.csv",
+      "rows": 360,
+      "matching_rows": 360,
+      "fields": 1800,
+      "matching_fields": 1800
+    },
+    {
+      "path": "transactions-bengaluru-1.csv",
+      "rows": 7200,
+      "matching_rows": 7200,
+      "fields": 28800,
+      "matching_fields": 28800
+    },
+    {
+      "path": "transactions-bengaluru-2.csv",
+      "rows": 7200,
+      "matching_rows": 7200,
+      "fields": 28800,
+      "matching_fields": 28800
+    },
+    {
+      "path": "transactions-bengaluru-3.csv",
+      "rows": 7200,
+      "matching_rows": 7200,
+      "fields": 28800,
+      "matching_fields": 28800
+    },
+    {
+      "path": "transactions-mumbai-1.csv",
+      "rows": 7200,
+      "matching_rows": 7200,
+      "fields": 28800,
+      "matching_fields": 28800
+    },
+    {
+      "path": "transactions-mumbai-2.csv",
+      "rows": 7200,
+      "matching_rows": 7200,
+      "fields": 28800,
+      "matching_fields": 28800
+    },
+    {
+      "path": "transactions-mumbai-3.csv",
+      "rows": 7200,
+      "matching_rows": 7200,
+      "fields": 28800,
+      "matching_fields": 28800
+    },
+    {
+      "path": "transactions-delhi-1.csv",
+      "rows": 7200,
+      "matching_rows": 7200,
+      "fields": 28800,
+      "matching_fields": 28800
+    },
+    {
+      "path": "transactions-delhi-2.csv",
+      "rows": 7200,
+      "matching_rows": 7200,
+      "fields": 28800,
+      "matching_fields": 28800
+    },
+    {
+      "path": "transactions-delhi-3.csv",
+      "rows": 7200,
+      "matching_rows": 7200,
+      "fields": 28800,
+      "matching_fields": 28800
+    }
+  ],
+  "checkout": {
+    "offer": {
+      "id": "805107abaa4d62",
+      "sku": "SKU011",
+      "skus": [
+        "SKU011"
+      ],
+      "name": "Freshway Milk",
+      "city": "Bengaluru",
+      "mechanism": "markdown",
+      "channel": "internal_sandbox",
+      "discount_bps": 1000,
+      "fixed_discount_paise": null,
+      "duration": 3,
+      "start_day": 0,
+      "segment": "Family baskets",
+      "max_redemptions": 79,
+      "price_paise": 7380,
+      "liability_paise": 66780,
+      "media_paise": 2000,
+      "unit_contribution_paise": 2339,
+      "margin_bps": 3169,
+      "incremental_contribution_paise": 24634,
+      "cannibalization_paise": 0,
+      "cannibalization": [],
+      "allocation": {
+        "SKU011|Bengaluru": 79
+      },
+      "source_refs": [
+        "imp_e9434470942d7ec2cd8e08ca5052",
+        "src_6c23dbaeb4184149",
+        "imp_e14b17f3c1b992cd0a21f0ff2cac",
+        "cmp_ed74c2c244424d85"
+      ],
+      "reason": "Family baskets, Bengaluru: 3 selling days, 31.7% contribution margin; maximum liability capped",
+      "minimum_basket_paise": 0,
+      "expected_units": 65.01,
+      "baseline_units": 39.71,
+      "clearance_units": 79,
+      "competitor_price_paise": 8400,
+      "evidence_status": "simulated"
+    },
+    "receipt": {
+      "id": "synthetic-order-1",
+      "plan_id": "plan_8dc0f317805a4bc0",
+      "offer_id": "805107abaa4d62",
+      "quantity": 1,
+      "discount_paise": 820,
+      "paid_paise": 7380,
+      "request_fingerprint": "6a491beeae6ff435cb074af21441603cb95c61dfe3eb3017bfdbe5366b858ecb",
+      "at": "2026-10-04T06:30:00+00:00",
+      "status": "fulfilled",
+      "connector": "internal_sandbox",
+      "stock_movements": {
+        "SKU011-0-A": 1
+      }
+    },
+    "physical_units_debited": 1
+  },
+  "changed_fact": {
+    "input": {
+      "event_id": "synthetic-physical-stock-loss",
+      "kind": "inventory",
+      "city": "Bengaluru",
+      "sku": "SKU011",
+      "value": 0,
+      "observed_at": "2026-10-04T06:30:01+00:00",
+      "replan": true
+    },
+    "previous_selected_offer": {
+      "id": "805107abaa4d62",
+      "sku": "SKU011",
+      "skus": [
+        "SKU011"
+      ],
+      "name": "Freshway Milk",
+      "city": "Bengaluru",
+      "mechanism": "markdown",
+      "channel": "internal_sandbox",
+      "discount_bps": 1000,
+      "fixed_discount_paise": null,
+      "duration": 3,
+      "start_day": 0,
+      "segment": "Family baskets",
+      "max_redemptions": 79,
+      "price_paise": 7380,
+      "liability_paise": 66780,
+      "media_paise": 2000,
+      "unit_contribution_paise": 2339,
+      "margin_bps": 3169,
+      "incremental_contribution_paise": 24634,
+      "cannibalization_paise": 0,
+      "cannibalization": [],
+      "allocation": {
+        "SKU011|Bengaluru": 79
+      },
+      "source_refs": [
+        "imp_e9434470942d7ec2cd8e08ca5052",
+        "src_6c23dbaeb4184149",
+        "imp_e14b17f3c1b992cd0a21f0ff2cac",
+        "cmp_ed74c2c244424d85"
+      ],
+      "reason": "Family baskets, Bengaluru: 3 selling days, 31.7% contribution margin; maximum liability capped",
+      "minimum_basket_paise": 0,
+      "expected_units": 65.01,
+      "baseline_units": 39.71,
+      "clearance_units": 79,
+      "competitor_price_paise": 8400,
+      "evidence_status": "simulated"
+    },
+    "event_receipt": {
+      "event_id": "synthetic-physical-stock-loss",
+      "kind": "inventory",
+      "city": "Bengaluru",
+      "sku": "SKU011",
+      "value": 0,
+      "observed_at": "2026-10-04T06:30:01+00:00",
+      "replan": true,
+      "id": "synthetic-physical-stock-loss",
+      "at": "2026-10-04T06:30:00+00:00",
+      "duplicate": false,
+      "snapshot_id": "fdd5d592d87dce6a",
+      "run_id": "run_cffa392ba912ae1c",
+      "parent_plan_id": "plan_8dc0f317805a4bc0"
+    },
+    "revised_offer_ids": [
+      "e1d3028484614b",
+      "bca9a725a02c1b",
+      "9420f25609e44c",
+      "4a4823df048216",
+      "b51a50c4621644",
+      "922a4c77fb8e12",
+      "6ca23cccc6432a",
+      "35d5d8b1aa8296",
+      "32d2ebfd20abd7"
+    ]
+  },
+  "event_replan": {
+    "seconds": 13.3145,
+    "parent_id": "plan_8dc0f317805a4bc0",
+    "revision": 2,
+    "changes": {
+      "added": 1,
+      "removed": 1,
+      "previous_contribution_paise": 735843,
+      "new_contribution_paise": 730792
+    },
+    "validation": {
+      "passed": true,
+      "errors": [],
+      "liability_paise": 497030,
+      "allocation": {
+        "SKU015|Bengaluru": 71,
+        "SKU019|Bengaluru": 68,
+        "SKU005|Bengaluru": 67,
+        "SKU003|Bengaluru": 66,
+        "SKU010|Bengaluru": 66,
+        "SKU016|Bengaluru": 63,
+        "SKU014|Bengaluru": 63,
+        "SKU008|Bengaluru": 60,
+        "SKU006|Bengaluru": 27
+      },
+      "checks": [
+        "item margin",
+        "discount ceiling",
+        "stock and expiry",
+        "maximum liability",
+        "overlap",
+        "channel and city",
+        "freshness"
+      ],
+      "batch_allocation": {
+        "SKU015-0-A": 71,
+        "SKU019-0-A": 68,
+        "SKU005-0-A": 67,
+        "SKU003-0-A": 66,
+        "SKU010-0-A": 66,
+        "SKU016-0-A": 63,
+        "SKU014-0-A": 63,
+        "SKU008-0-A": 60,
+        "SKU006-0-A": 27
+      },
+      "clearance_units": 551,
+      "offer_clearance_units": {
+        "e1d3028484614b": 71,
+        "bca9a725a02c1b": 68,
+        "9420f25609e44c": 67,
+        "4a4823df048216": 66,
+        "b51a50c4621644": 66,
+        "922a4c77fb8e12": 63,
+        "6ca23cccc6432a": 63,
+        "35d5d8b1aa8296": 60,
+        "32d2ebfd20abd7": 27
+      },
+      "evidence_status": "derived"
+    },
+    "simulation": {
+      "baseline": {
+        "contribution_paise": 66969915,
+        "revenue_paise": 194244090,
+        "spend_paise": 0,
+        "clearance_units": 1532.8,
+        "stockout_rate": 0.0695,
+        "units": 18127.3
+      },
+      "optimized": {
+        "contribution_paise": 67700708,
+        "revenue_paise": 195040457,
+        "spend_paise": 409988,
+        "clearance_units": 1668.9,
+        "stockout_rate": 0.0708,
+        "units": 18263.4
+      },
+      "incremental_contribution_paise": 730792,
+      "p10_paise": 567555,
+      "p50_paise": 754715,
+      "p90_paise": 827267,
+      "downside_probability": 0.0,
+      "scenarios": 40,
+      "seed": 261004,
+      "distribution": [
+        {
+          "value_paise": 407064,
+          "count": 1
+        },
+        {
+          "value_paise": 437539,
+          "count": 1
+        },
+        {
+          "value_paise": 468015,
+          "count": 0
+        },
+        {
+          "value_paise": 498490,
+          "count": 1
+        },
+        {
+          "value_paise": 528966,
+          "count": 0
+        },
+        {
+          "value_paise": 559441,
+          "count": 2
+        },
+        {
+          "value_paise": 589916,
+          "count": 0
+        },
+        {
+          "value_paise": 620392,
+          "count": 1
+        },
+        {
+          "value_paise": 650867,
+          "count": 2
+        },
+        {
+          "value_paise": 681343,
+          "count": 2
+        },
+        {
+          "value_paise": 711818,
+          "count": 3
+        },
+        {
+          "value_paise": 742294,
+          "count": 9
+        },
+        {
+          "value_paise": 772769,
+          "count": 8
+        },
+        {
+          "value_paise": 803244,
+          "count": 5
+        },
+        {
+          "value_paise": 833720,
+          "count": 2
+        },
+        {
+          "value_paise": 864195,
+          "count": 0
+        },
+        {
+          "value_paise": 894671,
+          "count": 0
+        },
+        {
+          "value_paise": 925146,
+          "count": 3
+        }
+      ],
+      "assumptions": [
+        "Correlated category demand",
+        "Price-response uncertainty \u00b130%",
+        "Comparable competitor price moves \u22125% to +2%",
+        "Coupon redemption 65\u2013100%",
+        "Declared substitute effects",
+        "FEFO expiry and variable replenishment"
+      ],
+      "sensitivity": {
+        "low_response": 567555,
+        "central": 730792,
+        "high_response": 827267,
+        "fragile": false
+      },
+      "evidence_status": "simulated",
+      "clearance_probability": 1.0,
+      "risk_objective_paise": 730792,
+      "daily_units": [
+        18.931249446058356,
+        16.663782008050468,
+        15.136650374383992
+      ],
+      "repair": "Feasible flat-discount rule selected using separate selection scenarios; no solver-optimality claim for this portfolio",
+      "selection_comparison": {
+        "selected": "flat_discount_rule",
+        "selection_seed": 365733,
+        "report_seed": 261004,
+        "scenarios": 40,
+        "rule_validation": {
+          "passed": true,
+          "errors": [],
+          "checks": [
+            "item margin",
+            "discount ceiling",
+            "stock and expiry",
+            "maximum liability",
+            "overlap",
+            "channel and city",
+            "freshness"
+          ],
+          "liability_paise": 497030,
+          "allocation": {
+            "SKU015|Bengaluru": 71,
+            "SKU019|Bengaluru": 68,
+            "SKU005|Bengaluru": 67,
+            "SKU003|Bengaluru": 66,
+            "SKU010|Bengaluru": 66,
+            "SKU016|Bengaluru": 63,
+            "SKU014|Bengaluru": 63,
+            "SKU008|Bengaluru": 60,
+            "SKU006|Bengaluru": 27
+          },
+          "batch_allocation": {
+            "SKU015-0-A": 71,
+            "SKU019-0-A": 68,
+            "SKU005-0-A": 67,
+            "SKU003-0-A": 66,
+            "SKU010-0-A": 66,
+            "SKU016-0-A": 63,
+            "SKU014-0-A": 63,
+            "SKU008-0-A": 60,
+            "SKU006-0-A": 27
+          },
+          "clearance_units": 551,
+          "offer_clearance_units": {
+            "e1d3028484614b": 71,
+            "bca9a725a02c1b": 68,
+            "9420f25609e44c": 67,
+            "4a4823df048216": 66,
+            "b51a50c4621644": 66,
+            "922a4c77fb8e12": 63,
+            "6ca23cccc6432a": 63,
+            "35d5d8b1aa8296": 60,
+            "32d2ebfd20abd7": 27
+          },
+          "evidence_status": "derived"
+        },
+        "candidate_risk_objective_paise": 80040,
+        "rule_risk_objective_paise": 707562,
+        "reason": "Feasible rule has higher simulated risk-adjusted contribution on the selection seed"
+      },
+      "rule_baseline": {
+        "contribution_paise": 67700708,
+        "revenue_paise": 195040457,
+        "spend_paise": 409988,
+        "clearance_units": 1668.9,
+        "stockout_rate": 0.0708,
+        "units": 18263.4
+      },
+      "rule_offers": [
+        {
+          "id": "e1d3028484614b",
+          "sku": "SKU015",
+          "skus": [
+            "SKU015"
+          ],
+          "name": "Freshway Yogurt",
+          "city": "Bengaluru",
+          "channel": "internal_sandbox",
+          "mechanism": "markdown",
+          "discount_bps": 1000,
+          "duration": 3,
+          "start_day": 0,
+          "segment": "Family baskets",
+          "fixed_discount_paise": null,
+          "minimum_basket_paise": 0,
+          "max_redemptions": 71,
+          "expected_units": 58.72,
+          "baseline_units": 39.1,
+          "allocation": {
+            "SKU015|Bengaluru": 71
+          },
+          "price_paise": 8640,
+          "unit_contribution_paise": 2976,
+          "margin_bps": 3444,
+          "liability_paise": 70160,
+          "media_paise": 2000,
+          "incremental_contribution_paise": 18857,
+          "cannibalization_paise": 0,
+          "cannibalization": [],
+          "clearance_units": 71,
+          "competitor_price_paise": 9800,
+          "evidence_status": "simulated",
+          "reason": "Family baskets, Bengaluru: 3 selling days, 34.4% contribution margin; maximum liability capped",
+          "source_refs": [
+            "imp_e9434470942d7ec2cd8e08ca5052",
+            "src_6c23dbaeb4184149",
+            "imp_e14b17f3c1b992cd0a21f0ff2cac",
+            "cmp_019d9113fc64412b"
+          ]
+        },
+        {
+          "id": "bca9a725a02c1b",
+          "sku": "SKU019",
+          "skus": [
+            "SKU019"
+          ],
+          "name": "Pantry Butter",
+          "city": "Bengaluru",
+          "channel": "internal_sandbox",
+          "mechanism": "markdown",
+          "discount_bps": 1000,
+          "duration": 3,
+          "start_day": 0,
+          "segment": "Family baskets",
+          "fixed_discount_paise": null,
+          "minimum_basket_paise": 0,
+          "max_redemptions": 68,
+          "expected_units": 56.47,
+          "baseline_units": 38.48,
+          "allocation": {
+            "SKU019|Bengaluru": 68
+          },
+          "price_paise": 7020,
+          "unit_contribution_paise": 1638,
+          "margin_bps": 2333,
+          "liability_paise": 55040,
+          "media_paise": 2000,
+          "incremental_contribution_paise": -2552,
+          "cannibalization_paise": 0,
+          "cannibalization": [],
+          "clearance_units": 68,
+          "competitor_price_paise": 8000,
+          "evidence_status": "simulated",
+          "reason": "Family baskets, Bengaluru: 3 selling days, 23.3% contribution margin; maximum liability capped",
+          "source_refs": [
+            "imp_e9434470942d7ec2cd8e08ca5052",
+            "src_6c23dbaeb4184149",
+            "imp_e14b17f3c1b992cd0a21f0ff2cac",
+            "cmp_b537c33051d2489f"
+          ]
+        },
+        {
+          "id": "9420f25609e44c",
+          "sku": "SKU005",
+          "skus": [
+            "SKU005"
+          ],
+          "name": "Daily Yogurt",
+          "city": "Bengaluru",
+          "channel": "internal_sandbox",
+          "mechanism": "markdown",
+          "discount_bps": 1000,
+          "duration": 3,
+          "start_day": 0,
+          "segment": "Family baskets",
+          "fixed_discount_paise": null,
+          "minimum_basket_paise": 0,
+          "max_redemptions": 67,
+          "expected_units": 55.32,
+          "baseline_units": 35.65,
+          "allocation": {
+            "SKU005|Bengaluru": 67
+          },
+          "price_paise": 7200,
+          "unit_contribution_paise": 2480,
+          "margin_bps": 3444,
+          "liability_paise": 55600,
+          "media_paise": 2000,
+          "incremental_contribution_paise": 18259,
+          "cannibalization_paise": 0,
+          "cannibalization": [],
+          "clearance_units": 67,
+          "competitor_price_paise": 8200,
+          "evidence_status": "simulated",
+          "reason": "Family baskets, Bengaluru: 3 selling days, 34.4% contribution margin; maximum liability capped",
+          "source_refs": [
+            "imp_e9434470942d7ec2cd8e08ca5052",
+            "src_6c23dbaeb4184149",
+            "imp_e14b17f3c1b992cd0a21f0ff2cac",
+            "cmp_eda174769d1942d8"
+          ]
+        },
+        {
+          "id": "4a4823df048216",
+          "sku": "SKU003",
+          "skus": [
+            "SKU003"
+          ],
+          "name": "Daily Paneer",
+          "city": "Bengaluru",
+          "channel": "internal_sandbox",
+          "mechanism": "markdown",
+          "discount_bps": 1000,
+          "duration": 3,
+          "start_day": 0,
+          "segment": "Family baskets",
+          "fixed_discount_paise": null,
+          "minimum_basket_paise": 0,
+          "max_redemptions": 66,
+          "expected_units": 54.17,
+          "baseline_units": 37.07,
+          "allocation": {
+            "SKU003|Bengaluru": 66
+          },
+          "price_paise": 8550,
+          "unit_contribution_paise": 2232,
+          "margin_bps": 2610,
+          "liability_paise": 64700,
+          "media_paise": 2000,
+          "incremental_contribution_paise": 948,
+          "cannibalization_paise": 0,
+          "cannibalization": [],
+          "clearance_units": 66,
+          "competitor_price_paise": 9700,
+          "evidence_status": "simulated",
+          "reason": "Family baskets, Bengaluru: 3 selling days, 26.1% contribution margin; maximum liability capped",
+          "source_refs": [
+            "imp_e9434470942d7ec2cd8e08ca5052",
+            "src_6c23dbaeb4184149",
+            "imp_e14b17f3c1b992cd0a21f0ff2cac",
+            "cmp_94d35f3cba5f4652"
+          ]
+        },
+        {
+          "id": "b51a50c4621644",
+          "sku": "SKU010",
+          "skus": [
+            "SKU010"
+          ],
+          "name": "Harvest Yogurt",
+          "city": "Bengaluru",
+          "channel": "internal_sandbox",
+          "mechanism": "markdown",
+          "discount_bps": 1000,
+          "duration": 3,
+          "start_day": 0,
+          "segment": "Family baskets",
+          "fixed_discount_paise": null,
+          "minimum_basket_paise": 0,
+          "max_redemptions": 66,
+          "expected_units": 54.28,
+          "baseline_units": 36.87,
+          "allocation": {
+            "SKU010|Bengaluru": 66
+          },
+          "price_paise": 7920,
+          "unit_contribution_paise": 2728,
+          "margin_bps": 3444,
+          "liability_paise": 60080,
+          "media_paise": 2000,
+          "incremental_contribution_paise": 13037,
+          "cannibalization_paise": 0,
+          "cannibalization": [],
+          "clearance_units": 66,
+          "competitor_price_paise": 9000,
+          "evidence_status": "simulated",
+          "reason": "Family baskets, Bengaluru: 3 selling days, 34.4% contribution margin; maximum liability capped",
+          "source_refs": [
+            "imp_e9434470942d7ec2cd8e08ca5052",
+            "src_6c23dbaeb4184149",
+            "imp_e14b17f3c1b992cd0a21f0ff2cac",
+            "cmp_3774405e55764e4f"
+          ]
+        },
+        {
+          "id": "922a4c77fb8e12",
+          "sku": "SKU016",
+          "skus": [
+            "SKU016"
+          ],
+          "name": "Pantry Milk",
+          "city": "Bengaluru",
+          "channel": "internal_sandbox",
+          "mechanism": "markdown",
+          "discount_bps": 1000,
+          "duration": 3,
+          "start_day": 0,
+          "segment": "Family baskets",
+          "fixed_discount_paise": null,
+          "minimum_basket_paise": 0,
+          "max_redemptions": 63,
+          "expected_units": 52.46,
+          "baseline_units": 33.49,
+          "allocation": {
+            "SKU016|Bengaluru": 63
+          },
+          "price_paise": 7920,
+          "unit_contribution_paise": 2507,
+          "margin_bps": 3165,
+          "liability_paise": 57440,
+          "media_paise": 2000,
+          "incremental_contribution_paise": 16090,
+          "cannibalization_paise": 0,
+          "cannibalization": [],
+          "clearance_units": 63,
+          "competitor_price_paise": 9000,
+          "evidence_status": "simulated",
+          "reason": "Family baskets, Bengaluru: 3 selling days, 31.6% contribution margin; maximum liability capped",
+          "source_refs": [
+            "imp_e9434470942d7ec2cd8e08ca5052",
+            "src_6c23dbaeb4184149",
+            "imp_e14b17f3c1b992cd0a21f0ff2cac",
+            "cmp_c5bb48d5ef8a4148"
+          ]
+        },
+        {
+          "id": "6ca23cccc6432a",
+          "sku": "SKU014",
+          "skus": [
+            "SKU014"
+          ],
+          "name": "Freshway Butter",
+          "city": "Bengaluru",
+          "channel": "internal_sandbox",
+          "mechanism": "markdown",
+          "discount_bps": 1000,
+          "duration": 3,
+          "start_day": 0,
+          "segment": "Family baskets",
+          "fixed_discount_paise": null,
+          "minimum_basket_paise": 0,
+          "max_redemptions": 63,
+          "expected_units": 52.15,
+          "baseline_units": 35.99,
+          "allocation": {
+            "SKU014|Bengaluru": 63
+          },
+          "price_paise": 6480,
+          "unit_contribution_paise": 1512,
+          "margin_bps": 2333,
+          "liability_paise": 47360,
+          "media_paise": 2000,
+          "incremental_contribution_paise": -3480,
+          "cannibalization_paise": 0,
+          "cannibalization": [],
+          "clearance_units": 63,
+          "competitor_price_paise": 7300,
+          "evidence_status": "simulated",
+          "reason": "Family baskets, Bengaluru: 3 selling days, 23.3% contribution margin; maximum liability capped",
+          "source_refs": [
+            "imp_e9434470942d7ec2cd8e08ca5052",
+            "src_6c23dbaeb4184149",
+            "imp_e14b17f3c1b992cd0a21f0ff2cac",
+            "cmp_7191d0fa33ab41f2"
+          ]
+        },
+        {
+          "id": "35d5d8b1aa8296",
+          "sku": "SKU008",
+          "skus": [
+            "SKU008"
+          ],
+          "name": "Harvest Paneer",
+          "city": "Bengaluru",
+          "channel": "internal_sandbox",
+          "mechanism": "markdown",
+          "discount_bps": 1000,
+          "duration": 3,
+          "start_day": 0,
+          "segment": "Family baskets",
+          "fixed_discount_paise": null,
+          "minimum_basket_paise": 0,
+          "max_redemptions": 60,
+          "expected_units": 49.49,
+          "baseline_units": 33.02,
+          "allocation": {
+            "SKU008|Bengaluru": 60
+          },
+          "price_paise": 9360,
+          "unit_contribution_paise": 2442,
+          "margin_bps": 2608,
+          "liability_paise": 64400,
+          "media_paise": 2000,
+          "incremental_contribution_paise": 3870,
+          "cannibalization_paise": 0,
+          "cannibalization": [],
+          "clearance_units": 60,
+          "competitor_price_paise": 10600,
+          "evidence_status": "simulated",
+          "reason": "Family baskets, Bengaluru: 3 selling days, 26.1% contribution margin; maximum liability capped",
+          "source_refs": [
+            "imp_e9434470942d7ec2cd8e08ca5052",
+            "src_6c23dbaeb4184149",
+            "imp_e14b17f3c1b992cd0a21f0ff2cac",
+            "cmp_cb3989fb987c4bd1"
+          ]
+        },
+        {
+          "id": "32d2ebfd20abd7",
+          "sku": "SKU006",
+          "skus": [
+            "SKU006"
+          ],
+          "name": "Harvest Milk",
+          "city": "Bengaluru",
+          "channel": "internal_sandbox",
+          "mechanism": "markdown",
+          "discount_bps": 1000,
+          "duration": 3,
+          "start_day": 0,
+          "segment": "Convenience shoppers",
+          "fixed_discount_paise": null,
+          "minimum_basket_paise": 0,
+          "max_redemptions": 27,
+          "expected_units": 22.17,
+          "baseline_units": 15.5,
+          "allocation": {
+            "SKU006|Bengaluru": 27
+          },
+          "price_paise": 6750,
+          "unit_contribution_paise": 2138,
+          "margin_bps": 3167,
+          "liability_paise": 22250,
+          "media_paise": 2000,
+          "incremental_contribution_paise": -8962,
+          "cannibalization_paise": 9613,
+          "cannibalization": [
+            {
+              "sku": "SKU001",
+              "units": 3.67,
+              "loss_paise": 9613,
+              "status": "assumed"
+            }
+          ],
+          "clearance_units": 27,
+          "competitor_price_paise": 7600,
+          "evidence_status": "simulated",
+          "reason": "Convenience shoppers, Bengaluru: 3 selling days, 31.7% contribution margin; maximum liability capped",
+          "source_refs": [
+            "imp_e9434470942d7ec2cd8e08ca5052",
+            "src_6c23dbaeb4184149",
+            "imp_e14b17f3c1b992cd0a21f0ff2cac",
+            "cmp_e55d3fd8d2924a1c"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "objective": "profit",
+          "offers": 9,
+          "incremental_contribution_paise": 730792,
+          "spend_paise": 409988,
+          "clearance_units": 1668.9,
+          "status": "SIMULATION_SELECTED_RULE"
+        },
+        {
+          "objective": "clearance",
+          "offers": 17,
+          "incremental_contribution_paise": 556607,
+          "spend_paise": 411127,
+          "clearance_units": 1630.1,
+          "status": "OPTIMAL"
+        },
+        {
+          "objective": "conservative",
+          "offers": 12,
+          "incremental_contribution_paise": 88306,
+          "spend_paise": 404177,
+          "clearance_units": 1535.2,
+          "status": "OPTIMAL"
+        }
+      ]
+    }
+  },
+  "final_state": {
+    "plan_count": 4,
+    "order_count": 1,
+    "event_count": 1,
+    "evidence_count": 8,
+    "spent_paise": 18820,
+    "reserved_budget_paise": 0
+  },
+  "seconds": 134.5823,
+  "extraction_by_modality": {
+    "text": {
+      "valid_cases": 3,
+      "correct_fields": 13,
+      "required_fields": 13,
+      "corrupt_cases": 0,
+      "expected_rejections": 0,
+      "auto_accepted": 0,
+      "field_accuracy": 1.0
+    },
+    "pdf": {
+      "valid_cases": 2,
+      "correct_fields": 8,
+      "required_fields": 8,
+      "corrupt_cases": 1,
+      "expected_rejections": 1,
+      "auto_accepted": 0,
+      "field_accuracy": 1.0
+    },
+    "image": {
+      "valid_cases": 1,
+      "correct_fields": 0,
+      "required_fields": 9,
+      "corrupt_cases": 1,
+      "expected_rejections": 1,
+      "auto_accepted": 0,
+      "field_accuracy": 0.0
+    }
+  },
+  "summary": {
+    "checks": 73,
+    "passed": 73,
+    "failed": 0,
+    "completed": true,
+    "claim": "Crafted offline synthetic operational evidence; neither D3 reliability nor real commercial uplift nor an official competition score."
+  }
+}

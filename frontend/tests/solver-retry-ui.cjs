@@ -1,0 +1,14 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
+const ts=require('typescript');
+const source=fs.readFileSync(path.resolve(__dirname,'../src/ui-state.ts'),'utf8');
+const compiled=ts.transpileModule(source,{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022}}).outputText;
+const exported={};vm.runInNewContext(compiled,{exports:exported,require,console});
+const canRetry=exported.canRetryCheckpoint;
+assert.equal(canRetry({state:'failed',step:4,solver_attempts:1,solver_attempt_limit:3,error:{code:'SOLVER_TIMEOUT'}}),true);
+assert.equal(canRetry({state:'failed',step:4,solver_attempts:2,solver_attempt_limit:3,error:{code:'SOLVER_TIMEOUT'}}),true);
+assert.equal(canRetry({state:'failed',step:4,solver_attempts:3,solver_attempt_limit:3,error:{code:'SOLVER_RETRY_LIMIT'}}),false);
+assert.equal(canRetry({state:'failed',step:4,solver_attempts:3,solver_attempt_limit:3,error:{code:'STEP_FAILED'}}),false);
+assert.equal(canRetry({state:'failed',step:0,error:{code:'PROVIDER_TIMEOUT'}}),true);
+assert.equal(canRetry({state:'planning',step:4,solver_attempts:1}),false);
+assert.equal(canRetry({state:'needs_input',step:5,error:null}),false);
+console.log('7/7 solver retry UI cases passed');

@@ -1,0 +1,22 @@
+entity,external_field,canonical_field,example,conversion,required
+retailer,merchant_id,tenant,allocated workspace,do not accept caller-selected tenant,true
+product,seller_sku,sku,SKU001,map vendor alias through verified SKU registry,true
+location,warehouse_name,city,Bengaluru,map physical fulfillment location,true
+inventory,on_hand,quantity,180,integer physical quantity,true
+inventory,quantity_type,quantity_basis,physical,physical or available_to_promise,true
+inventory,allocated,reserved,0,integer units,true
+inventory,damaged,unavailable,0,integer units,true
+inventory,minimum_stock,safety_stock,2,integer units,true
+inventory,best_before,expiry,2026-10-21,ISO local calendar date,true
+inventory,updated_at,observed_at,2026-10-01T12:00:00+05:30,timezone-aware ISO timestamp,true
+money,currency,currency,INR,reject unsupported currencies,true
+money,cost_rupees,cost_paise,3500,Decimal half-up times 100,true
+money,net_price_rupees,price_paise,5000,Decimal half-up times 100,true
+segment,cohort_label,segment,Value seekers,aggregate behavioral cohort without PII,true
+competitor,pack_size,pack_quantity,500,preserve explicit quantity,true
+competitor,unit,pack_unit,ml,map unit explicitly without inference,true
+transaction,sale_date,date,2026-09-30,complete IST day in saved history window,true
+transaction,units_sold,quantity,15,one daily aggregate per SKU and city,true
+transaction,unit_net_price,paid_price_paise,5000,integer paise excluding tax,true
+transaction,was_stockout,stockout,false,true or false,true
+transaction,co_purchased_skus,basket_items,SKU001|SKU081,pipe-separated mapped SKUs without PII,false

@@ -1,0 +1,39 @@
+{
+  "registered_at_utc": "2026-10-05T08:51:59Z",
+  "parent_source": "e10bba8b06f72c3f1ad0214f319daa9be091727ff628ae8bf24ca52130ab5d51",
+  "purpose": "Improve measured readiness across the eight unweighted official dimensions; no promised score.",
+  "authorization": "Local improvements in a new preserved copy. No installations, credentials, live API calls, publication or deletion.",
+  "agent_acceptance": [
+    "Actual forecast, evidence, solver and selection-simulation observations are consumed by bounded decision checkpoints.",
+    "Replies must echo the exact packet hash, cite supplied observation references and choose an allowed action/proposal.",
+    "Unknown actions, fabricated/stale references, changed financial permissions and invalid schemas fail closed.",
+    "At most six provider attempts persist across retries; clarification or stop never publishes or activates a plan.",
+    "Offline policy, mocked provider and manual native-model review are independently labelled; no live API evidence is claimed."
+  ],
+  "selection_protocol": {
+    "selection_seed_offset": 104729,
+    "report_seed": "User-supplied seed; never consulted to choose/repair the portfolio",
+    "comparators": ["no promotion", "validated flat discount", "solver candidate", "validated conservative candidate", "selected portfolio"],
+    "matched_conditions": "Same snapshots, authorized constraints, common random numbers, scenario count and demand assumptions within each comparison.",
+    "metrics": ["incremental contribution paise", "risk objective paise", "P10/P50/P90 paise", "downside fraction", "max liability paise", "clearance units", "constraint violations"],
+    "holdout_seeds": [194231, 580213, 903517],
+    "stress_cases": ["base", "lower demand response", "stronger substitution", "lower available stock", "zero budget"],
+    "acceptance": "Zero hard-constraint violations and complete reporting including losses/ties; no AI superiority threshold or tuning on held-out results."
+  },
+  "extraction_protocol": {
+    "holdout_seed": 806519,
+    "modalities": ["text PDF", "scanned PDF", "PNG", "JPEG"],
+    "templates": ["label-value policy", "tabular policy", "offer card", "compact multi-line offer", "conflicting values", "missing units/currency"],
+    "critical_fields": ["currency", "price_paise", "pack_quantity", "pack_unit", "city", "sku", "observed_at", "min_margin_bps", "max_discount_bps", "budget_paise"],
+    "metrics": "Exact non-null critical precision = correct emitted / emitted; coverage = correct emitted / ground-truth answerable fields. Null expected fields are counted separately; corrupt inputs and contradictions are separate strata.",
+    "acceptance": "100% critical precision on this finite holdout; target >=80% critical coverage per supported modality. Unsupported modalities remain explicitly gated. Human confirmation always required.",
+    "no_leakage": "Production parser must not read fixtures, filenames, ground truth, seed or model-review answers. Final holdout generated/run after implementation is frozen; no tuning after results."
+  },
+  "robustness_acceptance": [
+    "Existing tests plus meaningful new decision/provenance regressions pass.",
+    "Cross-worker lease, restart, idempotency and atomic stock/budget behavior remain enforced.",
+    "Browser verifies onboarding, current evidence versions, saved versus draft scope, report seed/count and recovery.",
+    "Production crash durability is not inferred from test-only SQLite MEMORY journaling."
+  ],
+  "external_gates": ["No retailer pilot or causal ROI evidence", "No live API validation", "No production concurrency/load or deployment proof", "Native Luna review is manual model-in-loop evidence only"]
+}

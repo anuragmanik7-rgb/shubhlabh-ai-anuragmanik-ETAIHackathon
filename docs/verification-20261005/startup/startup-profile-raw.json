@@ -1,0 +1,812 @@
+{
+  "operations": [
+    {
+      "phase": "application_import",
+      "operation": "Store.put_new:security",
+      "wall_seconds": 0.007850699999835342,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "new_session_1",
+      "operation": "Store.put_new:api_rate",
+      "wall_seconds": 0.004352300020400435,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "new_session_1",
+      "operation": "Store.mutate:api_rate",
+      "wall_seconds": 0.00794300000416115,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "new_session_1",
+      "operation": "Store.put_new:workspace_rate",
+      "wall_seconds": 0.004110699985176325,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "new_session_1",
+      "operation": "Store.mutate:workspace_rate",
+      "wall_seconds": 0.0050069999997504056,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "new_session_1",
+      "operation": "Store.get:state",
+      "wall_seconds": 0.0015559999737888575,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "new_session_1",
+      "operation": "create_retailer",
+      "wall_seconds": 0.37101180001627654,
+      "thread_cpu_seconds": 0.375
+    },
+    {
+      "phase": "new_session_1",
+      "operation": "Store.put_new:state",
+      "wall_seconds": 0.07174779998604208,
+      "thread_cpu_seconds": 0.0625
+    },
+    {
+      "phase": "new_session_1",
+      "operation": "ensure_seed",
+      "wall_seconds": 0.4443555999896489,
+      "thread_cpu_seconds": 0.4375
+    },
+    {
+      "phase": "new_session_2",
+      "operation": "Store.get:api_rate",
+      "wall_seconds": 0.0006973000126890838,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "new_session_2",
+      "operation": "Store.put_new:api_rate",
+      "wall_seconds": 0.0017364999512210488,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "new_session_2",
+      "operation": "Store.mutate:api_rate",
+      "wall_seconds": 0.004420100012794137,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "new_session_2",
+      "operation": "Store.get:workspace_rate",
+      "wall_seconds": 0.0006551999831572175,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "new_session_2",
+      "operation": "Store.put_new:workspace_rate",
+      "wall_seconds": 0.0014577999827452004,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "new_session_2",
+      "operation": "Store.mutate:workspace_rate",
+      "wall_seconds": 0.003970499965362251,
+      "thread_cpu_seconds": 0.015625
+    },
+    {
+      "phase": "new_session_2",
+      "operation": "Store.get:state",
+      "wall_seconds": 0.0008153999806381762,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "new_session_2",
+      "operation": "create_retailer",
+      "wall_seconds": 0.39112019998719916,
+      "thread_cpu_seconds": 0.375
+    },
+    {
+      "phase": "new_session_2",
+      "operation": "Store.put_new:state",
+      "wall_seconds": 0.0742455999716185,
+      "thread_cpu_seconds": 0.0625
+    },
+    {
+      "phase": "new_session_2",
+      "operation": "ensure_seed",
+      "wall_seconds": 0.46622060000663623,
+      "thread_cpu_seconds": 0.4375
+    },
+    {
+      "phase": "new_session_3",
+      "operation": "Store.get:api_rate",
+      "wall_seconds": 0.0017192999948747456,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "new_session_3",
+      "operation": "Store.put_new:api_rate",
+      "wall_seconds": 0.0030120000010356307,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "new_session_3",
+      "operation": "Store.mutate:api_rate",
+      "wall_seconds": 0.004809600010048598,
+      "thread_cpu_seconds": 0.015625
+    },
+    {
+      "phase": "new_session_3",
+      "operation": "Store.get:workspace_rate",
+      "wall_seconds": 0.0009960000170394778,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "new_session_3",
+      "operation": "Store.put_new:workspace_rate",
+      "wall_seconds": 0.002036999969277531,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "new_session_3",
+      "operation": "Store.mutate:workspace_rate",
+      "wall_seconds": 0.004734999965876341,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "new_session_3",
+      "operation": "Store.get:state",
+      "wall_seconds": 0.000943099963478744,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "new_session_3",
+      "operation": "create_retailer",
+      "wall_seconds": 0.27666930004488677,
+      "thread_cpu_seconds": 0.28125
+    },
+    {
+      "phase": "new_session_3",
+      "operation": "Store.put_new:state",
+      "wall_seconds": 0.06497430003946647,
+      "thread_cpu_seconds": 0.046875
+    },
+    {
+      "phase": "new_session_3",
+      "operation": "ensure_seed",
+      "wall_seconds": 0.3426238000392914,
+      "thread_cpu_seconds": 0.328125
+    },
+    {
+      "phase": "warm_session_1",
+      "operation": "Store.put_new:api_rate",
+      "wall_seconds": 0.0043966000084765255,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "warm_session_1",
+      "operation": "Store.mutate:api_rate",
+      "wall_seconds": 0.005282700003590435,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "warm_session_1",
+      "operation": "Store.get:state",
+      "wall_seconds": 0.5975695999804884,
+      "thread_cpu_seconds": 0.578125
+    },
+    {
+      "phase": "warm_session_1",
+      "operation": "ensure_seed",
+      "wall_seconds": 0.5978287999751046,
+      "thread_cpu_seconds": 0.578125
+    },
+    {
+      "phase": "warm_session_2",
+      "operation": "Store.get:api_rate",
+      "wall_seconds": 0.0010168000007979572,
+      "thread_cpu_seconds": 0.015625
+    },
+    {
+      "phase": "warm_session_2",
+      "operation": "Store.put_new:api_rate",
+      "wall_seconds": 0.002061299979686737,
+      "thread_cpu_seconds": 0.015625
+    },
+    {
+      "phase": "warm_session_2",
+      "operation": "Store.mutate:api_rate",
+      "wall_seconds": 0.006887900002766401,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "warm_session_2",
+      "operation": "Store.get:state",
+      "wall_seconds": 0.61640100000659,
+      "thread_cpu_seconds": 0.609375
+    },
+    {
+      "phase": "warm_session_2",
+      "operation": "ensure_seed",
+      "wall_seconds": 0.6164195999735966,
+      "thread_cpu_seconds": 0.609375
+    },
+    {
+      "phase": "warm_session_3",
+      "operation": "Store.get:api_rate",
+      "wall_seconds": 0.0008008999866433442,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "warm_session_3",
+      "operation": "Store.put_new:api_rate",
+      "wall_seconds": 0.0019836999708786607,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "warm_session_3",
+      "operation": "Store.mutate:api_rate",
+      "wall_seconds": 0.004766499972902238,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "warm_session_3",
+      "operation": "Store.get:state",
+      "wall_seconds": 0.5656283000134863,
+      "thread_cpu_seconds": 0.5625
+    },
+    {
+      "phase": "warm_session_3",
+      "operation": "ensure_seed",
+      "wall_seconds": 0.5656446000211872,
+      "thread_cpu_seconds": 0.5625
+    },
+    {
+      "phase": "bootstrap_1",
+      "operation": "Store.get:api_rate",
+      "wall_seconds": 0.0016874999855645,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_1",
+      "operation": "Store.put_new:api_rate",
+      "wall_seconds": 0.003440900007262826,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_1",
+      "operation": "Store.mutate:api_rate",
+      "wall_seconds": 0.006785299978218973,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_1",
+      "operation": "Store.get:api_rate",
+      "wall_seconds": 0.00332319998415187,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_1",
+      "operation": "Store.put_new:api_rate",
+      "wall_seconds": 0.00578109995694831,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_1",
+      "operation": "Store.get:api_rate",
+      "wall_seconds": 0.0060047999722883105,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_1",
+      "operation": "Store.put_new:api_rate",
+      "wall_seconds": 0.012948499992489815,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_1",
+      "operation": "Store.mutate:api_rate",
+      "wall_seconds": 0.020312200009357184,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_1",
+      "operation": "Store.get:api_rate",
+      "wall_seconds": 0.0009671999723650515,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_1",
+      "operation": "Store.put_new:api_rate",
+      "wall_seconds": 0.037621599971316755,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_1",
+      "operation": "Store.get:api_rate",
+      "wall_seconds": 0.001153399993199855,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_1",
+      "operation": "Store.put_new:api_rate",
+      "wall_seconds": 0.036991800006944686,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_1",
+      "operation": "Store.mutate:api_rate",
+      "wall_seconds": 0.13697939994744956,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_1",
+      "operation": "Store.get:api_rate",
+      "wall_seconds": 0.045329099986702204,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_1",
+      "operation": "Store.put_new:api_rate",
+      "wall_seconds": 0.2713045999989845,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_1",
+      "operation": "Store.get:api_rate",
+      "wall_seconds": 0.09642339998390526,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_1",
+      "operation": "Store.put_new:api_rate",
+      "wall_seconds": 0.35334440000588074,
+      "thread_cpu_seconds": 0.015625
+    },
+    {
+      "phase": "bootstrap_1",
+      "operation": "Store.get:state",
+      "wall_seconds": 0.5132765999878757,
+      "thread_cpu_seconds": 0.484375
+    },
+    {
+      "phase": "bootstrap_1",
+      "operation": "Store.list:plan",
+      "wall_seconds": 0.0017105999868363142,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_1",
+      "operation": "Store.mutate:api_rate",
+      "wall_seconds": 0.5249166000285186,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_1",
+      "operation": "Store.list:event",
+      "wall_seconds": 0.027745199971832335,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_1",
+      "operation": "Store.list:order",
+      "wall_seconds": 0.002001299988478422,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_1",
+      "operation": "Store.mutate:api_rate",
+      "wall_seconds": 0.29455999995116144,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_1",
+      "operation": "Store.list:evidence",
+      "wall_seconds": 0.0007975000189617276,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_1",
+      "operation": "Store.get:api_rate",
+      "wall_seconds": 0.0009027000050991774,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_1",
+      "operation": "Store.put_new:api_rate",
+      "wall_seconds": 0.5893818999757059,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_1",
+      "operation": "Store.mutate:api_rate",
+      "wall_seconds": 0.004522900038864464,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_1",
+      "operation": "Store.mutate:api_rate",
+      "wall_seconds": 0.9297255999990739,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_1",
+      "operation": "Store.list:run",
+      "wall_seconds": 0.0922794000362046,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_1",
+      "operation": "Store.get:state",
+      "wall_seconds": 0.6687826000270434,
+      "thread_cpu_seconds": 0.65625
+    },
+    {
+      "phase": "bootstrap_1",
+      "operation": "Store.mutate:api_rate",
+      "wall_seconds": 0.9484251000103541,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_1",
+      "operation": "Store.list:plan",
+      "wall_seconds": 0.0009125000215135515,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_2",
+      "operation": "Store.get:api_rate",
+      "wall_seconds": 0.0014432999887503684,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_2",
+      "operation": "Store.put_new:api_rate",
+      "wall_seconds": 0.0031290999613702297,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_2",
+      "operation": "Store.get:api_rate",
+      "wall_seconds": 0.0027842000126838684,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_2",
+      "operation": "Store.put_new:api_rate",
+      "wall_seconds": 0.0036253000143915415,
+      "thread_cpu_seconds": 0.015625
+    },
+    {
+      "phase": "bootstrap_2",
+      "operation": "Store.mutate:api_rate",
+      "wall_seconds": 0.008403000014368445,
+      "thread_cpu_seconds": 0.015625
+    },
+    {
+      "phase": "bootstrap_2",
+      "operation": "Store.get:api_rate",
+      "wall_seconds": 0.0039888000464998186,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_2",
+      "operation": "Store.put_new:api_rate",
+      "wall_seconds": 0.005260200006887317,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_2",
+      "operation": "Store.get:api_rate",
+      "wall_seconds": 0.0016281999996863306,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_2",
+      "operation": "Store.put_new:api_rate",
+      "wall_seconds": 0.00806439999723807,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_2",
+      "operation": "Store.mutate:api_rate",
+      "wall_seconds": 0.06739430001471192,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_2",
+      "operation": "Store.get:api_rate",
+      "wall_seconds": 0.09608540002955124,
+      "thread_cpu_seconds": 0.015625
+    },
+    {
+      "phase": "bootstrap_2",
+      "operation": "Store.put_new:api_rate",
+      "wall_seconds": 0.22744909999892116,
+      "thread_cpu_seconds": 0.015625
+    },
+    {
+      "phase": "bootstrap_2",
+      "operation": "Store.get:api_rate",
+      "wall_seconds": 0.32661709998501465,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_2",
+      "operation": "Store.put_new:api_rate",
+      "wall_seconds": 0.43619580002268776,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_2",
+      "operation": "Store.list:run",
+      "wall_seconds": 0.37409609998576343,
+      "thread_cpu_seconds": 0.015625
+    },
+    {
+      "phase": "bootstrap_2",
+      "operation": "Store.mutate:api_rate",
+      "wall_seconds": 0.5457330000353977,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_2",
+      "operation": "Store.get:state",
+      "wall_seconds": 0.6839386999490671,
+      "thread_cpu_seconds": 0.609375
+    },
+    {
+      "phase": "bootstrap_2",
+      "operation": "Store.list:plan",
+      "wall_seconds": 0.0026131999911740422,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_2",
+      "operation": "Store.mutate:api_rate",
+      "wall_seconds": 0.4698064000112936,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_2",
+      "operation": "Store.list:event",
+      "wall_seconds": 0.014574699976947159,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_2",
+      "operation": "Store.list:order",
+      "wall_seconds": 0.0010602000402286649,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_2",
+      "operation": "Store.mutate:api_rate",
+      "wall_seconds": 0.3285020000184886,
+      "thread_cpu_seconds": 0.015625
+    },
+    {
+      "phase": "bootstrap_2",
+      "operation": "Store.list:plan",
+      "wall_seconds": 0.001012599968817085,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_2",
+      "operation": "Store.get:api_rate",
+      "wall_seconds": 0.0010188999585807323,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_2",
+      "operation": "Store.put_new:api_rate",
+      "wall_seconds": 0.7695643999613822,
+      "thread_cpu_seconds": 0.015625
+    },
+    {
+      "phase": "bootstrap_2",
+      "operation": "Store.mutate:api_rate",
+      "wall_seconds": 0.005422699963673949,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_2",
+      "operation": "Store.get:api_rate",
+      "wall_seconds": 0.001504399988334626,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_2",
+      "operation": "Store.put_new:api_rate",
+      "wall_seconds": 0.8042557999724522,
+      "thread_cpu_seconds": 0.015625
+    },
+    {
+      "phase": "bootstrap_2",
+      "operation": "Store.mutate:api_rate",
+      "wall_seconds": 0.005023700010497123,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_2",
+      "operation": "Store.list:evidence",
+      "wall_seconds": 0.0008495000074617565,
+      "thread_cpu_seconds": 0.0
+    },
+    {
+      "phase": "bootstrap_2",
+      "operation": "Store.mutate:api_rate",
+      "wall_seconds": 0.8812006999505684,
+      "thread_cpu_seconds": 0.015625
+    },
+    {
+      "phase": "bootstrap_2",
+      "operation": "Store.get:state",
+      "wall_seconds": 0.6383940000087023,
+      "thread_cpu_seconds": 0.5625
+    }
+  ],
+  "requests": [
+    {
+      "label": "new_session_1",
+      "path": "/api/v1/session",
+      "seconds": 0.5237429999979213,
+      "status": 200,
+      "bytes": 246
+    },
+    {
+      "label": "new_session_2",
+      "path": "/api/v1/session",
+      "seconds": 0.48855800001183525,
+      "status": 200,
+      "bytes": 247
+    },
+    {
+      "label": "new_session_3",
+      "path": "/api/v1/session",
+      "seconds": 0.38991660001920536,
+      "status": 200,
+      "bytes": 247
+    },
+    {
+      "label": "warm_session_1",
+      "path": "/api/v1/session",
+      "seconds": 0.6194793999893591,
+      "status": 200,
+      "bytes": 246
+    },
+    {
+      "label": "warm_session_2",
+      "path": "/api/v1/session",
+      "seconds": 0.6351064000045881,
+      "status": 200,
+      "bytes": 246
+    },
+    {
+      "label": "warm_session_3",
+      "path": "/api/v1/session",
+      "seconds": 0.583431999955792,
+      "status": 200,
+      "bytes": 246
+    },
+    {
+      "label": "bootstrap_1",
+      "path": "/api/v1/evaluations",
+      "seconds": 0.046227999962866306,
+      "status": 200,
+      "bytes": 1931
+    },
+    {
+      "label": "bootstrap_1",
+      "path": "/api/v1/fixtures",
+      "seconds": 0.541298599971924,
+      "status": 200,
+      "bytes": 731
+    },
+    {
+      "label": "bootstrap_1",
+      "path": "/api/v1/connectors",
+      "seconds": 0.5568390999687836,
+      "status": 200,
+      "bytes": 1194
+    },
+    {
+      "label": "bootstrap_1",
+      "path": "/api/v1/overview",
+      "seconds": 0.5810312999528833,
+      "status": 200,
+      "bytes": 688
+    },
+    {
+      "label": "bootstrap_1",
+      "path": "/api/v1/evidence",
+      "seconds": 0.5860605999478139,
+      "status": 200,
+      "bytes": 2
+    },
+    {
+      "label": "bootstrap_1",
+      "path": "/api/v1/runs",
+      "seconds": 1.3130214999546297,
+      "status": 200,
+      "bytes": 2
+    },
+    {
+      "label": "bootstrap_1",
+      "path": "/api/v1/catalog",
+      "seconds": 1.3227995000197552,
+      "status": 200,
+      "bytes": 254436
+    },
+    {
+      "label": "bootstrap_1",
+      "path": "/api/v1/plans",
+      "seconds": 1.3271965000312775,
+      "status": 200,
+      "bytes": 2
+    },
+    {
+      "label": "bootstrap_2",
+      "path": "/api/v1/runs",
+      "seconds": 0.7079924999852665,
+      "status": 200,
+      "bytes": 2
+    },
+    {
+      "label": "bootstrap_2",
+      "path": "/api/v1/fixtures",
+      "seconds": 0.7153028000029735,
+      "status": 200,
+      "bytes": 731
+    },
+    {
+      "label": "bootstrap_2",
+      "path": "/api/v1/connectors",
+      "seconds": 0.7201377999735996,
+      "status": 200,
+      "bytes": 1194
+    },
+    {
+      "label": "bootstrap_2",
+      "path": "/api/v1/overview",
+      "seconds": 0.7388417000183836,
+      "status": 200,
+      "bytes": 688
+    },
+    {
+      "label": "bootstrap_2",
+      "path": "/api/v1/plans",
+      "seconds": 0.7831961999763735,
+      "status": 200,
+      "bytes": 2
+    },
+    {
+      "label": "bootstrap_2",
+      "path": "/api/v1/evaluations",
+      "seconds": 0.7953425000305288,
+      "status": 200,
+      "bytes": 1931
+    },
+    {
+      "label": "bootstrap_2",
+      "path": "/api/v1/evidence",
+      "seconds": 0.8307919999933802,
+      "status": 200,
+      "bytes": 2
+    },
+    {
+      "label": "bootstrap_2",
+      "path": "/api/v1/catalog",
+      "seconds": 1.5838896000059322,
+      "status": 200,
+      "bytes": 254436
+    }
+  ],
+  "batches": [
+    {
+      "phase": "bootstrap_1",
+      "seconds": 1.3303305999725126
+    },
+    {
+      "phase": "bootstrap_2",
+      "seconds": 1.5866425999556668
+    }
+  ]
+}

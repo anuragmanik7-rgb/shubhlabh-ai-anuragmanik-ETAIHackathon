@@ -1,0 +1,44 @@
+{
+ "what": "Hand verification of every auto-accepted critical field (offer price, MRP, pack) from the owner's real store photos and videos (docs/evidence/store_media.json), checked by eye against the source images on 2026-10-10.",
+ "source": "19 photos + 2 videos (12 keyframes) from hypermarket aisles, QSR menu boards, apparel and electronics displays in a Nagpur mall, sent on WhatsApp (2026-10-09). Two personal files (an airline check-in screen with a passenger's name, a social-media screenshot) were excluded before analysis.",
+ "pipeline": "quality check -> OCR -> model read A -> targeted read B on doubtful critical fields -> fused value with confidence and a box on the source -> auto-accept at >= 0.90, everything else to a person",
+ "model": "gpt-4.1-mini (both reads)",
+ "model_cost_usd": 0.0905,
+ "after_consistency_checks": {
+  "auto_accepted_critical_fields": 25,
+  "verifiable_by_eye": 22,
+  "correct": 20,
+  "accuracy_pct": 90.9,
+  "offer_price": {"verifiable": 14, "correct": 14},
+  "mrp": {"verifiable": 5, "correct": 4},
+  "pack": {"verifiable": 3, "correct": 2},
+  "unverifiable": 3,
+  "unverifiable_reason": "price tag cut off at the frame edge or text too small in a 464-px-wide WhatsApp video frame"
+ },
+ "before_consistency_checks": {
+  "auto_accepted_critical_fields": 29,
+  "verifiable_by_eye": 25,
+  "correct": 20,
+  "accuracy_pct": 80.0
+ },
+ "errors_found_and_fixes": [
+  {"pattern": "MRP read as equal to the smart price when the tiny MRP line was unreadable (Smart Bazaar tags: SMART PRICE 47, MRP 50, YOUR BACHAT 3)", "fix": "if MRP equals the offer price and no MRP-labelled line on the source confirms it, the MRP goes to a person (extraction.sanity)"},
+  {"pattern": "placeholder text accepted as a value (pack = 'not specified')", "fix": "placeholder text is treated as not found (extraction.sanity)"}
+ ],
+ "remaining_errors": [
+  {"file": "IMG-20261009-WA0031.jpg", "field": "mrp_inr", "read": 402, "truth": "402 is the shelf price of a neighbouring diaper pack; no MRP visible"},
+  {"file": "IMG-20261009-WA0031.jpg", "field": "pack", "read": "L 10 Pants", "truth": "pack size belongs to a different product on the same shelf"}
+ ],
+ "caught_by_review": [
+  {"file": "IMG-20261009-WA0035.jpg", "field": "offer_price_inr", "read": 333, "truth": "'Minimum 33% off' sign", "confidence": 0.62},
+  {"file": "VID-20261009-WA0036 t3.9 s", "field": "mrp_inr", "read": 47, "truth": "MRP 50 (bachat 3)"},
+  {"file": "VID-20261009-WA0036 t10.3 s", "field": "mrp_inr", "read": 19, "truth": "MRP 20 (bachat 1)"}
+ ],
+ "examples_correct": [
+  "Super Sarvottam Rice Bran Oil 13 kg: MRP 2,929, smart price 2,199",
+  "Lenovo LOQ-15: worth 3,14,890, at 1,63,999",
+  "KFC Chicken Krisper Meal: 237 struck, now 99",
+  "Smart Bazaar Tyohaar sale: Sweets 200 g, buy 1 get 1, MRP 179",
+  "Apple Red Delicious 399/kg; Taco Bell 89; Pizza Hut 4-course meal 99; BK Peri Peri meal 599"
+ ]
+}

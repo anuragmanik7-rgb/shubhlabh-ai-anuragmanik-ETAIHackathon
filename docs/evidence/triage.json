@@ -1,0 +1,311 @@
+{
+ "cases": 29,
+ "accuracy": {
+  "rules": 0.8276
+ },
+ "false_alarms": {
+  "rules": 5
+ },
+ "missed_escalations": {
+  "rules": 0
+ },
+ "cost_usd": {
+  "rules": 0.0
+ },
+ "note": "Hand-labelled expected actions; the model may downgrade soft signals only to alert and never below the floor for stock or budget.",
+ "rows": {
+  "rules": [
+   {
+    "id": "e00",
+    "kind": "budget_cut",
+    "note": "HQ trims next month; this week unchanged",
+    "expect": "alert",
+    "got": "alert",
+    "floor": "alert",
+    "recommended": "alert",
+    "correct": true
+   },
+   {
+    "id": "e01",
+    "kind": "budget_cut",
+    "note": "Finance rounding adjustment",
+    "expect": "alert",
+    "got": "alert",
+    "floor": "alert",
+    "recommended": "alert",
+    "correct": true
+   },
+   {
+    "id": "e02",
+    "kind": "budget_cut",
+    "note": "HQ cut festive budget by 20%",
+    "expect": "replan",
+    "got": "replan",
+    "floor": "replan",
+    "recommended": "replan",
+    "correct": true
+   },
+   {
+    "id": "e03",
+    "kind": "budget_cut",
+    "note": "Budget halved after the quarterly review",
+    "expect": "replan",
+    "got": "replan",
+    "floor": "replan",
+    "recommended": "replan",
+    "correct": true
+   },
+   {
+    "id": "e04",
+    "kind": "budget_cut",
+    "note": "Spend freeze",
+    "expect": "replan",
+    "got": "replan",
+    "floor": "replan",
+    "recommended": "replan",
+    "correct": true
+   },
+   {
+    "id": "e05",
+    "kind": "budget_cut",
+    "note": "Please continue, HQ is just being cautious",
+    "expect": "replan",
+    "got": "replan",
+    "floor": "replan",
+    "recommended": "replan",
+    "correct": true
+   },
+   {
+    "id": "e06",
+    "kind": "stock_drop",
+    "note": "Cold-chain failure, 60% of the lot written off",
+    "expect": "replan",
+    "got": "replan",
+    "floor": "replan",
+    "recommended": "replan",
+    "correct": true
+   },
+   {
+    "id": "e07",
+    "kind": "stock_drop",
+    "note": "Supplier short-shipped",
+    "expect": "replan",
+    "got": "replan",
+    "floor": "replan",
+    "recommended": "replan",
+    "correct": true
+   },
+   {
+    "id": "e08",
+    "kind": "stock_drop",
+    "note": "Minor damage in transit",
+    "expect": "adjust",
+    "got": "adjust",
+    "floor": "adjust",
+    "recommended": "adjust",
+    "correct": true
+   },
+   {
+    "id": "e09",
+    "kind": "stock_drop",
+    "note": "Two crates mislabelled",
+    "expect": "adjust",
+    "got": "adjust",
+    "floor": "adjust",
+    "recommended": "adjust",
+    "correct": true
+   },
+   {
+    "id": "e10",
+    "kind": "stock_drop",
+    "note": "Replenishment arriving tomorrow, they say",
+    "expect": "replan",
+    "got": "replan",
+    "floor": "replan",
+    "recommended": "replan",
+    "correct": true
+   },
+   {
+    "id": "e11",
+    "kind": "stock_drop",
+    "note": "Shelf audit found only 4 units",
+    "expect": "alert",
+    "got": "alert",
+    "floor": "alert",
+    "recommended": "alert",
+    "correct": true
+   },
+   {
+    "id": "e12",
+    "kind": "stock_drop",
+    "note": "Routine cycle count",
+    "expect": "ignore",
+    "got": "ignore",
+    "floor": "ignore",
+    "recommended": "ignore",
+    "correct": true
+   },
+   {
+    "id": "e13",
+    "kind": "competitor_cut",
+    "note": "Regular quick-commerce price",
+    "expect": "ignore",
+    "got": "ignore",
+    "floor": "ignore",
+    "recommended": "ignore",
+    "correct": true
+   },
+   {
+    "id": "e14",
+    "kind": "competitor_cut",
+    "note": "ZipMart festive price, any shopper",
+    "expect": "alert",
+    "got": "alert",
+    "floor": "alert",
+    "recommended": "alert",
+    "correct": true
+   },
+   {
+    "id": "e15",
+    "kind": "competitor_cut",
+    "note": "Slightly cheaper at DailyDash",
+    "expect": "alert",
+    "got": "alert",
+    "floor": "alert",
+    "recommended": "alert",
+    "correct": true
+   },
+   {
+    "id": "e16",
+    "kind": "competitor_cut",
+    "note": "ZipMart festive price for every shopper, same pack",
+    "expect": "replan",
+    "got": "replan",
+    "floor": "replan",
+    "recommended": "replan",
+    "correct": true
+   },
+   {
+    "id": "e17",
+    "kind": "competitor_cut",
+    "note": "QuickBasket undercut, comparable pack, no conditions",
+    "expect": "replan",
+    "got": "replan",
+    "floor": "replan",
+    "recommended": "replan",
+    "correct": true
+   },
+   {
+    "id": "e18",
+    "kind": "competitor_cut",
+    "note": "Members only price for loyalty subscribers",
+    "expect": "alert",
+    "got": "alert",
+    "floor": "alert",
+    "recommended": "alert",
+    "correct": true
+   },
+   {
+    "id": "e19",
+    "kind": "competitor_cut",
+    "note": "Requires a minimum basket of Rs 999",
+    "expect": "alert",
+    "got": "alert",
+    "floor": "alert",
+    "recommended": "alert",
+    "correct": true
+   },
+   {
+    "id": "e20",
+    "kind": "competitor_cut",
+    "note": "Only for paid Pass subscribers paying with an HDFC credit card",
+    "expect": "alert",
+    "got": "replan",
+    "floor": "replan",
+    "recommended": "replan",
+    "correct": false
+   },
+   {
+    "id": "e21",
+    "kind": "competitor_cut",
+    "note": "That price is for their 200 g pack; ours is the 1 kg pack",
+    "expect": "alert",
+    "got": "replan",
+    "floor": "replan",
+    "recommended": "replan",
+    "correct": false
+   },
+   {
+    "id": "e22",
+    "kind": "competitor_cut",
+    "note": "Flash price shown for 15 minutes to app users who refer a friend",
+    "expect": "alert",
+    "got": "replan",
+    "floor": "replan",
+    "recommended": "replan",
+    "correct": false
+   },
+   {
+    "id": "e23",
+    "kind": "sell_through_miss",
+    "note": "On track",
+    "expect": "ignore",
+    "got": "ignore",
+    "floor": "ignore",
+    "recommended": "ignore",
+    "correct": true
+   },
+   {
+    "id": "e24",
+    "kind": "sell_through_miss",
+    "note": "A bit slow",
+    "expect": "alert",
+    "got": "alert",
+    "floor": "alert",
+    "recommended": "alert",
+    "correct": true
+   },
+   {
+    "id": "e25",
+    "kind": "sell_through_miss",
+    "note": "Shoppers are not responding",
+    "expect": "replan",
+    "got": "replan",
+    "floor": "replan",
+    "recommended": "replan",
+    "correct": true
+   },
+   {
+    "id": "e26",
+    "kind": "sell_through_miss",
+    "note": "POS outage since morning; redemptions have not synced yet",
+    "expect": "alert",
+    "got": "replan",
+    "floor": "replan",
+    "recommended": "replan",
+    "correct": false
+   },
+   {
+    "id": "e27",
+    "kind": "sell_through_miss",
+    "note": "Day 3 of 5, still slow",
+    "expect": "replan",
+    "got": "replan",
+    "floor": "replan",
+    "recommended": "replan",
+    "correct": true
+   },
+   {
+    "id": "e28",
+    "kind": "sell_through_miss",
+    "note": "Store was closed yesterday for a local bandh, so no sales were possible",
+    "expect": "alert",
+    "got": "replan",
+    "floor": "replan",
+    "recommended": "replan",
+    "correct": false
+   }
+  ]
+ },
+ "at": "2026-10-07T22:38:52"
+}

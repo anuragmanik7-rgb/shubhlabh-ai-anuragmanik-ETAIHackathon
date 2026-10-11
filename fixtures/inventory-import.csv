@@ -1,0 +1,3 @@
+sku,city,quantity,quantity_basis,reserved,unavailable,safety_stock,expiry,observed_at
+SKU001,Bengaluru,180,physical,0,0,2,2026-10-21,2026-10-01T03:53:40+00:00
+SKU001,Mumbai,15,available_to_promise,0,0,2,2026-10-21,2026-10-01T03:53:40+00:00

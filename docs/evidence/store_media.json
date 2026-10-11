@@ -1,0 +1,2888 @@
+{
+ "summary": {
+  "generated_at": "2026-10-10 06:17:41",
+  "folder": "store_input",
+  "files": 21,
+  "photos": 19,
+  "videos": 2,
+  "video_frames_analysed": 12,
+  "pdfs": 0,
+  "items_analysed": 31,
+  "skipped": [],
+  "document_types": [
+   [
+    "other",
+    16
+   ],
+   [
+    "shelf_tag",
+    14
+   ],
+   [
+    "flyer",
+    1
+   ]
+  ],
+  "with_any_price": 22,
+  "extra_items_read": 45,
+  "fields_read": {
+   "item_name": 14,
+   "offer_price_inr": 22,
+   "seller": 11,
+   "mrp_inr": 14,
+   "pack": 9,
+   "valid_until": 2
+  },
+  "fields_auto_accepted": {
+   "offer_price_inr": 15,
+   "pack": 5,
+   "mrp_inr": 5
+  },
+  "critical_fields_read": 45,
+  "critical_fields_auto_accepted": 25,
+  "median_critical_confidence": 0.93,
+  "sent_to_human_review": 30,
+  "quality_issues": [
+   [
+    "blurry",
+    6
+   ],
+   [
+    "dark",
+    1
+   ]
+  ],
+  "quarantined": 0,
+  "methods": [
+   [
+    "two_reads",
+    31
+   ]
+  ],
+  "model_cost_usd": 0.0,
+  "seconds": 198.4
+ },
+ "videos": [
+  {
+   "file": "VID-20261009-WA0016.mp4",
+   "seconds": 55.1,
+   "frames_used": 6
+  },
+  {
+   "file": "VID-20261009-WA0036.mp4",
+   "seconds": 15.8,
+   "frames_used": 6
+  }
+ ],
+ "items": [
+  {
+   "file": "IMG-20261009-WA0017.jpg",
+   "source": "photo",
+   "at_s": null,
+   "image": "annotated/IMG-20261009-WA0017.jpg",
+   "input_type": "image",
+   "document_type": "other",
+   "method": "two_reads",
+   "quality": {
+    "sharpness": 603,
+    "brightness": 71,
+    "issues": [],
+    "ok": true
+   },
+   "seconds": 9.4,
+   "cost_usd": 0.0,
+   "fields": {
+    "item_name": {
+     "value": "Meal Biryani",
+     "confidence": 0.55,
+     "status": "needs_review",
+     "basis": "model only; not found by OCR"
+    },
+    "pack": {
+     "value": null,
+     "confidence": 0.0,
+     "status": "needs_review",
+     "basis": "placeholder text, treated as not found"
+    },
+    "mrp_inr": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; second read disagreed"
+    },
+    "offer_price_inr": {
+     "value": 89.0,
+     "confidence": 0.93,
+     "status": "accepted",
+     "basis": "two independent reads agree (second, targeted re-read)"
+    },
+    "valid_until": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "seller": {
+     "value": "Taco Bell",
+     "confidence": 0.86,
+     "status": "needs_review",
+     "basis": "model value located on the source; OCR parser disagreed or missed it"
+    },
+    "city": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    }
+   },
+   "other_items": [
+    {
+     "item_name": "Pepsi + Masala Twist Combo",
+     "pack": "not specified",
+     "mrp_inr": null,
+     "offer_price_inr": 99,
+     "valid_until": null,
+     "seller": "Taco Bell",
+     "city": null,
+     "quotes": {
+      "mrp": null,
+      "offer_price": "99",
+      "pack": "not specified"
+     }
+    },
+    {
+     "item_name": "Select items",
+     "pack": "not specified",
+     "mrp_inr": null,
+     "offer_price_inr": null,
+     "valid_until": "9th & 10th Oct",
+     "seller": "Taco Bell",
+     "city": null,
+     "quotes": {
+      "mrp": null,
+      "offer_price": "50% OFF",
+      "pack": "not specified"
+     }
+    }
+   ],
+   "review_queue": [
+    "mrp_inr",
+    "pack"
+   ],
+   "quarantined": false,
+   "pii_redacted": {},
+   "ocr_lines": 10
+  },
+  {
+   "file": "IMG-20261009-WA0018.jpg",
+   "source": "photo",
+   "at_s": null,
+   "image": "annotated/IMG-20261009-WA0018.jpg",
+   "input_type": "image",
+   "document_type": "shelf_tag",
+   "method": "two_reads",
+   "quality": {
+    "sharpness": 847,
+    "brightness": 152,
+    "issues": [],
+    "ok": true
+   },
+   "seconds": 7.3,
+   "cost_usd": 0.0,
+   "fields": {
+    "item_name": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "pack": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; second read disagreed"
+    },
+    "mrp_inr": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; second read disagreed"
+    },
+    "offer_price_inr": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; second read disagreed"
+    },
+    "valid_until": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "seller": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "city": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    }
+   },
+   "other_items": [
+    {
+     "item_name": null,
+     "pack": null,
+     "mrp_inr": null,
+     "offer_price_inr": null,
+     "valid_until": null,
+     "seller": null,
+     "city": null,
+     "quotes": {
+      "mrp": null,
+      "offer_price": null,
+      "pack": null
+     }
+    }
+   ],
+   "review_queue": [
+    "offer_price_inr",
+    "mrp_inr",
+    "pack"
+   ],
+   "quarantined": false,
+   "pii_redacted": {},
+   "ocr_lines": 57
+  },
+  {
+   "file": "IMG-20261009-WA0019.jpg",
+   "source": "photo",
+   "at_s": null,
+   "image": "annotated/IMG-20261009-WA0019.jpg",
+   "input_type": "image",
+   "document_type": "other",
+   "method": "two_reads",
+   "quality": {
+    "sharpness": 569,
+    "brightness": 106,
+    "issues": [],
+    "ok": true
+   },
+   "seconds": 3.4,
+   "cost_usd": 0.0,
+   "fields": {
+    "item_name": {
+     "value": "Pizza Hut 4 Course Meal",
+     "confidence": 0.55,
+     "status": "needs_review",
+     "basis": "model only; not found by OCR"
+    },
+    "pack": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; second read disagreed"
+    },
+    "mrp_inr": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; second read disagreed"
+    },
+    "offer_price_inr": {
+     "value": 99.0,
+     "confidence": 0.93,
+     "status": "accepted",
+     "basis": "two independent reads agree (second, targeted re-read)"
+    },
+    "valid_until": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "seller": {
+     "value": "Pizza Hut",
+     "confidence": 0.55,
+     "status": "needs_review",
+     "basis": "model only; not found by OCR"
+    },
+    "city": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    }
+   },
+   "other_items": [
+    {
+     "item_name": "McDonald's Everyday Value Meals",
+     "pack": null,
+     "mrp_inr": 240,
+     "offer_price_inr": 99,
+     "valid_until": null,
+     "seller": "McDonald's",
+     "city": null,
+     "quotes": {
+      "mrp": "₹240",
+      "offer_price": "99",
+      "pack": null
+     }
+    },
+    {
+     "item_name": "Burger King Crispy Veg",
+     "pack": "2 pcs",
+     "mrp_inr": 118,
+     "offer_price_inr": 79,
+     "valid_until": null,
+     "seller": "Burger King",
+     "city": null,
+     "quotes": {
+      "mrp": "118",
+      "offer_price": "79",
+      "pack": "2 for"
+     }
+    },
+    {
+     "item_name": "Burger King Crispy Chicken",
+     "pack": "2 pcs",
+     "mrp_inr": 158,
+     "offer_price_inr": 99,
+     "valid_until": null,
+     "seller": "Burger King",
+     "city": null,
+     "quotes": {
+      "mrp": "158",
+      "offer_price": "99",
+      "pack": "2 for"
+     }
+    }
+   ],
+   "review_queue": [
+    "mrp_inr",
+    "pack"
+   ],
+   "quarantined": false,
+   "pii_redacted": {},
+   "ocr_lines": 16
+  },
+  {
+   "file": "IMG-20261009-WA0020.jpg",
+   "source": "photo",
+   "at_s": null,
+   "image": "annotated/IMG-20261009-WA0020.jpg",
+   "input_type": "image",
+   "document_type": "other",
+   "method": "two_reads",
+   "quality": {
+    "sharpness": 297,
+    "brightness": 133,
+    "issues": [],
+    "ok": true
+   },
+   "seconds": 1.2,
+   "cost_usd": 0.0,
+   "fields": {
+    "item_name": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "pack": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; second read disagreed"
+    },
+    "mrp_inr": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; second read disagreed"
+    },
+    "offer_price_inr": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; second read disagreed"
+    },
+    "valid_until": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "seller": {
+     "value": "McDonald's",
+     "confidence": 0.55,
+     "status": "needs_review",
+     "basis": "model only; not found by OCR"
+    },
+    "city": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    }
+   },
+   "other_items": [
+    {
+     "item_name": null,
+     "pack": null,
+     "mrp_inr": null,
+     "offer_price_inr": null,
+     "valid_until": null,
+     "seller": null,
+     "city": null,
+     "quotes": {
+      "mrp": null,
+      "offer_price": null,
+      "pack": null
+     }
+    }
+   ],
+   "review_queue": [
+    "offer_price_inr",
+    "mrp_inr",
+    "pack"
+   ],
+   "quarantined": false,
+   "pii_redacted": {},
+   "ocr_lines": 1
+  },
+  {
+   "file": "IMG-20261009-WA0021.jpg",
+   "source": "photo",
+   "at_s": null,
+   "image": "annotated/IMG-20261009-WA0021.jpg",
+   "input_type": "image",
+   "document_type": "other",
+   "method": "two_reads",
+   "quality": {
+    "sharpness": 958,
+    "brightness": 105,
+    "issues": [],
+    "ok": true
+   },
+   "seconds": 2.8,
+   "cost_usd": 0.0,
+   "fields": {
+    "item_name": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "pack": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; second read disagreed"
+    },
+    "mrp_inr": {
+     "value": 6995.0,
+     "confidence": 0.86,
+     "status": "needs_review",
+     "basis": "model value located on the source; OCR parser disagreed or missed it; second read disagreed"
+    },
+    "offer_price_inr": {
+     "value": 399.0,
+     "confidence": 0.55,
+     "status": "needs_review",
+     "basis": "model only; not found by OCR; second read disagreed"
+    },
+    "valid_until": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "seller": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "city": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    }
+   },
+   "other_items": [
+    {
+     "item_name": null,
+     "pack": null,
+     "mrp_inr": 14995,
+     "offer_price_inr": 499,
+     "valid_until": null,
+     "seller": null,
+     "city": null,
+     "quotes": {
+      "mrp": "14995",
+      "offer_price": "499",
+      "pack": null
+     }
+    }
+   ],
+   "review_queue": [
+    "offer_price_inr",
+    "mrp_inr",
+    "pack"
+   ],
+   "quarantined": false,
+   "pii_redacted": {},
+   "ocr_lines": 14
+  },
+  {
+   "file": "IMG-20261009-WA0022.jpg",
+   "source": "photo",
+   "at_s": null,
+   "image": "annotated/IMG-20261009-WA0022.jpg",
+   "input_type": "image",
+   "document_type": "other",
+   "method": "two_reads",
+   "quality": {
+    "sharpness": 263,
+    "brightness": 120,
+    "issues": [],
+    "ok": true
+   },
+   "seconds": 1.8,
+   "cost_usd": 0.0,
+   "fields": {
+    "item_name": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "pack": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; second read disagreed"
+    },
+    "mrp_inr": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; second read disagreed"
+    },
+    "offer_price_inr": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; second read disagreed"
+    },
+    "valid_until": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "seller": {
+     "value": "THE MAN COMPANY",
+     "confidence": 0.55,
+     "status": "needs_review",
+     "basis": "model only; not found by OCR"
+    },
+    "city": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    }
+   },
+   "other_items": [],
+   "review_queue": [
+    "offer_price_inr",
+    "mrp_inr",
+    "pack"
+   ],
+   "quarantined": false,
+   "pii_redacted": {},
+   "ocr_lines": 4
+  },
+  {
+   "file": "IMG-20261009-WA0023.jpg",
+   "source": "photo",
+   "at_s": null,
+   "image": "annotated/IMG-20261009-WA0023.jpg",
+   "input_type": "image",
+   "document_type": "shelf_tag",
+   "method": "two_reads",
+   "quality": {
+    "sharpness": 441,
+    "brightness": 112,
+    "issues": [],
+    "ok": true
+   },
+   "seconds": 3.5,
+   "cost_usd": 0.0,
+   "fields": {
+    "item_name": {
+     "value": "APPLE RED DELICIOUS",
+     "confidence": 0.55,
+     "status": "needs_review",
+     "basis": "model only; not found by OCR"
+    },
+    "pack": {
+     "value": "per kg",
+     "confidence": 0.86,
+     "status": "needs_review",
+     "basis": "model value located on the source; OCR parser disagreed or missed it; second read disagreed"
+    },
+    "mrp_inr": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; second read disagreed"
+    },
+    "offer_price_inr": {
+     "value": 399.0,
+     "confidence": 0.97,
+     "status": "accepted",
+     "basis": "model and OCR agree; value located on the source"
+    },
+    "valid_until": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "seller": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "city": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    }
+   },
+   "other_items": [
+    {
+     "item_name": "APPLE SHIMLA",
+     "pack": "per kg",
+     "mrp_inr": null,
+     "offer_price_inr": 159,
+     "valid_until": null,
+     "seller": null,
+     "city": null,
+     "quotes": {
+      "mrp": null,
+      "offer_price": "₹ 159.00 /KG",
+      "pack": "per kg"
+     }
+    },
+    {
+     "item_name": "MOSAMBI",
+     "pack": "per kg",
+     "mrp_inr": null,
+     "offer_price_inr": 49,
+     "valid_until": null,
+     "seller": null,
+     "city": null,
+     "quotes": {
+      "mrp": null,
+      "offer_price": "₹ 49.00 /KG",
+      "pack": "per kg"
+     }
+    }
+   ],
+   "review_queue": [
+    "mrp_inr",
+    "pack"
+   ],
+   "quarantined": false,
+   "pii_redacted": {},
+   "ocr_lines": 23
+  },
+  {
+   "file": "IMG-20261009-WA0024.jpg",
+   "source": "photo",
+   "at_s": null,
+   "image": "annotated/IMG-20261009-WA0024.jpg",
+   "input_type": "image",
+   "document_type": "shelf_tag",
+   "method": "two_reads",
+   "quality": {
+    "sharpness": 768,
+    "brightness": 62,
+    "issues": [
+     "dark"
+    ],
+    "ok": false
+   },
+   "seconds": 2.4,
+   "cost_usd": 0.0,
+   "fields": {
+    "item_name": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "pack": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; image dark; second read disagreed"
+    },
+    "mrp_inr": {
+     "value": 1250.0,
+     "confidence": 0.54,
+     "status": "needs_review",
+     "basis": "OCR parser only; image dark; second read disagreed"
+    },
+    "offer_price_inr": {
+     "value": 399.0,
+     "confidence": 0.47,
+     "status": "needs_review",
+     "basis": "model only; not found by OCR; image dark; second read disagreed"
+    },
+    "valid_until": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "seller": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "city": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    }
+   },
+   "other_items": [
+    {
+     "item_name": null,
+     "pack": null,
+     "mrp_inr": null,
+     "offer_price_inr": 499,
+     "valid_until": null,
+     "seller": null,
+     "city": null,
+     "quotes": {
+      "mrp": null,
+      "offer_price": "499",
+      "pack": null
+     }
+    }
+   ],
+   "review_queue": [
+    "offer_price_inr",
+    "mrp_inr",
+    "pack"
+   ],
+   "quarantined": false,
+   "pii_redacted": {},
+   "ocr_lines": 14
+  },
+  {
+   "file": "IMG-20261009-WA0025.jpg",
+   "source": "photo",
+   "at_s": null,
+   "image": "annotated/IMG-20261009-WA0025.jpg",
+   "input_type": "image",
+   "document_type": "shelf_tag",
+   "method": "two_reads",
+   "quality": {
+    "sharpness": 977,
+    "brightness": 136,
+    "issues": [],
+    "ok": true
+   },
+   "seconds": 5.7,
+   "cost_usd": 0.0,
+   "fields": {
+    "item_name": {
+     "value": "Super Sarvottam Rice Bran Oil",
+     "confidence": 0.55,
+     "status": "needs_review",
+     "basis": "model only; not found by OCR"
+    },
+    "pack": {
+     "value": "13 kg",
+     "confidence": 0.97,
+     "status": "accepted",
+     "basis": "model and OCR agree; value located on the source"
+    },
+    "mrp_inr": {
+     "value": 2929.0,
+     "confidence": 0.93,
+     "status": "accepted",
+     "basis": "two independent reads agree (second, targeted re-read)"
+    },
+    "offer_price_inr": {
+     "value": 2199.0,
+     "confidence": 0.93,
+     "status": "accepted",
+     "basis": "two independent reads agree (second, targeted re-read)"
+    },
+    "valid_until": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "seller": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "city": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    }
+   },
+   "other_items": [
+    {
+     "item_name": "Gemini Refined Sunflower Oil",
+     "pack": "13 kg",
+     "mrp_inr": 3300,
+     "offer_price_inr": 2650,
+     "valid_until": null,
+     "seller": null,
+     "city": null,
+     "quotes": {
+      "mrp": "MRP: 3300",
+      "offer_price": "SMART PRICE ₹2650",
+      "pack": "13 kg"
+     }
+    }
+   ],
+   "review_queue": [],
+   "quarantined": false,
+   "pii_redacted": {},
+   "ocr_lines": 34
+  },
+  {
+   "file": "IMG-20261009-WA0026.jpg",
+   "source": "photo",
+   "at_s": null,
+   "image": "annotated/IMG-20261009-WA0026.jpg",
+   "input_type": "image",
+   "document_type": "other",
+   "method": "two_reads",
+   "quality": {
+    "sharpness": 417,
+    "brightness": 121,
+    "issues": [],
+    "ok": true
+   },
+   "seconds": 3.5,
+   "cost_usd": 0.0,
+   "fields": {
+    "item_name": {
+     "value": "Lenovo LOQ-15 Laptop",
+     "confidence": 0.55,
+     "status": "needs_review",
+     "basis": "model only; not found by OCR"
+    },
+    "pack": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; second read disagreed"
+    },
+    "mrp_inr": {
+     "value": 314890.0,
+     "confidence": 0.93,
+     "status": "accepted",
+     "basis": "two independent reads agree (second, targeted re-read)"
+    },
+    "offer_price_inr": {
+     "value": 163999.0,
+     "confidence": 0.93,
+     "status": "accepted",
+     "basis": "two independent reads agree (second, targeted re-read)"
+    },
+    "valid_until": {
+     "value": "30th September 2023",
+     "confidence": 0.55,
+     "status": "needs_review",
+     "basis": "model only; not found by OCR"
+    },
+    "seller": {
+     "value": "Q Digital",
+     "confidence": 0.55,
+     "status": "needs_review",
+     "basis": "model only; not found by OCR"
+    },
+    "city": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    }
+   },
+   "other_items": [
+    {
+     "item_name": "Apple AirPods Pro 3",
+     "pack": null,
+     "mrp_inr": 25900,
+     "offer_price_inr": 25900,
+     "valid_until": null,
+     "seller": null,
+     "city": null,
+     "quotes": {
+      "mrp": "Starting from ₹25900*",
+      "offer_price": "₹25900",
+      "pack": null
+     }
+    }
+   ],
+   "review_queue": [
+    "pack"
+   ],
+   "quarantined": false,
+   "pii_redacted": {},
+   "ocr_lines": 16
+  },
+  {
+   "file": "IMG-20261009-WA0027.jpg",
+   "source": "photo",
+   "at_s": null,
+   "image": "annotated/IMG-20261009-WA0027.jpg",
+   "input_type": "image",
+   "document_type": "other",
+   "method": "two_reads",
+   "quality": {
+    "sharpness": 578,
+    "brightness": 120,
+    "issues": [],
+    "ok": true
+   },
+   "seconds": 1.5,
+   "cost_usd": 0.0,
+   "fields": {
+    "item_name": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "pack": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; second read disagreed"
+    },
+    "mrp_inr": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; second read disagreed"
+    },
+    "offer_price_inr": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; second read disagreed"
+    },
+    "valid_until": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "seller": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "city": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    }
+   },
+   "other_items": [],
+   "review_queue": [
+    "offer_price_inr",
+    "mrp_inr",
+    "pack"
+   ],
+   "quarantined": false,
+   "pii_redacted": {},
+   "ocr_lines": 5
+  },
+  {
+   "file": "IMG-20261009-WA0028.jpg",
+   "source": "photo",
+   "at_s": null,
+   "image": "annotated/IMG-20261009-WA0028.jpg",
+   "input_type": "image",
+   "document_type": "flyer",
+   "method": "two_reads",
+   "quality": {
+    "sharpness": 336,
+    "brightness": 115,
+    "issues": [],
+    "ok": true
+   },
+   "seconds": 2.6,
+   "cost_usd": 0.0,
+   "fields": {
+    "item_name": {
+     "value": "iPhone 13 Pro Max 1TB",
+     "confidence": 0.55,
+     "status": "needs_review",
+     "basis": "model only; not found by OCR"
+    },
+    "pack": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; second read disagreed"
+    },
+    "mrp_inr": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; second read disagreed"
+    },
+    "offer_price_inr": {
+     "value": 135990.0,
+     "confidence": 0.55,
+     "status": "needs_review",
+     "basis": "model only; not found by OCR; second read disagreed"
+    },
+    "valid_until": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "seller": {
+     "value": "Retailer",
+     "confidence": 0.55,
+     "status": "needs_review",
+     "basis": "model only; not found by OCR"
+    },
+    "city": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    }
+   },
+   "other_items": [
+    {
+     "item_name": "iPhone 13 Pro 512GB",
+     "pack": null,
+     "mrp_inr": null,
+     "offer_price_inr": 113990,
+     "valid_until": null,
+     "seller": "Retailer",
+     "city": null,
+     "quotes": {
+      "mrp": null,
+      "offer_price": "₹1,13,990",
+      "pack": null
+     }
+    },
+    {
+     "item_name": "iPhone 13",
+     "pack": null,
+     "mrp_inr": null,
+     "offer_price_inr": 86990,
+     "valid_until": null,
+     "seller": "Retailer",
+     "city": null,
+     "quotes": {
+      "mrp": null,
+      "offer_price": "₹86,990",
+      "pack": null
+     }
+    },
+    {
+     "item_name": "Xiaomi 32 HD QLED TV",
+     "pack": null,
+     "mrp_inr": 13990,
+     "offer_price_inr": 13990,
+     "valid_until": null,
+     "seller": "Retailer",
+     "city": null,
+     "quotes": {
+      "mrp": "₹13,990",
+      "offer_price": "₹13,990",
+      "pack": null
+     }
+    },
+    {
+     "item_name": "Xiaomi 43 FHD TV",
+     "pack": null,
+     "mrp_inr": 21990,
+     "offer_price_inr": 21990,
+     "valid_until": null,
+     "seller": "Retailer",
+     "city": null,
+     "quotes": {
+      "mrp": "₹21,990",
+      "offer_price": "₹21,990",
+      "pack": null
+     }
+    },
+    {
+     "item_name": "Washing Machine",
+     "pack": null,
+     "mrp_inr": 11800,
+     "offer_price_inr": 11500,
+     "valid_until": null,
+     "seller": "Retailer",
+     "city": null,
+     "quotes": {
+      "mrp": "₹11,800",
+      "offer_price": "₹11,500",
+      "pack": null
+     }
+    }
+   ],
+   "review_queue": [
+    "offer_price_inr",
+    "mrp_inr",
+    "pack"
+   ],
+   "quarantined": false,
+   "pii_redacted": {},
+   "ocr_lines": 15
+  },
+  {
+   "file": "IMG-20261009-WA0029.jpg",
+   "source": "photo",
+   "at_s": null,
+   "image": "annotated/IMG-20261009-WA0029.jpg",
+   "input_type": "image",
+   "document_type": "other",
+   "method": "two_reads",
+   "quality": {
+    "sharpness": 737,
+    "brightness": 102,
+    "issues": [],
+    "ok": true
+   },
+   "seconds": 2.3,
+   "cost_usd": 0.0,
+   "fields": {
+    "item_name": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "pack": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; second read disagreed"
+    },
+    "mrp_inr": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; second read disagreed"
+    },
+    "offer_price_inr": {
+     "value": 89.0,
+     "confidence": 0.93,
+     "status": "accepted",
+     "basis": "two independent reads agree (second, targeted re-read)"
+    },
+    "valid_until": {
+     "value": "9th & 10th Oct",
+     "confidence": 0.55,
+     "status": "needs_review",
+     "basis": "model only; not found by OCR"
+    },
+    "seller": {
+     "value": "Taco Bell",
+     "confidence": 0.86,
+     "status": "needs_review",
+     "basis": "model value located on the source; OCR parser disagreed or missed it"
+    },
+    "city": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    }
+   },
+   "other_items": [],
+   "review_queue": [
+    "mrp_inr",
+    "pack"
+   ],
+   "quarantined": false,
+   "pii_redacted": {},
+   "ocr_lines": 11
+  },
+  {
+   "file": "IMG-20261009-WA0030.jpg",
+   "source": "photo",
+   "at_s": null,
+   "image": "annotated/IMG-20261009-WA0030.jpg",
+   "input_type": "image",
+   "document_type": "shelf_tag",
+   "method": "two_reads",
+   "quality": {
+    "sharpness": 812,
+    "brightness": 131,
+    "issues": [],
+    "ok": true
+   },
+   "seconds": 1.9,
+   "cost_usd": 0.0,
+   "fields": {
+    "item_name": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "pack": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; second read disagreed"
+    },
+    "mrp_inr": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; second read disagreed"
+    },
+    "offer_price_inr": {
+     "value": 9.0,
+     "confidence": 0.55,
+     "status": "needs_review",
+     "basis": "model only; not found by OCR; second read disagreed"
+    },
+    "valid_until": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "seller": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "city": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    }
+   },
+   "other_items": [
+    {
+     "item_name": null,
+     "pack": null,
+     "mrp_inr": null,
+     "offer_price_inr": 6,
+     "valid_until": null,
+     "seller": null,
+     "city": null,
+     "quotes": {
+      "mrp": "MRP पे 6% की छूट",
+      "offer_price": "6%",
+      "pack": null
+     }
+    }
+   ],
+   "review_queue": [
+    "offer_price_inr",
+    "mrp_inr",
+    "pack"
+   ],
+   "quarantined": false,
+   "pii_redacted": {},
+   "ocr_lines": 7
+  },
+  {
+   "file": "IMG-20261009-WA0031.jpg",
+   "source": "photo",
+   "at_s": null,
+   "image": "annotated/IMG-20261009-WA0031.jpg",
+   "input_type": "image",
+   "document_type": "shelf_tag",
+   "method": "two_reads",
+   "quality": {
+    "sharpness": 765,
+    "brightness": 124,
+    "issues": [],
+    "ok": true
+   },
+   "seconds": 1.8,
+   "cost_usd": 0.0,
+   "fields": {
+    "item_name": {
+     "value": "MamyPoko Pants Skin Breathe Care",
+     "confidence": 0.55,
+     "status": "needs_review",
+     "basis": "model only; not found by OCR"
+    },
+    "pack": {
+     "value": "L 10 Pants",
+     "confidence": 0.93,
+     "status": "accepted",
+     "basis": "two independent reads agree (second, targeted re-read)"
+    },
+    "mrp_inr": {
+     "value": 402.0,
+     "confidence": 0.97,
+     "status": "accepted",
+     "basis": "model and OCR agree; value located on the source"
+    },
+    "offer_price_inr": {
+     "value": 206.0,
+     "confidence": 0.62,
+     "status": "needs_review",
+     "basis": "OCR parser only; second read disagreed"
+    },
+    "valid_until": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "seller": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "city": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    }
+   },
+   "other_items": [
+    {
+     "item_name": "MamyPoko Pants Skin Breathe Care",
+     "pack": "XL 10 Pants",
+     "mrp_inr": 402,
+     "offer_price_inr": null,
+     "valid_until": null,
+     "seller": null,
+     "city": null,
+     "quotes": {
+      "mrp": "₹402",
+      "offer_price": null,
+      "pack": "XL 10 Pants"
+     }
+    },
+    {
+     "item_name": "MamyPoko Pants Pantsy Hope",
+     "pack": "M 54 Pants",
+     "mrp_inr": 206,
+     "offer_price_inr": null,
+     "valid_until": null,
+     "seller": null,
+     "city": null,
+     "quotes": {
+      "mrp": "₹206",
+      "offer_price": null,
+      "pack": "M 54 Pants"
+     }
+    }
+   ],
+   "review_queue": [
+    "offer_price_inr"
+   ],
+   "quarantined": false,
+   "pii_redacted": {},
+   "ocr_lines": 19
+  },
+  {
+   "file": "IMG-20261009-WA0033.jpg",
+   "source": "photo",
+   "at_s": null,
+   "image": "annotated/IMG-20261009-WA0033.jpg",
+   "input_type": "image",
+   "document_type": "other",
+   "method": "two_reads",
+   "quality": {
+    "sharpness": 656,
+    "brightness": 97,
+    "issues": [],
+    "ok": true
+   },
+   "seconds": 1.5,
+   "cost_usd": 0.0,
+   "fields": {
+    "item_name": {
+     "value": "All Biryani",
+     "confidence": 0.55,
+     "status": "needs_review",
+     "basis": "model only; not found by OCR"
+    },
+    "pack": {
+     "value": null,
+     "confidence": 0.0,
+     "status": "needs_review",
+     "basis": "placeholder text, treated as not found"
+    },
+    "mrp_inr": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; second read disagreed"
+    },
+    "offer_price_inr": {
+     "value": 89.0,
+     "confidence": 0.93,
+     "status": "accepted",
+     "basis": "two independent reads agree (second, targeted re-read)"
+    },
+    "valid_until": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "seller": {
+     "value": "Taco Bell",
+     "confidence": 0.86,
+     "status": "needs_review",
+     "basis": "model value located on the source; OCR parser disagreed or missed it"
+    },
+    "city": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    }
+   },
+   "other_items": [
+    {
+     "item_name": "Squad Sharing Packs",
+     "pack": "unspecified",
+     "mrp_inr": null,
+     "offer_price_inr": 247,
+     "valid_until": null,
+     "seller": "Taco Bell",
+     "city": null,
+     "quotes": {
+      "mrp": null,
+      "offer_price": "247",
+      "pack": null
+     }
+    },
+    {
+     "item_name": "Squad Sharing Bucket",
+     "pack": "unspecified",
+     "mrp_inr": null,
+     "offer_price_inr": 279,
+     "valid_until": null,
+     "seller": "Taco Bell",
+     "city": null,
+     "quotes": {
+      "mrp": null,
+      "offer_price": "279",
+      "pack": null
+     }
+    },
+    {
+     "item_name": "The Big Box",
+     "pack": "unspecified",
+     "mrp_inr": null,
+     "offer_price_inr": null,
+     "valid_until": null,
+     "seller": "Taco Bell",
+     "city": null,
+     "quotes": {
+      "mrp": null,
+      "offer_price": null,
+      "pack": null
+     }
+    },
+    {
+     "item_name": "Classic Pizza",
+     "pack": "unspecified",
+     "mrp_inr": null,
+     "offer_price_inr": 99,
+     "valid_until": null,
+     "seller": "Taco Bell",
+     "city": null,
+     "quotes": {
+      "mrp": null,
+      "offer_price": "99",
+      "pack": null
+     }
+    },
+    {
+     "item_name": "50% OFF",
+     "pack": "valid on 9th & 10th Oct",
+     "mrp_inr": null,
+     "offer_price_inr": null,
+     "valid_until": "10 Oct",
+     "seller": "Taco Bell",
+     "city": null,
+     "quotes": {
+      "mrp": null,
+      "offer_price": "50% OFF",
+      "pack": "9th & 10th Oct"
+     }
+    }
+   ],
+   "review_queue": [
+    "mrp_inr",
+    "pack"
+   ],
+   "quarantined": false,
+   "pii_redacted": {},
+   "ocr_lines": 12
+  },
+  {
+   "file": "IMG-20261009-WA0034.jpg",
+   "source": "photo",
+   "at_s": null,
+   "image": "annotated/IMG-20261009-WA0034.jpg",
+   "input_type": "image",
+   "document_type": "shelf_tag",
+   "method": "two_reads",
+   "quality": {
+    "sharpness": 516,
+    "brightness": 102,
+    "issues": [],
+    "ok": true
+   },
+   "seconds": 1.9,
+   "cost_usd": 0.0,
+   "fields": {
+    "item_name": {
+     "value": "KFC CHICKEN KRISPER MEAL",
+     "confidence": 0.55,
+     "status": "needs_review",
+     "basis": "model only; not found by OCR"
+    },
+    "pack": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; second read disagreed"
+    },
+    "mrp_inr": {
+     "value": 237.0,
+     "confidence": 0.97,
+     "status": "accepted",
+     "basis": "model and OCR agree; value located on the source"
+    },
+    "offer_price_inr": {
+     "value": 99.0,
+     "confidence": 0.97,
+     "status": "accepted",
+     "basis": "model and OCR agree; value located on the source"
+    },
+    "valid_until": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "seller": {
+     "value": "KFC",
+     "confidence": 0.86,
+     "status": "needs_review",
+     "basis": "model value located on the source; OCR parser disagreed or missed it"
+    },
+    "city": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    }
+   },
+   "other_items": [],
+   "review_queue": [
+    "pack"
+   ],
+   "quarantined": false,
+   "pii_redacted": {},
+   "ocr_lines": 11
+  },
+  {
+   "file": "IMG-20261009-WA0035.jpg",
+   "source": "photo",
+   "at_s": null,
+   "image": "annotated/IMG-20261009-WA0035.jpg",
+   "input_type": "image",
+   "document_type": "shelf_tag",
+   "method": "two_reads",
+   "quality": {
+    "sharpness": 370,
+    "brightness": 125,
+    "issues": [],
+    "ok": true
+   },
+   "seconds": 1.6,
+   "cost_usd": 0.0,
+   "fields": {
+    "item_name": {
+     "value": "Sweets 200 g (Vadilal / Vasanth Vidyut)",
+     "confidence": 0.55,
+     "status": "needs_review",
+     "basis": "model only; not found by OCR"
+    },
+    "pack": {
+     "value": "200 g",
+     "confidence": 0.93,
+     "status": "accepted",
+     "basis": "two independent reads agree (second, targeted re-read)"
+    },
+    "mrp_inr": {
+     "value": 179.0,
+     "confidence": 0.93,
+     "status": "accepted",
+     "basis": "two independent reads agree (second, targeted re-read)"
+    },
+    "offer_price_inr": {
+     "value": 333.0,
+     "confidence": 0.62,
+     "status": "needs_review",
+     "basis": "OCR parser only; second read disagreed"
+    },
+    "valid_until": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "seller": {
+     "value": "Smart Bazaar",
+     "confidence": 0.55,
+     "status": "needs_review",
+     "basis": "model only; not found by OCR"
+    },
+    "city": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    }
+   },
+   "other_items": [
+    {
+     "item_name": "Detergents (A Big Basket / Ultra / Vimbar)",
+     "pack": null,
+     "mrp_inr": 80,
+     "offer_price_inr": null,
+     "valid_until": null,
+     "seller": "Smart Bazaar",
+     "city": null,
+     "quotes": {
+      "mrp": "MRP ₹80",
+      "offer_price": "MINIMUM 33% OFF",
+      "pack": null
+     }
+    },
+    {
+     "item_name": "Cold Drinks & Juices (All Varieties Coke / Maaza / Sprite)",
+     "pack": null,
+     "mrp_inr": 80,
+     "offer_price_inr": null,
+     "valid_until": null,
+     "seller": "Smart Bazaar",
+     "city": null,
+     "quotes": {
+      "mrp": "MRP ₹80",
+      "offer_price": "BUY ANY 3 GET ANY 1 FREE",
+      "pack": null
+     }
+    },
+    {
+     "item_name": "Loose/ Good Life/ Devyani/ Groshivani Basmati Rice",
+     "pack": "1 kg",
+     "mrp_inr": 115,
+     "offer_price_inr": 95,
+     "valid_until": null,
+     "seller": "Smart Bazaar",
+     "city": null,
+     "quotes": {
+      "mrp": "MRP ₹115",
+      "offer_price": "SMART PRICE ₹95",
+      "pack": "1 Kg"
+     }
+    },
+    {
+     "item_name": "Fashion Clothing",
+     "pack": null,
+     "mrp_inr": null,
+     "offer_price_inr": 199,
+     "valid_until": null,
+     "seller": "Smart Bazaar",
+     "city": null,
+     "quotes": {
+      "mrp": null,
+      "offer_price": "Starting @ 199",
+      "pack": null
+     }
+    },
+    {
+     "item_name": "Branded Hard & Soft Trolley Bag",
+     "pack": null,
+     "mrp_inr": 7999,
+     "offer_price_inr": null,
+     "valid_until": null,
+     "seller": "Smart Bazaar",
+     "city": null,
+     "quotes": {
+      "mrp": "MRP ₹7999",
+      "offer_price": "UP TO 70% OFF",
+      "pack": null
+     }
+    }
+   ],
+   "review_queue": [
+    "offer_price_inr"
+   ],
+   "quarantined": false,
+   "pii_redacted": {},
+   "ocr_lines": 17
+  },
+  {
+   "file": "IMG-20261009-WA0038.jpg",
+   "source": "photo",
+   "at_s": null,
+   "image": "annotated/IMG-20261009-WA0038.jpg",
+   "input_type": "image",
+   "document_type": "other",
+   "method": "two_reads",
+   "quality": {
+    "sharpness": 502,
+    "brightness": 113,
+    "issues": [],
+    "ok": true
+   },
+   "seconds": 8.6,
+   "cost_usd": 0.0,
+   "fields": {
+    "item_name": {
+     "value": "PERI PERI MEAL FOR 2",
+     "confidence": 0.55,
+     "status": "needs_review",
+     "basis": "model only; not found by OCR"
+    },
+    "pack": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; second read disagreed"
+    },
+    "mrp_inr": {
+     "value": 1158.0,
+     "confidence": 0.55,
+     "status": "needs_review",
+     "basis": "model only; not found by OCR; second read disagreed"
+    },
+    "offer_price_inr": {
+     "value": 599.0,
+     "confidence": 0.97,
+     "status": "accepted",
+     "basis": "model and OCR agree; value located on the source"
+    },
+    "valid_until": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "seller": {
+     "value": "BK Cafe",
+     "confidence": 0.86,
+     "status": "needs_review",
+     "basis": "model value located on the source; OCR parser disagreed or missed it"
+    },
+    "city": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    }
+   },
+   "other_items": [
+    {
+     "item_name": "BK Fusion Sundae",
+     "pack": null,
+     "mrp_inr": 79,
+     "offer_price_inr": 49,
+     "valid_until": null,
+     "seller": "BK Cafe",
+     "city": null,
+     "quotes": {
+      "mrp": "79",
+      "offer_price": "49",
+      "pack": null
+     }
+    },
+    {
+     "item_name": "BK Fusion Shake",
+     "pack": null,
+     "mrp_inr": 249,
+     "offer_price_inr": 99,
+     "valid_until": null,
+     "seller": "BK Cafe",
+     "city": null,
+     "quotes": {
+      "mrp": "249",
+      "offer_price": "99",
+      "pack": null
+     }
+    },
+    {
+     "item_name": "Cold Coffee/ Thick Shake",
+     "pack": null,
+     "mrp_inr": 79,
+     "offer_price_inr": 79,
+     "valid_until": null,
+     "seller": "BK Cafe",
+     "city": null,
+     "quotes": {
+      "mrp": "79",
+      "offer_price": "79",
+      "pack": null
+     }
+    },
+    {
+     "item_name": "Hot Coffee/ Hot Chocolate",
+     "pack": null,
+     "mrp_inr": 59,
+     "offer_price_inr": 59,
+     "valid_until": null,
+     "seller": "BK Cafe",
+     "city": null,
+     "quotes": {
+      "mrp": "59",
+      "offer_price": "59",
+      "pack": null
+     }
+    },
+    {
+     "item_name": "Cheese Add-on",
+     "pack": null,
+     "mrp_inr": 24,
+     "offer_price_inr": 24,
+     "valid_until": null,
+     "seller": "BK Cafe",
+     "city": null,
+     "quotes": {
+      "mrp": "24",
+      "offer_price": "24",
+      "pack": null
+     }
+    }
+   ],
+   "review_queue": [
+    "mrp_inr",
+    "pack"
+   ],
+   "quarantined": false,
+   "pii_redacted": {},
+   "ocr_lines": 60
+  },
+  {
+   "file": "VID-20261009-WA0016.mp4",
+   "source": "video frame",
+   "at_s": 11.5,
+   "image": "annotated/VID-20261009-WA0016_t011.5.jpg",
+   "input_type": "image",
+   "document_type": "other",
+   "method": "two_reads",
+   "quality": {
+    "sharpness": 30,
+    "brightness": 129,
+    "issues": [
+     "blurry"
+    ],
+    "ok": false
+   },
+   "seconds": 0.8,
+   "cost_usd": 0.0,
+   "fields": {
+    "item_name": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "pack": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; image blurry; second read disagreed"
+    },
+    "mrp_inr": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; image blurry; second read disagreed"
+    },
+    "offer_price_inr": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; image blurry; second read disagreed"
+    },
+    "valid_until": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "seller": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "city": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    }
+   },
+   "other_items": [],
+   "review_queue": [
+    "offer_price_inr",
+    "mrp_inr",
+    "pack"
+   ],
+   "quarantined": false,
+   "pii_redacted": {},
+   "ocr_lines": 0
+  },
+  {
+   "file": "VID-20261009-WA0016.mp4",
+   "source": "video frame",
+   "at_s": 16.1,
+   "image": "annotated/VID-20261009-WA0016_t016.1.jpg",
+   "input_type": "image",
+   "document_type": "other",
+   "method": "two_reads",
+   "quality": {
+    "sharpness": 93,
+    "brightness": 117,
+    "issues": [
+     "blurry"
+    ],
+    "ok": false
+   },
+   "seconds": 0.5,
+   "cost_usd": 0.0,
+   "fields": {
+    "item_name": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "pack": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; image blurry; second read disagreed"
+    },
+    "mrp_inr": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; image blurry; second read disagreed"
+    },
+    "offer_price_inr": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; image blurry; second read disagreed"
+    },
+    "valid_until": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "seller": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "city": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    }
+   },
+   "other_items": [],
+   "review_queue": [
+    "offer_price_inr",
+    "mrp_inr",
+    "pack"
+   ],
+   "quarantined": false,
+   "pii_redacted": {},
+   "ocr_lines": 1
+  },
+  {
+   "file": "VID-20261009-WA0016.mp4",
+   "source": "video frame",
+   "at_s": 20.7,
+   "image": "annotated/VID-20261009-WA0016_t020.7.jpg",
+   "input_type": "image",
+   "document_type": "other",
+   "method": "two_reads",
+   "quality": {
+    "sharpness": 38,
+    "brightness": 121,
+    "issues": [
+     "blurry"
+    ],
+    "ok": false
+   },
+   "seconds": 0.4,
+   "cost_usd": 0.0,
+   "fields": {
+    "item_name": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "pack": {
+     "value": "1 kg",
+     "confidence": 0.47,
+     "status": "needs_review",
+     "basis": "model only; not found by OCR; image blurry; second read disagreed"
+    },
+    "mrp_inr": {
+     "value": 199.0,
+     "confidence": 0.47,
+     "status": "needs_review",
+     "basis": "model only; not found by OCR; image blurry; second read disagreed"
+    },
+    "offer_price_inr": {
+     "value": 139.0,
+     "confidence": 0.47,
+     "status": "needs_review",
+     "basis": "model only; not found by OCR; image blurry; second read disagreed"
+    },
+    "valid_until": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "seller": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "city": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    }
+   },
+   "other_items": [],
+   "review_queue": [
+    "offer_price_inr",
+    "mrp_inr",
+    "pack"
+   ],
+   "quarantined": false,
+   "pii_redacted": {},
+   "ocr_lines": 0
+  },
+  {
+   "file": "VID-20261009-WA0016.mp4",
+   "source": "video frame",
+   "at_s": 29.8,
+   "image": "annotated/VID-20261009-WA0016_t029.8.jpg",
+   "input_type": "image",
+   "document_type": "other",
+   "method": "two_reads",
+   "quality": {
+    "sharpness": 43,
+    "brightness": 132,
+    "issues": [
+     "blurry"
+    ],
+    "ok": false
+   },
+   "seconds": 0.4,
+   "cost_usd": 0.0,
+   "fields": {
+    "item_name": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "pack": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; image blurry; second read disagreed"
+    },
+    "mrp_inr": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; image blurry; second read disagreed"
+    },
+    "offer_price_inr": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; image blurry; second read disagreed"
+    },
+    "valid_until": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "seller": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "city": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    }
+   },
+   "other_items": [],
+   "review_queue": [
+    "offer_price_inr",
+    "mrp_inr",
+    "pack"
+   ],
+   "quarantined": false,
+   "pii_redacted": {},
+   "ocr_lines": 0
+  },
+  {
+   "file": "VID-20261009-WA0016.mp4",
+   "source": "video frame",
+   "at_s": 39.0,
+   "image": "annotated/VID-20261009-WA0016_t039.0.jpg",
+   "input_type": "image",
+   "document_type": "other",
+   "method": "two_reads",
+   "quality": {
+    "sharpness": 79,
+    "brightness": 124,
+    "issues": [
+     "blurry"
+    ],
+    "ok": false
+   },
+   "seconds": 0.4,
+   "cost_usd": 0.0,
+   "fields": {
+    "item_name": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "pack": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; image blurry; second read disagreed"
+    },
+    "mrp_inr": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; image blurry; second read disagreed"
+    },
+    "offer_price_inr": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; image blurry; second read disagreed"
+    },
+    "valid_until": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "seller": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "city": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    }
+   },
+   "other_items": [],
+   "review_queue": [
+    "offer_price_inr",
+    "mrp_inr",
+    "pack"
+   ],
+   "quarantined": false,
+   "pii_redacted": {},
+   "ocr_lines": 0
+  },
+  {
+   "file": "VID-20261009-WA0016.mp4",
+   "source": "video frame",
+   "at_s": 52.8,
+   "image": "annotated/VID-20261009-WA0016_t052.8.jpg",
+   "input_type": "image",
+   "document_type": "other",
+   "method": "two_reads",
+   "quality": {
+    "sharpness": 34,
+    "brightness": 138,
+    "issues": [
+     "blurry"
+    ],
+    "ok": false
+   },
+   "seconds": 0.4,
+   "cost_usd": 0.0,
+   "fields": {
+    "item_name": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "pack": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; image blurry; second read disagreed"
+    },
+    "mrp_inr": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; image blurry; second read disagreed"
+    },
+    "offer_price_inr": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; image blurry; second read disagreed"
+    },
+    "valid_until": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "seller": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "city": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    }
+   },
+   "other_items": [],
+   "review_queue": [
+    "offer_price_inr",
+    "mrp_inr",
+    "pack"
+   ],
+   "quarantined": false,
+   "pii_redacted": {},
+   "ocr_lines": 0
+  },
+  {
+   "file": "VID-20261009-WA0036.mp4",
+   "source": "video frame",
+   "at_s": 2.4,
+   "image": "annotated/VID-20261009-WA0036_t002.4.jpg",
+   "input_type": "image",
+   "document_type": "shelf_tag",
+   "method": "two_reads",
+   "quality": {
+    "sharpness": 407,
+    "brightness": 116,
+    "issues": [],
+    "ok": true
+   },
+   "seconds": 0.4,
+   "cost_usd": 0.0,
+   "fields": {
+    "item_name": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "pack": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; second read disagreed"
+    },
+    "mrp_inr": {
+     "value": 47.0,
+     "confidence": 0.62,
+     "status": "needs_review",
+     "basis": "model value located on the source; OCR parser disagreed or missed it; second read disagreed; MRP equals the offer price but no MRP line on the source confirms it: a person should check"
+    },
+    "offer_price_inr": {
+     "value": 47.0,
+     "confidence": 0.97,
+     "status": "accepted",
+     "basis": "model and OCR agree; value located on the source"
+    },
+    "valid_until": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "seller": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "city": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    }
+   },
+   "other_items": [
+    {
+     "item_name": null,
+     "pack": null,
+     "mrp_inr": 34,
+     "offer_price_inr": 34,
+     "valid_until": null,
+     "seller": null,
+     "city": null,
+     "quotes": {
+      "mrp": "34",
+      "offer_price": "34",
+      "pack": null
+     }
+    },
+    {
+     "item_name": null,
+     "pack": null,
+     "mrp_inr": 16,
+     "offer_price_inr": 16,
+     "valid_until": null,
+     "seller": null,
+     "city": null,
+     "quotes": {
+      "mrp": "16",
+      "offer_price": "16",
+      "pack": null
+     }
+    }
+   ],
+   "review_queue": [
+    "mrp_inr",
+    "pack"
+   ],
+   "quarantined": false,
+   "pii_redacted": {},
+   "ocr_lines": 1
+  },
+  {
+   "file": "VID-20261009-WA0036.mp4",
+   "source": "video frame",
+   "at_s": 3.9,
+   "image": "annotated/VID-20261009-WA0036_t003.9.jpg",
+   "input_type": "image",
+   "document_type": "shelf_tag",
+   "method": "two_reads",
+   "quality": {
+    "sharpness": 374,
+    "brightness": 123,
+    "issues": [],
+    "ok": true
+   },
+   "seconds": 0.5,
+   "cost_usd": 0.0,
+   "fields": {
+    "item_name": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "pack": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; second read disagreed"
+    },
+    "mrp_inr": {
+     "value": 47.0,
+     "confidence": 0.62,
+     "status": "needs_review",
+     "basis": "two independent reads agree (second, targeted re-read); MRP equals the offer price but no MRP line on the source confirms it: a person should check"
+    },
+    "offer_price_inr": {
+     "value": 47.0,
+     "confidence": 0.97,
+     "status": "accepted",
+     "basis": "model and OCR agree; value located on the source"
+    },
+    "valid_until": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "seller": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "city": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    }
+   },
+   "other_items": [
+    {
+     "item_name": null,
+     "pack": null,
+     "mrp_inr": 16,
+     "offer_price_inr": 16,
+     "valid_until": null,
+     "seller": null,
+     "city": null,
+     "quotes": {
+      "mrp": "MRP 16",
+      "offer_price": "₹16",
+      "pack": "SMART PRICE"
+     }
+    },
+    {
+     "item_name": null,
+     "pack": null,
+     "mrp_inr": 34,
+     "offer_price_inr": 34,
+     "valid_until": null,
+     "seller": null,
+     "city": null,
+     "quotes": {
+      "mrp": "MRP 34",
+      "offer_price": "₹34",
+      "pack": "SMART PRICE"
+     }
+    }
+   ],
+   "review_queue": [
+    "mrp_inr",
+    "pack"
+   ],
+   "quarantined": false,
+   "pii_redacted": {},
+   "ocr_lines": 4
+  },
+  {
+   "file": "VID-20261009-WA0036.mp4",
+   "source": "video frame",
+   "at_s": 5.5,
+   "image": "annotated/VID-20261009-WA0036_t005.5.jpg",
+   "input_type": "image",
+   "document_type": "shelf_tag",
+   "method": "two_reads",
+   "quality": {
+    "sharpness": 366,
+    "brightness": 116,
+    "issues": [],
+    "ok": true
+   },
+   "seconds": 0.5,
+   "cost_usd": 0.0,
+   "fields": {
+    "item_name": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "pack": {
+     "value": "200 g",
+     "confidence": 0.55,
+     "status": "needs_review",
+     "basis": "model only; not found by OCR; second read disagreed"
+    },
+    "mrp_inr": {
+     "value": null,
+     "confidence": 0,
+     "status": "needs_review",
+     "basis": "not found; second read disagreed"
+    },
+    "offer_price_inr": {
+     "value": 34.0,
+     "confidence": 0.93,
+     "status": "accepted",
+     "basis": "two independent reads agree (second, targeted re-read)"
+    },
+    "valid_until": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "seller": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "city": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    }
+   },
+   "other_items": [
+    {
+     "item_name": null,
+     "pack": null,
+     "mrp_inr": null,
+     "offer_price_inr": 49,
+     "valid_until": null,
+     "seller": null,
+     "city": null,
+     "quotes": {
+      "mrp": null,
+      "offer_price": "49",
+      "pack": null
+     }
+    }
+   ],
+   "review_queue": [
+    "mrp_inr",
+    "pack"
+   ],
+   "quarantined": false,
+   "pii_redacted": {},
+   "ocr_lines": 2
+  },
+  {
+   "file": "VID-20261009-WA0036.mp4",
+   "source": "video frame",
+   "at_s": 7.1,
+   "image": "annotated/VID-20261009-WA0036_t007.1.jpg",
+   "input_type": "image",
+   "document_type": "shelf_tag",
+   "method": "two_reads",
+   "quality": {
+    "sharpness": 386,
+    "brightness": 115,
+    "issues": [],
+    "ok": true
+   },
+   "seconds": 0.7,
+   "cost_usd": 0.0,
+   "fields": {
+    "item_name": {
+     "value": "MTR Bajri Roti Tawa Curry Chips",
+     "confidence": 0.55,
+     "status": "needs_review",
+     "basis": "model only; not found by OCR"
+    },
+    "pack": {
+     "value": "180 g",
+     "confidence": 0.93,
+     "status": "accepted",
+     "basis": "two independent reads agree (second, targeted re-read)"
+    },
+    "mrp_inr": {
+     "value": 80.08,
+     "confidence": 0.55,
+     "status": "needs_review",
+     "basis": "model only; not found by OCR; second read disagreed"
+    },
+    "offer_price_inr": {
+     "value": 40.0,
+     "confidence": 0.93,
+     "status": "accepted",
+     "basis": "two independent reads agree (second, targeted re-read)"
+    },
+    "valid_until": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "seller": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "city": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    }
+   },
+   "other_items": [
+    {
+     "item_name": null,
+     "pack": "1+1",
+     "mrp_inr": null,
+     "offer_price_inr": null,
+     "valid_until": null,
+     "seller": null,
+     "city": null,
+     "quotes": {
+      "mrp": null,
+      "offer_price": null,
+      "pack": "BUY 1 GET 1 FREE"
+     }
+    }
+   ],
+   "review_queue": [
+    "mrp_inr"
+   ],
+   "quarantined": false,
+   "pii_redacted": {},
+   "ocr_lines": 6
+  },
+  {
+   "file": "VID-20261009-WA0036.mp4",
+   "source": "video frame",
+   "at_s": 10.3,
+   "image": "annotated/VID-20261009-WA0036_t010.3.jpg",
+   "input_type": "image",
+   "document_type": "shelf_tag",
+   "method": "two_reads",
+   "quality": {
+    "sharpness": 337,
+    "brightness": 122,
+    "issues": [],
+    "ok": true
+   },
+   "seconds": 0.7,
+   "cost_usd": 0.0,
+   "fields": {
+    "item_name": {
+     "value": "Kurkure Tangy Chaata",
+     "confidence": 0.55,
+     "status": "needs_review",
+     "basis": "model only; not found by OCR"
+    },
+    "pack": {
+     "value": "27.6 gm",
+     "confidence": 0.55,
+     "status": "needs_review",
+     "basis": "model only; not found by OCR; second read disagreed"
+    },
+    "mrp_inr": {
+     "value": 19.0,
+     "confidence": 0.62,
+     "status": "needs_review",
+     "basis": "two independent reads agree (second, targeted re-read); MRP equals the offer price but no MRP line on the source confirms it: a person should check"
+    },
+    "offer_price_inr": {
+     "value": 19.0,
+     "confidence": 0.93,
+     "status": "accepted",
+     "basis": "two independent reads agree (second, targeted re-read)"
+    },
+    "valid_until": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "seller": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "city": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    }
+   },
+   "other_items": [
+    {
+     "item_name": null,
+     "pack": null,
+     "mrp_inr": 49,
+     "offer_price_inr": null,
+     "valid_until": null,
+     "seller": null,
+     "city": null,
+     "quotes": {
+      "mrp": "MRP ₹49",
+      "offer_price": null,
+      "pack": null
+     }
+    }
+   ],
+   "review_queue": [
+    "mrp_inr",
+    "pack"
+   ],
+   "quarantined": false,
+   "pii_redacted": {},
+   "ocr_lines": 5
+  },
+  {
+   "file": "VID-20261009-WA0036.mp4",
+   "source": "video frame",
+   "at_s": 15.0,
+   "image": "annotated/VID-20261009-WA0036_t015.0.jpg",
+   "input_type": "image",
+   "document_type": "shelf_tag",
+   "method": "two_reads",
+   "quality": {
+    "sharpness": 618,
+    "brightness": 121,
+    "issues": [],
+    "ok": true
+   },
+   "seconds": 1.3,
+   "cost_usd": 0.0,
+   "fields": {
+    "item_name": {
+     "value": "Vaseline Intensive Care Body Lotion",
+     "confidence": 0.55,
+     "status": "needs_review",
+     "basis": "model only; not found by OCR"
+    },
+    "pack": {
+     "value": "400 ml",
+     "confidence": 0.93,
+     "status": "accepted",
+     "basis": "two independent reads agree (second, targeted re-read)"
+    },
+    "mrp_inr": {
+     "value": 311.0,
+     "confidence": 0.62,
+     "status": "needs_review",
+     "basis": "two independent reads agree (second, targeted re-read); MRP equals the offer price but no MRP line on the source confirms it: a person should check"
+    },
+    "offer_price_inr": {
+     "value": 311.0,
+     "confidence": 0.91,
+     "status": "accepted",
+     "basis": "second read agrees with OCR; first read overruled"
+    },
+    "valid_until": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "seller": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    },
+    "city": {
+     "value": null,
+     "confidence": 0,
+     "status": "missing",
+     "basis": "not found"
+    }
+   },
+   "other_items": [
+    {
+     "item_name": "Vaseline Intensive Care Body Lotion",
+     "pack": "1 LTR",
+     "mrp_inr": 720,
+     "offer_price_inr": 260,
+     "valid_until": null,
+     "seller": null,
+     "city": null,
+     "quotes": {
+      "mrp": "MRP ₹720",
+      "offer_price": "₹260",
+      "pack": "1 LTR"
+     }
+    },
+    {
+     "item_name": "Vaseline Intensive Care Body Lotion",
+     "pack": "250 ml",
+     "mrp_inr": 311,
+     "offer_price_inr": 232,
+     "valid_until": null,
+     "seller": null,
+     "city": null,
+     "quotes": {
+      "mrp": "MRP ₹311",
+      "offer_price": "₹232",
+      "pack": "250 ml"
+     }
+    }
+   ],
+   "review_queue": [
+    "mrp_inr"
+   ],
+   "quarantined": false,
+   "pii_redacted": {},
+   "ocr_lines": 18
+  }
+ ]
+}

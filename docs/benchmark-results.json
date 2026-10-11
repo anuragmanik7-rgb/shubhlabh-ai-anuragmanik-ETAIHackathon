@@ -1,0 +1,93 @@
+{
+  "kind": "Ten fresh local offline engine runs; unique SQLite stores; seed creation excluded from timing",
+  "created_at": "2026-10-01T05:49:54.301196+00:00",
+  "runs": [
+    {
+      "run": 1,
+      "seconds": 7.249,
+      "validated": true,
+      "offers": 13,
+      "incremental_contribution_paise": 73983,
+      "snapshot": "5d525a2a87edabb9"
+    },
+    {
+      "run": 2,
+      "seconds": 6.952,
+      "validated": true,
+      "offers": 13,
+      "incremental_contribution_paise": 73983,
+      "snapshot": "640ec10226b1f56f"
+    },
+    {
+      "run": 3,
+      "seconds": 6.979,
+      "validated": true,
+      "offers": 13,
+      "incremental_contribution_paise": 73983,
+      "snapshot": "2443f4c165fc3442"
+    },
+    {
+      "run": 4,
+      "seconds": 7.425,
+      "validated": true,
+      "offers": 13,
+      "incremental_contribution_paise": 73983,
+      "snapshot": "12b8952c98d69704"
+    },
+    {
+      "run": 5,
+      "seconds": 7.431,
+      "validated": true,
+      "offers": 13,
+      "incremental_contribution_paise": 73983,
+      "snapshot": "d9f87e81be66172e"
+    },
+    {
+      "run": 6,
+      "seconds": 7.553,
+      "validated": true,
+      "offers": 13,
+      "incremental_contribution_paise": 73983,
+      "snapshot": "47eb8f0e4055fd19"
+    },
+    {
+      "run": 7,
+      "seconds": 7.608,
+      "validated": true,
+      "offers": 13,
+      "incremental_contribution_paise": 73983,
+      "snapshot": "06e368a32662fc57"
+    },
+    {
+      "run": 8,
+      "seconds": 7.667,
+      "validated": true,
+      "offers": 13,
+      "incremental_contribution_paise": 73983,
+      "snapshot": "701b9654186e5cfe"
+    },
+    {
+      "run": 9,
+      "seconds": 7.585,
+      "validated": true,
+      "offers": 13,
+      "incremental_contribution_paise": 73983,
+      "snapshot": "ac270a0626c14764"
+    },
+    {
+      "run": 10,
+      "seconds": 7.812,
+      "validated": true,
+      "offers": 13,
+      "incremental_contribution_paise": 73983,
+      "snapshot": "4fdf3811f51e3e82"
+    }
+  ],
+  "success_rate": 1.0,
+  "p50_seconds": 7.492,
+  "p95_nearest_rank_seconds": 7.812,
+  "live_provider": false,
+  "postgres": false,
+  "target_p95_seconds": 20,
+  "target_met": true
+}

@@ -1,0 +1,73 @@
+{
+  "name": "ShubhLabh AI · WhatsApp relay (Twilio → ShubhLabh → WhatsApp reply)",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "shubhlabh-whatsapp",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "6b0c1a51-0b7e-4c55-9d0a-6a1c0f0e0001",
+      "name": "Twilio WhatsApp message in",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 0],
+      "webhookId": "shubhlabh-whatsapp"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.SHUBHLABH_URL }}/api/v2/whatsapp/inbound",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "X-Relay-Token", "value": "={{ $env.SHUBHLABH_RELAY_TOKEN }}" }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "form-urlencoded",
+        "bodyParameters": {
+          "parameters": [
+            { "name": "From", "value": "={{ $json.body.From }}" },
+            { "name": "Body", "value": "={{ $json.body.Body || '' }}" },
+            { "name": "NumMedia", "value": "={{ $json.body.NumMedia || '0' }}" },
+            { "name": "MediaUrl0", "value": "={{ $json.body.MediaUrl0 || '' }}" },
+            { "name": "MediaContentType0", "value": "={{ $json.body.MediaContentType0 || '' }}" }
+          ]
+        },
+        "options": {
+          "timeout": 14000,
+          "response": { "response": { "responseFormat": "text" } }
+        }
+      },
+      "id": "6b0c1a51-0b7e-4c55-9d0a-6a1c0f0e0002",
+      "name": "Ask ShubhLabh AI",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [280, 0]
+    },
+    {
+      "parameters": {
+        "respondWith": "text",
+        "responseBody": "={{ $json.data }}",
+        "options": {
+          "responseHeaders": {
+            "entries": [ { "name": "Content-Type", "value": "text/xml" } ]
+          }
+        }
+      },
+      "id": "6b0c1a51-0b7e-4c55-9d0a-6a1c0f0e0003",
+      "name": "Reply on WhatsApp (TwiML)",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [560, 0]
+    }
+  ],
+  "connections": {
+    "Twilio WhatsApp message in": { "main": [[ { "node": "Ask ShubhLabh AI", "type": "main", "index": 0 } ]] },
+    "Ask ShubhLabh AI": { "main": [[ { "node": "Reply on WhatsApp (TwiML)", "type": "main", "index": 0 } ]] }
+  },
+  "settings": { "executionOrder": "v1" },
+  "meta": { "notes": "Set SHUBHLABH_URL and SHUBHLABH_RELAY_TOKEN as n8n environment variables (or paste the values into the HTTP node). The same token goes into ShubhLabh's WHATSAPP_RELAY_TOKEN secret. Point the Twilio WhatsApp sandbox 'When a message comes in' to this workflow's production webhook URL." }
+}

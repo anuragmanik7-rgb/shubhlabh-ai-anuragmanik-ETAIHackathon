@@ -1,0 +1,13 @@
+{
+  "created_at": "20261001T050035",
+  "tests_passed": 584,
+  "tests_total": 584,
+  "failures": 0,
+  "errors": 0,
+  "duration_seconds": 104.406,
+  "test_kind": "Automated synthetic backend checks",
+  "live_model_evaluated": false,
+  "postgres_evaluated": false,
+  "external_marketplace_connected": false,
+  "source_report": "pytest-20261001T050035.xml"
+}

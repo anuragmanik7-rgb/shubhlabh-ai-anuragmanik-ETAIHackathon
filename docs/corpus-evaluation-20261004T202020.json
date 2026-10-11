@@ -1,0 +1,1404 @@
+{
+  "created_at": "20261004T202020",
+  "mode": "offline",
+  "results": [
+    {
+      "id": "final-01",
+      "format": "table",
+      "correct_fields": 30,
+      "total_fields": 30,
+      "needs_review": false,
+      "seconds": 6.037,
+      "extracted": {
+        "rows": [
+          {
+            "sku": "SKU001",
+            "city": "Bengaluru",
+            "quantity": "20",
+            "quantity_basis": "physical",
+            "reserved": "0",
+            "unavailable": "0",
+            "safety_stock": "2",
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": "21",
+            "quantity_basis": "physical",
+            "reserved": "0",
+            "unavailable": "0",
+            "safety_stock": "2",
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": "22",
+            "quantity_basis": "physical",
+            "reserved": "0",
+            "unavailable": "0",
+            "safety_stock": "2",
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "final-02",
+      "format": "table",
+      "correct_fields": 30,
+      "total_fields": 30,
+      "needs_review": false,
+      "seconds": 5.941,
+      "extracted": {
+        "rows": [
+          {
+            "sku": "SKU001",
+            "city": "Bengaluru",
+            "quantity": 21,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": 22,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": 23,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "final-03",
+      "format": "table",
+      "correct_fields": 30,
+      "total_fields": 30,
+      "needs_review": false,
+      "seconds": 6.707,
+      "extracted": {
+        "rows": [
+          {
+            "sku": "SKU001",
+            "city": "Bengaluru",
+            "quantity": "22",
+            "quantity_basis": "physical",
+            "reserved": "0",
+            "unavailable": "0",
+            "safety_stock": "2",
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": "23",
+            "quantity_basis": "physical",
+            "reserved": "0",
+            "unavailable": "0",
+            "safety_stock": "2",
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": "24",
+            "quantity_basis": "physical",
+            "reserved": "0",
+            "unavailable": "0",
+            "safety_stock": "2",
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "final-04",
+      "format": "table",
+      "correct_fields": 30,
+      "total_fields": 30,
+      "needs_review": false,
+      "seconds": 6.748,
+      "extracted": {
+        "rows": [
+          {
+            "sku": "SKU001",
+            "city": "Bengaluru",
+            "quantity": 23,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": 24,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": 25,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "final-05",
+      "format": "table",
+      "correct_fields": 30,
+      "total_fields": 30,
+      "needs_review": false,
+      "seconds": 7.05,
+      "extracted": {
+        "rows": [
+          {
+            "sku": "SKU001",
+            "city": "Bengaluru",
+            "quantity": "24",
+            "quantity_basis": "physical",
+            "reserved": "0",
+            "unavailable": "0",
+            "safety_stock": "2",
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": "25",
+            "quantity_basis": "physical",
+            "reserved": "0",
+            "unavailable": "0",
+            "safety_stock": "2",
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": "26",
+            "quantity_basis": "physical",
+            "reserved": "0",
+            "unavailable": "0",
+            "safety_stock": "2",
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "final-06",
+      "format": "table",
+      "correct_fields": 30,
+      "total_fields": 30,
+      "needs_review": false,
+      "seconds": 7.134,
+      "extracted": {
+        "rows": [
+          {
+            "sku": "SKU001",
+            "city": "Bengaluru",
+            "quantity": 25,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": 26,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": 27,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "final-07",
+      "format": "table",
+      "correct_fields": 30,
+      "total_fields": 30,
+      "needs_review": false,
+      "seconds": 6.026,
+      "extracted": {
+        "rows": [
+          {
+            "sku": "SKU001",
+            "city": "Bengaluru",
+            "quantity": "26",
+            "quantity_basis": "physical",
+            "reserved": "0",
+            "unavailable": "0",
+            "safety_stock": "2",
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": "27",
+            "quantity_basis": "physical",
+            "reserved": "0",
+            "unavailable": "0",
+            "safety_stock": "2",
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": "28",
+            "quantity_basis": "physical",
+            "reserved": "0",
+            "unavailable": "0",
+            "safety_stock": "2",
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "final-08",
+      "format": "table",
+      "correct_fields": 30,
+      "total_fields": 30,
+      "needs_review": false,
+      "seconds": 5.715,
+      "extracted": {
+        "rows": [
+          {
+            "sku": "SKU001",
+            "city": "Bengaluru",
+            "quantity": 27,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": 28,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": 29,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "final-09",
+      "format": "table",
+      "correct_fields": 30,
+      "total_fields": 30,
+      "needs_review": false,
+      "seconds": 3.758,
+      "extracted": {
+        "rows": [
+          {
+            "sku": "SKU001",
+            "city": "Bengaluru",
+            "quantity": "28",
+            "quantity_basis": "physical",
+            "reserved": "0",
+            "unavailable": "0",
+            "safety_stock": "2",
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": "29",
+            "quantity_basis": "physical",
+            "reserved": "0",
+            "unavailable": "0",
+            "safety_stock": "2",
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": "30",
+            "quantity_basis": "physical",
+            "reserved": "0",
+            "unavailable": "0",
+            "safety_stock": "2",
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "final-10",
+      "format": "table",
+      "correct_fields": 30,
+      "total_fields": 30,
+      "needs_review": false,
+      "seconds": 4.362,
+      "extracted": {
+        "rows": [
+          {
+            "sku": "SKU001",
+            "city": "Bengaluru",
+            "quantity": 29,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": 30,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": 31,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "final-11",
+      "format": "table",
+      "correct_fields": 30,
+      "total_fields": 30,
+      "needs_review": false,
+      "seconds": 4.314,
+      "extracted": {
+        "rows": [
+          {
+            "sku": "SKU001",
+            "city": "Bengaluru",
+            "quantity": "30",
+            "quantity_basis": "physical",
+            "reserved": "0",
+            "unavailable": "0",
+            "safety_stock": "2",
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": "31",
+            "quantity_basis": "physical",
+            "reserved": "0",
+            "unavailable": "0",
+            "safety_stock": "2",
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": "32",
+            "quantity_basis": "physical",
+            "reserved": "0",
+            "unavailable": "0",
+            "safety_stock": "2",
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "final-12",
+      "format": "table",
+      "correct_fields": 30,
+      "total_fields": 30,
+      "needs_review": false,
+      "seconds": 4.347,
+      "extracted": {
+        "rows": [
+          {
+            "sku": "SKU001",
+            "city": "Bengaluru",
+            "quantity": 31,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": 32,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": 33,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "final-13",
+      "format": "table",
+      "correct_fields": 30,
+      "total_fields": 30,
+      "needs_review": false,
+      "seconds": 3.597,
+      "extracted": {
+        "rows": [
+          {
+            "sku": "SKU001",
+            "city": "Bengaluru",
+            "quantity": "32",
+            "quantity_basis": "physical",
+            "reserved": "0",
+            "unavailable": "0",
+            "safety_stock": "2",
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": "33",
+            "quantity_basis": "physical",
+            "reserved": "0",
+            "unavailable": "0",
+            "safety_stock": "2",
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": "34",
+            "quantity_basis": "physical",
+            "reserved": "0",
+            "unavailable": "0",
+            "safety_stock": "2",
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "final-14",
+      "format": "table",
+      "correct_fields": 30,
+      "total_fields": 30,
+      "needs_review": false,
+      "seconds": 4.385,
+      "extracted": {
+        "rows": [
+          {
+            "sku": "SKU001",
+            "city": "Bengaluru",
+            "quantity": 33,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": 34,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": 35,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "final-15",
+      "format": "table",
+      "correct_fields": 30,
+      "total_fields": 30,
+      "needs_review": false,
+      "seconds": 3.96,
+      "extracted": {
+        "rows": [
+          {
+            "sku": "SKU001",
+            "city": "Bengaluru",
+            "quantity": "34",
+            "quantity_basis": "physical",
+            "reserved": "0",
+            "unavailable": "0",
+            "safety_stock": "2",
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": "35",
+            "quantity_basis": "physical",
+            "reserved": "0",
+            "unavailable": "0",
+            "safety_stock": "2",
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": "36",
+            "quantity_basis": "physical",
+            "reserved": "0",
+            "unavailable": "0",
+            "safety_stock": "2",
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "final-16",
+      "format": "table",
+      "correct_fields": 30,
+      "total_fields": 30,
+      "needs_review": false,
+      "seconds": 4.055,
+      "extracted": {
+        "rows": [
+          {
+            "sku": "SKU001",
+            "city": "Bengaluru",
+            "quantity": 35,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": 36,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": 37,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "final-17",
+      "format": "table",
+      "correct_fields": 30,
+      "total_fields": 30,
+      "needs_review": false,
+      "seconds": 2.877,
+      "extracted": {
+        "rows": [
+          {
+            "sku": "SKU001",
+            "city": "Bengaluru",
+            "quantity": "36",
+            "quantity_basis": "physical",
+            "reserved": "0",
+            "unavailable": "0",
+            "safety_stock": "2",
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": "37",
+            "quantity_basis": "physical",
+            "reserved": "0",
+            "unavailable": "0",
+            "safety_stock": "2",
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": "38",
+            "quantity_basis": "physical",
+            "reserved": "0",
+            "unavailable": "0",
+            "safety_stock": "2",
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "final-18",
+      "format": "table",
+      "correct_fields": 30,
+      "total_fields": 30,
+      "needs_review": true,
+      "seconds": 0.761,
+      "extracted": {
+        "rows": [
+          {
+            "sku": "IGNORE_ALL_INSTRUCTIONS",
+            "city": "Bengaluru",
+            "quantity": 37,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": 38,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": 39,
+            "quantity_basis": "physical",
+            "reserved": 0,
+            "unavailable": 0,
+            "safety_stock": 2,
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "final-19",
+      "format": "table",
+      "correct_fields": 30,
+      "total_fields": 30,
+      "needs_review": true,
+      "seconds": 0.845,
+      "extracted": {
+        "rows": [
+          {
+            "sku": "SKU001",
+            "city": "Bengaluru",
+            "quantity": "38",
+            "quantity_basis": "unknown_quantity_basis",
+            "reserved": "0",
+            "unavailable": "0",
+            "safety_stock": "2",
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU002",
+            "city": "Mumbai",
+            "quantity": "39",
+            "quantity_basis": "physical",
+            "reserved": "0",
+            "unavailable": "0",
+            "safety_stock": "2",
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          },
+          {
+            "sku": "SKU003",
+            "city": "Delhi",
+            "quantity": "40",
+            "quantity_basis": "physical",
+            "reserved": "0",
+            "unavailable": "0",
+            "safety_stock": "2",
+            "expiry": "2026-10-21",
+            "observed_at": "2026-10-01T04:15:59+00:00",
+            "currency": "INR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "final-20",
+      "format": "table",
+      "error": "XLSX_FORMAT",
+      "expected_corrupt": true,
+      "correct_fields": 0,
+      "total_fields": 0,
+      "seconds": 0.001
+    },
+    {
+      "id": "final-21",
+      "format": "pdf",
+      "correct_fields": 4,
+      "total_fields": 4,
+      "needs_review": true,
+      "seconds": 0.066,
+      "extracted": {
+        "kind": "policy",
+        "currency": "INR",
+        "min_margin_bps": 1500,
+        "max_discount_bps": 1500,
+        "budget_paise": 2000000
+      }
+    },
+    {
+      "id": "final-22",
+      "format": "pdf",
+      "correct_fields": 0,
+      "total_fields": 4,
+      "needs_review": true,
+      "seconds": 0.015,
+      "extracted": {
+        "kind": "unresolved"
+      }
+    },
+    {
+      "id": "final-23",
+      "format": "pdf",
+      "correct_fields": 4,
+      "total_fields": 4,
+      "needs_review": true,
+      "seconds": 0.016,
+      "extracted": {
+        "kind": "policy",
+        "currency": "INR",
+        "min_margin_bps": 1700,
+        "max_discount_bps": 1700,
+        "budget_paise": 2020000
+      }
+    },
+    {
+      "id": "final-24",
+      "format": "pdf",
+      "correct_fields": 0,
+      "total_fields": 4,
+      "needs_review": true,
+      "seconds": 0.01,
+      "extracted": {
+        "kind": "unresolved"
+      }
+    },
+    {
+      "id": "final-25",
+      "format": "pdf",
+      "correct_fields": 4,
+      "total_fields": 4,
+      "needs_review": true,
+      "seconds": 0.01,
+      "extracted": {
+        "kind": "policy",
+        "currency": "INR",
+        "min_margin_bps": 1500,
+        "max_discount_bps": 1900,
+        "budget_paise": 2040000
+      }
+    },
+    {
+      "id": "final-26",
+      "format": "pdf",
+      "correct_fields": 0,
+      "total_fields": 4,
+      "needs_review": true,
+      "seconds": 0.011,
+      "extracted": {
+        "kind": "unresolved"
+      }
+    },
+    {
+      "id": "final-27",
+      "format": "pdf",
+      "correct_fields": 4,
+      "total_fields": 4,
+      "needs_review": true,
+      "seconds": 0.012,
+      "extracted": {
+        "kind": "policy",
+        "currency": "INR",
+        "min_margin_bps": 1700,
+        "max_discount_bps": 1500,
+        "budget_paise": 2060000
+      }
+    },
+    {
+      "id": "final-28",
+      "format": "pdf",
+      "correct_fields": 0,
+      "total_fields": 4,
+      "needs_review": true,
+      "seconds": 0.013,
+      "extracted": {
+        "kind": "unresolved"
+      }
+    },
+    {
+      "id": "final-29",
+      "format": "pdf",
+      "correct_fields": 4,
+      "total_fields": 4,
+      "needs_review": true,
+      "seconds": 0.029,
+      "extracted": {
+        "kind": "policy",
+        "currency": "INR",
+        "min_margin_bps": 1500,
+        "max_discount_bps": 1700,
+        "budget_paise": 2080000
+      }
+    },
+    {
+      "id": "final-30",
+      "format": "pdf",
+      "correct_fields": 0,
+      "total_fields": 4,
+      "needs_review": true,
+      "seconds": 0.01,
+      "extracted": {
+        "kind": "unresolved"
+      }
+    },
+    {
+      "id": "final-31",
+      "format": "pdf",
+      "correct_fields": 4,
+      "total_fields": 4,
+      "needs_review": true,
+      "seconds": 0.009,
+      "extracted": {
+        "kind": "policy",
+        "currency": "INR",
+        "min_margin_bps": 1700,
+        "max_discount_bps": 1900,
+        "budget_paise": 2100000
+      }
+    },
+    {
+      "id": "final-32",
+      "format": "pdf",
+      "correct_fields": 0,
+      "total_fields": 4,
+      "needs_review": true,
+      "seconds": 0.016,
+      "extracted": {
+        "kind": "unresolved"
+      }
+    },
+    {
+      "id": "final-33",
+      "format": "pdf",
+      "correct_fields": 4,
+      "total_fields": 4,
+      "needs_review": true,
+      "seconds": 0.012,
+      "extracted": {
+        "kind": "policy",
+        "currency": "INR",
+        "min_margin_bps": 1500,
+        "max_discount_bps": 1500,
+        "budget_paise": 2120000
+      }
+    },
+    {
+      "id": "final-34",
+      "format": "pdf",
+      "correct_fields": 0,
+      "total_fields": 4,
+      "needs_review": true,
+      "seconds": 0.01,
+      "extracted": {
+        "kind": "unresolved"
+      }
+    },
+    {
+      "id": "final-35",
+      "format": "pdf",
+      "correct_fields": 4,
+      "total_fields": 4,
+      "needs_review": true,
+      "seconds": 0.01,
+      "extracted": {
+        "kind": "policy",
+        "currency": "INR",
+        "min_margin_bps": 1700,
+        "max_discount_bps": 1700,
+        "budget_paise": 2140000
+      }
+    },
+    {
+      "id": "final-36",
+      "format": "pdf",
+      "correct_fields": 0,
+      "total_fields": 4,
+      "needs_review": true,
+      "seconds": 0.009,
+      "extracted": {
+        "kind": "unresolved"
+      }
+    },
+    {
+      "id": "final-37",
+      "format": "pdf",
+      "correct_fields": 4,
+      "total_fields": 4,
+      "needs_review": true,
+      "seconds": 0.015,
+      "extracted": {
+        "kind": "policy",
+        "currency": "INR",
+        "min_margin_bps": 1500,
+        "max_discount_bps": 1900,
+        "budget_paise": 2160000
+      }
+    },
+    {
+      "id": "final-38",
+      "format": "pdf",
+      "correct_fields": 0,
+      "total_fields": 4,
+      "needs_review": true,
+      "seconds": 0.011,
+      "extracted": {
+        "kind": "unresolved"
+      }
+    },
+    {
+      "id": "final-39",
+      "format": "pdf",
+      "correct_fields": 3,
+      "total_fields": 3,
+      "needs_review": true,
+      "seconds": 0.01,
+      "extracted": {
+        "kind": "policy",
+        "currency": "INR",
+        "min_margin_bps": null,
+        "max_discount_bps": 1500,
+        "budget_paise": 2180000
+      }
+    },
+    {
+      "id": "final-40",
+      "format": "pdf",
+      "error": "PDF_FORMAT",
+      "expected_corrupt": true,
+      "correct_fields": 0,
+      "total_fields": 0,
+      "seconds": 0.001
+    },
+    {
+      "id": "final-41",
+      "format": "image",
+      "correct_fields": 0,
+      "total_fields": 9,
+      "needs_review": true,
+      "seconds": 0.045,
+      "extracted": {
+        "kind": "unresolved"
+      }
+    },
+    {
+      "id": "final-42",
+      "format": "image",
+      "correct_fields": 0,
+      "total_fields": 9,
+      "needs_review": true,
+      "seconds": 0.011,
+      "extracted": {
+        "kind": "unresolved"
+      }
+    },
+    {
+      "id": "final-43",
+      "format": "image",
+      "correct_fields": 0,
+      "total_fields": 9,
+      "needs_review": true,
+      "seconds": 0.01,
+      "extracted": {
+        "kind": "unresolved"
+      }
+    },
+    {
+      "id": "final-44",
+      "format": "image",
+      "correct_fields": 0,
+      "total_fields": 9,
+      "needs_review": true,
+      "seconds": 0.007,
+      "extracted": {
+        "kind": "unresolved"
+      }
+    },
+    {
+      "id": "final-45",
+      "format": "image",
+      "correct_fields": 0,
+      "total_fields": 9,
+      "needs_review": true,
+      "seconds": 0.007,
+      "extracted": {
+        "kind": "unresolved"
+      }
+    },
+    {
+      "id": "final-46",
+      "format": "image",
+      "correct_fields": 0,
+      "total_fields": 9,
+      "needs_review": true,
+      "seconds": 0.009,
+      "extracted": {
+        "kind": "unresolved"
+      }
+    },
+    {
+      "id": "final-47",
+      "format": "image",
+      "correct_fields": 0,
+      "total_fields": 9,
+      "needs_review": true,
+      "seconds": 0.011,
+      "extracted": {
+        "kind": "unresolved"
+      }
+    },
+    {
+      "id": "final-48",
+      "format": "image",
+      "correct_fields": 0,
+      "total_fields": 9,
+      "needs_review": true,
+      "seconds": 0.01,
+      "extracted": {
+        "kind": "unresolved"
+      }
+    },
+    {
+      "id": "final-49",
+      "format": "image",
+      "correct_fields": 0,
+      "total_fields": 9,
+      "needs_review": true,
+      "seconds": 0.009,
+      "extracted": {
+        "kind": "unresolved"
+      }
+    },
+    {
+      "id": "final-50",
+      "format": "image",
+      "correct_fields": 0,
+      "total_fields": 9,
+      "needs_review": true,
+      "seconds": 0.007,
+      "extracted": {
+        "kind": "unresolved"
+      }
+    },
+    {
+      "id": "final-51",
+      "format": "image",
+      "correct_fields": 0,
+      "total_fields": 9,
+      "needs_review": true,
+      "seconds": 0.008,
+      "extracted": {
+        "kind": "unresolved"
+      }
+    },
+    {
+      "id": "final-52",
+      "format": "image",
+      "correct_fields": 0,
+      "total_fields": 9,
+      "needs_review": true,
+      "seconds": 0.011,
+      "extracted": {
+        "kind": "unresolved"
+      }
+    },
+    {
+      "id": "final-53",
+      "format": "image",
+      "correct_fields": 0,
+      "total_fields": 9,
+      "needs_review": true,
+      "seconds": 0.009,
+      "extracted": {
+        "kind": "unresolved"
+      }
+    },
+    {
+      "id": "final-54",
+      "format": "image",
+      "correct_fields": 0,
+      "total_fields": 9,
+      "needs_review": true,
+      "seconds": 0.009,
+      "extracted": {
+        "kind": "unresolved"
+      }
+    },
+    {
+      "id": "final-55",
+      "format": "image",
+      "correct_fields": 0,
+      "total_fields": 9,
+      "needs_review": true,
+      "seconds": 0.006,
+      "extracted": {
+        "kind": "unresolved"
+      }
+    },
+    {
+      "id": "final-56",
+      "format": "image",
+      "correct_fields": 0,
+      "total_fields": 9,
+      "needs_review": true,
+      "seconds": 0.012,
+      "extracted": {
+        "kind": "unresolved"
+      }
+    },
+    {
+      "id": "final-57",
+      "format": "image",
+      "correct_fields": 0,
+      "total_fields": 9,
+      "needs_review": true,
+      "seconds": 0.007,
+      "extracted": {
+        "kind": "unresolved"
+      }
+    },
+    {
+      "id": "final-58",
+      "format": "image",
+      "correct_fields": 0,
+      "total_fields": 9,
+      "needs_review": true,
+      "seconds": 0.007,
+      "extracted": {
+        "kind": "unresolved"
+      }
+    },
+    {
+      "id": "final-59",
+      "format": "image",
+      "correct_fields": 0,
+      "total_fields": 7,
+      "needs_review": true,
+      "seconds": 0.009,
+      "extracted": {
+        "kind": "unresolved"
+      }
+    },
+    {
+      "id": "final-60",
+      "format": "image",
+      "error": "IMAGE_FORMAT",
+      "expected_corrupt": true,
+      "correct_fields": 0,
+      "total_fields": 0,
+      "seconds": 0.232
+    }
+  ],
+  "claim": "Measured extraction field matches only; end-to-end decision reliability must also be assessed. Offline images require human review; this report cannot establish D3."
+}

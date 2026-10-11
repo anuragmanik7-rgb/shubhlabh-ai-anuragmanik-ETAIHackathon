@@ -1,0 +1,1619 @@
+{
+  "checks": [
+    {
+      "name": "Retailer onboarding is visible",
+      "passed": true,
+      "elapsed_ms": 31904
+    },
+    {
+      "name": "Exact source span is displayed",
+      "passed": true,
+      "elapsed_ms": 40795
+    },
+    {
+      "name": "Confirmed child supersedes pending source in current view",
+      "passed": true,
+      "elapsed_ms": 52897
+    }
+  ],
+  "errors": [],
+  "requests": [
+    {
+      "at_ms": 7103,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/",
+      "method": "GET"
+    },
+    {
+      "at_ms": 9978,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/",
+      "status": 200
+    },
+    {
+      "at_ms": 10310,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/assets/app-review.css",
+      "method": "GET"
+    },
+    {
+      "at_ms": 10416,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/assets/app-review.js",
+      "method": "GET"
+    },
+    {
+      "at_ms": 10683,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/assets/app-review.css",
+      "status": 200
+    },
+    {
+      "at_ms": 12493,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/assets/app-review.js",
+      "status": 200
+    },
+    {
+      "at_ms": 13810,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/session",
+      "method": "GET"
+    },
+    {
+      "at_ms": 20323,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/session",
+      "status": 200
+    },
+    {
+      "at_ms": 20327,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/overview",
+      "method": "GET"
+    },
+    {
+      "at_ms": 20329,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/catalog",
+      "method": "GET"
+    },
+    {
+      "at_ms": 20333,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/plans",
+      "method": "GET"
+    },
+    {
+      "at_ms": 20337,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/evidence",
+      "method": "GET"
+    },
+    {
+      "at_ms": 20340,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/connectors",
+      "method": "GET"
+    },
+    {
+      "at_ms": 20342,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/evaluations",
+      "method": "GET"
+    },
+    {
+      "at_ms": 20345,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/fixtures",
+      "method": "GET"
+    },
+    {
+      "at_ms": 20348,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs",
+      "method": "GET"
+    },
+    {
+      "at_ms": 20807,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/connectors",
+      "status": 200
+    },
+    {
+      "at_ms": 21936,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/plans",
+      "status": 200
+    },
+    {
+      "at_ms": 23136,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/evidence",
+      "status": 200
+    },
+    {
+      "at_ms": 23618,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/evaluations",
+      "status": 200
+    },
+    {
+      "at_ms": 24057,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs",
+      "status": 200
+    },
+    {
+      "at_ms": 25557,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/fixtures",
+      "status": 200
+    },
+    {
+      "at_ms": 29488,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/overview",
+      "status": 200
+    },
+    {
+      "at_ms": 31180,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/catalog",
+      "status": 200
+    },
+    {
+      "at_ms": 33479,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/evidence/upload",
+      "method": "POST"
+    },
+    {
+      "at_ms": 33902,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/evidence/upload",
+      "status": 200
+    },
+    {
+      "at_ms": 34085,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/overview",
+      "method": "GET"
+    },
+    {
+      "at_ms": 34105,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/catalog",
+      "method": "GET"
+    },
+    {
+      "at_ms": 34112,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/plans",
+      "method": "GET"
+    },
+    {
+      "at_ms": 34148,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/evidence",
+      "method": "GET"
+    },
+    {
+      "at_ms": 34161,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/connectors",
+      "method": "GET"
+    },
+    {
+      "at_ms": 34170,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/evaluations",
+      "method": "GET"
+    },
+    {
+      "at_ms": 34178,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/fixtures",
+      "method": "GET"
+    },
+    {
+      "at_ms": 34180,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs",
+      "method": "GET"
+    },
+    {
+      "at_ms": 35097,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/evaluations",
+      "status": 200
+    },
+    {
+      "at_ms": 35298,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/plans",
+      "status": 200
+    },
+    {
+      "at_ms": 36209,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/evidence",
+      "status": 200
+    },
+    {
+      "at_ms": 36578,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/connectors",
+      "status": 200
+    },
+    {
+      "at_ms": 37203,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/fixtures",
+      "status": 200
+    },
+    {
+      "at_ms": 38020,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs",
+      "status": 200
+    },
+    {
+      "at_ms": 38320,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/catalog",
+      "status": 200
+    },
+    {
+      "at_ms": 39860,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/overview",
+      "status": 200
+    },
+    {
+      "at_ms": 41555,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/evidence/src_924d30fe558c4045/corrections",
+      "method": "POST"
+    },
+    {
+      "at_ms": 46814,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/evidence/src_924d30fe558c4045/corrections",
+      "status": 200
+    },
+    {
+      "at_ms": 46896,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/overview",
+      "method": "GET"
+    },
+    {
+      "at_ms": 46899,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/catalog",
+      "method": "GET"
+    },
+    {
+      "at_ms": 46909,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/plans",
+      "method": "GET"
+    },
+    {
+      "at_ms": 46918,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/evidence",
+      "method": "GET"
+    },
+    {
+      "at_ms": 46938,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/connectors",
+      "method": "GET"
+    },
+    {
+      "at_ms": 46949,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/evaluations",
+      "method": "GET"
+    },
+    {
+      "at_ms": 46982,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/fixtures",
+      "method": "GET"
+    },
+    {
+      "at_ms": 47019,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs",
+      "method": "GET"
+    },
+    {
+      "at_ms": 48859,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/evaluations",
+      "status": 200
+    },
+    {
+      "at_ms": 49314,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/connectors",
+      "status": 200
+    },
+    {
+      "at_ms": 49912,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/evidence",
+      "status": 200
+    },
+    {
+      "at_ms": 50083,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/fixtures",
+      "status": 200
+    },
+    {
+      "at_ms": 51560,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/plans",
+      "status": 200
+    },
+    {
+      "at_ms": 51923,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs",
+      "status": 200
+    },
+    {
+      "at_ms": 52271,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/catalog",
+      "status": 200
+    },
+    {
+      "at_ms": 52511,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/overview",
+      "status": 200
+    },
+    {
+      "at_ms": 53160,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/session",
+      "method": "GET"
+    },
+    {
+      "at_ms": 55839,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/session",
+      "status": 200
+    },
+    {
+      "at_ms": 55840,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/plans",
+      "method": "POST"
+    },
+    {
+      "at_ms": 57999,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/plans",
+      "status": 202
+    },
+    {
+      "at_ms": 58018,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/",
+      "method": "GET"
+    },
+    {
+      "at_ms": 58026,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/",
+      "status": 200
+    },
+    {
+      "at_ms": 58074,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/assets/app-review.css",
+      "method": "GET"
+    },
+    {
+      "at_ms": 58076,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/assets/app-review.js",
+      "method": "GET"
+    },
+    {
+      "at_ms": 58087,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/assets/app-review.css",
+      "status": 200
+    },
+    {
+      "at_ms": 58180,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/assets/app-review.js",
+      "status": 200
+    },
+    {
+      "at_ms": 58208,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/session",
+      "method": "GET"
+    },
+    {
+      "at_ms": 60263,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/session",
+      "status": 200
+    },
+    {
+      "at_ms": 60275,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/overview",
+      "method": "GET"
+    },
+    {
+      "at_ms": 60317,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/catalog",
+      "method": "GET"
+    },
+    {
+      "at_ms": 60325,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/plans",
+      "method": "GET"
+    },
+    {
+      "at_ms": 60345,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/evidence",
+      "method": "GET"
+    },
+    {
+      "at_ms": 60353,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/connectors",
+      "method": "GET"
+    },
+    {
+      "at_ms": 60354,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/evaluations",
+      "method": "GET"
+    },
+    {
+      "at_ms": 60360,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/fixtures",
+      "method": "GET"
+    },
+    {
+      "at_ms": 60365,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs",
+      "method": "GET"
+    },
+    {
+      "at_ms": 62554,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/plans",
+      "status": 200
+    },
+    {
+      "at_ms": 62890,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/connectors",
+      "status": 200
+    },
+    {
+      "at_ms": 63155,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/evidence",
+      "status": 200
+    },
+    {
+      "at_ms": 63422,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/overview",
+      "status": 200
+    },
+    {
+      "at_ms": 63548,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/evaluations",
+      "status": 200
+    },
+    {
+      "at_ms": 63633,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs",
+      "status": 200
+    },
+    {
+      "at_ms": 64979,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/fixtures",
+      "status": 200
+    },
+    {
+      "at_ms": 65304,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/catalog",
+      "status": 200
+    },
+    {
+      "at_ms": 66598,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 66660,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 66708,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 66715,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82/advance",
+      "method": "POST"
+    },
+    {
+      "at_ms": 66735,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 67714,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82/advance",
+      "status": 200
+    },
+    {
+      "at_ms": 67786,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82/advance",
+      "method": "POST"
+    },
+    {
+      "at_ms": 69902,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 70505,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 74174,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 74946,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 78151,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 79146,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 82550,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 82791,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 86327,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 86935,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 90227,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 91460,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 97468,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 100035,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 103596,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 104637,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 108193,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 110340,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 110888,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82/advance",
+      "status": 200
+    },
+    {
+      "at_ms": 111694,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82/advance",
+      "method": "POST"
+    },
+    {
+      "at_ms": 113643,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 115564,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 118727,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 129852,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 133440,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 135023,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 136727,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82/advance",
+      "status": 200
+    },
+    {
+      "at_ms": 136731,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82/advance",
+      "method": "POST"
+    },
+    {
+      "at_ms": 138909,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 145892,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 150016,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 155809,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 157925,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82/advance",
+      "status": 200
+    },
+    {
+      "at_ms": 158132,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82/advance",
+      "method": "POST"
+    },
+    {
+      "at_ms": 159240,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 163635,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 167198,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 180525,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 187667,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 192791,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 195952,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 205605,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 209142,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 212017,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82/advance",
+      "status": 200
+    },
+    {
+      "at_ms": 212274,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/overview",
+      "method": "GET"
+    },
+    {
+      "at_ms": 212306,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/catalog",
+      "method": "GET"
+    },
+    {
+      "at_ms": 212318,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/plans",
+      "method": "GET"
+    },
+    {
+      "at_ms": 212323,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/evidence",
+      "method": "GET"
+    },
+    {
+      "at_ms": 212325,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/connectors",
+      "method": "GET"
+    },
+    {
+      "at_ms": 212330,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/evaluations",
+      "method": "GET"
+    },
+    {
+      "at_ms": 212338,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/fixtures",
+      "method": "GET"
+    },
+    {
+      "at_ms": 212359,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs",
+      "method": "GET"
+    },
+    {
+      "at_ms": 215301,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 215502,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/evidence",
+      "status": 200
+    },
+    {
+      "at_ms": 218750,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 220459,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/connectors",
+      "status": 200
+    },
+    {
+      "at_ms": 222650,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/plans",
+      "status": 200
+    },
+    {
+      "at_ms": 225368,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/evaluations",
+      "status": 200
+    },
+    {
+      "at_ms": 227388,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/fixtures",
+      "status": 200
+    },
+    {
+      "at_ms": 245500,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs",
+      "status": 200
+    },
+    {
+      "at_ms": 248354,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 252007,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 255131,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/catalog",
+      "status": 200
+    },
+    {
+      "at_ms": 256462,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/overview",
+      "status": 200
+    },
+    {
+      "at_ms": 257942,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 260766,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82/retry",
+      "method": "POST"
+    },
+    {
+      "type": "ui_solver_retry",
+      "attempt": 2,
+      "at_ms": 264429
+    },
+    {
+      "at_ms": 267350,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82/retry",
+      "status": 200
+    },
+    {
+      "at_ms": 267515,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/overview",
+      "method": "GET"
+    },
+    {
+      "at_ms": 267522,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/catalog",
+      "method": "GET"
+    },
+    {
+      "at_ms": 267525,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/plans",
+      "method": "GET"
+    },
+    {
+      "at_ms": 267531,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/evidence",
+      "method": "GET"
+    },
+    {
+      "at_ms": 267537,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/connectors",
+      "method": "GET"
+    },
+    {
+      "at_ms": 267539,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/evaluations",
+      "method": "GET"
+    },
+    {
+      "at_ms": 267549,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/fixtures",
+      "method": "GET"
+    },
+    {
+      "at_ms": 267550,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs",
+      "method": "GET"
+    },
+    {
+      "at_ms": 268990,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 275286,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/connectors",
+      "status": 200
+    },
+    {
+      "at_ms": 278367,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/plans",
+      "status": 200
+    },
+    {
+      "at_ms": 279305,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/evidence",
+      "status": 200
+    },
+    {
+      "at_ms": 280081,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/evaluations",
+      "status": 200
+    },
+    {
+      "at_ms": 281503,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/fixtures",
+      "status": 200
+    },
+    {
+      "at_ms": 285080,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs",
+      "status": 200
+    },
+    {
+      "at_ms": 292448,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 295903,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 298111,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/catalog",
+      "status": 200
+    },
+    {
+      "at_ms": 301706,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/overview",
+      "status": 200
+    },
+    {
+      "at_ms": 301829,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 302104,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 302266,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 302285,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82/advance",
+      "method": "POST"
+    },
+    {
+      "at_ms": 305275,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 314377,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 318523,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 323577,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 326985,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 338466,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 342202,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 345009,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82/advance",
+      "status": 200
+    },
+    {
+      "at_ms": 345027,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/overview",
+      "method": "GET"
+    },
+    {
+      "at_ms": 345028,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/catalog",
+      "method": "GET"
+    },
+    {
+      "at_ms": 345029,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/plans",
+      "method": "GET"
+    },
+    {
+      "at_ms": 345035,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/evidence",
+      "method": "GET"
+    },
+    {
+      "at_ms": 345036,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/connectors",
+      "method": "GET"
+    },
+    {
+      "at_ms": 345038,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/evaluations",
+      "method": "GET"
+    },
+    {
+      "at_ms": 345041,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/fixtures",
+      "method": "GET"
+    },
+    {
+      "at_ms": 345042,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs",
+      "method": "GET"
+    },
+    {
+      "at_ms": 345088,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/plans",
+      "status": 200
+    },
+    {
+      "at_ms": 345481,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/connectors",
+      "status": 200
+    },
+    {
+      "at_ms": 345814,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/evidence",
+      "status": 200
+    },
+    {
+      "at_ms": 352496,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/evaluations",
+      "status": 200
+    },
+    {
+      "at_ms": 367585,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 368459,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs",
+      "status": 200
+    },
+    {
+      "at_ms": 372569,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/fixtures",
+      "status": 200
+    },
+    {
+      "at_ms": 375003,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/overview",
+      "status": 200
+    },
+    {
+      "at_ms": 376670,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 379329,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/catalog",
+      "status": 200
+    },
+    {
+      "at_ms": 381932,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 384781,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82/retry",
+      "method": "POST"
+    },
+    {
+      "type": "ui_solver_retry",
+      "attempt": 3,
+      "at_ms": 385812
+    },
+    {
+      "at_ms": 389386,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 390351,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82/retry",
+      "status": 200
+    },
+    {
+      "at_ms": 390358,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/overview",
+      "method": "GET"
+    },
+    {
+      "at_ms": 390361,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/catalog",
+      "method": "GET"
+    },
+    {
+      "at_ms": 390362,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/plans",
+      "method": "GET"
+    },
+    {
+      "at_ms": 390367,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/evidence",
+      "method": "GET"
+    },
+    {
+      "at_ms": 390373,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/connectors",
+      "method": "GET"
+    },
+    {
+      "at_ms": 390375,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/evaluations",
+      "method": "GET"
+    },
+    {
+      "at_ms": 390377,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/fixtures",
+      "method": "GET"
+    },
+    {
+      "at_ms": 390380,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs",
+      "method": "GET"
+    },
+    {
+      "at_ms": 403435,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 403834,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/connectors",
+      "status": 200
+    },
+    {
+      "at_ms": 403835,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/plans",
+      "status": 200
+    },
+    {
+      "at_ms": 403849,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/evidence",
+      "status": 200
+    },
+    {
+      "at_ms": 407238,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 411007,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/evaluations",
+      "status": 200
+    },
+    {
+      "at_ms": 411212,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/fixtures",
+      "status": 200
+    },
+    {
+      "at_ms": 414881,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 418002,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 420112,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs",
+      "status": 200
+    },
+    {
+      "at_ms": 433859,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/overview",
+      "status": 200
+    },
+    {
+      "at_ms": 433873,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 437222,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/catalog",
+      "status": 200
+    },
+    {
+      "at_ms": 437333,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 437957,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 438201,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 438586,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82/advance",
+      "method": "POST"
+    },
+    {
+      "at_ms": 442110,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 445687,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 452928,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 455960,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 462883,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 466404,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 467660,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82/advance",
+      "status": 200
+    },
+    {
+      "at_ms": 467832,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/overview",
+      "method": "GET"
+    },
+    {
+      "at_ms": 467834,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/catalog",
+      "method": "GET"
+    },
+    {
+      "at_ms": 467839,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/plans",
+      "method": "GET"
+    },
+    {
+      "at_ms": 467964,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/evidence",
+      "method": "GET"
+    },
+    {
+      "at_ms": 468191,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/connectors",
+      "method": "GET"
+    },
+    {
+      "at_ms": 469175,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/evaluations",
+      "method": "GET"
+    },
+    {
+      "at_ms": 469299,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/fixtures",
+      "method": "GET"
+    },
+    {
+      "at_ms": 469324,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs",
+      "method": "GET"
+    },
+    {
+      "at_ms": 469951,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    },
+    {
+      "at_ms": 470304,
+      "type": "request",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "method": "GET"
+    },
+    {
+      "at_ms": 471520,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/connectors",
+      "status": 200
+    },
+    {
+      "at_ms": 473988,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/plans",
+      "status": 200
+    },
+    {
+      "at_ms": 474345,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/evidence",
+      "status": 200
+    },
+    {
+      "at_ms": 478274,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/evaluations",
+      "status": 200
+    },
+    {
+      "at_ms": 478541,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/fixtures",
+      "status": 200
+    },
+    {
+      "at_ms": 490857,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs",
+      "status": 200
+    },
+    {
+      "at_ms": 491706,
+      "type": "response",
+      "url": "http://127.0.0.1:8772/api/v1/runs/run_297aaae252f0ad82",
+      "status": 200
+    }
+  ],
+  "elapsed_ms": 493938,
+  "error": "AssertionError [ERR_ASSERTION]: Actual offline decision workflow validates",
+  "stack": "AssertionError [ERR_ASSERTION]: Actual offline decision workflow validates\n    at check (C:\\Users\\AnuragManik7\\Documents\\Codex\\2026-10-01\\task-4\\improvement-20261005T084814\\browser_review_round2.cjs:13:39)\n    at C:\\Users\\AnuragManik7\\Documents\\Codex\\2026-10-01\\task-4\\improvement-20261005T084814\\browser_review_round2.cjs:57:2"
+}

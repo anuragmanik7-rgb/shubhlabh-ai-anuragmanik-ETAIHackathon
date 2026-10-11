@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="6.943" timestamp="2026-10-05T03:24:49.753986+05:30" hostname="Manik"><testcase classname="tests.test_solver_timeout" name="test_api_exposes_timeout_and_preserved_retry_contract" time="3.209" /></testsuite></testsuites>

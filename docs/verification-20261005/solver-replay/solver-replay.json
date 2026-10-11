@@ -1,0 +1,85 @@
+{
+  "diagnostic": "Exact saved input replay after closing dedicated Chrome and HTTP server; unchanged default solver time limit 4 seconds, two workers, seed42. No publication and no reset of persisted attempt counters.",
+  "input_sha256": "365ed6aa4b3bde8485d27fbedef655f71c3d075ed2eee1de37f94f3485c8e014",
+  "source_run": "run_297aaae252f0ad82",
+  "source_terminal_error": {
+    "code": "SOLVER_RETRY_LIMIT",
+    "message": "The solver reached its time limit on all three attempts. No feasible result was established; this does not prove infeasibility. No plan was published or constraint relaxed. Start a new run when capacity is available."
+  },
+  "candidate_count": 811,
+  "results": [
+    {
+      "attempt": 1,
+      "wall_seconds": 7.910681299981661,
+      "process_cpu_seconds": 0.234375,
+      "result": {
+        "offers": [],
+        "status": "UNKNOWN",
+        "objective_paise": null,
+        "bound_paise": null,
+        "gap": null,
+        "interactions": 0
+      },
+      "validation": {
+        "passed": false,
+        "errors": [
+          "Stale inventory for Bengaluru",
+          "Stale inventory for Delhi",
+          "Stale inventory for Mumbai"
+        ],
+        "checks": [
+          "item margin",
+          "discount ceiling",
+          "stock and expiry",
+          "maximum liability",
+          "overlap",
+          "channel and city",
+          "freshness"
+        ],
+        "liability_paise": 0,
+        "allocation": {},
+        "batch_allocation": {},
+        "clearance_units": 0,
+        "offer_clearance_units": {},
+        "evidence_status": "derived"
+      }
+    },
+    {
+      "attempt": 2,
+      "wall_seconds": 6.041555600007996,
+      "process_cpu_seconds": 0.203125,
+      "result": {
+        "offers": [],
+        "status": "UNKNOWN",
+        "objective_paise": null,
+        "bound_paise": null,
+        "gap": null,
+        "interactions": 0
+      },
+      "validation": {
+        "passed": false,
+        "errors": [
+          "Stale inventory for Bengaluru",
+          "Stale inventory for Delhi",
+          "Stale inventory for Mumbai"
+        ],
+        "checks": [
+          "item margin",
+          "discount ceiling",
+          "stock and expiry",
+          "maximum liability",
+          "overlap",
+          "channel and city",
+          "freshness"
+        ],
+        "liability_paise": 0,
+        "allocation": {},
+        "batch_allocation": {},
+        "clearance_units": 0,
+        "offer_clearance_units": {},
+        "evidence_status": "derived"
+      }
+    }
+  ],
+  "production_data_changed": false
+}

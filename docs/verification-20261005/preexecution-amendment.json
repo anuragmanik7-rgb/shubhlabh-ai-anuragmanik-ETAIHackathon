@@ -1,0 +1,12 @@
+{
+  "scope": "Evaluation tooling only; no application or numerical outcome changes",
+  "final_holdout_outcomes_observed_before_amendment": false,
+  "portable_inputs": {
+    "path": "promopilot/evaluation-inputs/portfolio-development.json",
+    "sha256": "1af9769fc7cc14bc693c15103b65c962cea2f291c5ba84ba4fb510072d057289",
+    "description": "Exact synthetic snapshot, forecast, relationships and brief from the previously completed development run; excludes its portfolio choices and reporting outcomes."
+  },
+  "comparator_consistency": "The conservative holdout comparator now uses the same min(5, risk_lambda + 1) configuration as the already-frozen production orchestrator. This source-only mismatch was corrected before executing the final holdout.",
+  "unchanged": ["48 extraction inputs and seed", "15 portfolio cases and seeds", "selection/report separation", "precision and coverage thresholds", "zero invariant-violation target", "no requirement for AI or solver superiority"],
+  "original_preregistration_preserved": true
+}

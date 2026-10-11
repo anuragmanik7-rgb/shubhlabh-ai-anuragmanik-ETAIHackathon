@@ -1,0 +1,48 @@
+{
+  "what": "One-Click campaign design time: from the 'Design campaign' click to a ready, verified kit (documents read, Chronos-2 forecast, offers planned and certified, copy, calendar, channels, banners).",
+  "claim": "One click, under 2 minutes: a typical run, not a guarantee",
+  "measurements": [
+    {
+      "date": "2026-10-11",
+      "mode": "rules-only (no model key)",
+      "seconds": 44.4,
+      "machine": "idle",
+      "source": "timed in the product before the deck claim was set (commit b283135)"
+    },
+    {
+      "date": "2026-10-11",
+      "mode": "live AI agent (gpt-4.1-mini)",
+      "seconds": 92.0,
+      "machine": "idle",
+      "source": "timed in the product before the deck claim was set (commit b283135)"
+    },
+    {
+      "date": "2026-10-11",
+      "mode": "rules-only (no model key)",
+      "seconds": 88.9,
+      "machine": "not recorded",
+      "campaign": "camp_d42d3e17c9974642",
+      "plan": "plan_8814a2f6712b433f",
+      "source": "stored run behind the deck figures (docs/pitch/screens/figures.json, design_seconds)"
+    },
+    {
+      "date": "2026-10-11",
+      "mode": "live AI agent (gpt-4.1-mini)",
+      "seconds": 89.5,
+      "machine": "not recorded",
+      "campaign": "camp_fcc677a15c714f9b",
+      "plan": "plan_0023fb1b2598469b",
+      "source": "stored run behind the final demo video, take F_B2 (docs/pitch/review/demo_final/STATUS.txt)"
+    },
+    {
+      "date": "2026-10-11",
+      "mode": "live AI agent (gpt-4.1-mini)",
+      "seconds": 204.5,
+      "machine": "busy",
+      "plan": "plan_d0ed02ba4338430e",
+      "source": "superseded demo take F_B (docs/pitch/review/demo_final/STATUS.txt)"
+    }
+  ],
+  "summary": "Four of five measured runs finished in 44-92 s; one run on a busy machine took 204.5 s. Hence 'typically under 2 minutes', not a guarantee.",
+  "note": "Wall-clock times on the team's Windows laptop (local CPU, Chronos-2 on CPU). The first run after a restart also loads the forecasting model, which adds time."
+}

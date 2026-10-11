@@ -1,0 +1,2 @@
+date,sku,city,quantity,paid_price_paise,stockout,currency,basket_items
+2026-09-30,SKU001,Bengaluru,30,5000,false,INR,SKU001|SKU081

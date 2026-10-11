@@ -1,0 +1,12 @@
+{
+  "response_lock_verification": {
+    "method": "Serialize native-locked-responses.json using json.dumps(indent=2, ensure_ascii=False), followed by one newline",
+    "sha256": "6dc4c0e192e333ce6350f3a90f5222c734ced3d943067e98742e5bb5ed6df1de",
+    "matches_parent_declared_lock": true,
+    "original_stored_file_preserved": true
+  },
+  "scope_limitation": "Case 01 was a manual evaluation harness packet generated after an UNKNOWN solver result. The production workflow stops at that solver checkpoint and permits bounded retry; it does not advance to this selection packet. This case verifies bounded interpretation and validation of supplied observations, not an end-to-end production run or a live provider integration.",
+  "image_05_coverage": "The original withheld gold permits ambiguity abstention and contains no single scalar price label. The reply preserves all three explicit price contexts and abstains from a scalar price. Under an alternative rule requiring the Offer price scalar, critical-field coverage would be 6/7 (85.7%); that alternative was not retroactively substituted for the original gold.",
+  "original_gold_modified": false,
+  "production_code_modified_for_replies": false
+}

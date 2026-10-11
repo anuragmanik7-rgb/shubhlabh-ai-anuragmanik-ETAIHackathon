@@ -1,0 +1,489 @@
+{
+  "application_import_seconds": 6.865475500002503,
+  "requests": [
+    {
+      "label": "new_session_1",
+      "path": "/api/v1/session",
+      "seconds": 0.5237429999979213,
+      "status": 200,
+      "bytes": 246
+    },
+    {
+      "label": "new_session_2",
+      "path": "/api/v1/session",
+      "seconds": 0.48855800001183525,
+      "status": 200,
+      "bytes": 247
+    },
+    {
+      "label": "new_session_3",
+      "path": "/api/v1/session",
+      "seconds": 0.38991660001920536,
+      "status": 200,
+      "bytes": 247
+    },
+    {
+      "label": "warm_session_1",
+      "path": "/api/v1/session",
+      "seconds": 0.6194793999893591,
+      "status": 200,
+      "bytes": 246
+    },
+    {
+      "label": "warm_session_2",
+      "path": "/api/v1/session",
+      "seconds": 0.6351064000045881,
+      "status": 200,
+      "bytes": 246
+    },
+    {
+      "label": "warm_session_3",
+      "path": "/api/v1/session",
+      "seconds": 0.583431999955792,
+      "status": 200,
+      "bytes": 246
+    },
+    {
+      "label": "bootstrap_1",
+      "path": "/api/v1/evaluations",
+      "seconds": 0.046227999962866306,
+      "status": 200,
+      "bytes": 1931
+    },
+    {
+      "label": "bootstrap_1",
+      "path": "/api/v1/fixtures",
+      "seconds": 0.541298599971924,
+      "status": 200,
+      "bytes": 731
+    },
+    {
+      "label": "bootstrap_1",
+      "path": "/api/v1/connectors",
+      "seconds": 0.5568390999687836,
+      "status": 200,
+      "bytes": 1194
+    },
+    {
+      "label": "bootstrap_1",
+      "path": "/api/v1/overview",
+      "seconds": 0.5810312999528833,
+      "status": 200,
+      "bytes": 688
+    },
+    {
+      "label": "bootstrap_1",
+      "path": "/api/v1/evidence",
+      "seconds": 0.5860605999478139,
+      "status": 200,
+      "bytes": 2
+    },
+    {
+      "label": "bootstrap_1",
+      "path": "/api/v1/runs",
+      "seconds": 1.3130214999546297,
+      "status": 200,
+      "bytes": 2
+    },
+    {
+      "label": "bootstrap_1",
+      "path": "/api/v1/catalog",
+      "seconds": 1.3227995000197552,
+      "status": 200,
+      "bytes": 254436
+    },
+    {
+      "label": "bootstrap_1",
+      "path": "/api/v1/plans",
+      "seconds": 1.3271965000312775,
+      "status": 200,
+      "bytes": 2
+    },
+    {
+      "label": "bootstrap_2",
+      "path": "/api/v1/runs",
+      "seconds": 0.7079924999852665,
+      "status": 200,
+      "bytes": 2
+    },
+    {
+      "label": "bootstrap_2",
+      "path": "/api/v1/fixtures",
+      "seconds": 0.7153028000029735,
+      "status": 200,
+      "bytes": 731
+    },
+    {
+      "label": "bootstrap_2",
+      "path": "/api/v1/connectors",
+      "seconds": 0.7201377999735996,
+      "status": 200,
+      "bytes": 1194
+    },
+    {
+      "label": "bootstrap_2",
+      "path": "/api/v1/overview",
+      "seconds": 0.7388417000183836,
+      "status": 200,
+      "bytes": 688
+    },
+    {
+      "label": "bootstrap_2",
+      "path": "/api/v1/plans",
+      "seconds": 0.7831961999763735,
+      "status": 200,
+      "bytes": 2
+    },
+    {
+      "label": "bootstrap_2",
+      "path": "/api/v1/evaluations",
+      "seconds": 0.7953425000305288,
+      "status": 200,
+      "bytes": 1931
+    },
+    {
+      "label": "bootstrap_2",
+      "path": "/api/v1/evidence",
+      "seconds": 0.8307919999933802,
+      "status": 200,
+      "bytes": 2
+    },
+    {
+      "label": "bootstrap_2",
+      "path": "/api/v1/catalog",
+      "seconds": 1.5838896000059322,
+      "status": 200,
+      "bytes": 254436
+    }
+  ],
+  "bootstrap_batches": [
+    {
+      "phase": "bootstrap_1",
+      "seconds": 1.3303305999725126
+    },
+    {
+      "phase": "bootstrap_2",
+      "seconds": 1.5866425999556668
+    }
+  ],
+  "operations": {
+    "application_import / Store.put_new:security": {
+      "calls": 1,
+      "wall_seconds": 0.007850699999835342,
+      "thread_cpu_seconds": 0.0
+    },
+    "new_session_1 / Store.put_new:api_rate": {
+      "calls": 1,
+      "wall_seconds": 0.004352300020400435,
+      "thread_cpu_seconds": 0.0
+    },
+    "new_session_1 / Store.mutate:api_rate": {
+      "calls": 1,
+      "wall_seconds": 0.00794300000416115,
+      "thread_cpu_seconds": 0.0
+    },
+    "new_session_1 / Store.put_new:workspace_rate": {
+      "calls": 1,
+      "wall_seconds": 0.004110699985176325,
+      "thread_cpu_seconds": 0.0
+    },
+    "new_session_1 / Store.mutate:workspace_rate": {
+      "calls": 1,
+      "wall_seconds": 0.0050069999997504056,
+      "thread_cpu_seconds": 0.0
+    },
+    "new_session_1 / Store.get:state": {
+      "calls": 1,
+      "wall_seconds": 0.0015559999737888575,
+      "thread_cpu_seconds": 0.0
+    },
+    "new_session_1 / create_retailer": {
+      "calls": 1,
+      "wall_seconds": 0.37101180001627654,
+      "thread_cpu_seconds": 0.375
+    },
+    "new_session_1 / Store.put_new:state": {
+      "calls": 1,
+      "wall_seconds": 0.07174779998604208,
+      "thread_cpu_seconds": 0.0625
+    },
+    "new_session_1 / ensure_seed": {
+      "calls": 1,
+      "wall_seconds": 0.4443555999896489,
+      "thread_cpu_seconds": 0.4375
+    },
+    "new_session_2 / Store.get:api_rate": {
+      "calls": 1,
+      "wall_seconds": 0.0006973000126890838,
+      "thread_cpu_seconds": 0.0
+    },
+    "new_session_2 / Store.put_new:api_rate": {
+      "calls": 1,
+      "wall_seconds": 0.0017364999512210488,
+      "thread_cpu_seconds": 0.0
+    },
+    "new_session_2 / Store.mutate:api_rate": {
+      "calls": 1,
+      "wall_seconds": 0.004420100012794137,
+      "thread_cpu_seconds": 0.0
+    },
+    "new_session_2 / Store.get:workspace_rate": {
+      "calls": 1,
+      "wall_seconds": 0.0006551999831572175,
+      "thread_cpu_seconds": 0.0
+    },
+    "new_session_2 / Store.put_new:workspace_rate": {
+      "calls": 1,
+      "wall_seconds": 0.0014577999827452004,
+      "thread_cpu_seconds": 0.0
+    },
+    "new_session_2 / Store.mutate:workspace_rate": {
+      "calls": 1,
+      "wall_seconds": 0.003970499965362251,
+      "thread_cpu_seconds": 0.015625
+    },
+    "new_session_2 / Store.get:state": {
+      "calls": 1,
+      "wall_seconds": 0.0008153999806381762,
+      "thread_cpu_seconds": 0.0
+    },
+    "new_session_2 / create_retailer": {
+      "calls": 1,
+      "wall_seconds": 0.39112019998719916,
+      "thread_cpu_seconds": 0.375
+    },
+    "new_session_2 / Store.put_new:state": {
+      "calls": 1,
+      "wall_seconds": 0.0742455999716185,
+      "thread_cpu_seconds": 0.0625
+    },
+    "new_session_2 / ensure_seed": {
+      "calls": 1,
+      "wall_seconds": 0.46622060000663623,
+      "thread_cpu_seconds": 0.4375
+    },
+    "new_session_3 / Store.get:api_rate": {
+      "calls": 1,
+      "wall_seconds": 0.0017192999948747456,
+      "thread_cpu_seconds": 0.0
+    },
+    "new_session_3 / Store.put_new:api_rate": {
+      "calls": 1,
+      "wall_seconds": 0.0030120000010356307,
+      "thread_cpu_seconds": 0.0
+    },
+    "new_session_3 / Store.mutate:api_rate": {
+      "calls": 1,
+      "wall_seconds": 0.004809600010048598,
+      "thread_cpu_seconds": 0.015625
+    },
+    "new_session_3 / Store.get:workspace_rate": {
+      "calls": 1,
+      "wall_seconds": 0.0009960000170394778,
+      "thread_cpu_seconds": 0.0
+    },
+    "new_session_3 / Store.put_new:workspace_rate": {
+      "calls": 1,
+      "wall_seconds": 0.002036999969277531,
+      "thread_cpu_seconds": 0.0
+    },
+    "new_session_3 / Store.mutate:workspace_rate": {
+      "calls": 1,
+      "wall_seconds": 0.004734999965876341,
+      "thread_cpu_seconds": 0.0
+    },
+    "new_session_3 / Store.get:state": {
+      "calls": 1,
+      "wall_seconds": 0.000943099963478744,
+      "thread_cpu_seconds": 0.0
+    },
+    "new_session_3 / create_retailer": {
+      "calls": 1,
+      "wall_seconds": 0.27666930004488677,
+      "thread_cpu_seconds": 0.28125
+    },
+    "new_session_3 / Store.put_new:state": {
+      "calls": 1,
+      "wall_seconds": 0.06497430003946647,
+      "thread_cpu_seconds": 0.046875
+    },
+    "new_session_3 / ensure_seed": {
+      "calls": 1,
+      "wall_seconds": 0.3426238000392914,
+      "thread_cpu_seconds": 0.328125
+    },
+    "warm_session_1 / Store.put_new:api_rate": {
+      "calls": 1,
+      "wall_seconds": 0.0043966000084765255,
+      "thread_cpu_seconds": 0.0
+    },
+    "warm_session_1 / Store.mutate:api_rate": {
+      "calls": 1,
+      "wall_seconds": 0.005282700003590435,
+      "thread_cpu_seconds": 0.0
+    },
+    "warm_session_1 / Store.get:state": {
+      "calls": 1,
+      "wall_seconds": 0.5975695999804884,
+      "thread_cpu_seconds": 0.578125
+    },
+    "warm_session_1 / ensure_seed": {
+      "calls": 1,
+      "wall_seconds": 0.5978287999751046,
+      "thread_cpu_seconds": 0.578125
+    },
+    "warm_session_2 / Store.get:api_rate": {
+      "calls": 1,
+      "wall_seconds": 0.0010168000007979572,
+      "thread_cpu_seconds": 0.015625
+    },
+    "warm_session_2 / Store.put_new:api_rate": {
+      "calls": 1,
+      "wall_seconds": 0.002061299979686737,
+      "thread_cpu_seconds": 0.015625
+    },
+    "warm_session_2 / Store.mutate:api_rate": {
+      "calls": 1,
+      "wall_seconds": 0.006887900002766401,
+      "thread_cpu_seconds": 0.0
+    },
+    "warm_session_2 / Store.get:state": {
+      "calls": 1,
+      "wall_seconds": 0.61640100000659,
+      "thread_cpu_seconds": 0.609375
+    },
+    "warm_session_2 / ensure_seed": {
+      "calls": 1,
+      "wall_seconds": 0.6164195999735966,
+      "thread_cpu_seconds": 0.609375
+    },
+    "warm_session_3 / Store.get:api_rate": {
+      "calls": 1,
+      "wall_seconds": 0.0008008999866433442,
+      "thread_cpu_seconds": 0.0
+    },
+    "warm_session_3 / Store.put_new:api_rate": {
+      "calls": 1,
+      "wall_seconds": 0.0019836999708786607,
+      "thread_cpu_seconds": 0.0
+    },
+    "warm_session_3 / Store.mutate:api_rate": {
+      "calls": 1,
+      "wall_seconds": 0.004766499972902238,
+      "thread_cpu_seconds": 0.0
+    },
+    "warm_session_3 / Store.get:state": {
+      "calls": 1,
+      "wall_seconds": 0.5656283000134863,
+      "thread_cpu_seconds": 0.5625
+    },
+    "warm_session_3 / ensure_seed": {
+      "calls": 1,
+      "wall_seconds": 0.5656446000211872,
+      "thread_cpu_seconds": 0.5625
+    },
+    "bootstrap_1 / Store.get:api_rate": {
+      "calls": 8,
+      "wall_seconds": 0.15579129988327622,
+      "thread_cpu_seconds": 0.0
+    },
+    "bootstrap_1 / Store.put_new:api_rate": {
+      "calls": 8,
+      "wall_seconds": 1.3108147999155335,
+      "thread_cpu_seconds": 0.015625
+    },
+    "bootstrap_1 / Store.mutate:api_rate": {
+      "calls": 8,
+      "wall_seconds": 2.866227099962998,
+      "thread_cpu_seconds": 0.0
+    },
+    "bootstrap_1 / Store.get:state": {
+      "calls": 2,
+      "wall_seconds": 1.182059200014919,
+      "thread_cpu_seconds": 1.140625
+    },
+    "bootstrap_1 / Store.list:plan": {
+      "calls": 2,
+      "wall_seconds": 0.0026231000083498657,
+      "thread_cpu_seconds": 0.0
+    },
+    "bootstrap_1 / Store.list:event": {
+      "calls": 1,
+      "wall_seconds": 0.027745199971832335,
+      "thread_cpu_seconds": 0.0
+    },
+    "bootstrap_1 / Store.list:order": {
+      "calls": 1,
+      "wall_seconds": 0.002001299988478422,
+      "thread_cpu_seconds": 0.0
+    },
+    "bootstrap_1 / Store.list:evidence": {
+      "calls": 1,
+      "wall_seconds": 0.0007975000189617276,
+      "thread_cpu_seconds": 0.0
+    },
+    "bootstrap_1 / Store.list:run": {
+      "calls": 1,
+      "wall_seconds": 0.0922794000362046,
+      "thread_cpu_seconds": 0.0
+    },
+    "bootstrap_2 / Store.get:api_rate": {
+      "calls": 8,
+      "wall_seconds": 0.43507030000910163,
+      "thread_cpu_seconds": 0.015625
+    },
+    "bootstrap_2 / Store.put_new:api_rate": {
+      "calls": 8,
+      "wall_seconds": 2.2575440999353305,
+      "thread_cpu_seconds": 0.0625
+    },
+    "bootstrap_2 / Store.mutate:api_rate": {
+      "calls": 8,
+      "wall_seconds": 2.3114858000189997,
+      "thread_cpu_seconds": 0.046875
+    },
+    "bootstrap_2 / Store.list:run": {
+      "calls": 1,
+      "wall_seconds": 0.37409609998576343,
+      "thread_cpu_seconds": 0.015625
+    },
+    "bootstrap_2 / Store.get:state": {
+      "calls": 2,
+      "wall_seconds": 1.3223326999577694,
+      "thread_cpu_seconds": 1.171875
+    },
+    "bootstrap_2 / Store.list:plan": {
+      "calls": 2,
+      "wall_seconds": 0.0036257999599911273,
+      "thread_cpu_seconds": 0.0
+    },
+    "bootstrap_2 / Store.list:event": {
+      "calls": 1,
+      "wall_seconds": 0.014574699976947159,
+      "thread_cpu_seconds": 0.0
+    },
+    "bootstrap_2 / Store.list:order": {
+      "calls": 1,
+      "wall_seconds": 0.0010602000402286649,
+      "thread_cpu_seconds": 0.0
+    },
+    "bootstrap_2 / Store.list:evidence": {
+      "calls": 1,
+      "wall_seconds": 0.0008495000074617565,
+      "thread_cpu_seconds": 0.0
+    }
+  },
+  "provider_calls": 0,
+  "thresholds": {
+    "new_session_seconds": 5,
+    "warm_session_seconds": 2,
+    "bootstrap_seconds": 5
+  },
+  "threshold_passed": true,
+  "limitations": [
+    "Three new sessions and three warm requests are a bounded diagnostic, not a load-test percentile.",
+    "Thresholds are explicit local review targets, not official competition criteria.",
+    "Instrumentation records wall time and CPU time for the executing thread; nested operation totals overlap.",
+    "No other heavy verification process should run concurrently."
+  ]
+}

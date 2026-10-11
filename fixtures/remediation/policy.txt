@@ -1,0 +1,8 @@
+SYNTHETIC FIXTURE - HARVEST LANE GROCERY
+Promotion authority policy
+Currency: INR
+Minimum margin: 15%
+Maximum discount: 20%
+Marketing budget: INR 18,000
+Scope: Bengaluru, Mumbai, Delhi
+This document is invented test data. It is not a retailer policy.

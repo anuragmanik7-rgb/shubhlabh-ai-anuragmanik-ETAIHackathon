@@ -1,0 +1,18 @@
+{
+ "source": "FreshRetailNet-50K (Dingdong-Inc), CC BY 4.0",
+ "elasticity_prior": {
+  "mean": 1.76,
+  "sd": 0.927,
+  "p10": 0.706,
+  "p90": 2.95
+ },
+ "global": {
+  "price_elasticity": 1.451,
+  "se": 0.0046,
+  "activity_lift_pct": 6.3,
+  "holiday_lift_pct": 1.4,
+  "observations": 2659265
+ },
+ "caveat": "Response models are calibrated and back-tested on public Chinese fresh-retail data (FreshRetailNet-50K, CC BY 4.0). Promotions were not randomised; gains are offline, model-based estimates, not results from an Indian retailer or an A/B test.",
+ "at": "2026-10-07T22:15:18"
+}

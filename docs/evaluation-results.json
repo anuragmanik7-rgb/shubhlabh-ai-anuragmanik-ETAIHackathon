@@ -1,0 +1,47 @@
+{
+  "created_at": "2026-10-05T11:16:53.221874+00:00",
+  "tests_passed": 738,
+  "tests_total": 738,
+  "failures": 0,
+  "errors": 0,
+  "duration_seconds": 737.243,
+  "test_kind": "Complete synthetic backend suite; separate focused recovery run passed 27 checks",
+  "live_model_evaluated": false,
+  "postgres_evaluated": false,
+  "external_marketplace_connected": false,
+  "source_report": "docs/verification-20261005/backend-full.xml",
+  "source_fingerprint": "216c27d7671f653161eea23e9d4c7dc0571903cd449b22f5ca7aaf474921c39f",
+  "harness_limits": [
+    "No deletion; all synthetic updates retain prior versions",
+    "Loopback-only network; API keys cleared",
+    "SQLite MEMORY journal and temp store for this authorized no-deletion harness",
+    "No production crash-durability or cloud-load claim"
+  ],
+  "holdouts": {
+    "text_pdf_critical_fields": "57/57; 12 synthetic layouts",
+    "offline_raster_coverage": 0,
+    "portfolio_cases": 15,
+    "selected_constraint_violations": 0,
+    "selected_negative_report_means": 0,
+    "offline_policy_vs_flat_rule": {
+      "wins": 3,
+      "ties": 12,
+      "losses": 0
+    }
+  },
+  "pending_at_report_creation": [],
+  "note": "Holdouts preceded the lease recovery change. Their numerical and extraction algorithm files remain unchanged; they are not evidence of live AI superiority or real retailer uplift.",
+  "verified_at": "2026-10-05T11:42:52.467534+00:00",
+  "completion_status": {
+    "backend": "738 passed",
+    "browser": "failed: SOLVER_RETRY_LIMIT; 3 checks passed, 1 failed, 13 not reached",
+    "startup_http_profile": "passed 22 HTTP requests; separate browser latency gate failed",
+    "extracted_runtime": "See companion release receipt"
+  },
+  "current_limitations": [
+    "Real-clock browser planning did not finish",
+    "Raster extraction coverage 0% offline",
+    "No live API, D3 reliability, production deployment or retailer impact validation"
+  ],
+  "verification_report": "docs/verification-20261005/REPORT.md"
+}

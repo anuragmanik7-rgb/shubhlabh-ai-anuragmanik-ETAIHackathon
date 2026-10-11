@@ -1,0 +1,145 @@
+{
+  "id": "run_297aaae252f0ad82",
+  "plan_id": "plan_ad4b4862eafd4759",
+  "revision": 1,
+  "state": "failed",
+  "step": 4,
+  "mode": "offline",
+  "events": [
+    {
+      "tool": "read_evidence",
+      "state": "completed",
+      "summary": "Read 120 products, stock and policy v2. Critical missing costs exclude affected products.",
+      "at": "2026-10-05T11:24:38.633768+00:00",
+      "seconds": 0.893,
+      "mode": "offline"
+    },
+    {
+      "tool": "forecast_demand",
+      "state": "completed",
+      "summary": "Selected poisson using development-period WAPE; untouched temporal test results recorded.",
+      "at": "2026-10-05T11:25:21.290003+00:00",
+      "seconds": 42.385,
+      "mode": "offline"
+    },
+    {
+      "tool": "get_relationships",
+      "state": "completed",
+      "summary": "Computed 3 supported co-purchase pairs; substitute effects are labelled scenario assumptions.",
+      "at": "2026-10-05T11:25:47.158000+00:00",
+      "seconds": 20.606,
+      "mode": "offline"
+    },
+    {
+      "tool": "decide_analysis",
+      "state": "completed",
+      "summary": "Required numerical observations are available; continue within the unchanged brief.",
+      "at": "2026-10-05T11:26:01.668467+00:00",
+      "mode": "offline",
+      "packet_id": "ff865da412b69c927fe8dec0ff22f02a5dde9346b2eecbc43cc8ac85b772f0d4",
+      "phase": "analysis",
+      "revision": 1,
+      "snapshot_id": "46e51adcdd4d6aa3",
+      "snapshot_hash": "4254174c6254d83d541f60e005d396a8011db824cb28b1fe6f54e395d2971961",
+      "brief_hash": "22e8658d44cf17df104a99fd4dbe3b432dc73c45212f4c854a75902dd601afea",
+      "origin": "offline_policy",
+      "decision": {
+        "packet_id": "ff865da412b69c927fe8dec0ff22f02a5dde9346b2eecbc43cc8ac85b772f0d4",
+        "action": "continue",
+        "proposal_id": null,
+        "rationale": "Required numerical observations are available; continue within the unchanged brief.",
+        "citations": [
+          "evidence:6b3af91317d9685a",
+          "forecast:5e92a9d525c1d813",
+          "relationships:0a742813f0a48ef8"
+        ],
+        "questions": []
+      },
+      "observation_refs": [
+        "evidence:6b3af91317d9685a",
+        "forecast:5e92a9d525c1d813",
+        "relationships:0a742813f0a48ef8"
+      ]
+    },
+    {
+      "tool": "generate_candidates",
+      "state": "completed",
+      "summary": "Screened catalog to 20 promoted products; retained 811 offers with policy checks.",
+      "at": "2026-10-05T11:26:06.892413+00:00",
+      "seconds": 16.993,
+      "mode": "offline"
+    },
+    {
+      "tool": "optimize_plan",
+      "state": "failed",
+      "summary": "The solver reached its time limit without establishing a feasible result (attempt 1/3). This does not prove the brief is infeasible. Retry the preserved checkpoint; no input constraints were changed.",
+      "at": "2026-10-05T11:26:59.662336+00:00"
+    },
+    {
+      "tool": "retry_checkpoint",
+      "state": "completed",
+      "summary": "Resuming preserved successful steps; no execution action repeated",
+      "at": "2026-10-05T11:27:56.215014+00:00"
+    },
+    {
+      "tool": "optimize_plan",
+      "state": "failed",
+      "summary": "The solver reached its time limit without establishing a feasible result (attempt 2/3). This does not prove the brief is infeasible. Retry the preserved checkpoint; no input constraints were changed.",
+      "at": "2026-10-05T11:29:11.854266+00:00"
+    },
+    {
+      "tool": "retry_checkpoint",
+      "state": "completed",
+      "summary": "Resuming preserved successful steps; no execution action repeated",
+      "at": "2026-10-05T11:30:01.151503+00:00"
+    },
+    {
+      "tool": "optimize_plan",
+      "state": "failed",
+      "summary": "The solver reached its time limit on all three attempts. No feasible result was established; this does not prove infeasibility. No plan was published or constraint relaxed. Start a new run when capacity is available.",
+      "at": "2026-10-05T11:31:15.830146+00:00"
+    }
+  ],
+  "snapshot_id": "46e51adcdd4d6aa3",
+  "solver_attempts": 3,
+  "solver_attempt_limit": 3,
+  "brief": {
+    "title": "Browser verification plan",
+    "instruction": "",
+    "cities": [
+      "Bengaluru",
+      "Mumbai",
+      "Delhi"
+    ],
+    "objective": "profit",
+    "budget_paise": 500000,
+    "horizon": 3,
+    "mechanisms": [
+      "markdown",
+      "coupon",
+      "bundle"
+    ],
+    "min_margin_bps": 1500,
+    "max_discount_bps": 2000,
+    "risk_lambda": 0.5,
+    "clearance_target": 0,
+    "clearance_hard": false,
+    "scenarios": 40,
+    "seed": 42,
+    "mode": "offline",
+    "parent_id": null,
+    "start_date": "2026-10-05"
+  },
+  "parent_id": null,
+  "idempotency_key": "browser-review-cda25d3d-2bb7-4b0b-b212-e3ac56131604",
+  "request_fingerprint": "ad5dbe0f3a438bda436ea93d14ef66f91ed823cb383701319f5ebb7033b05de8",
+  "attempt": 7,
+  "created_at": "2026-10-05T11:24:28.966225+00:00",
+  "snapshot_ref": "run_297aaae252f0ad82",
+  "ai_calls": 0,
+  "last_solver_status": "UNKNOWN",
+  "error": {
+    "code": "SOLVER_RETRY_LIMIT",
+    "message": "The solver reached its time limit on all three attempts. No feasible result was established; this does not prove infeasibility. No plan was published or constraint relaxed. Start a new run when capacity is available."
+  }
+}

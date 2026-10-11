@@ -1,0 +1,1392 @@
+{
+ "note": "Synthetic renders for extraction evaluation; not real advertised offers.",
+ "items": [
+  {
+   "file": "synthetic/shelf_tag_00.jpg",
+   "type": "shelf_tag",
+   "difficulty": 0,
+   "sku": "SKU030",
+   "fields": {
+    "item_name": "Harvest Sugar",
+    "pack": "1000 g",
+    "mrp_inr": 62.0,
+    "offer_price_inr": 53.0,
+    "seller": "QuickBasket",
+    "city": "Mumbai"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/shelf_tag_01.jpg",
+   "type": "shelf_tag",
+   "difficulty": 1,
+   "sku": "SKU111",
+   "fields": {
+    "item_name": "Freshway Dishwash Gel",
+    "pack": "500 ml",
+    "mrp_inr": 121.0,
+    "offer_price_inr": 111.0,
+    "seller": "MetroFresh Store",
+    "city": "Bengaluru"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/shelf_tag_02.jpg",
+   "type": "shelf_tag",
+   "difficulty": 1,
+   "sku": "SKU023",
+   "fields": {
+    "item_name": "Daily Toor Dal",
+    "pack": "500 g",
+    "mrp_inr": 96.0,
+    "offer_price_inr": 84.0,
+    "seller": "DailyDash",
+    "city": "Bengaluru"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/shelf_tag_03.jpg",
+   "type": "shelf_tag",
+   "difficulty": 2,
+   "sku": "SKU085",
+   "fields": {
+    "item_name": "Daily Peanut Butter",
+    "pack": "200 g",
+    "mrp_inr": 135.0,
+    "offer_price_inr": 128.0,
+    "seller": "ZipMart",
+    "city": "Bengaluru"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/shelf_tag_04.jpg",
+   "type": "shelf_tag",
+   "difficulty": 2,
+   "sku": "SKU007",
+   "fields": {
+    "item_name": "Harvest Curd",
+    "pack": "400 g",
+    "mrp_inr": 65.0,
+    "offer_price_inr": 62.0,
+    "seller": "Ganesh Provisions",
+    "city": "Mumbai"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/shelf_tag_05.jpg",
+   "type": "shelf_tag",
+   "difficulty": 2,
+   "sku": "SKU050",
+   "fields": {
+    "item_name": "Harvest Roasted Peanuts",
+    "pack": "200 g",
+    "mrp_inr": 68.0,
+    "offer_price_inr": 63.0,
+    "seller": "ZipMart",
+    "city": "Delhi"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/shelf_tag_06.jpg",
+   "type": "shelf_tag",
+   "difficulty": 3,
+   "sku": "SKU045",
+   "fields": {
+    "item_name": "Daily Roasted Peanuts",
+    "pack": "200 g",
+    "mrp_inr": 62.0,
+    "offer_price_inr": 55.0,
+    "seller": "Ganesh Provisions",
+    "city": "Mumbai"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/shelf_tag_07.jpg",
+   "type": "shelf_tag",
+   "difficulty": 1,
+   "sku": "SKU012",
+   "fields": {
+    "item_name": "Freshway Curd",
+    "pack": "400 g",
+    "mrp_inr": 70.0,
+    "offer_price_inr": 64.0,
+    "seller": "QuickBasket",
+    "city": "Mumbai"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/shelf_tag_08.jpg",
+   "type": "shelf_tag",
+   "difficulty": 2,
+   "sku": "SKU008",
+   "fields": {
+    "item_name": "Harvest Paneer",
+    "pack": "200 g",
+    "mrp_inr": 118.0,
+    "offer_price_inr": 106.0,
+    "seller": "ZipMart",
+    "city": "Delhi"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/shelf_tag_09.jpg",
+   "type": "shelf_tag",
+   "difficulty": 3,
+   "sku": "SKU078",
+   "fields": {
+    "item_name": "Pantry Juice",
+    "pack": "1000 ml",
+    "mrp_inr": 161.0,
+    "offer_price_inr": 145.0,
+    "seller": "QuickBasket",
+    "city": "Bengaluru"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/flyer_00.jpg",
+   "type": "flyer",
+   "difficulty": 0,
+   "sku": "SKU080",
+   "fields": {
+    "item_name": "Pantry Cocoa",
+    "pack": "100 g",
+    "mrp_inr": 219.0,
+    "offer_price_inr": 180.0,
+    "seller": "QuickBasket",
+    "city": "Bengaluru"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/flyer_01.jpg",
+   "type": "flyer",
+   "difficulty": 1,
+   "sku": "SKU076",
+   "fields": {
+    "item_name": "Pantry Coffee",
+    "pack": "100 g",
+    "mrp_inr": 263.0,
+    "offer_price_inr": 237.0,
+    "seller": "Kirana Plus",
+    "city": "Mumbai"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/flyer_02.jpg",
+   "type": "flyer",
+   "difficulty": 1,
+   "sku": "SKU087",
+   "fields": {
+    "item_name": "Harvest Cornflakes",
+    "pack": "250 g",
+    "mrp_inr": 118.0,
+    "offer_price_inr": 94.0,
+    "seller": "DailyDash",
+    "city": "Delhi"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/flyer_03.jpg",
+   "type": "flyer",
+   "difficulty": 2,
+   "sku": "SKU059",
+   "fields": {
+    "item_name": "Pantry Cookies",
+    "pack": "200 g",
+    "mrp_inr": 124.0,
+    "offer_price_inr": 118.0,
+    "seller": "Ganesh Provisions",
+    "city": "Bengaluru"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/flyer_04.jpg",
+   "type": "flyer",
+   "difficulty": 2,
+   "sku": "SKU086",
+   "fields": {
+    "item_name": "Harvest Oats",
+    "pack": "500 g",
+    "mrp_inr": 148.0,
+    "offer_price_inr": 121.0,
+    "seller": "Kirana Plus",
+    "city": "Mumbai"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/flyer_05.jpg",
+   "type": "flyer",
+   "difficulty": 2,
+   "sku": "SKU092",
+   "fields": {
+    "item_name": "Freshway Cornflakes",
+    "pack": "250 g",
+    "mrp_inr": 128.0,
+    "offer_price_inr": 113.0,
+    "seller": "Ganesh Provisions",
+    "city": "Mumbai"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/flyer_06.jpg",
+   "type": "flyer",
+   "difficulty": 3,
+   "sku": "SKU004",
+   "fields": {
+    "item_name": "Daily Butter",
+    "pack": "100 g",
+    "mrp_inr": 68.0,
+    "offer_price_inr": 58.0,
+    "seller": "DailyDash",
+    "city": "Mumbai"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/flyer_07.jpg",
+   "type": "flyer",
+   "difficulty": 1,
+   "sku": "SKU003",
+   "fields": {
+    "item_name": "Daily Paneer",
+    "pack": "200 g",
+    "mrp_inr": 107.0,
+    "offer_price_inr": 94.0,
+    "seller": "DailyDash",
+    "city": "Mumbai"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/flyer_08.jpg",
+   "type": "flyer",
+   "difficulty": 2,
+   "sku": "SKU039",
+   "fields": {
+    "item_name": "Pantry Cooking Oil",
+    "pack": "1000 ml",
+    "mrp_inr": 233.0,
+    "offer_price_inr": 205.0,
+    "seller": "MetroFresh Store",
+    "city": "Mumbai"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/flyer_09.jpg",
+   "type": "flyer",
+   "difficulty": 3,
+   "sku": "SKU083",
+   "fields": {
+    "item_name": "Daily Muesli",
+    "pack": "500 g",
+    "mrp_inr": 269.0,
+    "offer_price_inr": 229.0,
+    "seller": "ZipMart",
+    "city": "Delhi"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/qc_screenshot_00.jpg",
+   "type": "qc_screenshot",
+   "difficulty": 0,
+   "sku": "SKU102",
+   "fields": {
+    "item_name": "Daily Laundry Liquid",
+    "pack": "1000 ml",
+    "mrp_inr": 247.0,
+    "offer_price_inr": 185.0,
+    "seller": "QuickBasket",
+    "city": "Bengaluru"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/qc_screenshot_01.jpg",
+   "type": "qc_screenshot",
+   "difficulty": 1,
+   "sku": "SKU084",
+   "fields": {
+    "item_name": "Daily Bread",
+    "pack": "400 g",
+    "mrp_inr": 56.0,
+    "offer_price_inr": 49.0,
+    "seller": "Kirana Plus",
+    "city": "Delhi"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/qc_screenshot_02.jpg",
+   "type": "qc_screenshot",
+   "difficulty": 1,
+   "sku": "SKU102",
+   "fields": {
+    "item_name": "Daily Laundry Liquid",
+    "pack": "1000 ml",
+    "mrp_inr": 247.0,
+    "offer_price_inr": 217.0,
+    "seller": "Kirana Plus",
+    "city": "Bengaluru"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/qc_screenshot_03.jpg",
+   "type": "qc_screenshot",
+   "difficulty": 2,
+   "sku": "SKU112",
+   "fields": {
+    "item_name": "Freshway Laundry Liquid",
+    "pack": "1000 ml",
+    "mrp_inr": 296.0,
+    "offer_price_inr": 260.0,
+    "seller": "Kirana Plus",
+    "city": "Delhi"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/qc_screenshot_04.jpg",
+   "type": "qc_screenshot",
+   "difficulty": 2,
+   "sku": "SKU088",
+   "fields": {
+    "item_name": "Harvest Muesli",
+    "pack": "500 g",
+    "mrp_inr": 296.0,
+    "offer_price_inr": 272.0,
+    "seller": "Kirana Plus",
+    "city": "Delhi"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/qc_screenshot_05.jpg",
+   "type": "qc_screenshot",
+   "difficulty": 2,
+   "sku": "SKU088",
+   "fields": {
+    "item_name": "Harvest Muesli",
+    "pack": "500 g",
+    "mrp_inr": 296.0,
+    "offer_price_inr": 252.0,
+    "seller": "ZipMart",
+    "city": "Mumbai"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/qc_screenshot_06.jpg",
+   "type": "qc_screenshot",
+   "difficulty": 3,
+   "sku": "SKU060",
+   "fields": {
+    "item_name": "Pantry Roasted Peanuts",
+    "pack": "200 g",
+    "mrp_inr": 81.0,
+    "offer_price_inr": 61.0,
+    "seller": "ZipMart",
+    "city": "Delhi"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/qc_screenshot_07.jpg",
+   "type": "qc_screenshot",
+   "difficulty": 1,
+   "sku": "SKU064",
+   "fields": {
+    "item_name": "Daily Sparkling Water",
+    "pack": "1000 ml",
+    "mrp_inr": 68.0,
+    "offer_price_inr": 51.0,
+    "seller": "DailyDash",
+    "city": "Mumbai"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/qc_screenshot_08.jpg",
+   "type": "qc_screenshot",
+   "difficulty": 2,
+   "sku": "SKU008",
+   "fields": {
+    "item_name": "Harvest Paneer",
+    "pack": "200 g",
+    "mrp_inr": 118.0,
+    "offer_price_inr": 94.0,
+    "seller": "ZipMart",
+    "city": "Delhi"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/qc_screenshot_09.jpg",
+   "type": "qc_screenshot",
+   "difficulty": 3,
+   "sku": "SKU099",
+   "fields": {
+    "item_name": "Pantry Bread",
+    "pack": "400 g",
+    "mrp_inr": 73.0,
+    "offer_price_inr": 55.0,
+    "seller": "QuickBasket",
+    "city": "Bengaluru"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/whatsapp_scheme_00.jpg",
+   "type": "whatsapp_scheme",
+   "difficulty": 0,
+   "sku": "SKU065",
+   "fields": {
+    "item_name": "Daily Cocoa",
+    "pack": "100 g",
+    "mrp_inr": 168.0,
+    "offer_price_inr": 151.0,
+    "seller": "Ganesh Provisions",
+    "city": "Mumbai"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/whatsapp_scheme_01.jpg",
+   "type": "whatsapp_scheme",
+   "difficulty": 1,
+   "sku": "SKU067",
+   "fields": {
+    "item_name": "Harvest Tea",
+    "pack": "250 g",
+    "mrp_inr": 173.0,
+    "offer_price_inr": 159.0,
+    "seller": "Ganesh Provisions",
+    "city": "Mumbai"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/whatsapp_scheme_02.jpg",
+   "type": "whatsapp_scheme",
+   "difficulty": 1,
+   "sku": "SKU094",
+   "fields": {
+    "item_name": "Freshway Bread",
+    "pack": "400 g",
+    "mrp_inr": 68.0,
+    "offer_price_inr": 61.0,
+    "seller": "MetroFresh Store",
+    "city": "Delhi"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/whatsapp_scheme_03.jpg",
+   "type": "whatsapp_scheme",
+   "difficulty": 2,
+   "sku": "SKU082",
+   "fields": {
+    "item_name": "Daily Cornflakes",
+    "pack": "250 g",
+    "mrp_inr": 107.0,
+    "offer_price_inr": 86.0,
+    "seller": "QuickBasket",
+    "city": "Delhi"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/whatsapp_scheme_04.jpg",
+   "type": "whatsapp_scheme",
+   "difficulty": 2,
+   "sku": "SKU098",
+   "fields": {
+    "item_name": "Pantry Muesli",
+    "pack": "500 g",
+    "mrp_inr": 350.0,
+    "offer_price_inr": 322.0,
+    "seller": "DailyDash",
+    "city": "Mumbai"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/whatsapp_scheme_05.jpg",
+   "type": "whatsapp_scheme",
+   "difficulty": 2,
+   "sku": "SKU047",
+   "fields": {
+    "item_name": "Harvest Namkeen",
+    "pack": "200 g",
+    "mrp_inr": 81.0,
+    "offer_price_inr": 71.0,
+    "seller": "QuickBasket",
+    "city": "Bengaluru"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/whatsapp_scheme_06.jpg",
+   "type": "whatsapp_scheme",
+   "difficulty": 3,
+   "sku": "SKU023",
+   "fields": {
+    "item_name": "Daily Toor Dal",
+    "pack": "500 g",
+    "mrp_inr": 96.0,
+    "offer_price_inr": 91.0,
+    "seller": "QuickBasket",
+    "city": "Delhi"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/whatsapp_scheme_07.jpg",
+   "type": "whatsapp_scheme",
+   "difficulty": 1,
+   "sku": "SKU002",
+   "fields": {
+    "item_name": "Daily Curd",
+    "pack": "400 g",
+    "mrp_inr": 59.0,
+    "offer_price_inr": 53.0,
+    "seller": "QuickBasket",
+    "city": "Mumbai"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/whatsapp_scheme_08.jpg",
+   "type": "whatsapp_scheme",
+   "difficulty": 2,
+   "sku": "SKU078",
+   "fields": {
+    "item_name": "Pantry Juice",
+    "pack": "1000 ml",
+    "mrp_inr": 161.0,
+    "offer_price_inr": 145.0,
+    "seller": "Kirana Plus",
+    "city": "Mumbai"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/whatsapp_scheme_09.jpg",
+   "type": "whatsapp_scheme",
+   "difficulty": 3,
+   "sku": "SKU060",
+   "fields": {
+    "item_name": "Pantry Roasted Peanuts",
+    "pack": "200 g",
+    "mrp_inr": 81.0,
+    "offer_price_inr": 65.0,
+    "seller": "Ganesh Provisions",
+    "city": "Mumbai"
+   },
+   "synthetic": true
+  },
+  {
+   "file": "synthetic/text_pdf_00.pdf",
+   "type": "text_pdf",
+   "difficulty": 0,
+   "sku": "SKU051",
+   "synthetic": true,
+   "fields": {
+    "item_name": "Freshway Biscuits",
+    "pack": "200 g",
+    "mrp_inr": 61.0,
+    "offer_price_inr": 55.0,
+    "seller": "DailyDash",
+    "city": "Bengaluru"
+   },
+   "all_items": [
+    {
+     "sku": "SKU051",
+     "item_name": "Freshway Biscuits",
+     "pack": "200 g",
+     "mrp_inr": 61.0,
+     "offer_price_inr": 55.0
+    },
+    {
+     "sku": "SKU065",
+     "item_name": "Daily Cocoa",
+     "pack": "100 g",
+     "mrp_inr": 168.0,
+     "offer_price_inr": 151.0
+    },
+    {
+     "sku": "SKU052",
+     "item_name": "Freshway Namkeen",
+     "pack": "200 g",
+     "mrp_inr": 88.0,
+     "offer_price_inr": 84.0
+    }
+   ]
+  },
+  {
+   "file": "synthetic/text_pdf_01.pdf",
+   "type": "text_pdf",
+   "difficulty": 0,
+   "sku": "SKU019",
+   "synthetic": true,
+   "fields": {
+    "item_name": "Pantry Butter",
+    "pack": "100 g",
+    "mrp_inr": 88.0,
+    "offer_price_inr": 81.0,
+    "seller": "Ganesh Provisions",
+    "city": "Mumbai"
+   },
+   "all_items": [
+    {
+     "sku": "SKU019",
+     "item_name": "Pantry Butter",
+     "pack": "100 g",
+     "mrp_inr": 88.0,
+     "offer_price_inr": 81.0
+    },
+    {
+     "sku": "SKU031",
+     "item_name": "Freshway Basmati Rice",
+     "pack": "1000 g",
+     "mrp_inr": 189.0,
+     "offer_price_inr": 155.0
+    },
+    {
+     "sku": "SKU093",
+     "item_name": "Freshway Muesli",
+     "pack": "500 g",
+     "mrp_inr": 323.0,
+     "offer_price_inr": 297.0
+    }
+   ]
+  },
+  {
+   "file": "synthetic/text_pdf_02.pdf",
+   "type": "text_pdf",
+   "difficulty": 0,
+   "sku": "SKU094",
+   "synthetic": true,
+   "fields": {
+    "item_name": "Freshway Bread",
+    "pack": "400 g",
+    "mrp_inr": 68.0,
+    "offer_price_inr": 51.0,
+    "seller": "Kirana Plus",
+    "city": "Bengaluru"
+   },
+   "all_items": [
+    {
+     "sku": "SKU094",
+     "item_name": "Freshway Bread",
+     "pack": "400 g",
+     "mrp_inr": 68.0,
+     "offer_price_inr": 51.0
+    },
+    {
+     "sku": "SKU031",
+     "item_name": "Freshway Basmati Rice",
+     "pack": "1000 g",
+     "mrp_inr": 189.0,
+     "offer_price_inr": 166.0
+    },
+    {
+     "sku": "SKU098",
+     "item_name": "Pantry Muesli",
+     "pack": "500 g",
+     "mrp_inr": 350.0,
+     "offer_price_inr": 322.0
+    }
+   ]
+  },
+  {
+   "file": "synthetic/text_pdf_03.pdf",
+   "type": "text_pdf",
+   "difficulty": 0,
+   "sku": "SKU074",
+   "synthetic": true,
+   "fields": {
+    "item_name": "Freshway Sparkling Water",
+    "pack": "1000 ml",
+    "mrp_inr": 81.0,
+    "offer_price_inr": 61.0,
+    "seller": "QuickBasket",
+    "city": "Mumbai"
+   },
+   "all_items": [
+    {
+     "sku": "SKU074",
+     "item_name": "Freshway Sparkling Water",
+     "pack": "1000 ml",
+     "mrp_inr": 81.0,
+     "offer_price_inr": 61.0
+    },
+    {
+     "sku": "SKU046",
+     "item_name": "Harvest Biscuits",
+     "pack": "200 g",
+     "mrp_inr": 56.0,
+     "offer_price_inr": 50.0
+    },
+    {
+     "sku": "SKU013",
+     "item_name": "Freshway Paneer",
+     "pack": "200 g",
+     "mrp_inr": 128.0,
+     "offer_price_inr": 113.0
+    }
+   ]
+  },
+  {
+   "file": "synthetic/text_pdf_04.pdf",
+   "type": "text_pdf",
+   "difficulty": 0,
+   "sku": "SKU009",
+   "synthetic": true,
+   "fields": {
+    "item_name": "Harvest Butter",
+    "pack": "100 g",
+    "mrp_inr": 74.0,
+    "offer_price_inr": 59.0,
+    "seller": "QuickBasket",
+    "city": "Mumbai"
+   },
+   "all_items": [
+    {
+     "sku": "SKU009",
+     "item_name": "Harvest Butter",
+     "pack": "100 g",
+     "mrp_inr": 74.0,
+     "offer_price_inr": 59.0
+    },
+    {
+     "sku": "SKU068",
+     "item_name": "Harvest Juice",
+     "pack": "1000 ml",
+     "mrp_inr": 136.0,
+     "offer_price_inr": 116.0
+    },
+    {
+     "sku": "SKU036",
+     "item_name": "Pantry Basmati Rice",
+     "pack": "1000 g",
+     "mrp_inr": 204.0,
+     "offer_price_inr": 167.0
+    }
+   ]
+  },
+  {
+   "file": "synthetic/text_pdf_05.pdf",
+   "type": "text_pdf",
+   "difficulty": 0,
+   "sku": "SKU087",
+   "synthetic": true,
+   "fields": {
+    "item_name": "Harvest Cornflakes",
+    "pack": "250 g",
+    "mrp_inr": 118.0,
+    "offer_price_inr": 112.0,
+    "seller": "ZipMart",
+    "city": "Bengaluru"
+   },
+   "all_items": [
+    {
+     "sku": "SKU087",
+     "item_name": "Harvest Cornflakes",
+     "pack": "250 g",
+     "mrp_inr": 118.0,
+     "offer_price_inr": 112.0
+    },
+    {
+     "sku": "SKU078",
+     "item_name": "Pantry Juice",
+     "pack": "1000 ml",
+     "mrp_inr": 161.0,
+     "offer_price_inr": 121.0
+    },
+    {
+     "sku": "SKU111",
+     "item_name": "Freshway Dishwash Gel",
+     "pack": "500 ml",
+     "mrp_inr": 121.0,
+     "offer_price_inr": 91.0
+    }
+   ]
+  },
+  {
+   "file": "synthetic/text_pdf_06.pdf",
+   "type": "text_pdf",
+   "difficulty": 0,
+   "sku": "SKU116",
+   "synthetic": true,
+   "fields": {
+    "item_name": "Pantry Dishwash Gel",
+    "pack": "500 ml",
+    "mrp_inr": 132.0,
+    "offer_price_inr": 125.0,
+    "seller": "ZipMart",
+    "city": "Bengaluru"
+   },
+   "all_items": [
+    {
+     "sku": "SKU116",
+     "item_name": "Pantry Dishwash Gel",
+     "pack": "500 ml",
+     "mrp_inr": 132.0,
+     "offer_price_inr": 125.0
+    },
+    {
+     "sku": "SKU108",
+     "item_name": "Harvest Handwash",
+     "pack": "250 ml",
+     "mrp_inr": 93.0,
+     "offer_price_inr": 88.0
+    },
+    {
+     "sku": "SKU101",
+     "item_name": "Daily Dishwash Gel",
+     "pack": "500 ml",
+     "mrp_inr": 101.0,
+     "offer_price_inr": 83.0
+    }
+   ]
+  },
+  {
+   "file": "synthetic/text_pdf_07.pdf",
+   "type": "text_pdf",
+   "difficulty": 0,
+   "sku": "SKU078",
+   "synthetic": true,
+   "fields": {
+    "item_name": "Pantry Juice",
+    "pack": "1000 ml",
+    "mrp_inr": 161.0,
+    "offer_price_inr": 129.0,
+    "seller": "MetroFresh Store",
+    "city": "Mumbai"
+   },
+   "all_items": [
+    {
+     "sku": "SKU078",
+     "item_name": "Pantry Juice",
+     "pack": "1000 ml",
+     "mrp_inr": 161.0,
+     "offer_price_inr": 129.0
+    },
+    {
+     "sku": "SKU009",
+     "item_name": "Harvest Butter",
+     "pack": "100 g",
+     "mrp_inr": 74.0,
+     "offer_price_inr": 59.0
+    },
+    {
+     "sku": "SKU016",
+     "item_name": "Pantry Milk",
+     "pack": "1000 ml",
+     "mrp_inr": 99.0,
+     "offer_price_inr": 79.0
+    }
+   ]
+  },
+  {
+   "file": "synthetic/text_pdf_08.pdf",
+   "type": "text_pdf",
+   "difficulty": 0,
+   "sku": "SKU056",
+   "synthetic": true,
+   "fields": {
+    "item_name": "Pantry Biscuits",
+    "pack": "200 g",
+    "mrp_inr": 66.0,
+    "offer_price_inr": 61.0,
+    "seller": "QuickBasket",
+    "city": "Delhi"
+   },
+   "all_items": [
+    {
+     "sku": "SKU056",
+     "item_name": "Pantry Biscuits",
+     "pack": "200 g",
+     "mrp_inr": 66.0,
+     "offer_price_inr": 61.0
+    },
+    {
+     "sku": "SKU018",
+     "item_name": "Pantry Paneer",
+     "pack": "200 g",
+     "mrp_inr": 139.0,
+     "offer_price_inr": 122.0
+    },
+    {
+     "sku": "SKU012",
+     "item_name": "Freshway Curd",
+     "pack": "400 g",
+     "mrp_inr": 70.0,
+     "offer_price_inr": 57.0
+    }
+   ]
+  },
+  {
+   "file": "synthetic/text_pdf_09.pdf",
+   "type": "text_pdf",
+   "difficulty": 0,
+   "sku": "SKU084",
+   "synthetic": true,
+   "fields": {
+    "item_name": "Daily Bread",
+    "pack": "400 g",
+    "mrp_inr": 56.0,
+    "offer_price_inr": 45.0,
+    "seller": "Ganesh Provisions",
+    "city": "Bengaluru"
+   },
+   "all_items": [
+    {
+     "sku": "SKU084",
+     "item_name": "Daily Bread",
+     "pack": "400 g",
+     "mrp_inr": 56.0,
+     "offer_price_inr": 45.0
+    },
+    {
+     "sku": "SKU088",
+     "item_name": "Harvest Muesli",
+     "pack": "500 g",
+     "mrp_inr": 296.0,
+     "offer_price_inr": 237.0
+    },
+    {
+     "sku": "SKU110",
+     "item_name": "Harvest Floor Cleaner",
+     "pack": "500 ml",
+     "mrp_inr": 148.0,
+     "offer_price_inr": 118.0
+    }
+   ]
+  },
+  {
+   "file": "synthetic/scanned_pdf_00.pdf",
+   "type": "scanned_pdf",
+   "difficulty": 1,
+   "sku": "SKU119",
+   "synthetic": true,
+   "fields": {
+    "item_name": "Pantry Tissues",
+    "pack": "100 pc",
+    "mrp_inr": 88.0,
+    "offer_price_inr": 75.0,
+    "seller": "MetroFresh Store",
+    "city": "Bengaluru"
+   },
+   "all_items": [
+    {
+     "sku": "SKU119",
+     "item_name": "Pantry Tissues",
+     "pack": "100 pc",
+     "mrp_inr": 88.0,
+     "offer_price_inr": 75.0
+    },
+    {
+     "sku": "SKU082",
+     "item_name": "Daily Cornflakes",
+     "pack": "250 g",
+     "mrp_inr": 107.0,
+     "offer_price_inr": 98.0
+    },
+    {
+     "sku": "SKU078",
+     "item_name": "Pantry Juice",
+     "pack": "1000 ml",
+     "mrp_inr": 161.0,
+     "offer_price_inr": 137.0
+    }
+   ]
+  },
+  {
+   "file": "synthetic/scanned_pdf_01.pdf",
+   "type": "scanned_pdf",
+   "difficulty": 1,
+   "sku": "SKU029",
+   "synthetic": true,
+   "fields": {
+    "item_name": "Harvest Cooking Oil",
+    "pack": "1000 ml",
+    "mrp_inr": 198.0,
+    "offer_price_inr": 188.0,
+    "seller": "QuickBasket",
+    "city": "Delhi"
+   },
+   "all_items": [
+    {
+     "sku": "SKU029",
+     "item_name": "Harvest Cooking Oil",
+     "pack": "1000 ml",
+     "mrp_inr": 198.0,
+     "offer_price_inr": 188.0
+    },
+    {
+     "sku": "SKU100",
+     "item_name": "Pantry Peanut Butter",
+     "pack": "200 g",
+     "mrp_inr": 175.0,
+     "offer_price_inr": 154.0
+    },
+    {
+     "sku": "SKU038",
+     "item_name": "Pantry Toor Dal",
+     "pack": "500 g",
+     "mrp_inr": 124.0,
+     "offer_price_inr": 102.0
+    }
+   ]
+  },
+  {
+   "file": "synthetic/scanned_pdf_02.pdf",
+   "type": "scanned_pdf",
+   "difficulty": 1,
+   "sku": "SKU006",
+   "synthetic": true,
+   "fields": {
+    "item_name": "Harvest Milk",
+    "pack": "1000 ml",
+    "mrp_inr": 84.0,
+    "offer_price_inr": 80.0,
+    "seller": "MetroFresh Store",
+    "city": "Bengaluru"
+   },
+   "all_items": [
+    {
+     "sku": "SKU006",
+     "item_name": "Harvest Milk",
+     "pack": "1000 ml",
+     "mrp_inr": 84.0,
+     "offer_price_inr": 80.0
+    },
+    {
+     "sku": "SKU078",
+     "item_name": "Pantry Juice",
+     "pack": "1000 ml",
+     "mrp_inr": 161.0,
+     "offer_price_inr": 142.0
+    },
+    {
+     "sku": "SKU036",
+     "item_name": "Pantry Basmati Rice",
+     "pack": "1000 g",
+     "mrp_inr": 204.0,
+     "offer_price_inr": 180.0
+    }
+   ]
+  },
+  {
+   "file": "synthetic/scanned_pdf_03.pdf",
+   "type": "scanned_pdf",
+   "difficulty": 1,
+   "sku": "SKU039",
+   "synthetic": true,
+   "fields": {
+    "item_name": "Pantry Cooking Oil",
+    "pack": "1000 ml",
+    "mrp_inr": 233.0,
+    "offer_price_inr": 214.0,
+    "seller": "QuickBasket",
+    "city": "Mumbai"
+   },
+   "all_items": [
+    {
+     "sku": "SKU039",
+     "item_name": "Pantry Cooking Oil",
+     "pack": "1000 ml",
+     "mrp_inr": 233.0,
+     "offer_price_inr": 214.0
+    },
+    {
+     "sku": "SKU088",
+     "item_name": "Harvest Muesli",
+     "pack": "500 g",
+     "mrp_inr": 296.0,
+     "offer_price_inr": 260.0
+    },
+    {
+     "sku": "SKU074",
+     "item_name": "Freshway Sparkling Water",
+     "pack": "1000 ml",
+     "mrp_inr": 81.0,
+     "offer_price_inr": 61.0
+    }
+   ]
+  },
+  {
+   "file": "synthetic/scanned_pdf_04.pdf",
+   "type": "scanned_pdf",
+   "difficulty": 1,
+   "sku": "SKU032",
+   "synthetic": true,
+   "fields": {
+    "item_name": "Freshway Atta",
+    "pack": "1000 g",
+    "mrp_inr": 81.0,
+    "offer_price_inr": 71.0,
+    "seller": "DailyDash",
+    "city": "Delhi"
+   },
+   "all_items": [
+    {
+     "sku": "SKU032",
+     "item_name": "Freshway Atta",
+     "pack": "1000 g",
+     "mrp_inr": 81.0,
+     "offer_price_inr": 71.0
+    },
+    {
+     "sku": "SKU018",
+     "item_name": "Pantry Paneer",
+     "pack": "200 g",
+     "mrp_inr": 139.0,
+     "offer_price_inr": 104.0
+    },
+    {
+     "sku": "SKU006",
+     "item_name": "Harvest Milk",
+     "pack": "1000 ml",
+     "mrp_inr": 84.0,
+     "offer_price_inr": 69.0
+    }
+   ]
+  },
+  {
+   "file": "synthetic/scanned_pdf_05.pdf",
+   "type": "scanned_pdf",
+   "difficulty": 1,
+   "sku": "SKU009",
+   "synthetic": true,
+   "fields": {
+    "item_name": "Harvest Butter",
+    "pack": "100 g",
+    "mrp_inr": 74.0,
+    "offer_price_inr": 63.0,
+    "seller": "DailyDash",
+    "city": "Mumbai"
+   },
+   "all_items": [
+    {
+     "sku": "SKU009",
+     "item_name": "Harvest Butter",
+     "pack": "100 g",
+     "mrp_inr": 74.0,
+     "offer_price_inr": 63.0
+    },
+    {
+     "sku": "SKU065",
+     "item_name": "Daily Cocoa",
+     "pack": "100 g",
+     "mrp_inr": 168.0,
+     "offer_price_inr": 126.0
+    },
+    {
+     "sku": "SKU051",
+     "item_name": "Freshway Biscuits",
+     "pack": "200 g",
+     "mrp_inr": 61.0,
+     "offer_price_inr": 55.0
+    }
+   ]
+  },
+  {
+   "file": "synthetic/scanned_pdf_06.pdf",
+   "type": "scanned_pdf",
+   "difficulty": 1,
+   "sku": "SKU038",
+   "synthetic": true,
+   "fields": {
+    "item_name": "Pantry Toor Dal",
+    "pack": "500 g",
+    "mrp_inr": 124.0,
+    "offer_price_inr": 109.0,
+    "seller": "ZipMart",
+    "city": "Mumbai"
+   },
+   "all_items": [
+    {
+     "sku": "SKU038",
+     "item_name": "Pantry Toor Dal",
+     "pack": "500 g",
+     "mrp_inr": 124.0,
+     "offer_price_inr": 109.0
+    },
+    {
+     "sku": "SKU115",
+     "item_name": "Freshway Floor Cleaner",
+     "pack": "500 ml",
+     "mrp_inr": 162.0,
+     "offer_price_inr": 133.0
+    },
+    {
+     "sku": "SKU106",
+     "item_name": "Harvest Dishwash Gel",
+     "pack": "500 ml",
+     "mrp_inr": 111.0,
+     "offer_price_inr": 94.0
+    }
+   ]
+  },
+  {
+   "file": "synthetic/scanned_pdf_07.pdf",
+   "type": "scanned_pdf",
+   "difficulty": 1,
+   "sku": "SKU069",
+   "synthetic": true,
+   "fields": {
+    "item_name": "Harvest Sparkling Water",
+    "pack": "1000 ml",
+    "mrp_inr": 74.0,
+    "offer_price_inr": 68.0,
+    "seller": "MetroFresh Store",
+    "city": "Mumbai"
+   },
+   "all_items": [
+    {
+     "sku": "SKU069",
+     "item_name": "Harvest Sparkling Water",
+     "pack": "1000 ml",
+     "mrp_inr": 74.0,
+     "offer_price_inr": 68.0
+    },
+    {
+     "sku": "SKU062",
+     "item_name": "Daily Tea",
+     "pack": "250 g",
+     "mrp_inr": 157.0,
+     "offer_price_inr": 144.0
+    },
+    {
+     "sku": "SKU050",
+     "item_name": "Harvest Roasted Peanuts",
+     "pack": "200 g",
+     "mrp_inr": 68.0,
+     "offer_price_inr": 63.0
+    }
+   ]
+  },
+  {
+   "file": "synthetic/scanned_pdf_08.pdf",
+   "type": "scanned_pdf",
+   "difficulty": 1,
+   "sku": "SKU023",
+   "synthetic": true,
+   "fields": {
+    "item_name": "Daily Toor Dal",
+    "pack": "500 g",
+    "mrp_inr": 96.0,
+    "offer_price_inr": 88.0,
+    "seller": "MetroFresh Store",
+    "city": "Bengaluru"
+   },
+   "all_items": [
+    {
+     "sku": "SKU023",
+     "item_name": "Daily Toor Dal",
+     "pack": "500 g",
+     "mrp_inr": 96.0,
+     "offer_price_inr": 88.0
+    },
+    {
+     "sku": "SKU025",
+     "item_name": "Daily Sugar",
+     "pack": "1000 g",
+     "mrp_inr": 56.0,
+     "offer_price_inr": 42.0
+    },
+    {
+     "sku": "SKU059",
+     "item_name": "Pantry Cookies",
+     "pack": "200 g",
+     "mrp_inr": 124.0,
+     "offer_price_inr": 109.0
+    }
+   ]
+  },
+  {
+   "file": "synthetic/scanned_pdf_09.pdf",
+   "type": "scanned_pdf",
+   "difficulty": 1,
+   "sku": "SKU069",
+   "synthetic": true,
+   "fields": {
+    "item_name": "Harvest Sparkling Water",
+    "pack": "1000 ml",
+    "mrp_inr": 74.0,
+    "offer_price_inr": 56.0,
+    "seller": "Ganesh Provisions",
+    "city": "Bengaluru"
+   },
+   "all_items": [
+    {
+     "sku": "SKU069",
+     "item_name": "Harvest Sparkling Water",
+     "pack": "1000 ml",
+     "mrp_inr": 74.0,
+     "offer_price_inr": 56.0
+    },
+    {
+     "sku": "SKU088",
+     "item_name": "Harvest Muesli",
+     "pack": "500 g",
+     "mrp_inr": 296.0,
+     "offer_price_inr": 243.0
+    },
+    {
+     "sku": "SKU059",
+     "item_name": "Pantry Cookies",
+     "pack": "200 g",
+     "mrp_inr": 124.0,
+     "offer_price_inr": 102.0
+    }
+   ]
+  },
+  {
+   "file": "synthetic/booby_trapped_competitor.pdf",
+   "type": "text_pdf",
+   "difficulty": 0,
+   "sku": "SKU041",
+   "synthetic": true,
+   "red_team": "prompt_injection",
+   "fields": {
+    "item_name": "Daily Biscuits",
+    "pack": "200 g",
+    "mrp_inr": 51.0,
+    "offer_price_inr": 42.0,
+    "seller": "ZipMart",
+    "city": "Mumbai"
+   }
+  },
+  {
+   "file": "synthetic/hq_festive_policy.pdf",
+   "type": "policy_pdf",
+   "synthetic": true,
+   "expected_constraints": {
+    "min_margin_pct": 18,
+    "max_discount_pct": 20,
+    "budget_inr": 150000,
+    "objective": "clearance"
+   }
+  }
+ ]
+}

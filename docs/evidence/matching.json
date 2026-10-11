@@ -1,0 +1,22 @@
+{
+ "pairs": 150,
+ "f1": {
+  "offline": 0.8
+ },
+ "precision": {
+  "offline": 0.6667
+ },
+ "recall": {
+  "offline": 1.0
+ },
+ "false_cheaper_alerts": {
+  "raw": 17,
+  "unit_price": 0,
+  "cases": 39
+ },
+ "cost_usd": {
+  "offline": 0.0
+ },
+ "note": "100 positive pairs (35% with a different pack size) and 50 other-brand negatives.",
+ "at": "2026-10-07T22:39:23"
+}

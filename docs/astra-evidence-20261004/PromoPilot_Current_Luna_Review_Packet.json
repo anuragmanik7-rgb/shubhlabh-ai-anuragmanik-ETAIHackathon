@@ -1,0 +1,682 @@
+{
+  "schema_version": 1,
+  "project": "PromoPilot",
+  "official_problem": "ET AI Hackathon Agentic Edition / Retail Problem 3 Autonomous Promotion Planner",
+  "source": {
+    "git_commit": null,
+    "git_branch": null,
+    "reason": "No Git repository in canonical project or its task parent",
+    "sha256": "0020e00cd96fc8579ca0defb28d2d8dd9126193fdc8ce61740bae5eb8a3cb6d4",
+    "hash_definition": "SHA256 of compact sorted JSON mapping backend/**/*.py and frontend/src/**/* relative paths to SHA256",
+    "files": {
+      "backend/__init__.py": "434fdfdad1da83ac97ca1e7b4965f75f4edf9cf1b17f4fbf370e849442978ddc",
+      "backend/app/__init__.py": "206c0c20665706f1ac0b45b5826cfddf0f53b34cb1e0adb87448af171ef37792",
+      "backend/app/config.py": "aad29bf0512e60b6bf0383a9dfa4293ae1c8f267fd48abcef63bd5adcacc3584",
+      "backend/app/connectors.py": "5c45425e5e27ddea18b9eb9ff7743955a23e8257fa37d7361acc89a31cf94f14",
+      "backend/app/contracts.py": "907db49a59d16de70d9ed39a85afe724b3dd0380f1f9bc4bd6df9632caee2867",
+      "backend/app/domain.py": "37d1866b92afac88bded41a36813ebdcf13002fcaed90059f8aae27dcb296c3a",
+      "backend/app/economics.py": "862d2f3ecd7993c941c02497680fed6d4507a91ab7f5e6d31ae2ac62a28bfcb2",
+      "backend/app/execution.py": "aef233d695ebde46ca4b300214d2cc43347526ecf839c7b64833946ea7c4a672",
+      "backend/app/forecast.py": "30712058eb52734ff4dc0f762fa223b49d6f13b37481766cf01fd2b94cf92987",
+      "backend/app/ingestion.py": "bccf081b189073e934fda18375e3134867c48fc15f6b50fc3f0126a587875197",
+      "backend/app/main.py": "17f1655e0e670bc3a6feebe68bb4f494e5973004c8898ed8820e1f5f4f6848d3",
+      "backend/app/orchestrator.py": "a98ac74e3ece68fca7efe695e475ddad6330c0b8baa4ad7c5facb3603a1a5c40",
+      "backend/app/persistence.py": "53cbe0a4839ff6492d40443427f3f2e75027a422fd35119153d1b68a2b74e09d",
+      "backend/app/planner.py": "11cea51164811b671526a97c37c7a6bd0f08f8179eb704803b72dd56249256d8",
+      "backend/app/providers.py": "2cbc21ef6534148629e7fa6b39c43545f4899b33902069c877c4b8be80224aba",
+      "backend/app/rate_limits.py": "ccbb44e1b47951d0053b120badb638e99bd9f90417d5fddc243ab76a814de6ea",
+      "backend/app/seed.py": "56a6e598d2fbf9f7972cc38818335e535732e183d7a520217588c62ccce30d99",
+      "backend/app/simulation.py": "1cc8428a107f82c8e5f888ffe48b93838c2158f0d5f11cf88e30dc718d91fd8a",
+      "frontend/src/api.ts": "4a4d34882267e7b6f2f4ab2e1b538ccf59531a77834457a2efbd71baeb10c3e0",
+      "frontend/src/App.tsx": "1765ef1cfdff363ff406402ac9b06e551bd27d3f97d7de3120e098ff61dee890",
+      "frontend/src/AuthorityEditor.tsx": "db90842d723691ebd4eccea38898976e3f778354d837c28547819c130fa358c6",
+      "frontend/src/contracts.ts": "02f37affa8367e8b1bd89ef6b274d0fd2b205bf58a23fbcb8dd73a58e00f8ea3",
+      "frontend/src/main.tsx": "660c19ace773014e29044cde6c524541e39091729fff206704543277e8036d4a",
+      "frontend/src/style.css": "744508aaf3ab731d315eaddbedd538bd1137c91fcff54becb80bfa9328ecf6f7",
+      "frontend/src/ui-state.ts": "8eabccb2295f06c0b05878e33ff8d8ab5eca005fb0d30de6a395cd34704fe080"
+    },
+    "canonical_files_checked": 426,
+    "canonical_mismatches": []
+  },
+  "execution_mode": {
+    "app": "offline deterministic orchestration; real forecast, optimizer, simulator, import, approval and transactional sandbox tools",
+    "model_calls": 0,
+    "model_prompts_executed": [],
+    "model_choices_executed": [],
+    "fixed_vs_live_model_comparator": "not run; no live model run",
+    "business_comparators": [
+      "no promotion",
+      "flat 10% markdown rule"
+    ],
+    "requested_future_app_model": "GPT-6 Luna; exact API ID/access unverified",
+    "native_luna_review": "Separate analysis of this evidence; never an app API result"
+  },
+  "groundtruth": {
+    "seed": 20261004,
+    "scenario_clock_utc": "2026-10-04T06:30:00+00:00",
+    "simulation_seed": 261004,
+    "fixture_manifest_sha256": "ce8b59b990305cfb5842abdf5187b9dbfaaef6a87551f1d1526978a3de871d03",
+    "dimensions": {
+      "products": 120,
+      "cities": 3,
+      "categories": 6,
+      "history_days": 180,
+      "transaction_rows": 64800,
+      "inventory_rows": 360,
+      "competitor_rows": 360,
+      "new_basket_rows": 1620,
+      "stockout_history_rows": 783
+    },
+    "persisted_rows": 65640,
+    "matching_rows": 65640,
+    "persisted_fields": 263400,
+    "matching_fields": 263400,
+    "provenance": "Invented Indian grocery data; 2200 seed baskets, segments/calendar/substitution/replenishment assumptions retained"
+  },
+  "evaluation": {
+    "checks": 73,
+    "passed": 73,
+    "failed": 0,
+    "completed": true,
+    "claim": "Crafted offline synthetic operational evidence; neither D3 reliability nor real commercial uplift nor an official competition score."
+  },
+  "wall_seconds": 197.803,
+  "profit": {
+    "brief": {
+      "title": "Synthetic evaluation: profit",
+      "instruction": "",
+      "cities": [
+        "Bengaluru",
+        "Mumbai",
+        "Delhi"
+      ],
+      "objective": "profit",
+      "budget_paise": 500000,
+      "horizon": 3,
+      "mechanisms": [
+        "markdown",
+        "coupon",
+        "bundle"
+      ],
+      "min_margin_bps": 1500,
+      "max_discount_bps": 2000,
+      "risk_lambda": 0.5,
+      "clearance_target": 0,
+      "clearance_hard": false,
+      "scenarios": 40,
+      "seed": 261004,
+      "mode": "offline",
+      "parent_id": null,
+      "start_date": "2026-10-04"
+    },
+    "offer_count": 9,
+    "offer_mechanisms": [
+      "markdown"
+    ],
+    "liability_paise": 499410,
+    "validation": {
+      "passed": true,
+      "errors": [],
+      "liability_paise": 499410,
+      "allocation": {
+        "SKU011|Bengaluru": 79,
+        "SKU015|Bengaluru": 71,
+        "SKU019|Bengaluru": 68,
+        "SKU005|Bengaluru": 67,
+        "SKU003|Bengaluru": 66,
+        "SKU010|Bengaluru": 66,
+        "SKU016|Bengaluru": 63,
+        "SKU014|Bengaluru": 63,
+        "SKU006|Bengaluru": 27
+      },
+      "checks": [
+        "item margin",
+        "discount ceiling",
+        "stock and expiry",
+        "maximum liability",
+        "overlap",
+        "channel and city",
+        "freshness"
+      ],
+      "batch_allocation": {
+        "SKU011-0-A": 79,
+        "SKU015-0-A": 71,
+        "SKU019-0-A": 68,
+        "SKU005-0-A": 67,
+        "SKU003-0-A": 66,
+        "SKU010-0-A": 66,
+        "SKU016-0-A": 63,
+        "SKU014-0-A": 63,
+        "SKU006-0-A": 27
+      },
+      "clearance_units": 570,
+      "offer_clearance_units": {
+        "805107abaa4d62": 79,
+        "e1d3028484614b": 71,
+        "bca9a725a02c1b": 68,
+        "9420f25609e44c": 67,
+        "4a4823df048216": 66,
+        "b51a50c4621644": 66,
+        "922a4c77fb8e12": 63,
+        "6ca23cccc6432a": 63,
+        "32d2ebfd20abd7": 27
+      },
+      "evidence_status": "derived"
+    },
+    "simulation": {
+      "baseline": {
+        "contribution_paise": 67139132,
+        "revenue_paise": 195014448,
+        "spend_paise": 0,
+        "clearance_units": 1626.8,
+        "stockout_rate": 0.0667,
+        "units": 18221.3
+      },
+      "optimized": {
+        "contribution_paise": 67874975,
+        "revenue_paise": 195816039,
+        "spend_paise": 410861,
+        "clearance_units": 1767.7,
+        "stockout_rate": 0.0683,
+        "units": 18362.2
+      },
+      "rule_baseline": {
+        "contribution_paise": 67874975,
+        "revenue_paise": 195816039,
+        "spend_paise": 410861,
+        "clearance_units": 1767.7,
+        "stockout_rate": 0.0683,
+        "units": 18362.2
+      },
+      "incremental_contribution_paise": 735843,
+      "p10_paise": 602405,
+      "p50_paise": 745626,
+      "p90_paise": 864674,
+      "downside_probability": 0.0,
+      "scenarios": 40,
+      "seed": 261004
+    },
+    "portfolio_selection": {
+      "selected": "flat_discount_rule",
+      "selection_seed": 365733,
+      "report_seed": 261004,
+      "scenarios": 40,
+      "rule_validation": {
+        "passed": true,
+        "errors": [],
+        "checks": [
+          "item margin",
+          "discount ceiling",
+          "stock and expiry",
+          "maximum liability",
+          "overlap",
+          "channel and city",
+          "freshness"
+        ],
+        "liability_paise": 499410,
+        "allocation": {
+          "SKU011|Bengaluru": 79,
+          "SKU015|Bengaluru": 71,
+          "SKU019|Bengaluru": 68,
+          "SKU005|Bengaluru": 67,
+          "SKU003|Bengaluru": 66,
+          "SKU010|Bengaluru": 66,
+          "SKU016|Bengaluru": 63,
+          "SKU014|Bengaluru": 63,
+          "SKU006|Bengaluru": 27
+        },
+        "batch_allocation": {
+          "SKU011-0-A": 79,
+          "SKU015-0-A": 71,
+          "SKU019-0-A": 68,
+          "SKU005-0-A": 67,
+          "SKU003-0-A": 66,
+          "SKU010-0-A": 66,
+          "SKU016-0-A": 63,
+          "SKU014-0-A": 63,
+          "SKU006-0-A": 27
+        },
+        "clearance_units": 570,
+        "offer_clearance_units": {
+          "805107abaa4d62": 79,
+          "e1d3028484614b": 71,
+          "bca9a725a02c1b": 68,
+          "9420f25609e44c": 67,
+          "4a4823df048216": 66,
+          "b51a50c4621644": 66,
+          "922a4c77fb8e12": 63,
+          "6ca23cccc6432a": 63,
+          "32d2ebfd20abd7": 27
+        },
+        "evidence_status": "derived"
+      },
+      "candidate_risk_objective_paise": 134037,
+      "rule_risk_objective_paise": 708984,
+      "reason": "Feasible rule has higher simulated risk-adjusted contribution on the selection seed"
+    },
+    "forecast": {
+      "chosen": "poisson",
+      "wape": {
+        "seasonal_naive": {
+          "dev": 0.2099,
+          "test": 0.2033
+        },
+        "poisson": {
+          "dev": 0.182,
+          "test": 0.2045
+        }
+      },
+      "split": {
+        "train_days": 124,
+        "development_days": 28,
+        "test_days": 28
+      },
+      "grouped_test_metrics": {
+        "city": {
+          "Bengaluru": {
+            "wape": 0.2023,
+            "bias": 0.0747,
+            "baseline_wape": 0.2017,
+            "points": 3319
+          },
+          "Delhi": {
+            "wape": 0.2041,
+            "bias": 0.0756,
+            "baseline_wape": 0.2037,
+            "points": 3318
+          },
+          "Mumbai": {
+            "wape": 0.2076,
+            "bias": 0.0781,
+            "baseline_wape": 0.2047,
+            "points": 3318
+          }
+        },
+        "category": {
+          "Beverages": {
+            "wape": 0.2066,
+            "bias": 0.072,
+            "baseline_wape": 0.206,
+            "points": 1662
+          },
+          "Breakfast": {
+            "wape": 0.2062,
+            "bias": 0.0781,
+            "baseline_wape": 0.2048,
+            "points": 1659
+          },
+          "Dairy & fresh": {
+            "wape": 0.2,
+            "bias": 0.0755,
+            "baseline_wape": 0.1983,
+            "points": 1659
+          },
+          "Home essentials": {
+            "wape": 0.2016,
+            "bias": 0.0748,
+            "baseline_wape": 0.1999,
+            "points": 1657
+          },
+          "Snacks": {
+            "wape": 0.2095,
+            "bias": 0.0782,
+            "baseline_wape": 0.2088,
+            "points": 1661
+          },
+          "Staples": {
+            "wape": 0.204,
+            "bias": 0.0758,
+            "baseline_wape": 0.2032,
+            "points": 1657
+          }
+        }
+      },
+      "prediction_intervals": {
+        "nominal_coverage": 0.8,
+        "empirical_test_coverage": 0.7721,
+        "mean_test_width_units": 9.6,
+        "calibration": "Development-period normalized absolute residual quantile; empirical coverage measured on temporal test",
+        "status": "Measured on synthetic rolling one-step holdout; scenario ranges are separate"
+      },
+      "claim": "Predictive accuracy on Mixed imported and synthetic demo data; price response is an association, not causal uplift",
+      "snapshot_id": "c0fc22c0f7bbc76f"
+    },
+    "actual_tool_trace": [
+      {
+        "tool": "read_evidence",
+        "state": "completed",
+        "summary": "Read 120 products, stock and policy v2. Critical missing costs exclude affected products.",
+        "at": "2026-10-04T06:30:00+00:00",
+        "seconds": 1.163,
+        "mode": "offline"
+      },
+      {
+        "tool": "forecast_demand",
+        "state": "completed",
+        "summary": "Selected poisson using development-period WAPE; untouched temporal test results recorded.",
+        "at": "2026-10-04T06:30:00+00:00",
+        "seconds": 3.208,
+        "mode": "offline"
+      },
+      {
+        "tool": "get_relationships",
+        "state": "completed",
+        "summary": "Computed 3 supported co-purchase pairs; substitute effects are labelled scenario assumptions.",
+        "at": "2026-10-04T06:30:00+00:00",
+        "seconds": 1.561,
+        "mode": "offline"
+      },
+      {
+        "tool": "generate_candidates",
+        "state": "completed",
+        "summary": "Screened catalog to 20 promoted products; retained 850 offers with policy checks.",
+        "at": "2026-10-04T06:30:00+00:00",
+        "seconds": 1.655,
+        "mode": "offline"
+      },
+      {
+        "tool": "optimize_plan",
+        "state": "completed",
+        "summary": "Solver returned OPTIMAL; 14 offers within shared stock and maximum-liability limits.",
+        "at": "2026-10-04T06:30:00+00:00",
+        "seconds": 2.401,
+        "mode": "offline"
+      },
+      {
+        "tool": "simulate_plan",
+        "state": "completed",
+        "summary": "Simulated 40 common-random scenarios against no promotion and the flat-discount baseline.",
+        "at": "2026-10-04T06:30:00+00:00",
+        "seconds": 5.741,
+        "mode": "offline"
+      },
+      {
+        "tool": "validate_plan",
+        "state": "completed",
+        "summary": "Independent margin, overlap, expiry, stock and maximum-liability validation passed.",
+        "at": "2026-10-04T06:30:00+00:00",
+        "seconds": 1.323,
+        "mode": "offline"
+      }
+    ]
+  },
+  "changed_fact": {
+    "input": {
+      "event_id": "synthetic-physical-stock-loss",
+      "kind": "inventory",
+      "city": "Bengaluru",
+      "sku": "SKU011",
+      "value": 0,
+      "observed_at": "2026-10-04T06:30:01+00:00",
+      "replan": true
+    },
+    "previous_offer": {
+      "id": "805107abaa4d62",
+      "sku": "SKU011",
+      "skus": [
+        "SKU011"
+      ],
+      "name": "Freshway Milk",
+      "city": "Bengaluru",
+      "mechanism": "markdown",
+      "channel": "internal_sandbox",
+      "discount_bps": 1000,
+      "fixed_discount_paise": null,
+      "duration": 3,
+      "start_day": 0,
+      "segment": "Family baskets",
+      "max_redemptions": 79,
+      "price_paise": 7380,
+      "liability_paise": 66780,
+      "media_paise": 2000,
+      "unit_contribution_paise": 2339,
+      "margin_bps": 3169,
+      "incremental_contribution_paise": 24634,
+      "cannibalization_paise": 0,
+      "cannibalization": [],
+      "allocation": {
+        "SKU011|Bengaluru": 79
+      },
+      "source_refs": [
+        "imp_e9434470942d7ec2cd8e08ca5052",
+        "src_f34de4bc27fc4959",
+        "imp_e14b17f3c1b992cd0a21f0ff2cac",
+        "cmp_625e9635418b4b5c"
+      ],
+      "reason": "Family baskets, Bengaluru: 3 selling days, 31.7% contribution margin; maximum liability capped",
+      "minimum_basket_paise": 0,
+      "expected_units": 65.01,
+      "baseline_units": 39.71,
+      "clearance_units": 79,
+      "competitor_price_paise": 8400,
+      "evidence_status": "simulated"
+    },
+    "changes": {
+      "added": 1,
+      "removed": 1,
+      "previous_contribution_paise": 735843,
+      "new_contribution_paise": 730792
+    },
+    "new_validation": {
+      "passed": true,
+      "errors": [],
+      "liability_paise": 497030,
+      "allocation": {
+        "SKU015|Bengaluru": 71,
+        "SKU019|Bengaluru": 68,
+        "SKU005|Bengaluru": 67,
+        "SKU003|Bengaluru": 66,
+        "SKU010|Bengaluru": 66,
+        "SKU016|Bengaluru": 63,
+        "SKU014|Bengaluru": 63,
+        "SKU008|Bengaluru": 60,
+        "SKU006|Bengaluru": 27
+      },
+      "checks": [
+        "item margin",
+        "discount ceiling",
+        "stock and expiry",
+        "maximum liability",
+        "overlap",
+        "channel and city",
+        "freshness"
+      ],
+      "batch_allocation": {
+        "SKU015-0-A": 71,
+        "SKU019-0-A": 68,
+        "SKU005-0-A": 67,
+        "SKU003-0-A": 66,
+        "SKU010-0-A": 66,
+        "SKU016-0-A": 63,
+        "SKU014-0-A": 63,
+        "SKU008-0-A": 60,
+        "SKU006-0-A": 27
+      },
+      "clearance_units": 551,
+      "offer_clearance_units": {
+        "e1d3028484614b": 71,
+        "bca9a725a02c1b": 68,
+        "9420f25609e44c": 67,
+        "4a4823df048216": 66,
+        "b51a50c4621644": 66,
+        "922a4c77fb8e12": 63,
+        "6ca23cccc6432a": 63,
+        "35d5d8b1aa8296": 60,
+        "32d2ebfd20abd7": 27
+      },
+      "evidence_status": "derived"
+    },
+    "new_status": "awaiting_approval",
+    "active_plan_paused": "paused",
+    "all_out_of_stock_offers_removed": true
+  },
+  "sandbox_order": {
+    "offer": {
+      "id": "805107abaa4d62",
+      "sku": "SKU011",
+      "skus": [
+        "SKU011"
+      ],
+      "name": "Freshway Milk",
+      "city": "Bengaluru",
+      "mechanism": "markdown",
+      "channel": "internal_sandbox",
+      "discount_bps": 1000,
+      "fixed_discount_paise": null,
+      "duration": 3,
+      "start_day": 0,
+      "segment": "Family baskets",
+      "max_redemptions": 79,
+      "price_paise": 7380,
+      "liability_paise": 66780,
+      "media_paise": 2000,
+      "unit_contribution_paise": 2339,
+      "margin_bps": 3169,
+      "incremental_contribution_paise": 24634,
+      "cannibalization_paise": 0,
+      "cannibalization": [],
+      "allocation": {
+        "SKU011|Bengaluru": 79
+      },
+      "source_refs": [
+        "imp_e9434470942d7ec2cd8e08ca5052",
+        "src_f34de4bc27fc4959",
+        "imp_e14b17f3c1b992cd0a21f0ff2cac",
+        "cmp_625e9635418b4b5c"
+      ],
+      "reason": "Family baskets, Bengaluru: 3 selling days, 31.7% contribution margin; maximum liability capped",
+      "minimum_basket_paise": 0,
+      "expected_units": 65.01,
+      "baseline_units": 39.71,
+      "clearance_units": 79,
+      "competitor_price_paise": 8400,
+      "evidence_status": "simulated"
+    },
+    "receipt": {
+      "id": "synthetic-order-1",
+      "plan_id": "plan_a97395d845cc4a15",
+      "offer_id": "805107abaa4d62",
+      "quantity": 1,
+      "discount_paise": 820,
+      "paid_paise": 7380,
+      "request_fingerprint": "0ba04cd463c2681d97fa27839b1801bb3bbf5ccfc60b30894e5dae8dfa46c6e4",
+      "at": "2026-10-04T06:30:00+00:00",
+      "status": "fulfilled",
+      "connector": "internal_sandbox",
+      "stock_movements": {
+        "SKU011-0-A": 1
+      }
+    },
+    "physical_units_debited": 1
+  },
+  "no_launch_cases": [
+    {
+      "name": "zero-budget",
+      "brief": {
+        "title": "Synthetic evaluation: zero-budget",
+        "mode": "offline",
+        "scenarios": 40,
+        "seed": 261004,
+        "horizon": 3,
+        "budget_paise": 0,
+        "cities": [
+          "Delhi"
+        ]
+      },
+      "state": "validated",
+      "offer_count": 0,
+      "error": null
+    },
+    {
+      "name": "infeasible-clearance",
+      "brief": {
+        "title": "Synthetic evaluation: infeasible-clearance",
+        "mode": "offline",
+        "scenarios": 40,
+        "seed": 261004,
+        "horizon": 3,
+        "budget_paise": 0,
+        "clearance_target": 5000,
+        "clearance_hard": true,
+        "objective": "clearance",
+        "cities": [
+          "Delhi"
+        ]
+      },
+      "state": "needs_input",
+      "offer_count": null,
+      "error": null
+    },
+    {
+      "name": "strict-margin",
+      "brief": {
+        "title": "Synthetic evaluation: strict-margin",
+        "mode": "offline",
+        "scenarios": 40,
+        "seed": 261004,
+        "horizon": 3,
+        "budget_paise": 500000,
+        "min_margin_bps": 9000,
+        "cities": [
+          "Delhi"
+        ]
+      },
+      "state": "validated",
+      "offer_count": 0,
+      "error": null
+    }
+  ],
+  "extraction": {
+    "text": {
+      "valid_cases": 3,
+      "correct_fields": 13,
+      "required_fields": 13,
+      "corrupt_cases": 0,
+      "expected_rejections": 0,
+      "auto_accepted": 0,
+      "field_accuracy": 1.0
+    },
+    "pdf": {
+      "valid_cases": 2,
+      "correct_fields": 8,
+      "required_fields": 8,
+      "corrupt_cases": 1,
+      "expected_rejections": 1,
+      "auto_accepted": 0,
+      "field_accuracy": 1.0
+    },
+    "image": {
+      "valid_cases": 1,
+      "correct_fields": 0,
+      "required_fields": 9,
+      "corrupt_cases": 1,
+      "expected_rejections": 1,
+      "auto_accepted": 0,
+      "field_accuracy": 0.0
+    }
+  },
+  "final_state": {
+    "plan_count": 4,
+    "order_count": 1,
+    "event_count": 1,
+    "evidence_count": 8,
+    "spent_paise": 18820,
+    "reserved_budget_paise": 0
+  },
+  "limitations": [
+    "API imports preserve the original 2200 synthetic baskets and append 1620 labeled basket rows.",
+    "Segments, calendar factors, substitute effects and replenishment retain the original assumed seed values; no supported import exists for them.",
+    "Daily rows are invented aggregate sales and one planted co-purchase receipt where basket_items is present, not raw orders.",
+    "Product import updates costs and selling prices, not catalog identity or supplier funding.",
+    "Observed labels assigned by the app describe the uploaded source, not real-world observation.",
+    "A frozen process clock supports repeatable freshness and expiry checks; timings and random record IDs are not deterministic.",
+    "No external model, real retailer, PostgreSQL or public deployment was exercised.",
+    "Business figures are scenario simulations, not measured commercial uplift.",
+    "No organizer numeric scoring weights are specified; this report supplies evidence only.",
+    "Fresh Vite build blocked by spawn EPERM; repaired UI/browser screenshots unavailable.",
+    "Zero downside in 40 crafted scenarios is not proof of zero real-world risk.",
+    "Poisson chosen on development WAPE but test WAPE20.45% is worse than seasonal-naive20.33%.",
+    "Current price-response and supplier/substitution assumptions do not establish causal commercial uplift."
+  ],
+  "review_request": "Analyze only these synthetic inputs and actual outputs for arithmetic, constraint consistency, reasoning gaps and supportable claims. Do not code, invoke paid APIs or treat offline decisions as model-selected decisions."
+}

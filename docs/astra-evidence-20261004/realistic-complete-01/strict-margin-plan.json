@@ -1,0 +1,948 @@
+{
+  "id": "plan_ffeae6a8575c4e80",
+  "run_id": "run_0ad0838e7def9c03",
+  "revision": 1,
+  "status": "awaiting_approval",
+  "brief": {
+    "title": "Synthetic evaluation: strict-margin",
+    "instruction": "",
+    "cities": [
+      "Delhi"
+    ],
+    "objective": "profit",
+    "budget_paise": 500000,
+    "horizon": 3,
+    "mechanisms": [
+      "markdown",
+      "coupon",
+      "bundle"
+    ],
+    "min_margin_bps": 9000,
+    "max_discount_bps": 2000,
+    "risk_lambda": 0.5,
+    "clearance_target": 0,
+    "clearance_hard": false,
+    "scenarios": 40,
+    "seed": 261004,
+    "mode": "offline",
+    "parent_id": null,
+    "start_date": "2026-10-04"
+  },
+  "offers": [],
+  "simulation": {
+    "baseline": {
+      "contribution_paise": 26123075,
+      "revenue_paise": 72966754,
+      "spend_paise": 0,
+      "clearance_units": 0.0,
+      "stockout_rate": 0.0667,
+      "units": 6816.4
+    },
+    "optimized": {
+      "contribution_paise": 26123075,
+      "revenue_paise": 72966754,
+      "spend_paise": 0,
+      "clearance_units": 0.0,
+      "stockout_rate": 0.0667,
+      "units": 6816.4
+    },
+    "incremental_contribution_paise": 0,
+    "p10_paise": 0,
+    "p50_paise": 0,
+    "p90_paise": 0,
+    "downside_probability": 0.0,
+    "scenarios": 40,
+    "seed": 261004,
+    "distribution": [
+      {
+        "value_paise": 0,
+        "count": 0
+      },
+      {
+        "value_paise": 0,
+        "count": 0
+      },
+      {
+        "value_paise": 0,
+        "count": 0
+      },
+      {
+        "value_paise": 0,
+        "count": 0
+      },
+      {
+        "value_paise": 0,
+        "count": 0
+      },
+      {
+        "value_paise": 0,
+        "count": 0
+      },
+      {
+        "value_paise": 0,
+        "count": 0
+      },
+      {
+        "value_paise": 0,
+        "count": 0
+      },
+      {
+        "value_paise": 0,
+        "count": 0
+      },
+      {
+        "value_paise": 0,
+        "count": 40
+      },
+      {
+        "value_paise": 0,
+        "count": 0
+      },
+      {
+        "value_paise": 0,
+        "count": 0
+      },
+      {
+        "value_paise": 0,
+        "count": 0
+      },
+      {
+        "value_paise": 0,
+        "count": 0
+      },
+      {
+        "value_paise": 0,
+        "count": 0
+      },
+      {
+        "value_paise": 0,
+        "count": 0
+      },
+      {
+        "value_paise": 0,
+        "count": 0
+      },
+      {
+        "value_paise": 0,
+        "count": 0
+      }
+    ],
+    "assumptions": [
+      "Correlated category demand",
+      "Price-response uncertainty \u00b130%",
+      "Comparable competitor price moves \u22125% to +2%",
+      "Coupon redemption 65\u2013100%",
+      "Declared substitute effects",
+      "FEFO expiry and variable replenishment"
+    ],
+    "sensitivity": {
+      "low_response": 0,
+      "central": 0,
+      "high_response": 0,
+      "fragile": false
+    },
+    "evidence_status": "simulated",
+    "clearance_probability": 1.0,
+    "risk_objective_paise": 0,
+    "daily_units": [
+      21.40185138894449,
+      18.8065711899667,
+      16.594723287392448
+    ],
+    "rule_baseline": {
+      "contribution_paise": 26123075,
+      "revenue_paise": 72966754,
+      "spend_paise": 0,
+      "clearance_units": 0.0,
+      "stockout_rate": 0.0667,
+      "units": 6816.4
+    },
+    "rule_offers": [],
+    "alternatives": [
+      {
+        "objective": "profit",
+        "offers": 0,
+        "incremental_contribution_paise": 0,
+        "spend_paise": 0,
+        "clearance_units": 0.0,
+        "status": "OPTIMAL"
+      },
+      {
+        "objective": "clearance",
+        "offers": 0,
+        "incremental_contribution_paise": 0,
+        "spend_paise": 0,
+        "clearance_units": 0.0,
+        "status": "OPTIMAL"
+      },
+      {
+        "objective": "conservative",
+        "offers": 0,
+        "incremental_contribution_paise": 0,
+        "spend_paise": 0,
+        "clearance_units": 0.0,
+        "status": "OPTIMAL"
+      }
+    ]
+  },
+  "validation": {
+    "passed": true,
+    "errors": [],
+    "liability_paise": 0,
+    "allocation": {},
+    "checks": [
+      "item margin",
+      "discount ceiling",
+      "stock and expiry",
+      "maximum liability",
+      "overlap",
+      "channel and city",
+      "freshness"
+    ],
+    "batch_allocation": {},
+    "clearance_units": 0,
+    "offer_clearance_units": {},
+    "evidence_status": "derived"
+  },
+  "snapshot_id": "11c2a3df04680f1d",
+  "policy_version": 2,
+  "mode": "offline",
+  "created_at": "2026-10-04T06:30:00+00:00",
+  "parent_id": null,
+  "stock_version": 18,
+  "solver": {
+    "status": "OPTIMAL",
+    "objective_paise": 0,
+    "bound_paise": 0,
+    "gap": 0,
+    "interactions": 0
+  },
+  "relationships": [
+    {
+      "a": "SKU022",
+      "b": "SKU025",
+      "kind": "complement",
+      "effect": 0.029753488372093025,
+      "status": "derived association",
+      "source": "Mixed imported and synthetic demo data basket co-occurrence; not causal",
+      "support": 987,
+      "lift": 3.48
+    },
+    {
+      "a": "SKU001",
+      "b": "SKU081",
+      "kind": "complement",
+      "effect": 0.027919154415067222,
+      "status": "derived association",
+      "source": "Mixed imported and synthetic demo data basket co-occurrence; not causal",
+      "support": 1047,
+      "lift": 3.33
+    },
+    {
+      "a": "SKU041",
+      "b": "SKU061",
+      "kind": "complement",
+      "effect": 0.02477933884297521,
+      "status": "derived association",
+      "source": "Mixed imported and synthetic demo data basket co-occurrence; not causal",
+      "support": 1165,
+      "lift": 3.06
+    },
+    {
+      "a": "SKU001",
+      "b": "SKU006",
+      "kind": "substitute",
+      "effect": 0.55,
+      "status": "assumed",
+      "source": "Declared synthetic response assumption",
+      "support": null,
+      "lift": null
+    },
+    {
+      "a": "SKU002",
+      "b": "SKU007",
+      "kind": "substitute",
+      "effect": 0.55,
+      "status": "assumed",
+      "source": "Declared synthetic response assumption",
+      "support": null,
+      "lift": null
+    },
+    {
+      "a": "SKU021",
+      "b": "SKU026",
+      "kind": "substitute",
+      "effect": 0.55,
+      "status": "assumed",
+      "source": "Declared synthetic response assumption",
+      "support": null,
+      "lift": null
+    },
+    {
+      "a": "SKU041",
+      "b": "SKU046",
+      "kind": "substitute",
+      "effect": 0.55,
+      "status": "assumed",
+      "source": "Declared synthetic response assumption",
+      "support": null,
+      "lift": null
+    },
+    {
+      "a": "SKU061",
+      "b": "SKU066",
+      "kind": "substitute",
+      "effect": 0.55,
+      "status": "assumed",
+      "source": "Declared synthetic response assumption",
+      "support": null,
+      "lift": null
+    },
+    {
+      "a": "SKU081",
+      "b": "SKU086",
+      "kind": "substitute",
+      "effect": 0.55,
+      "status": "assumed",
+      "source": "Declared synthetic response assumption",
+      "support": null,
+      "lift": null
+    }
+  ],
+  "forecast_metrics": {
+    "chosen": "poisson",
+    "wape": {
+      "seasonal_naive": {
+        "dev": 0.2099,
+        "test": 0.2033
+      },
+      "poisson": {
+        "dev": 0.182,
+        "test": 0.2045
+      }
+    },
+    "split": {
+      "train_days": 124,
+      "development_days": 28,
+      "test_days": 28
+    },
+    "grouped_test_metrics": {
+      "city": {
+        "Bengaluru": {
+          "wape": 0.2023,
+          "bias": 0.0747,
+          "baseline_wape": 0.2017,
+          "points": 3319
+        },
+        "Delhi": {
+          "wape": 0.2041,
+          "bias": 0.0756,
+          "baseline_wape": 0.2037,
+          "points": 3318
+        },
+        "Mumbai": {
+          "wape": 0.2076,
+          "bias": 0.0781,
+          "baseline_wape": 0.2047,
+          "points": 3318
+        }
+      },
+      "category": {
+        "Beverages": {
+          "wape": 0.2066,
+          "bias": 0.072,
+          "baseline_wape": 0.206,
+          "points": 1662
+        },
+        "Breakfast": {
+          "wape": 0.2062,
+          "bias": 0.0781,
+          "baseline_wape": 0.2048,
+          "points": 1659
+        },
+        "Dairy & fresh": {
+          "wape": 0.2,
+          "bias": 0.0755,
+          "baseline_wape": 0.1983,
+          "points": 1659
+        },
+        "Home essentials": {
+          "wape": 0.2016,
+          "bias": 0.0748,
+          "baseline_wape": 0.1999,
+          "points": 1657
+        },
+        "Snacks": {
+          "wape": 0.2095,
+          "bias": 0.0782,
+          "baseline_wape": 0.2088,
+          "points": 1661
+        },
+        "Staples": {
+          "wape": 0.204,
+          "bias": 0.0758,
+          "baseline_wape": 0.2032,
+          "points": 1657
+        }
+      }
+    },
+    "prediction_intervals": {
+      "nominal_coverage": 0.8,
+      "empirical_test_coverage": 0.7721,
+      "mean_test_width_units": 9.6,
+      "calibration": "Development-period normalized absolute residual quantile; empirical coverage measured on temporal test",
+      "status": "Measured on synthetic rolling one-step holdout; scenario ranges are separate"
+    },
+    "claim": "Predictive accuracy on Mixed imported and synthetic demo data; price response is an association, not causal uplift",
+    "snapshot_id": "11c2a3df04680f1d"
+  },
+  "screening": {
+    "excluded": [
+      {
+        "sku": "SKU001",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU002",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU003",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU004",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU005",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU006",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU007",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU008",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU009",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU010",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU011",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU012",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU013",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU014",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU015",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU016",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU017",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU018",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU019",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU020",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU021",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU022",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU023",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU024",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU025",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU026",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU027",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU028",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU029",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU030",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU031",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU032",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU033",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU034",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU035",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU036",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU037",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU038",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU039",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU040",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU041",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU042",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU043",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU044",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU045",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU046",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU047",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU048",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU049",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU050",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU051",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU052",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU053",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU054",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU055",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU056",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU057",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU058",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU059",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU060",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU061",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU062",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU063",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU064",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU065",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU066",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU067",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU068",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU069",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU070",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU071",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU072",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU073",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU074",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU075",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU076",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU077",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU078",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU079",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU080",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU081",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU082",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU083",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU084",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU085",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU086",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU087",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU088",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU089",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU090",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU091",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU092",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU093",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU094",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU095",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU096",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU097",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU098",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU099",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU100",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU101",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU102",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU103",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU104",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU105",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU106",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU107",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU108",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU109",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU110",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU111",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU112",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU113",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU114",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU115",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU116",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU117",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU118",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU119",
+        "reason": "Baseline contribution margin below required floor"
+      },
+      {
+        "sku": "SKU120",
+        "reason": "Baseline contribution margin below required floor"
+      }
+    ],
+    "rejected": [],
+    "shortlist": [],
+    "candidate_count": 0,
+    "scope": "Finite retained candidate set; full 120-SKU portfolio simulated"
+  },
+  "trace": [
+    {
+      "tool": "read_evidence",
+      "state": "completed",
+      "summary": "Read 120 products, stock and policy v2. Critical missing costs exclude affected products.",
+      "at": "2026-10-04T06:30:00+00:00",
+      "seconds": 1.046,
+      "mode": "offline"
+    },
+    {
+      "tool": "forecast_demand",
+      "state": "completed",
+      "summary": "Selected poisson using development-period WAPE; untouched temporal test results recorded.",
+      "at": "2026-10-04T06:30:00+00:00",
+      "seconds": 2.943,
+      "mode": "offline"
+    },
+    {
+      "tool": "get_relationships",
+      "state": "completed",
+      "summary": "Computed 3 supported co-purchase pairs; substitute effects are labelled scenario assumptions.",
+      "at": "2026-10-04T06:30:00+00:00",
+      "seconds": 0.741,
+      "mode": "offline"
+    },
+    {
+      "tool": "generate_candidates",
+      "state": "completed",
+      "summary": "Screened catalog to 0 promoted products; retained 0 offers with policy checks.",
+      "at": "2026-10-04T06:30:00+00:00",
+      "seconds": 1.051,
+      "mode": "offline"
+    },
+    {
+      "tool": "optimize_plan",
+      "state": "completed",
+      "summary": "Solver returned OPTIMAL; 0 offers within shared stock and maximum-liability limits.",
+      "at": "2026-10-04T06:30:00+00:00",
+      "seconds": 1.068,
+      "mode": "offline"
+    },
+    {
+      "tool": "simulate_plan",
+      "state": "completed",
+      "summary": "Simulated 40 common-random scenarios against no promotion and the flat-discount baseline.",
+      "at": "2026-10-04T06:30:00+00:00",
+      "seconds": 0.943,
+      "mode": "offline"
+    },
+    {
+      "tool": "validate_plan",
+      "state": "completed",
+      "summary": "Independent margin, overlap, expiry, stock and maximum-liability validation passed.",
+      "at": "2026-10-04T06:30:00+00:00",
+      "seconds": 0.999,
+      "mode": "offline"
+    }
+  ],
+  "data_label": "Mixed imported and synthetic demo data",
+  "approved": null,
+  "decision_summary": "0 offers selected. Maximum liability is capped; portfolio simulation includes unpromoted substitutes. 40 scenarios, with source and assumption labels."
+}

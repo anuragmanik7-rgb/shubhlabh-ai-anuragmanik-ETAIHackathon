@@ -1,0 +1,30 @@
+{
+  "created_at": "2026-10-01T06:41:08.524141+00:00",
+  "default_limit": 400,
+  "window_seconds": 3600,
+  "window_kind": "rolling",
+  "authenticated_scope": "workspace",
+  "unauthenticated_scope": "direct client address",
+  "configuration": "API_RATE_LIMIT_PER_HOUR",
+  "persistent_shared_database_quota": true,
+  "targeted_cases_passed": 12,
+  "full_suite_passed": 640,
+  "postgres_runtime_tested": false,
+  "browser_lifecycle_passed": true,
+  "quota_boundary": "400 admitted requests; 401st returns HTTP 429 with Retry-After",
+  "excluded": [
+    "page",
+    "static assets",
+    "health",
+    "API documentation"
+  ],
+  "separate_guards": {
+    "workspace_creation_per_hour": 12,
+    "default_model_budget_usd_per_day": 0.5
+  },
+  "evidence": [
+    "audit-evidence/rate-limit-targeted.xml",
+    "audit-evidence/rate-limit-full-suite.xml",
+    "audit-evidence/browser-rate-limit-lifecycle.json"
+  ]
+}

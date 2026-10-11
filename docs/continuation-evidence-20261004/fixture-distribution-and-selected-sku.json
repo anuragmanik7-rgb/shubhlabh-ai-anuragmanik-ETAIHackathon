@@ -1,0 +1,148 @@
+{
+  "fixture_manifest_sha256": "ce8b59b990305cfb5842abdf5187b9dbfaaef6a87551f1d1526978a3de871d03",
+  "invented_data": true,
+  "schema": {
+    "products.csv": [
+      "sku",
+      "cost_paise",
+      "price_paise",
+      "currency"
+    ],
+    "inventory.csv": [
+      "sku",
+      "city",
+      "quantity",
+      "reserved",
+      "unavailable",
+      "safety_stock",
+      "quantity_basis",
+      "expiry",
+      "observed_at",
+      "currency"
+    ],
+    "competitors.csv": [
+      "sku",
+      "city",
+      "price_paise",
+      "pack_quantity",
+      "pack_unit",
+      "observed_at",
+      "conditions",
+      "currency"
+    ],
+    "transactions-bengaluru-1.csv": [
+      "sku",
+      "city",
+      "date",
+      "quantity",
+      "paid_price_paise",
+      "stockout",
+      "basket_items",
+      "currency"
+    ]
+  },
+  "distribution": {
+    "catalog_price_paise": {
+      "n": 120,
+      "min": 3500,
+      "p10": 5500.0,
+      "median": 9550.0,
+      "p90": 19530.0,
+      "max": 31200,
+      "mean": 11367.5
+    },
+    "cost_paise": {
+      "n": 120,
+      "min": 2188,
+      "p10": 3295.0,
+      "median": 5906.5,
+      "p90": 12426.0,
+      "max": 19500,
+      "mean": 6875.333
+    },
+    "physical_stock_units": {
+      "n": 360,
+      "min": 6,
+      "p10": 76.0,
+      "median": 120.0,
+      "p90": 169.0,
+      "max": 211,
+      "mean": 119.394
+    },
+    "daily_sold_units": {
+      "n": 64800,
+      "min": 2,
+      "p10": 9.0,
+      "median": 16.0,
+      "p90": 27.0,
+      "max": 76,
+      "mean": 17.247
+    },
+    "stockout_rows": 783,
+    "basket_rows": 1620,
+    "first_date": "2026-04-07",
+    "last_date": "2026-10-03"
+  },
+  "selected_sku_input_rows": {
+    "product": {
+      "sku": "SKU011",
+      "cost_paise": "4715",
+      "price_paise": "8200",
+      "currency": "INR"
+    },
+    "inventory": {
+      "sku": "SKU011",
+      "city": "Bengaluru",
+      "quantity": "125",
+      "reserved": "0",
+      "unavailable": "1",
+      "safety_stock": "3",
+      "quantity_basis": "physical",
+      "expiry": "2026-10-06",
+      "observed_at": "2026-10-04T06:30:00+00:00",
+      "currency": "INR"
+    },
+    "competitor": {
+      "sku": "SKU011",
+      "city": "Bengaluru",
+      "price_paise": "8400",
+      "pack_quantity": "1000",
+      "pack_unit": "ml",
+      "observed_at": "2026-10-04T06:30:00+00:00",
+      "conditions": "No membership restriction",
+      "currency": "INR"
+    },
+    "first_two_sales": [
+      {
+        "sku": "SKU011",
+        "city": "Bengaluru",
+        "date": "2026-04-07",
+        "quantity": "48",
+        "paid_price_paise": "7380",
+        "stockout": "false",
+        "basket_items": "",
+        "currency": "INR"
+      },
+      {
+        "sku": "SKU011",
+        "city": "Bengaluru",
+        "date": "2026-04-08",
+        "quantity": "44",
+        "paid_price_paise": "7380",
+        "stockout": "false",
+        "basket_items": "",
+        "currency": "INR"
+      }
+    ]
+  },
+  "retained_seed_economics_for_selected_sku": {
+    "sku": "SKU011",
+    "price_paise": 8200,
+    "cost_paise": 4715,
+    "variable_cost_paise": 326,
+    "supplier_funding_paise": 0,
+    "mrp_paise": 9139,
+    "pack_quantity": 1000,
+    "pack_unit": "ml"
+  }
+}

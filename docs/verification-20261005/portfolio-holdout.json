@@ -1,0 +1,4112 @@
+{
+  "summary": {
+    "cases": 15,
+    "selected_constraint_violations": 0,
+    "selected_negative_report_means": 0,
+    "selected_vs_flat_rule": {
+      "wins": 3,
+      "ties": 12,
+      "losses": 0
+    }
+  },
+  "selection_origin": "offline_policy",
+  "provider_calls": 0,
+  "source_freeze": {
+    "backend/app/__init__.py": "206c0c20665706f1ac0b45b5826cfddf0f53b34cb1e0adb87448af171ef37792",
+    "backend/app/config.py": "9c65628704c33f247b7a0b2451c6e7c4b8a62c368026c8a17bd2e98037c344c1",
+    "backend/app/connectors.py": "5c45425e5e27ddea18b9eb9ff7743955a23e8257fa37d7361acc89a31cf94f14",
+    "backend/app/contracts.py": "3bcaab93063618d937271f76127acfebad12a60261dfa0ce128c497c786f1a18",
+    "backend/app/decisions.py": "68116049ee6328648c05e3d26a7dc5719aebd529bfdf59e585c153dc9e2bed53",
+    "backend/app/domain.py": "37d1866b92afac88bded41a36813ebdcf13002fcaed90059f8aae27dcb296c3a",
+    "backend/app/economics.py": "862d2f3ecd7993c941c02497680fed6d4507a91ab7f5e6d31ae2ac62a28bfcb2",
+    "backend/app/evidence_parser.py": "65f15c537cdf7fd08d854394c3215fc85e7edcd379323b6b55782b351f955a14",
+    "backend/app/execution.py": "aef233d695ebde46ca4b300214d2cc43347526ecf839c7b64833946ea7c4a672",
+    "backend/app/forecast.py": "30712058eb52734ff4dc0f762fa223b49d6f13b37481766cf01fd2b94cf92987",
+    "backend/app/ingestion.py": "685b6a33e46b392dc70150f1d993eb732afe5507f1bd63e9026c54daf6abdcea",
+    "backend/app/main.py": "95ad6726898d7544f906ec388b76fccb019dd61cbc073b1a347926bfdc09fd73",
+    "backend/app/orchestrator.py": "bcacfc9c7a08dbb3f8194d4f09608ffa7964097987fb25473de63f081680ae4b",
+    "backend/app/persistence.py": "53cbe0a4839ff6492d40443427f3f2e75027a422fd35119153d1b68a2b74e09d",
+    "backend/app/planner.py": "11cea51164811b671526a97c37c7a6bd0f08f8179eb704803b72dd56249256d8",
+    "backend/app/providers.py": "01d026bb31986a13243b068acb67d8f62ada1a58b66629e204f9fcaebcd4800a",
+    "backend/app/rate_limits.py": "ccbb44e1b47951d0053b120badb638e99bd9f90417d5fddc243ab76a814de6ea",
+    "backend/app/seed.py": "56a6e598d2fbf9f7972cc38818335e535732e183d7a520217588c62ccce30d99",
+    "backend/app/simulation.py": "1cc8428a107f82c8e5f888ffe48b93838c2158f0d5f11cf88e30dc718d91fd8a"
+  },
+  "frozen_input_sha256": "1af9769fc7cc14bc693c15103b65c962cea2f291c5ba84ba4fb510072d057289",
+  "rows": [
+    {
+      "case": "base",
+      "report_seed": 194231,
+      "selection_seed": 298960,
+      "origin": "offline_policy",
+      "selected": "flat_discount_rule",
+      "decision": {
+        "packet_id": "ebcc7011e234f3d2f92eece230feb05059036aa49143e82a65160f82031130a5",
+        "action": "select_portfolio",
+        "proposal_id": "flat_discount_rule",
+        "rationale": "Offline policy selected flat_discount_rule by risk_objective_paise on separate selection scenarios. This is simulated evidence; approval remains required.",
+        "citations": [
+          "selection:18fa08d81db9d13e",
+          "assumption_case:751bbc009e4ccaff"
+        ],
+        "questions": []
+      },
+      "proposals": [
+        {
+          "id": "solver_candidate",
+          "eligible": true,
+          "liability_paise": 499810,
+          "selection": {
+            "incremental_contribution_paise": 141878,
+            "risk_objective_paise": 141878,
+            "p10_paise": 100087,
+            "p50_paise": 141285,
+            "p90_paise": 187245,
+            "downside_probability": 0.0,
+            "seed": 298960,
+            "scenarios": 40,
+            "clearance_units": 1646.1
+          }
+        },
+        {
+          "id": "flat_discount_rule",
+          "eligible": true,
+          "liability_paise": 499410,
+          "selection": {
+            "incremental_contribution_paise": 700583,
+            "risk_objective_paise": 700583,
+            "p10_paise": 476151,
+            "p50_paise": 761626,
+            "p90_paise": 865002,
+            "downside_probability": 0.0,
+            "seed": 298960,
+            "scenarios": 40,
+            "clearance_units": 1761.8
+          }
+        },
+        {
+          "id": "conservative_candidate",
+          "eligible": false,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 298960,
+            "scenarios": 40,
+            "clearance_units": 1625.3
+          }
+        },
+        {
+          "id": "no_promotion",
+          "eligible": true,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 298960,
+            "scenarios": 40,
+            "clearance_units": 1625.3
+          }
+        }
+      ],
+      "report": {
+        "solver_candidate": {
+          "incremental_contribution_paise": 143638,
+          "risk_objective_paise": 142889,
+          "p10_paise": 112055,
+          "p50_paise": 153762,
+          "p90_paise": 181341,
+          "downside_probability": 0.025,
+          "seed": 194231,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 68375321,
+            "revenue_paise": 198493524,
+            "spend_paise": 411069,
+            "clearance_units": 1670.4,
+            "stockout_rate": 0.0673,
+            "units": 18616.6
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 499810,
+            "allocation": {
+              "SKU022|Bengaluru": 32,
+              "SKU025|Bengaluru": 32,
+              "SKU022|Mumbai": 26,
+              "SKU025|Mumbai": 26,
+              "SKU022|Delhi": 35,
+              "SKU025|Delhi": 35,
+              "SKU001|Bengaluru": 36,
+              "SKU081|Bengaluru": 36,
+              "SKU001|Mumbai": 29,
+              "SKU081|Mumbai": 29,
+              "SKU001|Delhi": 40,
+              "SKU081|Delhi": 40,
+              "SKU041|Bengaluru": 26,
+              "SKU061|Bengaluru": 26,
+              "SKU041|Mumbai": 22,
+              "SKU061|Mumbai": 22,
+              "SKU041|Delhi": 30,
+              "SKU061|Delhi": 30,
+              "SKU015|Delhi": 85,
+              "SKU011|Bengaluru": 61,
+              "SKU005|Bengaluru": 53,
+              "SKU005|Mumbai": 56,
+              "SKU005|Delhi": 77
+            },
+            "batch_allocation": {
+              "SKU022-0-A": 32,
+              "SKU025-0-A": 32,
+              "SKU022-1-A": 26,
+              "SKU025-1-A": 26,
+              "SKU022-2-A": 35,
+              "SKU025-2-A": 35,
+              "SKU001-0-A": 36,
+              "SKU081-0-A": 36,
+              "SKU001-1-A": 29,
+              "SKU081-1-A": 29,
+              "SKU001-2-A": 40,
+              "SKU081-2-A": 40,
+              "SKU041-0-A": 26,
+              "SKU061-0-A": 26,
+              "SKU041-1-A": 22,
+              "SKU061-1-A": 22,
+              "SKU041-2-A": 30,
+              "SKU061-2-A": 30,
+              "SKU015-2-A": 85,
+              "SKU011-0-A": 61,
+              "SKU005-0-A": 53,
+              "SKU005-1-A": 56,
+              "SKU005-2-A": 77
+            },
+            "clearance_units": 150,
+            "offer_clearance_units": {
+              "a7970ea74775de": 0,
+              "14dbf813a8813e": 0,
+              "d61df8a67d9d84": 0,
+              "1929d5a797ae72": 36,
+              "d5a5923f919981": 0,
+              "50daf77dc78849": 0,
+              "541f1d15ab9b20": 0,
+              "203be25fad61be": 0,
+              "082c48a0ac3229": 0,
+              "ed3dac8404741e": 0,
+              "59dac59e712d23": 61,
+              "4fe6e936548fe8": 53,
+              "6a3cf4b715271b": 0,
+              "3a307fccfa3e91": 0
+            },
+            "evidence_status": "derived"
+          }
+        },
+        "flat_discount_rule": {
+          "incremental_contribution_paise": 699965,
+          "risk_objective_paise": 698526,
+          "p10_paise": 430014,
+          "p50_paise": 761407,
+          "p90_paise": 882836,
+          "downside_probability": 0.025,
+          "seed": 194231,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 68931649,
+            "revenue_paise": 198478719,
+            "spend_paise": 417230,
+            "clearance_units": 1786.8,
+            "stockout_rate": 0.0687,
+            "units": 18606.5
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 499410,
+            "allocation": {
+              "SKU011|Bengaluru": 79,
+              "SKU015|Bengaluru": 71,
+              "SKU019|Bengaluru": 68,
+              "SKU005|Bengaluru": 67,
+              "SKU003|Bengaluru": 66,
+              "SKU010|Bengaluru": 66,
+              "SKU016|Bengaluru": 63,
+              "SKU014|Bengaluru": 63,
+              "SKU006|Bengaluru": 27
+            },
+            "batch_allocation": {
+              "SKU011-0-A": 79,
+              "SKU015-0-A": 71,
+              "SKU019-0-A": 68,
+              "SKU005-0-A": 67,
+              "SKU003-0-A": 66,
+              "SKU010-0-A": 66,
+              "SKU016-0-A": 63,
+              "SKU014-0-A": 63,
+              "SKU006-0-A": 27
+            },
+            "clearance_units": 570,
+            "offer_clearance_units": {
+              "805107abaa4d62": 79,
+              "e1d3028484614b": 71,
+              "bca9a725a02c1b": 68,
+              "9420f25609e44c": 67,
+              "4a4823df048216": 66,
+              "b51a50c4621644": 66,
+              "922a4c77fb8e12": 63,
+              "6ca23cccc6432a": 63,
+              "32d2ebfd20abd7": 27
+            },
+            "evidence_status": "derived"
+          }
+        },
+        "conservative_candidate": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 194231,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 68231684,
+            "revenue_paise": 197714233,
+            "spend_paise": 0,
+            "clearance_units": 1649.9,
+            "stockout_rate": 0.0669,
+            "units": 18469.6
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        },
+        "no_promotion": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 194231,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 68231684,
+            "revenue_paise": 197714233,
+            "spend_paise": 0,
+            "clearance_units": 1649.9,
+            "stockout_rate": 0.0669,
+            "units": 18469.6
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        }
+      }
+    },
+    {
+      "case": "base",
+      "report_seed": 580213,
+      "selection_seed": 684942,
+      "origin": "offline_policy",
+      "selected": "flat_discount_rule",
+      "decision": {
+        "packet_id": "fa499f6fe79bde4c8edbd0c3cc94f7467744a8f1d748c0f247da3e97cfe71e82",
+        "action": "select_portfolio",
+        "proposal_id": "flat_discount_rule",
+        "rationale": "Offline policy selected flat_discount_rule by risk_objective_paise on separate selection scenarios. This is simulated evidence; approval remains required.",
+        "citations": [
+          "selection:ae1e44bcfe90be2d",
+          "assumption_case:751bbc009e4ccaff"
+        ],
+        "questions": []
+      },
+      "proposals": [
+        {
+          "id": "solver_candidate",
+          "eligible": true,
+          "liability_paise": 499810,
+          "selection": {
+            "incremental_contribution_paise": 140998,
+            "risk_objective_paise": 139700,
+            "p10_paise": 111663,
+            "p50_paise": 150170,
+            "p90_paise": 188178,
+            "downside_probability": 0.025,
+            "seed": 684942,
+            "scenarios": 40,
+            "clearance_units": 1654.6
+          }
+        },
+        {
+          "id": "flat_discount_rule",
+          "eligible": true,
+          "liability_paise": 499410,
+          "selection": {
+            "incremental_contribution_paise": 682063,
+            "risk_objective_paise": 674141,
+            "p10_paise": 412792,
+            "p50_paise": 786593,
+            "p90_paise": 871417,
+            "downside_probability": 0.075,
+            "seed": 684942,
+            "scenarios": 40,
+            "clearance_units": 1768.0
+          }
+        },
+        {
+          "id": "conservative_candidate",
+          "eligible": false,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 684942,
+            "scenarios": 40,
+            "clearance_units": 1633.7
+          }
+        },
+        {
+          "id": "no_promotion",
+          "eligible": true,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 684942,
+            "scenarios": 40,
+            "clearance_units": 1633.7
+          }
+        }
+      ],
+      "report": {
+        "solver_candidate": {
+          "incremental_contribution_paise": 142005,
+          "risk_objective_paise": 142005,
+          "p10_paise": 107635,
+          "p50_paise": 146352,
+          "p90_paise": 183719,
+          "downside_probability": 0.0,
+          "seed": 580213,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 67389128,
+            "revenue_paise": 196353944,
+            "spend_paise": 404096,
+            "clearance_units": 1623.4,
+            "stockout_rate": 0.0669,
+            "units": 18371.2
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 499810,
+            "allocation": {
+              "SKU022|Bengaluru": 32,
+              "SKU025|Bengaluru": 32,
+              "SKU022|Mumbai": 26,
+              "SKU025|Mumbai": 26,
+              "SKU022|Delhi": 35,
+              "SKU025|Delhi": 35,
+              "SKU001|Bengaluru": 36,
+              "SKU081|Bengaluru": 36,
+              "SKU001|Mumbai": 29,
+              "SKU081|Mumbai": 29,
+              "SKU001|Delhi": 40,
+              "SKU081|Delhi": 40,
+              "SKU041|Bengaluru": 26,
+              "SKU061|Bengaluru": 26,
+              "SKU041|Mumbai": 22,
+              "SKU061|Mumbai": 22,
+              "SKU041|Delhi": 30,
+              "SKU061|Delhi": 30,
+              "SKU015|Delhi": 85,
+              "SKU011|Bengaluru": 61,
+              "SKU005|Bengaluru": 53,
+              "SKU005|Mumbai": 56,
+              "SKU005|Delhi": 77
+            },
+            "batch_allocation": {
+              "SKU022-0-A": 32,
+              "SKU025-0-A": 32,
+              "SKU022-1-A": 26,
+              "SKU025-1-A": 26,
+              "SKU022-2-A": 35,
+              "SKU025-2-A": 35,
+              "SKU001-0-A": 36,
+              "SKU081-0-A": 36,
+              "SKU001-1-A": 29,
+              "SKU081-1-A": 29,
+              "SKU001-2-A": 40,
+              "SKU081-2-A": 40,
+              "SKU041-0-A": 26,
+              "SKU061-0-A": 26,
+              "SKU041-1-A": 22,
+              "SKU061-1-A": 22,
+              "SKU041-2-A": 30,
+              "SKU061-2-A": 30,
+              "SKU015-2-A": 85,
+              "SKU011-0-A": 61,
+              "SKU005-0-A": 53,
+              "SKU005-1-A": 56,
+              "SKU005-2-A": 77
+            },
+            "clearance_units": 150,
+            "offer_clearance_units": {
+              "a7970ea74775de": 0,
+              "14dbf813a8813e": 0,
+              "d61df8a67d9d84": 0,
+              "1929d5a797ae72": 36,
+              "d5a5923f919981": 0,
+              "50daf77dc78849": 0,
+              "541f1d15ab9b20": 0,
+              "203be25fad61be": 0,
+              "082c48a0ac3229": 0,
+              "ed3dac8404741e": 0,
+              "59dac59e712d23": 61,
+              "4fe6e936548fe8": 53,
+              "6a3cf4b715271b": 0,
+              "3a307fccfa3e91": 0
+            },
+            "evidence_status": "derived"
+          }
+        },
+        "flat_discount_rule": {
+          "incremental_contribution_paise": 712966,
+          "risk_objective_paise": 712966,
+          "p10_paise": 538879,
+          "p50_paise": 735958,
+          "p90_paise": 877663,
+          "downside_probability": 0.0,
+          "seed": 580213,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 67960089,
+            "revenue_paise": 196374459,
+            "spend_paise": 406287,
+            "clearance_units": 1739.6,
+            "stockout_rate": 0.0683,
+            "units": 18365.0
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 499410,
+            "allocation": {
+              "SKU011|Bengaluru": 79,
+              "SKU015|Bengaluru": 71,
+              "SKU019|Bengaluru": 68,
+              "SKU005|Bengaluru": 67,
+              "SKU003|Bengaluru": 66,
+              "SKU010|Bengaluru": 66,
+              "SKU016|Bengaluru": 63,
+              "SKU014|Bengaluru": 63,
+              "SKU006|Bengaluru": 27
+            },
+            "batch_allocation": {
+              "SKU011-0-A": 79,
+              "SKU015-0-A": 71,
+              "SKU019-0-A": 68,
+              "SKU005-0-A": 67,
+              "SKU003-0-A": 66,
+              "SKU010-0-A": 66,
+              "SKU016-0-A": 63,
+              "SKU014-0-A": 63,
+              "SKU006-0-A": 27
+            },
+            "clearance_units": 570,
+            "offer_clearance_units": {
+              "805107abaa4d62": 79,
+              "e1d3028484614b": 71,
+              "bca9a725a02c1b": 68,
+              "9420f25609e44c": 67,
+              "4a4823df048216": 66,
+              "b51a50c4621644": 66,
+              "922a4c77fb8e12": 63,
+              "6ca23cccc6432a": 63,
+              "32d2ebfd20abd7": 27
+            },
+            "evidence_status": "derived"
+          }
+        },
+        "conservative_candidate": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 580213,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 67247123,
+            "revenue_paise": 195596889,
+            "spend_paise": 0,
+            "clearance_units": 1602.2,
+            "stockout_rate": 0.0667,
+            "units": 18227.6
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        },
+        "no_promotion": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 580213,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 67247123,
+            "revenue_paise": 195596889,
+            "spend_paise": 0,
+            "clearance_units": 1602.2,
+            "stockout_rate": 0.0667,
+            "units": 18227.6
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        }
+      }
+    },
+    {
+      "case": "base",
+      "report_seed": 903517,
+      "selection_seed": 8245,
+      "origin": "offline_policy",
+      "selected": "flat_discount_rule",
+      "decision": {
+        "packet_id": "75bdd8aafef9199f2d51c2e596cd90a25ef1c9c26ee00c54abcf6fc8f114cd03",
+        "action": "select_portfolio",
+        "proposal_id": "flat_discount_rule",
+        "rationale": "Offline policy selected flat_discount_rule by risk_objective_paise on separate selection scenarios. This is simulated evidence; approval remains required.",
+        "citations": [
+          "selection:303a8f0dd1ca1f18",
+          "assumption_case:751bbc009e4ccaff"
+        ],
+        "questions": []
+      },
+      "proposals": [
+        {
+          "id": "solver_candidate",
+          "eligible": true,
+          "liability_paise": 499810,
+          "selection": {
+            "incremental_contribution_paise": 141440,
+            "risk_objective_paise": 141440,
+            "p10_paise": 89605,
+            "p50_paise": 143504,
+            "p90_paise": 190801,
+            "downside_probability": 0.0,
+            "seed": 8245,
+            "scenarios": 40,
+            "clearance_units": 1681.4
+          }
+        },
+        {
+          "id": "flat_discount_rule",
+          "eligible": true,
+          "liability_paise": 499410,
+          "selection": {
+            "incremental_contribution_paise": 717583,
+            "risk_objective_paise": 717583,
+            "p10_paise": 469246,
+            "p50_paise": 774221,
+            "p90_paise": 867170,
+            "downside_probability": 0.0,
+            "seed": 8245,
+            "scenarios": 40,
+            "clearance_units": 1800.1
+          }
+        },
+        {
+          "id": "conservative_candidate",
+          "eligible": false,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 8245,
+            "scenarios": 40,
+            "clearance_units": 1660.5
+          }
+        },
+        {
+          "id": "no_promotion",
+          "eligible": true,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 8245,
+            "scenarios": 40,
+            "clearance_units": 1660.5
+          }
+        }
+      ],
+      "report": {
+        "solver_candidate": {
+          "incremental_contribution_paise": 142989,
+          "risk_objective_paise": 142477,
+          "p10_paise": 89189,
+          "p50_paise": 147935,
+          "p90_paise": 194668,
+          "downside_probability": 0.025,
+          "seed": 903517,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 68592295,
+            "revenue_paise": 198544879,
+            "spend_paise": 413222,
+            "clearance_units": 1713.4,
+            "stockout_rate": 0.0674,
+            "units": 18644.1
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 499810,
+            "allocation": {
+              "SKU022|Bengaluru": 32,
+              "SKU025|Bengaluru": 32,
+              "SKU022|Mumbai": 26,
+              "SKU025|Mumbai": 26,
+              "SKU022|Delhi": 35,
+              "SKU025|Delhi": 35,
+              "SKU001|Bengaluru": 36,
+              "SKU081|Bengaluru": 36,
+              "SKU001|Mumbai": 29,
+              "SKU081|Mumbai": 29,
+              "SKU001|Delhi": 40,
+              "SKU081|Delhi": 40,
+              "SKU041|Bengaluru": 26,
+              "SKU061|Bengaluru": 26,
+              "SKU041|Mumbai": 22,
+              "SKU061|Mumbai": 22,
+              "SKU041|Delhi": 30,
+              "SKU061|Delhi": 30,
+              "SKU015|Delhi": 85,
+              "SKU011|Bengaluru": 61,
+              "SKU005|Bengaluru": 53,
+              "SKU005|Mumbai": 56,
+              "SKU005|Delhi": 77
+            },
+            "batch_allocation": {
+              "SKU022-0-A": 32,
+              "SKU025-0-A": 32,
+              "SKU022-1-A": 26,
+              "SKU025-1-A": 26,
+              "SKU022-2-A": 35,
+              "SKU025-2-A": 35,
+              "SKU001-0-A": 36,
+              "SKU081-0-A": 36,
+              "SKU001-1-A": 29,
+              "SKU081-1-A": 29,
+              "SKU001-2-A": 40,
+              "SKU081-2-A": 40,
+              "SKU041-0-A": 26,
+              "SKU061-0-A": 26,
+              "SKU041-1-A": 22,
+              "SKU061-1-A": 22,
+              "SKU041-2-A": 30,
+              "SKU061-2-A": 30,
+              "SKU015-2-A": 85,
+              "SKU011-0-A": 61,
+              "SKU005-0-A": 53,
+              "SKU005-1-A": 56,
+              "SKU005-2-A": 77
+            },
+            "clearance_units": 150,
+            "offer_clearance_units": {
+              "a7970ea74775de": 0,
+              "14dbf813a8813e": 0,
+              "d61df8a67d9d84": 0,
+              "1929d5a797ae72": 36,
+              "d5a5923f919981": 0,
+              "50daf77dc78849": 0,
+              "541f1d15ab9b20": 0,
+              "203be25fad61be": 0,
+              "082c48a0ac3229": 0,
+              "ed3dac8404741e": 0,
+              "59dac59e712d23": 61,
+              "4fe6e936548fe8": 53,
+              "6a3cf4b715271b": 0,
+              "3a307fccfa3e91": 0
+            },
+            "evidence_status": "derived"
+          }
+        },
+        "flat_discount_rule": {
+          "incremental_contribution_paise": 683960,
+          "risk_objective_paise": 678217,
+          "p10_paise": 506015,
+          "p50_paise": 752744,
+          "p90_paise": 881750,
+          "downside_probability": 0.025,
+          "seed": 903517,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 69133266,
+            "revenue_paise": 198519764,
+            "spend_paise": 429025,
+            "clearance_units": 1828.5,
+            "stockout_rate": 0.0693,
+            "units": 18633.7
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 499410,
+            "allocation": {
+              "SKU011|Bengaluru": 79,
+              "SKU015|Bengaluru": 71,
+              "SKU019|Bengaluru": 68,
+              "SKU005|Bengaluru": 67,
+              "SKU003|Bengaluru": 66,
+              "SKU010|Bengaluru": 66,
+              "SKU016|Bengaluru": 63,
+              "SKU014|Bengaluru": 63,
+              "SKU006|Bengaluru": 27
+            },
+            "batch_allocation": {
+              "SKU011-0-A": 79,
+              "SKU015-0-A": 71,
+              "SKU019-0-A": 68,
+              "SKU005-0-A": 67,
+              "SKU003-0-A": 66,
+              "SKU010-0-A": 66,
+              "SKU016-0-A": 63,
+              "SKU014-0-A": 63,
+              "SKU006-0-A": 27
+            },
+            "clearance_units": 570,
+            "offer_clearance_units": {
+              "805107abaa4d62": 79,
+              "e1d3028484614b": 71,
+              "bca9a725a02c1b": 68,
+              "9420f25609e44c": 67,
+              "4a4823df048216": 66,
+              "b51a50c4621644": 66,
+              "922a4c77fb8e12": 63,
+              "6ca23cccc6432a": 63,
+              "32d2ebfd20abd7": 27
+            },
+            "evidence_status": "derived"
+          }
+        },
+        "conservative_candidate": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 903517,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 68449306,
+            "revenue_paise": 197771457,
+            "spend_paise": 0,
+            "clearance_units": 1692.3,
+            "stockout_rate": 0.067,
+            "units": 18497.5
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        },
+        "no_promotion": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 903517,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 68449306,
+            "revenue_paise": 197771457,
+            "spend_paise": 0,
+            "clearance_units": 1692.3,
+            "stockout_rate": 0.067,
+            "units": 18497.5
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        }
+      }
+    },
+    {
+      "case": "lower_response",
+      "report_seed": 194231,
+      "selection_seed": 298960,
+      "origin": "offline_policy",
+      "selected": "flat_discount_rule",
+      "decision": {
+        "packet_id": "e8d49f98759cb01ee72d0e7ae404d9bc99ce002e461070c390e5757cb5eba536",
+        "action": "select_portfolio",
+        "proposal_id": "flat_discount_rule",
+        "rationale": "Offline policy selected flat_discount_rule by risk_objective_paise on separate selection scenarios. This is simulated evidence; approval remains required.",
+        "citations": [
+          "selection:12efcfce1d3e173d",
+          "assumption_case:f39e54fe261fa03d"
+        ],
+        "questions": []
+      },
+      "proposals": [
+        {
+          "id": "solver_candidate",
+          "eligible": false,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 298960,
+            "scenarios": 40,
+            "clearance_units": 1625.3
+          }
+        },
+        {
+          "id": "flat_discount_rule",
+          "eligible": true,
+          "liability_paise": 289970,
+          "selection": {
+            "incremental_contribution_paise": 140818,
+            "risk_objective_paise": 140818,
+            "p10_paise": 106858,
+            "p50_paise": 144419,
+            "p90_paise": 171076,
+            "downside_probability": 0.0,
+            "seed": 298960,
+            "scenarios": 40,
+            "clearance_units": 1671.6
+          }
+        },
+        {
+          "id": "conservative_candidate",
+          "eligible": false,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 298960,
+            "scenarios": 40,
+            "clearance_units": 1625.3
+          }
+        },
+        {
+          "id": "no_promotion",
+          "eligible": true,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 298960,
+            "scenarios": 40,
+            "clearance_units": 1625.3
+          }
+        }
+      ],
+      "report": {
+        "solver_candidate": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 194231,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 68231684,
+            "revenue_paise": 197714233,
+            "spend_paise": 0,
+            "clearance_units": 1649.9,
+            "stockout_rate": 0.0669,
+            "units": 18469.6
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        },
+        "flat_discount_rule": {
+          "incremental_contribution_paise": 140623,
+          "risk_objective_paise": 139385,
+          "p10_paise": 114529,
+          "p50_paise": 146785,
+          "p90_paise": 175244,
+          "downside_probability": 0.025,
+          "seed": 194231,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 68372307,
+            "revenue_paise": 197890856,
+            "spend_paise": 243817,
+            "clearance_units": 1696.5,
+            "stockout_rate": 0.0672,
+            "units": 18516.2
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 289970,
+            "allocation": {
+              "SKU011|Bengaluru": 44,
+              "SKU019|Bengaluru": 40,
+              "SKU005|Bengaluru": 39,
+              "SKU014|Bengaluru": 38,
+              "SKU016|Bengaluru": 36,
+              "SKU015|Bengaluru": 25,
+              "SKU003|Bengaluru": 24,
+              "SKU010|Bengaluru": 24,
+              "SKU006|Bengaluru": 23,
+              "SKU018|Bengaluru": 22
+            },
+            "batch_allocation": {
+              "SKU011-0-A": 44,
+              "SKU019-0-A": 40,
+              "SKU005-0-A": 39,
+              "SKU014-0-A": 38,
+              "SKU016-0-A": 36,
+              "SKU015-0-A": 25,
+              "SKU003-0-A": 24,
+              "SKU010-0-A": 24,
+              "SKU006-0-A": 23,
+              "SKU018-0-A": 22
+            },
+            "clearance_units": 315,
+            "offer_clearance_units": {
+              "fae86582b3bab0": 44,
+              "4a808e4576c3b1": 40,
+              "428234dc650627": 39,
+              "88080096c5d9bb": 38,
+              "346696e95b3cf9": 36,
+              "25a520ff26acf2": 25,
+              "fc31873446f619": 24,
+              "8e6117b38aef3e": 24,
+              "32d2ebfd20abd7": 23,
+              "e90846c9b98dcd": 22
+            },
+            "evidence_status": "derived"
+          }
+        },
+        "conservative_candidate": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 194231,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 68231684,
+            "revenue_paise": 197714233,
+            "spend_paise": 0,
+            "clearance_units": 1649.9,
+            "stockout_rate": 0.0669,
+            "units": 18469.6
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        },
+        "no_promotion": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 194231,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 68231684,
+            "revenue_paise": 197714233,
+            "spend_paise": 0,
+            "clearance_units": 1649.9,
+            "stockout_rate": 0.0669,
+            "units": 18469.6
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        }
+      }
+    },
+    {
+      "case": "lower_response",
+      "report_seed": 580213,
+      "selection_seed": 684942,
+      "origin": "offline_policy",
+      "selected": "flat_discount_rule",
+      "decision": {
+        "packet_id": "38589df609ed1aae9bc9c3bc01a6ac75fde2fd943e4f679d7b15efcdd3350433",
+        "action": "select_portfolio",
+        "proposal_id": "flat_discount_rule",
+        "rationale": "Offline policy selected flat_discount_rule by risk_objective_paise on separate selection scenarios. This is simulated evidence; approval remains required.",
+        "citations": [
+          "selection:f2f120637deeacd4",
+          "assumption_case:f39e54fe261fa03d"
+        ],
+        "questions": []
+      },
+      "proposals": [
+        {
+          "id": "solver_candidate",
+          "eligible": false,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 684942,
+            "scenarios": 40,
+            "clearance_units": 1633.7
+          }
+        },
+        {
+          "id": "flat_discount_rule",
+          "eligible": true,
+          "liability_paise": 289970,
+          "selection": {
+            "incremental_contribution_paise": 130269,
+            "risk_objective_paise": 127069,
+            "p10_paise": 110808,
+            "p50_paise": 147115,
+            "p90_paise": 171642,
+            "downside_probability": 0.05,
+            "seed": 684942,
+            "scenarios": 40,
+            "clearance_units": 1678.7
+          }
+        },
+        {
+          "id": "conservative_candidate",
+          "eligible": false,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 684942,
+            "scenarios": 40,
+            "clearance_units": 1633.7
+          }
+        },
+        {
+          "id": "no_promotion",
+          "eligible": true,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 684942,
+            "scenarios": 40,
+            "clearance_units": 1633.7
+          }
+        }
+      ],
+      "report": {
+        "solver_candidate": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 580213,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 67247123,
+            "revenue_paise": 195596889,
+            "spend_paise": 0,
+            "clearance_units": 1602.2,
+            "stockout_rate": 0.0667,
+            "units": 18227.6
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        },
+        "flat_discount_rule": {
+          "incremental_contribution_paise": 148612,
+          "risk_objective_paise": 148612,
+          "p10_paise": 114777,
+          "p50_paise": 148709,
+          "p90_paise": 188858,
+          "downside_probability": 0.0,
+          "seed": 580213,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 67395734,
+            "revenue_paise": 195781588,
+            "spend_paise": 237966,
+            "clearance_units": 1649.0,
+            "stockout_rate": 0.0668,
+            "units": 18274.4
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 289970,
+            "allocation": {
+              "SKU011|Bengaluru": 44,
+              "SKU019|Bengaluru": 40,
+              "SKU005|Bengaluru": 39,
+              "SKU014|Bengaluru": 38,
+              "SKU016|Bengaluru": 36,
+              "SKU015|Bengaluru": 25,
+              "SKU003|Bengaluru": 24,
+              "SKU010|Bengaluru": 24,
+              "SKU006|Bengaluru": 23,
+              "SKU018|Bengaluru": 22
+            },
+            "batch_allocation": {
+              "SKU011-0-A": 44,
+              "SKU019-0-A": 40,
+              "SKU005-0-A": 39,
+              "SKU014-0-A": 38,
+              "SKU016-0-A": 36,
+              "SKU015-0-A": 25,
+              "SKU003-0-A": 24,
+              "SKU010-0-A": 24,
+              "SKU006-0-A": 23,
+              "SKU018-0-A": 22
+            },
+            "clearance_units": 315,
+            "offer_clearance_units": {
+              "fae86582b3bab0": 44,
+              "4a808e4576c3b1": 40,
+              "428234dc650627": 39,
+              "88080096c5d9bb": 38,
+              "346696e95b3cf9": 36,
+              "25a520ff26acf2": 25,
+              "fc31873446f619": 24,
+              "8e6117b38aef3e": 24,
+              "32d2ebfd20abd7": 23,
+              "e90846c9b98dcd": 22
+            },
+            "evidence_status": "derived"
+          }
+        },
+        "conservative_candidate": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 580213,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 67247123,
+            "revenue_paise": 195596889,
+            "spend_paise": 0,
+            "clearance_units": 1602.2,
+            "stockout_rate": 0.0667,
+            "units": 18227.6
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        },
+        "no_promotion": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 580213,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 67247123,
+            "revenue_paise": 195596889,
+            "spend_paise": 0,
+            "clearance_units": 1602.2,
+            "stockout_rate": 0.0667,
+            "units": 18227.6
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        }
+      }
+    },
+    {
+      "case": "lower_response",
+      "report_seed": 903517,
+      "selection_seed": 8245,
+      "origin": "offline_policy",
+      "selected": "flat_discount_rule",
+      "decision": {
+        "packet_id": "c229985d98266363fd6a6ff53d8990ace78c7a5fe510fbc4b1fd145779a06d25",
+        "action": "select_portfolio",
+        "proposal_id": "flat_discount_rule",
+        "rationale": "Offline policy selected flat_discount_rule by risk_objective_paise on separate selection scenarios. This is simulated evidence; approval remains required.",
+        "citations": [
+          "selection:dc780b1e3da14e20",
+          "assumption_case:f39e54fe261fa03d"
+        ],
+        "questions": []
+      },
+      "proposals": [
+        {
+          "id": "solver_candidate",
+          "eligible": false,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 8245,
+            "scenarios": 40,
+            "clearance_units": 1660.5
+          }
+        },
+        {
+          "id": "flat_discount_rule",
+          "eligible": true,
+          "liability_paise": 289970,
+          "selection": {
+            "incremental_contribution_paise": 146667,
+            "risk_objective_paise": 146667,
+            "p10_paise": 116189,
+            "p50_paise": 152792,
+            "p90_paise": 181673,
+            "downside_probability": 0.0,
+            "seed": 8245,
+            "scenarios": 40,
+            "clearance_units": 1708.1
+          }
+        },
+        {
+          "id": "conservative_candidate",
+          "eligible": false,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 8245,
+            "scenarios": 40,
+            "clearance_units": 1660.5
+          }
+        },
+        {
+          "id": "no_promotion",
+          "eligible": true,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 8245,
+            "scenarios": 40,
+            "clearance_units": 1660.5
+          }
+        }
+      ],
+      "report": {
+        "solver_candidate": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 903517,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 68449306,
+            "revenue_paise": 197771457,
+            "spend_paise": 0,
+            "clearance_units": 1692.3,
+            "stockout_rate": 0.067,
+            "units": 18497.5
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        },
+        "flat_discount_rule": {
+          "incremental_contribution_paise": 141800,
+          "risk_objective_paise": 139231,
+          "p10_paise": 107486,
+          "p50_paise": 155528,
+          "p90_paise": 187162,
+          "downside_probability": 0.025,
+          "seed": 903517,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 68591106,
+            "revenue_paise": 197949557,
+            "spend_paise": 249854,
+            "clearance_units": 1739.7,
+            "stockout_rate": 0.0673,
+            "units": 18544.9
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 289970,
+            "allocation": {
+              "SKU011|Bengaluru": 44,
+              "SKU019|Bengaluru": 40,
+              "SKU005|Bengaluru": 39,
+              "SKU014|Bengaluru": 38,
+              "SKU016|Bengaluru": 36,
+              "SKU015|Bengaluru": 25,
+              "SKU003|Bengaluru": 24,
+              "SKU010|Bengaluru": 24,
+              "SKU006|Bengaluru": 23,
+              "SKU018|Bengaluru": 22
+            },
+            "batch_allocation": {
+              "SKU011-0-A": 44,
+              "SKU019-0-A": 40,
+              "SKU005-0-A": 39,
+              "SKU014-0-A": 38,
+              "SKU016-0-A": 36,
+              "SKU015-0-A": 25,
+              "SKU003-0-A": 24,
+              "SKU010-0-A": 24,
+              "SKU006-0-A": 23,
+              "SKU018-0-A": 22
+            },
+            "clearance_units": 315,
+            "offer_clearance_units": {
+              "fae86582b3bab0": 44,
+              "4a808e4576c3b1": 40,
+              "428234dc650627": 39,
+              "88080096c5d9bb": 38,
+              "346696e95b3cf9": 36,
+              "25a520ff26acf2": 25,
+              "fc31873446f619": 24,
+              "8e6117b38aef3e": 24,
+              "32d2ebfd20abd7": 23,
+              "e90846c9b98dcd": 22
+            },
+            "evidence_status": "derived"
+          }
+        },
+        "conservative_candidate": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 903517,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 68449306,
+            "revenue_paise": 197771457,
+            "spend_paise": 0,
+            "clearance_units": 1692.3,
+            "stockout_rate": 0.067,
+            "units": 18497.5
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        },
+        "no_promotion": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 903517,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 68449306,
+            "revenue_paise": 197771457,
+            "spend_paise": 0,
+            "clearance_units": 1692.3,
+            "stockout_rate": 0.067,
+            "units": 18497.5
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        }
+      }
+    },
+    {
+      "case": "stronger_substitution",
+      "report_seed": 194231,
+      "selection_seed": 298960,
+      "origin": "offline_policy",
+      "selected": "flat_discount_rule",
+      "decision": {
+        "packet_id": "ffb29c81d7eda28675bde2b43a8d2f332a8c9d2cc02791e674eda5756a39dd1d",
+        "action": "select_portfolio",
+        "proposal_id": "flat_discount_rule",
+        "rationale": "Offline policy selected flat_discount_rule by risk_objective_paise on separate selection scenarios. This is simulated evidence; approval remains required.",
+        "citations": [
+          "selection:69b89175bdce415e",
+          "assumption_case:b0e5d6ce98738ff3"
+        ],
+        "questions": []
+      },
+      "proposals": [
+        {
+          "id": "solver_candidate",
+          "eligible": false,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 298960,
+            "scenarios": 40,
+            "clearance_units": 1625.3
+          }
+        },
+        {
+          "id": "flat_discount_rule",
+          "eligible": true,
+          "liability_paise": 499410,
+          "selection": {
+            "incremental_contribution_paise": 683081,
+            "risk_objective_paise": 683081,
+            "p10_paise": 461089,
+            "p50_paise": 743753,
+            "p90_paise": 844910,
+            "downside_probability": 0.0,
+            "seed": 298960,
+            "scenarios": 40,
+            "clearance_units": 1759.1
+          }
+        },
+        {
+          "id": "conservative_candidate",
+          "eligible": false,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 298960,
+            "scenarios": 40,
+            "clearance_units": 1625.3
+          }
+        },
+        {
+          "id": "no_promotion",
+          "eligible": true,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 298960,
+            "scenarios": 40,
+            "clearance_units": 1625.3
+          }
+        }
+      ],
+      "report": {
+        "solver_candidate": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 194231,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 68231684,
+            "revenue_paise": 197714233,
+            "spend_paise": 0,
+            "clearance_units": 1649.9,
+            "stockout_rate": 0.0669,
+            "units": 18469.6
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        },
+        "flat_discount_rule": {
+          "incremental_contribution_paise": 681955,
+          "risk_objective_paise": 680229,
+          "p10_paise": 411077,
+          "p50_paise": 746118,
+          "p90_paise": 859513,
+          "downside_probability": 0.025,
+          "seed": 194231,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 68913639,
+            "revenue_paise": 198459958,
+            "spend_paise": 417230,
+            "clearance_units": 1784.1,
+            "stockout_rate": 0.0687,
+            "units": 18603.8
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 499410,
+            "allocation": {
+              "SKU011|Bengaluru": 79,
+              "SKU015|Bengaluru": 71,
+              "SKU019|Bengaluru": 68,
+              "SKU005|Bengaluru": 67,
+              "SKU003|Bengaluru": 66,
+              "SKU010|Bengaluru": 66,
+              "SKU016|Bengaluru": 63,
+              "SKU014|Bengaluru": 63,
+              "SKU006|Bengaluru": 27
+            },
+            "batch_allocation": {
+              "SKU011-0-A": 79,
+              "SKU015-0-A": 71,
+              "SKU019-0-A": 68,
+              "SKU005-0-A": 67,
+              "SKU003-0-A": 66,
+              "SKU010-0-A": 66,
+              "SKU016-0-A": 63,
+              "SKU014-0-A": 63,
+              "SKU006-0-A": 27
+            },
+            "clearance_units": 570,
+            "offer_clearance_units": {
+              "805107abaa4d62": 79,
+              "e1d3028484614b": 71,
+              "bca9a725a02c1b": 68,
+              "9420f25609e44c": 67,
+              "4a4823df048216": 66,
+              "b51a50c4621644": 66,
+              "922a4c77fb8e12": 63,
+              "6ca23cccc6432a": 63,
+              "32d2ebfd20abd7": 27
+            },
+            "evidence_status": "derived"
+          }
+        },
+        "conservative_candidate": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 194231,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 68231684,
+            "revenue_paise": 197714233,
+            "spend_paise": 0,
+            "clearance_units": 1649.9,
+            "stockout_rate": 0.0669,
+            "units": 18469.6
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        },
+        "no_promotion": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 194231,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 68231684,
+            "revenue_paise": 197714233,
+            "spend_paise": 0,
+            "clearance_units": 1649.9,
+            "stockout_rate": 0.0669,
+            "units": 18469.6
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        }
+      }
+    },
+    {
+      "case": "stronger_substitution",
+      "report_seed": 580213,
+      "selection_seed": 684942,
+      "origin": "offline_policy",
+      "selected": "flat_discount_rule",
+      "decision": {
+        "packet_id": "5564d17ef17bcfd6a21b2b06d6c726a0276c06ddc62ae6def02815ecce2da04e",
+        "action": "select_portfolio",
+        "proposal_id": "flat_discount_rule",
+        "rationale": "Offline policy selected flat_discount_rule by risk_objective_paise on separate selection scenarios. This is simulated evidence; approval remains required.",
+        "citations": [
+          "selection:ebebe9737f67a9ef",
+          "assumption_case:b0e5d6ce98738ff3"
+        ],
+        "questions": []
+      },
+      "proposals": [
+        {
+          "id": "solver_candidate",
+          "eligible": false,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 684942,
+            "scenarios": 40,
+            "clearance_units": 1633.7
+          }
+        },
+        {
+          "id": "flat_discount_rule",
+          "eligible": true,
+          "liability_paise": 499410,
+          "selection": {
+            "incremental_contribution_paise": 664415,
+            "risk_objective_paise": 655938,
+            "p10_paise": 396501,
+            "p50_paise": 769658,
+            "p90_paise": 851265,
+            "downside_probability": 0.075,
+            "seed": 684942,
+            "scenarios": 40,
+            "clearance_units": 1765.3
+          }
+        },
+        {
+          "id": "conservative_candidate",
+          "eligible": false,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 684942,
+            "scenarios": 40,
+            "clearance_units": 1633.7
+          }
+        },
+        {
+          "id": "no_promotion",
+          "eligible": true,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 684942,
+            "scenarios": 40,
+            "clearance_units": 1633.7
+          }
+        }
+      ],
+      "report": {
+        "solver_candidate": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 580213,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 67247123,
+            "revenue_paise": 195596889,
+            "spend_paise": 0,
+            "clearance_units": 1602.2,
+            "stockout_rate": 0.0667,
+            "units": 18227.6
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        },
+        "flat_discount_rule": {
+          "incremental_contribution_paise": 694391,
+          "risk_objective_paise": 694391,
+          "p10_paise": 516038,
+          "p50_paise": 719075,
+          "p90_paise": 856710,
+          "downside_probability": 0.0,
+          "seed": 580213,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 67941514,
+            "revenue_paise": 196355110,
+            "spend_paise": 406287,
+            "clearance_units": 1736.7,
+            "stockout_rate": 0.0683,
+            "units": 18362.2
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 499410,
+            "allocation": {
+              "SKU011|Bengaluru": 79,
+              "SKU015|Bengaluru": 71,
+              "SKU019|Bengaluru": 68,
+              "SKU005|Bengaluru": 67,
+              "SKU003|Bengaluru": 66,
+              "SKU010|Bengaluru": 66,
+              "SKU016|Bengaluru": 63,
+              "SKU014|Bengaluru": 63,
+              "SKU006|Bengaluru": 27
+            },
+            "batch_allocation": {
+              "SKU011-0-A": 79,
+              "SKU015-0-A": 71,
+              "SKU019-0-A": 68,
+              "SKU005-0-A": 67,
+              "SKU003-0-A": 66,
+              "SKU010-0-A": 66,
+              "SKU016-0-A": 63,
+              "SKU014-0-A": 63,
+              "SKU006-0-A": 27
+            },
+            "clearance_units": 570,
+            "offer_clearance_units": {
+              "805107abaa4d62": 79,
+              "e1d3028484614b": 71,
+              "bca9a725a02c1b": 68,
+              "9420f25609e44c": 67,
+              "4a4823df048216": 66,
+              "b51a50c4621644": 66,
+              "922a4c77fb8e12": 63,
+              "6ca23cccc6432a": 63,
+              "32d2ebfd20abd7": 27
+            },
+            "evidence_status": "derived"
+          }
+        },
+        "conservative_candidate": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 580213,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 67247123,
+            "revenue_paise": 195596889,
+            "spend_paise": 0,
+            "clearance_units": 1602.2,
+            "stockout_rate": 0.0667,
+            "units": 18227.6
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        },
+        "no_promotion": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 580213,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 67247123,
+            "revenue_paise": 195596889,
+            "spend_paise": 0,
+            "clearance_units": 1602.2,
+            "stockout_rate": 0.0667,
+            "units": 18227.6
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        }
+      }
+    },
+    {
+      "case": "stronger_substitution",
+      "report_seed": 903517,
+      "selection_seed": 8245,
+      "origin": "offline_policy",
+      "selected": "flat_discount_rule",
+      "decision": {
+        "packet_id": "416f60944fe9e16d1da2b65fe599685adab97a2d73c7fe86c42d2b95a745898f",
+        "action": "select_portfolio",
+        "proposal_id": "flat_discount_rule",
+        "rationale": "Offline policy selected flat_discount_rule by risk_objective_paise on separate selection scenarios. This is simulated evidence; approval remains required.",
+        "citations": [
+          "selection:21375f965ea154bb",
+          "assumption_case:b0e5d6ce98738ff3"
+        ],
+        "questions": []
+      },
+      "proposals": [
+        {
+          "id": "solver_candidate",
+          "eligible": false,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 8245,
+            "scenarios": 40,
+            "clearance_units": 1660.5
+          }
+        },
+        {
+          "id": "flat_discount_rule",
+          "eligible": true,
+          "liability_paise": 499410,
+          "selection": {
+            "incremental_contribution_paise": 698935,
+            "risk_objective_paise": 698935,
+            "p10_paise": 444858,
+            "p50_paise": 754640,
+            "p90_paise": 847021,
+            "downside_probability": 0.0,
+            "seed": 8245,
+            "scenarios": 40,
+            "clearance_units": 1797.2
+          }
+        },
+        {
+          "id": "conservative_candidate",
+          "eligible": false,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 8245,
+            "scenarios": 40,
+            "clearance_units": 1660.5
+          }
+        },
+        {
+          "id": "no_promotion",
+          "eligible": true,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 8245,
+            "scenarios": 40,
+            "clearance_units": 1660.5
+          }
+        }
+      ],
+      "report": {
+        "solver_candidate": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 903517,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 68449306,
+            "revenue_paise": 197771457,
+            "spend_paise": 0,
+            "clearance_units": 1692.3,
+            "stockout_rate": 0.067,
+            "units": 18497.5
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        },
+        "flat_discount_rule": {
+          "incremental_contribution_paise": 665327,
+          "risk_objective_paise": 659258,
+          "p10_paise": 488741,
+          "p50_paise": 734712,
+          "p90_paise": 862557,
+          "downside_probability": 0.025,
+          "seed": 903517,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 69114633,
+            "revenue_paise": 198500355,
+            "spend_paise": 429025,
+            "clearance_units": 1825.6,
+            "stockout_rate": 0.0693,
+            "units": 18630.8
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 499410,
+            "allocation": {
+              "SKU011|Bengaluru": 79,
+              "SKU015|Bengaluru": 71,
+              "SKU019|Bengaluru": 68,
+              "SKU005|Bengaluru": 67,
+              "SKU003|Bengaluru": 66,
+              "SKU010|Bengaluru": 66,
+              "SKU016|Bengaluru": 63,
+              "SKU014|Bengaluru": 63,
+              "SKU006|Bengaluru": 27
+            },
+            "batch_allocation": {
+              "SKU011-0-A": 79,
+              "SKU015-0-A": 71,
+              "SKU019-0-A": 68,
+              "SKU005-0-A": 67,
+              "SKU003-0-A": 66,
+              "SKU010-0-A": 66,
+              "SKU016-0-A": 63,
+              "SKU014-0-A": 63,
+              "SKU006-0-A": 27
+            },
+            "clearance_units": 570,
+            "offer_clearance_units": {
+              "805107abaa4d62": 79,
+              "e1d3028484614b": 71,
+              "bca9a725a02c1b": 68,
+              "9420f25609e44c": 67,
+              "4a4823df048216": 66,
+              "b51a50c4621644": 66,
+              "922a4c77fb8e12": 63,
+              "6ca23cccc6432a": 63,
+              "32d2ebfd20abd7": 27
+            },
+            "evidence_status": "derived"
+          }
+        },
+        "conservative_candidate": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 903517,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 68449306,
+            "revenue_paise": 197771457,
+            "spend_paise": 0,
+            "clearance_units": 1692.3,
+            "stockout_rate": 0.067,
+            "units": 18497.5
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        },
+        "no_promotion": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 903517,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 68449306,
+            "revenue_paise": 197771457,
+            "spend_paise": 0,
+            "clearance_units": 1692.3,
+            "stockout_rate": 0.067,
+            "units": 18497.5
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        }
+      }
+    },
+    {
+      "case": "lower_stock",
+      "report_seed": 194231,
+      "selection_seed": 298960,
+      "origin": "offline_policy",
+      "selected": "no_promotion",
+      "decision": {
+        "packet_id": "4888dc64801f2757fca0ca7b17bcbc6c5445b9c8fdb7889a45b1cefe9dbb8b40",
+        "action": "select_portfolio",
+        "proposal_id": "no_promotion",
+        "rationale": "Offline policy selected no_promotion by risk_objective_paise on separate selection scenarios. This is simulated evidence; approval remains required.",
+        "citations": [
+          "selection:7c5fa3d5be72744a",
+          "assumption_case:d70e46d58fb84690"
+        ],
+        "questions": []
+      },
+      "proposals": [
+        {
+          "id": "solver_candidate",
+          "eligible": false,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 298960,
+            "scenarios": 40,
+            "clearance_units": 1157.0
+          }
+        },
+        {
+          "id": "flat_discount_rule",
+          "eligible": false,
+          "liability_paise": 499250,
+          "selection": {
+            "incremental_contribution_paise": -306271,
+            "risk_objective_paise": -459406,
+            "p10_paise": -319775,
+            "p50_paise": -305045,
+            "p90_paise": -293156,
+            "downside_probability": 1.0,
+            "seed": 298960,
+            "scenarios": 40,
+            "clearance_units": 1157.0
+          }
+        },
+        {
+          "id": "conservative_candidate",
+          "eligible": false,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 298960,
+            "scenarios": 40,
+            "clearance_units": 1157.0
+          }
+        },
+        {
+          "id": "no_promotion",
+          "eligible": true,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 298960,
+            "scenarios": 40,
+            "clearance_units": 1157.0
+          }
+        }
+      ],
+      "report": {
+        "solver_candidate": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 194231,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 67497963,
+            "revenue_paise": 188454140,
+            "spend_paise": 0,
+            "clearance_units": 1156.9,
+            "stockout_rate": 0.1272,
+            "units": 17391.9
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        },
+        "flat_discount_rule": {
+          "incremental_contribution_paise": -310342,
+          "risk_objective_paise": -465513,
+          "p10_paise": -330027,
+          "p50_paise": -311675,
+          "p90_paise": -290702,
+          "downside_probability": 1.0,
+          "seed": 194231,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 67187621,
+            "revenue_paise": 188161817,
+            "spend_paise": 310807,
+            "clearance_units": 1157.0,
+            "stockout_rate": 0.1313,
+            "units": 17392.0
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 499250,
+            "allocation": {
+              "SKU015|Bengaluru": 65,
+              "SKU003|Bengaluru": 65,
+              "SKU019|Bengaluru": 65,
+              "SKU011|Bengaluru": 64,
+              "SKU010|Bengaluru": 62,
+              "SKU014|Bengaluru": 62,
+              "SKU005|Bengaluru": 59,
+              "SKU020|Bengaluru": 56,
+              "SKU016|Bengaluru": 56
+            },
+            "batch_allocation": {
+              "SKU015-0-A": 65,
+              "SKU003-0-A": 65,
+              "SKU019-0-A": 65,
+              "SKU011-0-A": 64,
+              "SKU010-0-A": 62,
+              "SKU014-0-A": 62,
+              "SKU005-0-A": 59,
+              "SKU020-0-A": 56,
+              "SKU016-0-A": 56
+            },
+            "clearance_units": 554,
+            "offer_clearance_units": {
+              "e1d3028484614b": 65,
+              "4a4823df048216": 65,
+              "bca9a725a02c1b": 65,
+              "805107abaa4d62": 64,
+              "b51a50c4621644": 62,
+              "6ca23cccc6432a": 62,
+              "9420f25609e44c": 59,
+              "8c99b7814fa80b": 56,
+              "922a4c77fb8e12": 56
+            },
+            "evidence_status": "derived"
+          }
+        },
+        "conservative_candidate": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 194231,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 67497963,
+            "revenue_paise": 188454140,
+            "spend_paise": 0,
+            "clearance_units": 1156.9,
+            "stockout_rate": 0.1272,
+            "units": 17391.9
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        },
+        "no_promotion": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 194231,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 67497963,
+            "revenue_paise": 188454140,
+            "spend_paise": 0,
+            "clearance_units": 1156.9,
+            "stockout_rate": 0.1272,
+            "units": 17391.9
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        }
+      }
+    },
+    {
+      "case": "lower_stock",
+      "report_seed": 580213,
+      "selection_seed": 684942,
+      "origin": "offline_policy",
+      "selected": "no_promotion",
+      "decision": {
+        "packet_id": "9cc406e6f6c2291d42744bc8f85a5fe0ec81dbb9438f8b498f5caa5b0740c125",
+        "action": "select_portfolio",
+        "proposal_id": "no_promotion",
+        "rationale": "Offline policy selected no_promotion by risk_objective_paise on separate selection scenarios. This is simulated evidence; approval remains required.",
+        "citations": [
+          "selection:7a4d3b5bada77e6c",
+          "assumption_case:d70e46d58fb84690"
+        ],
+        "questions": []
+      },
+      "proposals": [
+        {
+          "id": "solver_candidate",
+          "eligible": false,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 684942,
+            "scenarios": 40,
+            "clearance_units": 1157.0
+          }
+        },
+        {
+          "id": "flat_discount_rule",
+          "eligible": false,
+          "liability_paise": 499250,
+          "selection": {
+            "incremental_contribution_paise": -303992,
+            "risk_objective_paise": -455988,
+            "p10_paise": -321953,
+            "p50_paise": -302485,
+            "p90_paise": -285805,
+            "downside_probability": 1.0,
+            "seed": 684942,
+            "scenarios": 40,
+            "clearance_units": 1157.0
+          }
+        },
+        {
+          "id": "conservative_candidate",
+          "eligible": false,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 684942,
+            "scenarios": 40,
+            "clearance_units": 1157.0
+          }
+        },
+        {
+          "id": "no_promotion",
+          "eligible": true,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 684942,
+            "scenarios": 40,
+            "clearance_units": 1157.0
+          }
+        }
+      ],
+      "report": {
+        "solver_candidate": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 580213,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 67134514,
+            "revenue_paise": 187410482,
+            "spend_paise": 0,
+            "clearance_units": 1156.9,
+            "stockout_rate": 0.1264,
+            "units": 17285.3
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        },
+        "flat_discount_rule": {
+          "incremental_contribution_paise": -302628,
+          "risk_objective_paise": -453942,
+          "p10_paise": -320272,
+          "p50_paise": -303853,
+          "p90_paise": -287368,
+          "downside_probability": 1.0,
+          "seed": 580213,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 66831886,
+            "revenue_paise": 187125903,
+            "spend_paise": 303782,
+            "clearance_units": 1157.0,
+            "stockout_rate": 0.1298,
+            "units": 17285.4
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 499250,
+            "allocation": {
+              "SKU015|Bengaluru": 65,
+              "SKU003|Bengaluru": 65,
+              "SKU019|Bengaluru": 65,
+              "SKU011|Bengaluru": 64,
+              "SKU010|Bengaluru": 62,
+              "SKU014|Bengaluru": 62,
+              "SKU005|Bengaluru": 59,
+              "SKU020|Bengaluru": 56,
+              "SKU016|Bengaluru": 56
+            },
+            "batch_allocation": {
+              "SKU015-0-A": 65,
+              "SKU003-0-A": 65,
+              "SKU019-0-A": 65,
+              "SKU011-0-A": 64,
+              "SKU010-0-A": 62,
+              "SKU014-0-A": 62,
+              "SKU005-0-A": 59,
+              "SKU020-0-A": 56,
+              "SKU016-0-A": 56
+            },
+            "clearance_units": 554,
+            "offer_clearance_units": {
+              "e1d3028484614b": 65,
+              "4a4823df048216": 65,
+              "bca9a725a02c1b": 65,
+              "805107abaa4d62": 64,
+              "b51a50c4621644": 62,
+              "6ca23cccc6432a": 62,
+              "9420f25609e44c": 59,
+              "8c99b7814fa80b": 56,
+              "922a4c77fb8e12": 56
+            },
+            "evidence_status": "derived"
+          }
+        },
+        "conservative_candidate": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 580213,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 67134514,
+            "revenue_paise": 187410482,
+            "spend_paise": 0,
+            "clearance_units": 1156.9,
+            "stockout_rate": 0.1264,
+            "units": 17285.3
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        },
+        "no_promotion": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 580213,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 67134514,
+            "revenue_paise": 187410482,
+            "spend_paise": 0,
+            "clearance_units": 1156.9,
+            "stockout_rate": 0.1264,
+            "units": 17285.3
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        }
+      }
+    },
+    {
+      "case": "lower_stock",
+      "report_seed": 903517,
+      "selection_seed": 8245,
+      "origin": "offline_policy",
+      "selected": "no_promotion",
+      "decision": {
+        "packet_id": "23e557b906086eb9516a6e692e48e722b07be32e6c060668d956a35fd4a68da9",
+        "action": "select_portfolio",
+        "proposal_id": "no_promotion",
+        "rationale": "Offline policy selected no_promotion by risk_objective_paise on separate selection scenarios. This is simulated evidence; approval remains required.",
+        "citations": [
+          "selection:def3febbbdfec87c",
+          "assumption_case:d70e46d58fb84690"
+        ],
+        "questions": []
+      },
+      "proposals": [
+        {
+          "id": "solver_candidate",
+          "eligible": false,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 8245,
+            "scenarios": 40,
+            "clearance_units": 1156.9
+          }
+        },
+        {
+          "id": "flat_discount_rule",
+          "eligible": false,
+          "liability_paise": 499250,
+          "selection": {
+            "incremental_contribution_paise": -310609,
+            "risk_objective_paise": -465913,
+            "p10_paise": -327997,
+            "p50_paise": -314151,
+            "p90_paise": -286669,
+            "downside_probability": 1.0,
+            "seed": 8245,
+            "scenarios": 40,
+            "clearance_units": 1156.9
+          }
+        },
+        {
+          "id": "conservative_candidate",
+          "eligible": false,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 8245,
+            "scenarios": 40,
+            "clearance_units": 1156.9
+          }
+        },
+        {
+          "id": "no_promotion",
+          "eligible": true,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 8245,
+            "scenarios": 40,
+            "clearance_units": 1156.9
+          }
+        }
+      ],
+      "report": {
+        "solver_candidate": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 903517,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 67177231,
+            "revenue_paise": 187587345,
+            "spend_paise": 0,
+            "clearance_units": 1157.0,
+            "stockout_rate": 0.132,
+            "units": 17309.4
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        },
+        "flat_discount_rule": {
+          "incremental_contribution_paise": -312215,
+          "risk_objective_paise": -468323,
+          "p10_paise": -331404,
+          "p50_paise": -311960,
+          "p90_paise": -295465,
+          "downside_probability": 1.0,
+          "seed": 903517,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 66865016,
+            "revenue_paise": 187293130,
+            "spend_paise": 312215,
+            "clearance_units": 1157.0,
+            "stockout_rate": 0.1356,
+            "units": 17309.4
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 499250,
+            "allocation": {
+              "SKU015|Bengaluru": 65,
+              "SKU003|Bengaluru": 65,
+              "SKU019|Bengaluru": 65,
+              "SKU011|Bengaluru": 64,
+              "SKU010|Bengaluru": 62,
+              "SKU014|Bengaluru": 62,
+              "SKU005|Bengaluru": 59,
+              "SKU020|Bengaluru": 56,
+              "SKU016|Bengaluru": 56
+            },
+            "batch_allocation": {
+              "SKU015-0-A": 65,
+              "SKU003-0-A": 65,
+              "SKU019-0-A": 65,
+              "SKU011-0-A": 64,
+              "SKU010-0-A": 62,
+              "SKU014-0-A": 62,
+              "SKU005-0-A": 59,
+              "SKU020-0-A": 56,
+              "SKU016-0-A": 56
+            },
+            "clearance_units": 554,
+            "offer_clearance_units": {
+              "e1d3028484614b": 65,
+              "4a4823df048216": 65,
+              "bca9a725a02c1b": 65,
+              "805107abaa4d62": 64,
+              "b51a50c4621644": 62,
+              "6ca23cccc6432a": 62,
+              "9420f25609e44c": 59,
+              "8c99b7814fa80b": 56,
+              "922a4c77fb8e12": 56
+            },
+            "evidence_status": "derived"
+          }
+        },
+        "conservative_candidate": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 903517,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 67177231,
+            "revenue_paise": 187587345,
+            "spend_paise": 0,
+            "clearance_units": 1157.0,
+            "stockout_rate": 0.132,
+            "units": 17309.4
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        },
+        "no_promotion": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 903517,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 67177231,
+            "revenue_paise": 187587345,
+            "spend_paise": 0,
+            "clearance_units": 1157.0,
+            "stockout_rate": 0.132,
+            "units": 17309.4
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        }
+      }
+    },
+    {
+      "case": "zero_budget",
+      "report_seed": 194231,
+      "selection_seed": 298960,
+      "origin": "offline_policy",
+      "selected": "flat_discount_rule",
+      "decision": {
+        "packet_id": "dd332d771bf1e8b6b9f83e8fb7fd3c0e99fb625a746dd0786de9d258f20bad38",
+        "action": "select_portfolio",
+        "proposal_id": "flat_discount_rule",
+        "rationale": "Offline policy selected flat_discount_rule by risk_objective_paise on separate selection scenarios. This is simulated evidence; approval remains required.",
+        "citations": [
+          "selection:ac16edec840c7b8a",
+          "assumption_case:a0bf3036e39726ed"
+        ],
+        "questions": []
+      },
+      "proposals": [
+        {
+          "id": "solver_candidate",
+          "eligible": false,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 298960,
+            "scenarios": 40,
+            "clearance_units": 1625.3
+          }
+        },
+        {
+          "id": "flat_discount_rule",
+          "eligible": true,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 298960,
+            "scenarios": 40,
+            "clearance_units": 1625.3
+          }
+        },
+        {
+          "id": "conservative_candidate",
+          "eligible": true,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 298960,
+            "scenarios": 40,
+            "clearance_units": 1625.3
+          }
+        },
+        {
+          "id": "no_promotion",
+          "eligible": true,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 298960,
+            "scenarios": 40,
+            "clearance_units": 1625.3
+          }
+        }
+      ],
+      "report": {
+        "solver_candidate": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 194231,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 68231684,
+            "revenue_paise": 197714233,
+            "spend_paise": 0,
+            "clearance_units": 1649.9,
+            "stockout_rate": 0.0669,
+            "units": 18469.6
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        },
+        "flat_discount_rule": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 194231,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 68231684,
+            "revenue_paise": 197714233,
+            "spend_paise": 0,
+            "clearance_units": 1649.9,
+            "stockout_rate": 0.0669,
+            "units": 18469.6
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        },
+        "conservative_candidate": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 194231,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 68231684,
+            "revenue_paise": 197714233,
+            "spend_paise": 0,
+            "clearance_units": 1649.9,
+            "stockout_rate": 0.0669,
+            "units": 18469.6
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        },
+        "no_promotion": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 194231,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 68231684,
+            "revenue_paise": 197714233,
+            "spend_paise": 0,
+            "clearance_units": 1649.9,
+            "stockout_rate": 0.0669,
+            "units": 18469.6
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        }
+      }
+    },
+    {
+      "case": "zero_budget",
+      "report_seed": 580213,
+      "selection_seed": 684942,
+      "origin": "offline_policy",
+      "selected": "flat_discount_rule",
+      "decision": {
+        "packet_id": "430de802ad170bf8ffd30f6606b2cc3068bb29c5c9a1d03b5124f1c58e25b1ec",
+        "action": "select_portfolio",
+        "proposal_id": "flat_discount_rule",
+        "rationale": "Offline policy selected flat_discount_rule by risk_objective_paise on separate selection scenarios. This is simulated evidence; approval remains required.",
+        "citations": [
+          "selection:a5da18763bfae3ea",
+          "assumption_case:a0bf3036e39726ed"
+        ],
+        "questions": []
+      },
+      "proposals": [
+        {
+          "id": "solver_candidate",
+          "eligible": false,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 684942,
+            "scenarios": 40,
+            "clearance_units": 1633.7
+          }
+        },
+        {
+          "id": "flat_discount_rule",
+          "eligible": true,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 684942,
+            "scenarios": 40,
+            "clearance_units": 1633.7
+          }
+        },
+        {
+          "id": "conservative_candidate",
+          "eligible": true,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 684942,
+            "scenarios": 40,
+            "clearance_units": 1633.7
+          }
+        },
+        {
+          "id": "no_promotion",
+          "eligible": true,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 684942,
+            "scenarios": 40,
+            "clearance_units": 1633.7
+          }
+        }
+      ],
+      "report": {
+        "solver_candidate": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 580213,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 67247123,
+            "revenue_paise": 195596889,
+            "spend_paise": 0,
+            "clearance_units": 1602.2,
+            "stockout_rate": 0.0667,
+            "units": 18227.6
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        },
+        "flat_discount_rule": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 580213,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 67247123,
+            "revenue_paise": 195596889,
+            "spend_paise": 0,
+            "clearance_units": 1602.2,
+            "stockout_rate": 0.0667,
+            "units": 18227.6
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        },
+        "conservative_candidate": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 580213,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 67247123,
+            "revenue_paise": 195596889,
+            "spend_paise": 0,
+            "clearance_units": 1602.2,
+            "stockout_rate": 0.0667,
+            "units": 18227.6
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        },
+        "no_promotion": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 580213,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 67247123,
+            "revenue_paise": 195596889,
+            "spend_paise": 0,
+            "clearance_units": 1602.2,
+            "stockout_rate": 0.0667,
+            "units": 18227.6
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        }
+      }
+    },
+    {
+      "case": "zero_budget",
+      "report_seed": 903517,
+      "selection_seed": 8245,
+      "origin": "offline_policy",
+      "selected": "flat_discount_rule",
+      "decision": {
+        "packet_id": "56324d756e1a387b9ea2d99d457d0529490333e7a1bbab09d6b39cc2b6c3572f",
+        "action": "select_portfolio",
+        "proposal_id": "flat_discount_rule",
+        "rationale": "Offline policy selected flat_discount_rule by risk_objective_paise on separate selection scenarios. This is simulated evidence; approval remains required.",
+        "citations": [
+          "selection:738d1ef1e8882dd5",
+          "assumption_case:a0bf3036e39726ed"
+        ],
+        "questions": []
+      },
+      "proposals": [
+        {
+          "id": "solver_candidate",
+          "eligible": false,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 8245,
+            "scenarios": 40,
+            "clearance_units": 1660.5
+          }
+        },
+        {
+          "id": "flat_discount_rule",
+          "eligible": true,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 8245,
+            "scenarios": 40,
+            "clearance_units": 1660.5
+          }
+        },
+        {
+          "id": "conservative_candidate",
+          "eligible": true,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 8245,
+            "scenarios": 40,
+            "clearance_units": 1660.5
+          }
+        },
+        {
+          "id": "no_promotion",
+          "eligible": true,
+          "liability_paise": 0,
+          "selection": {
+            "incremental_contribution_paise": 0,
+            "risk_objective_paise": 0,
+            "p10_paise": 0,
+            "p50_paise": 0,
+            "p90_paise": 0,
+            "downside_probability": 0.0,
+            "seed": 8245,
+            "scenarios": 40,
+            "clearance_units": 1660.5
+          }
+        }
+      ],
+      "report": {
+        "solver_candidate": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 903517,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 68449306,
+            "revenue_paise": 197771457,
+            "spend_paise": 0,
+            "clearance_units": 1692.3,
+            "stockout_rate": 0.067,
+            "units": 18497.5
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        },
+        "flat_discount_rule": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 903517,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 68449306,
+            "revenue_paise": 197771457,
+            "spend_paise": 0,
+            "clearance_units": 1692.3,
+            "stockout_rate": 0.067,
+            "units": 18497.5
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        },
+        "conservative_candidate": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 903517,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 68449306,
+            "revenue_paise": 197771457,
+            "spend_paise": 0,
+            "clearance_units": 1692.3,
+            "stockout_rate": 0.067,
+            "units": 18497.5
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        },
+        "no_promotion": {
+          "incremental_contribution_paise": 0,
+          "risk_objective_paise": 0,
+          "p10_paise": 0,
+          "p50_paise": 0,
+          "p90_paise": 0,
+          "downside_probability": 0.0,
+          "seed": 903517,
+          "scenarios": 40,
+          "optimized": {
+            "contribution_paise": 68449306,
+            "revenue_paise": 197771457,
+            "spend_paise": 0,
+            "clearance_units": 1692.3,
+            "stockout_rate": 0.067,
+            "units": 18497.5
+          },
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "checks": [
+              "item margin",
+              "discount ceiling",
+              "stock and expiry",
+              "maximum liability",
+              "overlap",
+              "channel and city",
+              "freshness"
+            ],
+            "liability_paise": 0,
+            "allocation": {},
+            "batch_allocation": {},
+            "clearance_units": 0,
+            "offer_clearance_units": {},
+            "evidence_status": "derived"
+          }
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Synthetic model-based outcomes, not causal retailer ROI.",
+    "Assumption changes are preregistered stresses, not new observed data.",
+    "No threshold demands the planner or an AI beat a simpler rule.",
+    "Forecast fit is reused only because history and product prices are identical across stress cases."
+  ]
+}

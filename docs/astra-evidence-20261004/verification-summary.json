@@ -1,0 +1,988 @@
+{
+  "created_at_utc": "2026-10-04T21:32:07.819857+00:00",
+  "project": "PromoPilot",
+  "canonical_source": "C:\\Users\\AnuragManik7\\Documents\\Codex\\2026-10-01\\as-a-coder-with-20-years\\outputs\\promopilot",
+  "git": {
+    "repository": null,
+    "branch": null,
+    "commit": null
+  },
+  "current_source_sha256": "0020e00cd96fc8579ca0defb28d2d8dd9126193fdc8ce61740bae5eb8a3cb6d4",
+  "source_files": {
+    "backend/__init__.py": "434fdfdad1da83ac97ca1e7b4965f75f4edf9cf1b17f4fbf370e849442978ddc",
+    "backend/app/__init__.py": "206c0c20665706f1ac0b45b5826cfddf0f53b34cb1e0adb87448af171ef37792",
+    "backend/app/config.py": "aad29bf0512e60b6bf0383a9dfa4293ae1c8f267fd48abcef63bd5adcacc3584",
+    "backend/app/connectors.py": "5c45425e5e27ddea18b9eb9ff7743955a23e8257fa37d7361acc89a31cf94f14",
+    "backend/app/contracts.py": "907db49a59d16de70d9ed39a85afe724b3dd0380f1f9bc4bd6df9632caee2867",
+    "backend/app/domain.py": "37d1866b92afac88bded41a36813ebdcf13002fcaed90059f8aae27dcb296c3a",
+    "backend/app/economics.py": "862d2f3ecd7993c941c02497680fed6d4507a91ab7f5e6d31ae2ac62a28bfcb2",
+    "backend/app/execution.py": "aef233d695ebde46ca4b300214d2cc43347526ecf839c7b64833946ea7c4a672",
+    "backend/app/forecast.py": "30712058eb52734ff4dc0f762fa223b49d6f13b37481766cf01fd2b94cf92987",
+    "backend/app/ingestion.py": "bccf081b189073e934fda18375e3134867c48fc15f6b50fc3f0126a587875197",
+    "backend/app/main.py": "17f1655e0e670bc3a6feebe68bb4f494e5973004c8898ed8820e1f5f4f6848d3",
+    "backend/app/orchestrator.py": "a98ac74e3ece68fca7efe695e475ddad6330c0b8baa4ad7c5facb3603a1a5c40",
+    "backend/app/persistence.py": "53cbe0a4839ff6492d40443427f3f2e75027a422fd35119153d1b68a2b74e09d",
+    "backend/app/planner.py": "11cea51164811b671526a97c37c7a6bd0f08f8179eb704803b72dd56249256d8",
+    "backend/app/providers.py": "2cbc21ef6534148629e7fa6b39c43545f4899b33902069c877c4b8be80224aba",
+    "backend/app/rate_limits.py": "ccbb44e1b47951d0053b120badb638e99bd9f90417d5fddc243ab76a814de6ea",
+    "backend/app/seed.py": "56a6e598d2fbf9f7972cc38818335e535732e183d7a520217588c62ccce30d99",
+    "backend/app/simulation.py": "1cc8428a107f82c8e5f888ffe48b93838c2158f0d5f11cf88e30dc718d91fd8a",
+    "frontend/src/api.ts": "4a4d34882267e7b6f2f4ab2e1b538ccf59531a77834457a2efbd71baeb10c3e0",
+    "frontend/src/App.tsx": "1765ef1cfdff363ff406402ac9b06e551bd27d3f97d7de3120e098ff61dee890",
+    "frontend/src/AuthorityEditor.tsx": "db90842d723691ebd4eccea38898976e3f778354d837c28547819c130fa358c6",
+    "frontend/src/contracts.ts": "02f37affa8367e8b1bd89ef6b274d0fd2b205bf58a23fbcb8dd73a58e00f8ea3",
+    "frontend/src/main.tsx": "660c19ace773014e29044cde6c524541e39091729fff206704543277e8036d4a",
+    "frontend/src/style.css": "744508aaf3ab731d315eaddbedd538bd1137c91fcff54becb80bfa9328ecf6f7",
+    "frontend/src/ui-state.ts": "8eabccb2295f06c0b05878e33ff8d8ab5eca005fb0d30de6a395cd34704fe080"
+  },
+  "source_hash_definition": "SHA256 of compact sorted JSON mapping backend/**/*.py and frontend/src/**/* to SHA256",
+  "archived_run01_packet_source_sha256": "9fd632887272ab17f7086a106fc4c24fa0eed51290b05ae90645913c0c333df2",
+  "canonical_preservation": {
+    "checked": 426,
+    "mismatches": []
+  },
+  "official_pdf_sha256": "51c4e3c7cfece1e7f52eed3a1f81918ffc95625a59e77aa31ca37fc4b23a3483",
+  "fixture_manifest_sha256": "ce8b59b990305cfb5842abdf5187b9dbfaaef6a87551f1d1526978a3de871d03",
+  "pytest_reports": [
+    {
+      "file": "focused-astra.xml",
+      "completed_report": true,
+      "tests": 25,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 65.842,
+      "passed": 24,
+      "nonpasses": [
+        {
+          "test": "tests.test_astra_integration::test_manual_simulation_uses_shared_gate_and_releases_on_error",
+          "kind": "failure",
+          "message": "assert 500 == 503\n +  where 500 = <Response [500 Internal Server Error]>.status_code",
+          "details": "tmp_path = WindowsPath('C:/Users/AnuragManik7/Documents/Codex/2026-10-01/task-4/astra-20261005T014009/checks/run-20261004T201325947268/scratch/10be1b59da9346b495d88679f4bdcf26')\nmonkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000002223C887DA0>\n\n    def test_manual_simulation_uses_shared_gate_and_releases_on_error(tmp_path,monkeypatch):\n        import backend.app.simulation as simulation\n        app=create_app('sqlite:///'+str(tmp_path/'gate.sqlite3'))\n        client=TestClient(app,raise_server_exceptions=False)\n        session=client.get('/api/v1/session').json();tenant=session['tenant']\n        client.headers['x-csrf-token']=session['csrf']\n        store=app.state.store\n        store.put_new(tenant,'run','r',{'snapshot':{},'results':{'forecast_demand':{}}})\n        store.put_new(tenant,'plan','p',{'id':'p','run_id':'r','revision':1,'brief':{'seed':42},'relationships':[],'offers':[],'simulation':{}})\n        calls=[]\n        def controlled(*args):\n            calls.append(args[-1]);return {'optimized':{'spend_paise':0}}\n        monkeypatch.setattr(simulation,'simulate',controlled)\n        assert COMPUTE_SLOTS.acquire(False);assert COMPUTE_SLOTS.acquire(False)\n        try:\n            response=client.post('/api/v1/plans/p/simulate',json={'scenarios':1000})\n>           assert response.status_code==503\nE           assert 500 == 503\nE            +  where 500 = <Response [500 Internal Server Error]>.status_code\n\ntests\\test_astra_integration.py:50: AssertionError"
+        }
+      ]
+    },
+    {
+      "file": "full-astra-01.xml",
+      "completed_report": true,
+      "tests": 696,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 674.982,
+      "passed": 695,
+      "nonpasses": [
+        {
+          "test": "tests.test_audit_regressions::test_xlsx_zero_safety_and_fractional_units_are_validated_exactly",
+          "kind": "failure",
+          "message": "FileNotFoundError: [Errno 2] No usable temporary directory found in ['C:\\\\Users\\\\ANURAG~1\\\\AppData\\\\Local\\\\Temp', 'C:\\\\Users\\\\ANURAG~1\\\\AppData\\\\Local\\\\Temp', 'C:\\\\Users\\\\AnuragManik7\\\\AppData\\\\Local\\\\Temp', 'C:\\\\windows\\\\Temp', 'c:\\\\temp', 'c:\\\\tmp', '\\\\temp', '\\\\tmp', 'C:\\\\Users\\\\AnuragManik7\\\\Documents\\\\Codex\\\\2026-10-01\\\\task-4\\\\astra-20261005T014009\\\\promopilot']",
+          "details": "def test_xlsx_zero_safety_and_fractional_units_are_validated_exactly():\n        from openpyxl import Workbook\n        from io import BytesIO\n        db=seeded()\n        def table(quantity):\n            book=Workbook();sheet=book.active;sheet.append(['sku','city','quantity','safety_stock','expiry','observed_at']);sheet.append(['SKU001','Delhi',quantity,0,'2030-01-01',now()]);out=BytesIO();book.save(out);return out.getvalue()\n>       assert import_table(db,'t','zero.xlsx',table(50),'inventory')['status']=='applied'\n                                               ^^^^^^^^^\n\ntests\\test_audit_regressions.py:177: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\ntests\\test_audit_regressions.py:176: in table\n    book=Workbook();sheet=book.active;sheet.append(['sku','city','quantity','safety_stock','expiry','observed_at']);sheet.append(['SKU001','Delhi',quantity,0,'2030-01-01',now()]);out=BytesIO();book.save(out);return out.getvalue()\n                                                                                                                                                                                                 ^^^^^^^^^^^^^^\n..\\..\\..\\as-a-coder-with-20-years\\work\\promopilot-env\\Lib\\site-packages\\openpyxl\\workbook\\workbook.py:386: in save\n    save_workbook(self, filename)\n..\\..\\..\\as-a-coder-with-20-years\\work\\promopilot-env\\Lib\\site-packages\\openpyxl\\writer\\excel.py:294: in save_workbook\n    writer.save()\n..\\..\\..\\as-a-coder-with-20-years\\work\\promopilot-env\\Lib\\site-packages\\openpyxl\\writer\\excel.py:275: in save\n    self.write_data()\n..\\..\\..\\as-a-coder-with-20-years\\work\\promopilot-env\\Lib\\site-packages\\openpyxl\\writer\\excel.py:77: in write_data\n    self._write_worksheets()\n..\\..\\..\\as-a-coder-with-20-years\\work\\promopilot-env\\Lib\\site-packages\\openpyxl\\writer\\excel.py:215: in _write_worksheets\n    self.write_worksheet(ws)\n..\\..\\..\\as-a-coder-with-20-years\\work\\promopilot-env\\Lib\\site-packages\\openpyxl\\writer\\excel.py:199: in write_worksheet\n    writer = WorksheetWriter(ws)\n             ^^^^^^^^^^^^^^^^^^^\n..\\..\\..\\as-a-coder-with-20-years\\work\\promopilot-env\\Lib\\site-packages\\openpyxl\\worksheet\\_writer.py:52: in __init__\n    out = create_temporary_file()\n          ^^^^^^^^^^^^^^^^^^^^^^^\n..\\..\\..\\as-a-coder-with-20-years\\work\\promopilot-env\\Lib\\site-packages\\openpyxl\\worksheet\\_writer.py:36: in create_temporary_file\n    fobj = NamedTemporaryFile(mode='w+', suffix=suffix,\n..\\..\\..\\..\\..\\..\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\tempfile.py:564: in NamedTemporaryFile\n    prefix, suffix, dir, output_type = _sanitize_params(prefix, suffix, dir)\n                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n..\\..\\..\\..\\..\\..\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\tempfile.py:126: in _sanitize_params\n    dir = gettempdir()\n          ^^^^^^^^^^^^\n..\\..\\..\\..\\..\\..\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\tempfile.py:315: in gettempdir\n    return _os.fsdecode(_gettempdir())\n                        ^^^^^^^^^^^^^\n..\\..\\..\\..\\..\\..\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\tempfile.py:308: in _gettempdir\n    tempdir = _get_default_tempdir()\n              ^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\n    def _get_default_tempdir():\n        \"\"\"Calculate the default directory to use for temporary files.\n        This routine should be called exactly once.\n    \n        We determine whether or not a candidate temp dir is usable by\n        trying to create and write to a file in that directory.  If this\n        is successful, the test file is deleted.  To prevent denial of\n        service, the name of the test file must be randomized.\"\"\"\n    \n        namer = _RandomNameSequence()\n        dirlist = _candidate_tempdir_list()\n    \n        for dir in dirlist:\n            if dir != _os.curdir:\n                dir = _os.path.abspath(dir)\n            # Try only a few names per directory.\n            for seq in range(100):\n                name = next(namer)\n                filename = _os.path.join(dir, name)\n                try:\n                    fd = _os.open(filename, _bin_openflags, 0o600)\n                    try:\n                        try:\n                            _os.write(fd, b'blat')\n                        finally:\n                            _os.close(fd)\n                    finally:\n                        _os.unlink(filename)\n                    return dir\n                except FileExistsError:\n                    pass\n                except PermissionError:\n                    # This exception is thrown when a directory with the chosen name\n                    # already exists on windows.\n                    if (_os.name == 'nt' and _os.path.isdir(dir) and\n                        _os.access(dir, _os.W_OK)):\n                        continue\n                    break   # no point trying more names in this directory\n                except OSError:\n                    break   # no point trying more names in this directory\n>       raise FileNotFoundError(_errno.ENOENT,\n                                \"No usable temporary directory found in %s\" %\n                                dirlist)\nE       FileNotFoundError: [Errno 2] No usable temporary directory found in ['C:\\\\Users\\\\ANURAG~1\\\\AppData\\\\Local\\\\Temp', 'C:\\\\Users\\\\ANURAG~1\\\\AppData\\\\Local\\\\Temp', 'C:\\\\Users\\\\AnuragManik7\\\\AppData\\\\Local\\\\Temp', 'C:\\\\windows\\\\Temp', 'c:\\\\temp', 'c:\\\\tmp', '\\\\temp', '\\\\tmp', 'C:\\\\Users\\\\AnuragManik7\\\\Documents\\\\Codex\\\\2026-10-01\\\\task-4\\\\astra-20261005T014009\\\\promopilot']\n\n..\\..\\..\\..\\..\\..\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\tempfile.py:223: FileNotFoundError"
+        }
+      ]
+    },
+    {
+      "file": "xlsx-nondeleting-01.xml",
+      "completed_report": true,
+      "tests": 1,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 17.122,
+      "passed": 0,
+      "nonpasses": [
+        {
+          "test": "tests.test_audit_regressions::test_xlsx_zero_safety_and_fractional_units_are_validated_exactly",
+          "kind": "failure",
+          "message": "backend.app.domain.AppError: ('XLSX_FORMAT', 'Spreadsheet could not be read; use .xlsx without macros')",
+          "details": "name = 'zero.xlsx'\ncontent = b'PK\\x03\\x04\\x14\\x00\\x00\\x00\\x00\\x00D\\x0fE]\\x1ct\\xfc8\\xf6\\x01\\x00\\x00\\xf6\\x01\\x00\\x00\\x13\\x00\\x00\\x00[Content_Types].x...01}\\x05\\x00\\x00xl/worksheets/sheet1.xmlPK\\x05\\x06\\x00\\x00\\x00\\x00\\x05\\x00\\x05\\x00E\\x01\\x00\\x00\\x8b\\x08\\x00\\x00\\x00\\x00'\n\n    def table_rows(name,content):\n        book=None\n        try:\n            if name.lower().endswith('.csv'):\n                reader=iter(csv.reader(StringIO(content.decode('utf-8-sig')),strict=True))\n            elif name.lower().endswith('.xlsx'):\n                with zipfile.ZipFile(BytesIO(content)) as z:\n                    if sum(f.file_size for f in z.infolist())>40_000_000:raise AppError('EXPANDED_LIMIT','Spreadsheet expansion is too large')\n                book=load_workbook(BytesIO(content),read_only=True,data_only=True)\n>               if book.active.max_row>10001 or book.active.max_column>60:raise AppError('ROW_LIMIT','Use up to 10,000 rows and 60 columns')\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^\nE               TypeError: '>' not supported between instances of 'NoneType' and 'int'\n\nbackend\\app\\ingestion.py:23: TypeError\n\nDuring handling of the above exception, another exception occurred:\n\n    def test_xlsx_zero_safety_and_fractional_units_are_validated_exactly():\n        from io import BytesIO\n        from zipfile import ZipFile\n        from xml.sax.saxutils import escape\n        db=seeded()\n        def table(quantity):\n            # A minimal standards-compliant XLSX built entirely in memory. The\n            # production OpenPyXL reader remains real; its writer would otherwise\n            # create and delete scratch files even when its output is BytesIO.\n            rows=[['sku','city','quantity','safety_stock','expiry','observed_at'],['SKU001','Delhi',quantity,0,'2030-01-01',now()]]\n            xml=[]\n            for index,row in enumerate(rows,1):\n                cells=[]\n                for column,value in enumerate(row):\n                    ref=chr(65+column)+str(index)\n                    cells.append(f'<c r=\"{ref}\"><v>{value}</v></c>' if isinstance(value,(int,float)) else f'<c r=\"{ref}\" t=\"inlineStr\"><is><t>{escape(value)}</t></is></c>')\n                xml.append(f'<row r=\"{index}\">'+''.join(cells)+'</row>')\n            out=BytesIO()\n            with ZipFile(out,'w') as archive:\n                archive.writestr('[Content_Types].xml','<Types xmlns=\"http://schemas.openxmlformats.org/package/2006/content-types\"><Default Extension=\"rels\" ContentType=\"application/vnd.openxmlformats-package.relationships+xml\"/><Default Extension=\"xml\" ContentType=\"application/xml\"/><Override PartName=\"/xl/workbook.xml\" ContentType=\"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml\"/><Override PartName=\"/xl/worksheets/sheet1.xml\" ContentType=\"application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml\"/></Types>')\n                archive.writestr('_rels/.rels','<Relationships xmlns=\"http://schemas.openxmlformats.org/package/2006/relationships\"><Relationship Id=\"rId1\" Type=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument\" Target=\"xl/workbook.xml\"/></Relationships>')\n                archive.writestr('xl/workbook.xml','<workbook xmlns=\"http://schemas.openxmlformats.org/spreadsheetml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\"><sheets><sheet name=\"Inventory\" sheetId=\"1\" r:id=\"rId1\"/></sheets></workbook>')\n                archive.writestr('xl/_rels/workbook.xml.rels','<Relationships xmlns=\"http://schemas.openxmlformats.org/package/2006/relationships\"><Relationship Id=\"rId1\" Type=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet\" Target=\"worksheets/sheet1.xml\"/></Relationships>')\n                archive.writestr('xl/worksheets/sheet1.xml','<worksheet xmlns=\"http://schemas.openxmlformats.org/spreadsheetml/2006/main\"><sheetData>'+''.join(xml)+'</sheetData></worksheet>')\n            return out.getvalue()\n>       assert import_table(db,'t','zero.xlsx',table(50),'inventory')['status']=='applied'\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\ntests\\test_audit_regressions.py:196: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbackend\\app\\ingestion.py:130: in import_table\n    rows=table_rows(name,content)\n         ^^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nname = 'zero.xlsx'\ncontent = b'PK\\x03\\x04\\x14\\x00\\x00\\x00\\x00\\x00D\\x0fE]\\x1ct\\xfc8\\xf6\\x01\\x00\\x00\\xf6\\x01\\x00\\x00\\x13\\x00\\x00\\x00[Content_Types].x...01}\\x05\\x00\\x00xl/worksheets/sheet1.xmlPK\\x05\\x06\\x00\\x00\\x00\\x00\\x05\\x00\\x05\\x00E\\x01\\x00\\x00\\x8b\\x08\\x00\\x00\\x00\\x00'\n\n    def table_rows(name,content):\n        book=None\n        try:\n            if name.lower().endswith('.csv'):\n                reader=iter(csv.reader(StringIO(content.decode('utf-8-sig')),strict=True))\n            elif name.lower().endswith('.xlsx'):\n                with zipfile.ZipFile(BytesIO(content)) as z:\n                    if sum(f.file_size for f in z.infolist())>40_000_000:raise AppError('EXPANDED_LIMIT','Spreadsheet expansion is too large')\n                book=load_workbook(BytesIO(content),read_only=True,data_only=True)\n                if book.active.max_row>10001 or book.active.max_column>60:raise AppError('ROW_LIMIT','Use up to 10,000 rows and 60 columns')\n                reader=iter(book.active.iter_rows(values_only=True))\n            else:raise AppError('FILE_TYPE','Use CSV or XLSX for operational tables')\n            headers=next(reader,None)\n            if not headers or any(not isinstance(h,str) or not h.strip() for h in headers):raise AppError('TABLE_HEADER','A nonempty header is required for every column')\n            headers=[h.strip() for h in headers]\n            if len(headers)>60 or len(headers)!=len(set(headers)):raise AppError('TABLE_HEADER','Column names must be unique; use at most 60 columns')\n            out=[]\n            for row in reader:\n                if not any(v not in [None,''] for v in row):continue\n                if len(row)!=len(headers):raise AppError('TABLE_ROW','Every row must match the header columns')\n                out.append(dict(zip(headers,row)))\n                if len(out)>10000:raise AppError('ROW_LIMIT','Import at most 10,000 rows per file')\n            if not out:raise AppError('EMPTY_TABLE','The table contains no data rows')\n            return out\n        except AppError:raise\n        except (UnicodeError,csv.Error):raise AppError('CSV_FORMAT','Upload a UTF-8 CSV with a valid header and rows')\n>       except Exception:raise AppError('XLSX_FORMAT','Spreadsheet could not be read; use .xlsx without macros')\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       backend.app.domain.AppError: ('XLSX_FORMAT', 'Spreadsheet could not be read; use .xlsx without macros')\n\nbackend\\app\\ingestion.py:40: AppError"
+        }
+      ]
+    },
+    {
+      "file": "latest-targeted-01.xml",
+      "completed_report": true,
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 10.773,
+      "passed": 7,
+      "nonpasses": []
+    },
+    {
+      "file": "diagnostic-current-01.xml",
+      "completed_report": true,
+      "tests": 702,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 933.208,
+      "passed": 702,
+      "nonpasses": []
+    }
+  ],
+  "other_checks": {
+    "typescript_no_emit": "passed",
+    "component_api_harness": "13/13 passed",
+    "openapi_typescript_contract": "passed",
+    "frozen_corpus_before_final_changes": "609/814 fields; 3 expected corrupt errors",
+    "fresh_vite_build": "BLOCKED: spawn EPERM loading installed esbuild",
+    "repaired_browser": "NOT RUN: fresh build unavailable",
+    "realistic_complete_01": "73/73 passed BEFORE final comparison/XLSX/UI changes",
+    "realistic_complete_02": "52/53 passed; main profit solver UNKNOWN and needs_input; lifecycle not produced",
+    "full_astra_02_and_03": "INTERRUPTED without complete JUnit; failures observed, not a pass",
+    "realistic_complete_03": {
+      "checks": 73,
+      "passed": 73,
+      "failed": 0,
+      "completed": true,
+      "claim": "Crafted offline synthetic operational evidence; neither D3 reliability nor real commercial uplift nor an official competition score."
+    },
+    "live_models_postgresql_deployment": "NOT RUN",
+    "frozen_corpus_current": {
+      "file": "corpus-evaluation-20261004T213037.json",
+      "cases": 60,
+      "correct_fields": 609,
+      "total_fields": 814,
+      "errors": 3,
+      "by_modality": {
+        "table": {
+          "correct_fields": 570,
+          "total_fields": 570,
+          "errors": 1
+        },
+        "pdf": {
+          "correct_fields": 39,
+          "total_fields": 75,
+          "errors": 1
+        },
+        "image": {
+          "correct_fields": 0,
+          "total_fields": 169,
+          "errors": 1
+        }
+      }
+    }
+  },
+  "library_transfer": {
+    "status": "BLOCKED",
+    "created_remote_files": 0,
+    "reason": "Automatic approval review twice rejected private Library upload; forwarded delegation/Sentinel approval not accepted as direct user authorization; no bypass"
+  },
+  "no_deletion": "Originals, previous outputs, synthetic row versions and failed runs retained. No cleanup. Narrow file-transfer-temp exception did not produce successful transfer.",
+  "claim": "Preserved repair candidate with explicit verification limits; not a verified production release or live AI demonstration.",
+  "latest_serial_evaluation": {
+    "evaluation": "realistic-complete-03",
+    "summary": {
+      "checks": 73,
+      "passed": 73,
+      "failed": 0,
+      "completed": true,
+      "claim": "Crafted offline synthetic operational evidence; neither D3 reliability nor real commercial uplift nor an official competition score."
+    },
+    "seconds": 197.803,
+    "failed_checks": [],
+    "offer_count": 9,
+    "solver": {
+      "status": "SIMULATION_SELECTED_RULE",
+      "objective_paise": null,
+      "bound_paise": null,
+      "gap": null,
+      "candidate_solver": {
+        "status": "OPTIMAL",
+        "objective_paise": 209132,
+        "bound_paise": 209132,
+        "gap": 0.0,
+        "interactions": 648,
+        "wall_seconds": 0.522,
+        "objective_definition": "Expected incremental contribution minus lambda times downside shortfall; clearance objective also includes disclosed 500 paise/unit priority"
+      }
+    },
+    "validation": {
+      "passed": true,
+      "errors": [],
+      "liability_paise": 499410,
+      "allocation": {
+        "SKU011|Bengaluru": 79,
+        "SKU015|Bengaluru": 71,
+        "SKU019|Bengaluru": 68,
+        "SKU005|Bengaluru": 67,
+        "SKU003|Bengaluru": 66,
+        "SKU010|Bengaluru": 66,
+        "SKU016|Bengaluru": 63,
+        "SKU014|Bengaluru": 63,
+        "SKU006|Bengaluru": 27
+      },
+      "checks": [
+        "item margin",
+        "discount ceiling",
+        "stock and expiry",
+        "maximum liability",
+        "overlap",
+        "channel and city",
+        "freshness"
+      ],
+      "batch_allocation": {
+        "SKU011-0-A": 79,
+        "SKU015-0-A": 71,
+        "SKU019-0-A": 68,
+        "SKU005-0-A": 67,
+        "SKU003-0-A": 66,
+        "SKU010-0-A": 66,
+        "SKU016-0-A": 63,
+        "SKU014-0-A": 63,
+        "SKU006-0-A": 27
+      },
+      "clearance_units": 570,
+      "offer_clearance_units": {
+        "805107abaa4d62": 79,
+        "e1d3028484614b": 71,
+        "bca9a725a02c1b": 68,
+        "9420f25609e44c": 67,
+        "4a4823df048216": 66,
+        "b51a50c4621644": 66,
+        "922a4c77fb8e12": 63,
+        "6ca23cccc6432a": 63,
+        "32d2ebfd20abd7": 27
+      },
+      "evidence_status": "derived"
+    },
+    "simulation": {
+      "baseline": {
+        "contribution_paise": 67139132,
+        "revenue_paise": 195014448,
+        "spend_paise": 0,
+        "clearance_units": 1626.8,
+        "stockout_rate": 0.0667,
+        "units": 18221.3
+      },
+      "optimized": {
+        "contribution_paise": 67874975,
+        "revenue_paise": 195816039,
+        "spend_paise": 410861,
+        "clearance_units": 1767.7,
+        "stockout_rate": 0.0683,
+        "units": 18362.2
+      },
+      "incremental_contribution_paise": 735843,
+      "p10_paise": 602405,
+      "p50_paise": 745626,
+      "p90_paise": 864674,
+      "downside_probability": 0.0,
+      "scenarios": 40,
+      "seed": 261004,
+      "distribution": [
+        {
+          "value_paise": 367973,
+          "count": 2
+        },
+        {
+          "value_paise": 402829,
+          "count": 0
+        },
+        {
+          "value_paise": 437685,
+          "count": 0
+        },
+        {
+          "value_paise": 472541,
+          "count": 0
+        },
+        {
+          "value_paise": 507397,
+          "count": 0
+        },
+        {
+          "value_paise": 542253,
+          "count": 1
+        },
+        {
+          "value_paise": 577109,
+          "count": 1
+        },
+        {
+          "value_paise": 611964,
+          "count": 1
+        },
+        {
+          "value_paise": 646820,
+          "count": 3
+        },
+        {
+          "value_paise": 681676,
+          "count": 1
+        },
+        {
+          "value_paise": 716532,
+          "count": 9
+        },
+        {
+          "value_paise": 751388,
+          "count": 6
+        },
+        {
+          "value_paise": 786244,
+          "count": 4
+        },
+        {
+          "value_paise": 821100,
+          "count": 5
+        },
+        {
+          "value_paise": 855956,
+          "count": 3
+        },
+        {
+          "value_paise": 890812,
+          "count": 3
+        },
+        {
+          "value_paise": 925668,
+          "count": 0
+        },
+        {
+          "value_paise": 960524,
+          "count": 1
+        }
+      ],
+      "assumptions": [
+        "Correlated category demand",
+        "Price-response uncertainty ±30%",
+        "Comparable competitor price moves −5% to +2%",
+        "Coupon redemption 65–100%",
+        "Declared substitute effects",
+        "FEFO expiry and variable replenishment"
+      ],
+      "sensitivity": {
+        "low_response": 602405,
+        "central": 735843,
+        "high_response": 864674,
+        "fragile": false
+      },
+      "evidence_status": "simulated",
+      "clearance_probability": 1.0,
+      "risk_objective_paise": 735843,
+      "daily_units": [
+        19.03421110115456,
+        16.76369869025554,
+        15.20806784104006
+      ],
+      "repair": "Feasible flat-discount rule selected using separate selection scenarios; no solver-optimality claim for this portfolio",
+      "selection_comparison": {
+        "selected": "flat_discount_rule",
+        "selection_seed": 365733,
+        "report_seed": 261004,
+        "scenarios": 40,
+        "rule_validation": {
+          "passed": true,
+          "errors": [],
+          "checks": [
+            "item margin",
+            "discount ceiling",
+            "stock and expiry",
+            "maximum liability",
+            "overlap",
+            "channel and city",
+            "freshness"
+          ],
+          "liability_paise": 499410,
+          "allocation": {
+            "SKU011|Bengaluru": 79,
+            "SKU015|Bengaluru": 71,
+            "SKU019|Bengaluru": 68,
+            "SKU005|Bengaluru": 67,
+            "SKU003|Bengaluru": 66,
+            "SKU010|Bengaluru": 66,
+            "SKU016|Bengaluru": 63,
+            "SKU014|Bengaluru": 63,
+            "SKU006|Bengaluru": 27
+          },
+          "batch_allocation": {
+            "SKU011-0-A": 79,
+            "SKU015-0-A": 71,
+            "SKU019-0-A": 68,
+            "SKU005-0-A": 67,
+            "SKU003-0-A": 66,
+            "SKU010-0-A": 66,
+            "SKU016-0-A": 63,
+            "SKU014-0-A": 63,
+            "SKU006-0-A": 27
+          },
+          "clearance_units": 570,
+          "offer_clearance_units": {
+            "805107abaa4d62": 79,
+            "e1d3028484614b": 71,
+            "bca9a725a02c1b": 68,
+            "9420f25609e44c": 67,
+            "4a4823df048216": 66,
+            "b51a50c4621644": 66,
+            "922a4c77fb8e12": 63,
+            "6ca23cccc6432a": 63,
+            "32d2ebfd20abd7": 27
+          },
+          "evidence_status": "derived"
+        },
+        "candidate_risk_objective_paise": 134037,
+        "rule_risk_objective_paise": 708984,
+        "reason": "Feasible rule has higher simulated risk-adjusted contribution on the selection seed"
+      },
+      "rule_baseline": {
+        "contribution_paise": 67874975,
+        "revenue_paise": 195816039,
+        "spend_paise": 410861,
+        "clearance_units": 1767.7,
+        "stockout_rate": 0.0683,
+        "units": 18362.2
+      },
+      "rule_offers": [
+        {
+          "id": "805107abaa4d62",
+          "sku": "SKU011",
+          "skus": [
+            "SKU011"
+          ],
+          "name": "Freshway Milk",
+          "city": "Bengaluru",
+          "channel": "internal_sandbox",
+          "mechanism": "markdown",
+          "discount_bps": 1000,
+          "duration": 3,
+          "start_day": 0,
+          "segment": "Family baskets",
+          "fixed_discount_paise": null,
+          "minimum_basket_paise": 0,
+          "max_redemptions": 79,
+          "expected_units": 65.01,
+          "baseline_units": 39.71,
+          "allocation": {
+            "SKU011|Bengaluru": 79
+          },
+          "price_paise": 7380,
+          "unit_contribution_paise": 2339,
+          "margin_bps": 3169,
+          "liability_paise": 66780,
+          "media_paise": 2000,
+          "incremental_contribution_paise": 24634,
+          "cannibalization_paise": 0,
+          "cannibalization": [],
+          "clearance_units": 79,
+          "competitor_price_paise": 8400,
+          "evidence_status": "simulated",
+          "reason": "Family baskets, Bengaluru: 3 selling days, 31.7% contribution margin; maximum liability capped",
+          "source_refs": [
+            "imp_e9434470942d7ec2cd8e08ca5052",
+            "src_f34de4bc27fc4959",
+            "imp_e14b17f3c1b992cd0a21f0ff2cac",
+            "cmp_625e9635418b4b5c"
+          ]
+        },
+        {
+          "id": "e1d3028484614b",
+          "sku": "SKU015",
+          "skus": [
+            "SKU015"
+          ],
+          "name": "Freshway Yogurt",
+          "city": "Bengaluru",
+          "channel": "internal_sandbox",
+          "mechanism": "markdown",
+          "discount_bps": 1000,
+          "duration": 3,
+          "start_day": 0,
+          "segment": "Family baskets",
+          "fixed_discount_paise": null,
+          "minimum_basket_paise": 0,
+          "max_redemptions": 71,
+          "expected_units": 58.72,
+          "baseline_units": 39.1,
+          "allocation": {
+            "SKU015|Bengaluru": 71
+          },
+          "price_paise": 8640,
+          "unit_contribution_paise": 2976,
+          "margin_bps": 3444,
+          "liability_paise": 70160,
+          "media_paise": 2000,
+          "incremental_contribution_paise": 18857,
+          "cannibalization_paise": 0,
+          "cannibalization": [],
+          "clearance_units": 71,
+          "competitor_price_paise": 9800,
+          "evidence_status": "simulated",
+          "reason": "Family baskets, Bengaluru: 3 selling days, 34.4% contribution margin; maximum liability capped",
+          "source_refs": [
+            "imp_e9434470942d7ec2cd8e08ca5052",
+            "src_f34de4bc27fc4959",
+            "imp_e14b17f3c1b992cd0a21f0ff2cac",
+            "cmp_d6b6763fe0a14c90"
+          ]
+        },
+        {
+          "id": "bca9a725a02c1b",
+          "sku": "SKU019",
+          "skus": [
+            "SKU019"
+          ],
+          "name": "Pantry Butter",
+          "city": "Bengaluru",
+          "channel": "internal_sandbox",
+          "mechanism": "markdown",
+          "discount_bps": 1000,
+          "duration": 3,
+          "start_day": 0,
+          "segment": "Family baskets",
+          "fixed_discount_paise": null,
+          "minimum_basket_paise": 0,
+          "max_redemptions": 68,
+          "expected_units": 56.47,
+          "baseline_units": 38.48,
+          "allocation": {
+            "SKU019|Bengaluru": 68
+          },
+          "price_paise": 7020,
+          "unit_contribution_paise": 1638,
+          "margin_bps": 2333,
+          "liability_paise": 55040,
+          "media_paise": 2000,
+          "incremental_contribution_paise": -2552,
+          "cannibalization_paise": 0,
+          "cannibalization": [],
+          "clearance_units": 68,
+          "competitor_price_paise": 8000,
+          "evidence_status": "simulated",
+          "reason": "Family baskets, Bengaluru: 3 selling days, 23.3% contribution margin; maximum liability capped",
+          "source_refs": [
+            "imp_e9434470942d7ec2cd8e08ca5052",
+            "src_f34de4bc27fc4959",
+            "imp_e14b17f3c1b992cd0a21f0ff2cac",
+            "cmp_47a68e185ef04f94"
+          ]
+        },
+        {
+          "id": "9420f25609e44c",
+          "sku": "SKU005",
+          "skus": [
+            "SKU005"
+          ],
+          "name": "Daily Yogurt",
+          "city": "Bengaluru",
+          "channel": "internal_sandbox",
+          "mechanism": "markdown",
+          "discount_bps": 1000,
+          "duration": 3,
+          "start_day": 0,
+          "segment": "Family baskets",
+          "fixed_discount_paise": null,
+          "minimum_basket_paise": 0,
+          "max_redemptions": 67,
+          "expected_units": 55.32,
+          "baseline_units": 35.65,
+          "allocation": {
+            "SKU005|Bengaluru": 67
+          },
+          "price_paise": 7200,
+          "unit_contribution_paise": 2480,
+          "margin_bps": 3444,
+          "liability_paise": 55600,
+          "media_paise": 2000,
+          "incremental_contribution_paise": 18259,
+          "cannibalization_paise": 0,
+          "cannibalization": [],
+          "clearance_units": 67,
+          "competitor_price_paise": 8200,
+          "evidence_status": "simulated",
+          "reason": "Family baskets, Bengaluru: 3 selling days, 34.4% contribution margin; maximum liability capped",
+          "source_refs": [
+            "imp_e9434470942d7ec2cd8e08ca5052",
+            "src_f34de4bc27fc4959",
+            "imp_e14b17f3c1b992cd0a21f0ff2cac",
+            "cmp_8728f033e4d34663"
+          ]
+        },
+        {
+          "id": "4a4823df048216",
+          "sku": "SKU003",
+          "skus": [
+            "SKU003"
+          ],
+          "name": "Daily Paneer",
+          "city": "Bengaluru",
+          "channel": "internal_sandbox",
+          "mechanism": "markdown",
+          "discount_bps": 1000,
+          "duration": 3,
+          "start_day": 0,
+          "segment": "Family baskets",
+          "fixed_discount_paise": null,
+          "minimum_basket_paise": 0,
+          "max_redemptions": 66,
+          "expected_units": 54.17,
+          "baseline_units": 37.07,
+          "allocation": {
+            "SKU003|Bengaluru": 66
+          },
+          "price_paise": 8550,
+          "unit_contribution_paise": 2232,
+          "margin_bps": 2610,
+          "liability_paise": 64700,
+          "media_paise": 2000,
+          "incremental_contribution_paise": 948,
+          "cannibalization_paise": 0,
+          "cannibalization": [],
+          "clearance_units": 66,
+          "competitor_price_paise": 9700,
+          "evidence_status": "simulated",
+          "reason": "Family baskets, Bengaluru: 3 selling days, 26.1% contribution margin; maximum liability capped",
+          "source_refs": [
+            "imp_e9434470942d7ec2cd8e08ca5052",
+            "src_f34de4bc27fc4959",
+            "imp_e14b17f3c1b992cd0a21f0ff2cac",
+            "cmp_40dd00e3eb0a41eb"
+          ]
+        },
+        {
+          "id": "b51a50c4621644",
+          "sku": "SKU010",
+          "skus": [
+            "SKU010"
+          ],
+          "name": "Harvest Yogurt",
+          "city": "Bengaluru",
+          "channel": "internal_sandbox",
+          "mechanism": "markdown",
+          "discount_bps": 1000,
+          "duration": 3,
+          "start_day": 0,
+          "segment": "Family baskets",
+          "fixed_discount_paise": null,
+          "minimum_basket_paise": 0,
+          "max_redemptions": 66,
+          "expected_units": 54.28,
+          "baseline_units": 36.87,
+          "allocation": {
+            "SKU010|Bengaluru": 66
+          },
+          "price_paise": 7920,
+          "unit_contribution_paise": 2728,
+          "margin_bps": 3444,
+          "liability_paise": 60080,
+          "media_paise": 2000,
+          "incremental_contribution_paise": 13037,
+          "cannibalization_paise": 0,
+          "cannibalization": [],
+          "clearance_units": 66,
+          "competitor_price_paise": 9000,
+          "evidence_status": "simulated",
+          "reason": "Family baskets, Bengaluru: 3 selling days, 34.4% contribution margin; maximum liability capped",
+          "source_refs": [
+            "imp_e9434470942d7ec2cd8e08ca5052",
+            "src_f34de4bc27fc4959",
+            "imp_e14b17f3c1b992cd0a21f0ff2cac",
+            "cmp_1c3bfe27922e4541"
+          ]
+        },
+        {
+          "id": "922a4c77fb8e12",
+          "sku": "SKU016",
+          "skus": [
+            "SKU016"
+          ],
+          "name": "Pantry Milk",
+          "city": "Bengaluru",
+          "channel": "internal_sandbox",
+          "mechanism": "markdown",
+          "discount_bps": 1000,
+          "duration": 3,
+          "start_day": 0,
+          "segment": "Family baskets",
+          "fixed_discount_paise": null,
+          "minimum_basket_paise": 0,
+          "max_redemptions": 63,
+          "expected_units": 52.46,
+          "baseline_units": 33.49,
+          "allocation": {
+            "SKU016|Bengaluru": 63
+          },
+          "price_paise": 7920,
+          "unit_contribution_paise": 2507,
+          "margin_bps": 3165,
+          "liability_paise": 57440,
+          "media_paise": 2000,
+          "incremental_contribution_paise": 16090,
+          "cannibalization_paise": 0,
+          "cannibalization": [],
+          "clearance_units": 63,
+          "competitor_price_paise": 9000,
+          "evidence_status": "simulated",
+          "reason": "Family baskets, Bengaluru: 3 selling days, 31.6% contribution margin; maximum liability capped",
+          "source_refs": [
+            "imp_e9434470942d7ec2cd8e08ca5052",
+            "src_f34de4bc27fc4959",
+            "imp_e14b17f3c1b992cd0a21f0ff2cac",
+            "cmp_d83cef643292435c"
+          ]
+        },
+        {
+          "id": "6ca23cccc6432a",
+          "sku": "SKU014",
+          "skus": [
+            "SKU014"
+          ],
+          "name": "Freshway Butter",
+          "city": "Bengaluru",
+          "channel": "internal_sandbox",
+          "mechanism": "markdown",
+          "discount_bps": 1000,
+          "duration": 3,
+          "start_day": 0,
+          "segment": "Family baskets",
+          "fixed_discount_paise": null,
+          "minimum_basket_paise": 0,
+          "max_redemptions": 63,
+          "expected_units": 52.15,
+          "baseline_units": 35.99,
+          "allocation": {
+            "SKU014|Bengaluru": 63
+          },
+          "price_paise": 6480,
+          "unit_contribution_paise": 1512,
+          "margin_bps": 2333,
+          "liability_paise": 47360,
+          "media_paise": 2000,
+          "incremental_contribution_paise": -3480,
+          "cannibalization_paise": 0,
+          "cannibalization": [],
+          "clearance_units": 63,
+          "competitor_price_paise": 7300,
+          "evidence_status": "simulated",
+          "reason": "Family baskets, Bengaluru: 3 selling days, 23.3% contribution margin; maximum liability capped",
+          "source_refs": [
+            "imp_e9434470942d7ec2cd8e08ca5052",
+            "src_f34de4bc27fc4959",
+            "imp_e14b17f3c1b992cd0a21f0ff2cac",
+            "cmp_157c10f71dda428d"
+          ]
+        },
+        {
+          "id": "32d2ebfd20abd7",
+          "sku": "SKU006",
+          "skus": [
+            "SKU006"
+          ],
+          "name": "Harvest Milk",
+          "city": "Bengaluru",
+          "channel": "internal_sandbox",
+          "mechanism": "markdown",
+          "discount_bps": 1000,
+          "duration": 3,
+          "start_day": 0,
+          "segment": "Convenience shoppers",
+          "fixed_discount_paise": null,
+          "minimum_basket_paise": 0,
+          "max_redemptions": 27,
+          "expected_units": 22.17,
+          "baseline_units": 15.5,
+          "allocation": {
+            "SKU006|Bengaluru": 27
+          },
+          "price_paise": 6750,
+          "unit_contribution_paise": 2138,
+          "margin_bps": 3167,
+          "liability_paise": 22250,
+          "media_paise": 2000,
+          "incremental_contribution_paise": -8962,
+          "cannibalization_paise": 9613,
+          "cannibalization": [
+            {
+              "sku": "SKU001",
+              "units": 3.67,
+              "loss_paise": 9613,
+              "status": "assumed"
+            }
+          ],
+          "clearance_units": 27,
+          "competitor_price_paise": 7600,
+          "evidence_status": "simulated",
+          "reason": "Convenience shoppers, Bengaluru: 3 selling days, 31.7% contribution margin; maximum liability capped",
+          "source_refs": [
+            "imp_e9434470942d7ec2cd8e08ca5052",
+            "src_f34de4bc27fc4959",
+            "imp_e14b17f3c1b992cd0a21f0ff2cac",
+            "cmp_34c40766e1f94d7a"
+          ]
+        }
+      ],
+      "alternatives": [
+        {
+          "objective": "profit",
+          "offers": 9,
+          "incremental_contribution_paise": 735843,
+          "spend_paise": 410861,
+          "clearance_units": 1767.7,
+          "status": "SIMULATION_SELECTED_RULE"
+        },
+        {
+          "objective": "clearance",
+          "offers": 16,
+          "incremental_contribution_paise": 674325,
+          "spend_paise": 413455,
+          "clearance_units": 1741.6,
+          "status": "FEASIBLE"
+        },
+        {
+          "objective": "conservative",
+          "offers": 14,
+          "incremental_contribution_paise": 144426,
+          "spend_paise": 405550,
+          "clearance_units": 1647.9,
+          "status": "OPTIMAL"
+        }
+      ]
+    },
+    "forecast": {
+      "chosen": "poisson",
+      "wape": {
+        "seasonal_naive": {
+          "dev": 0.2099,
+          "test": 0.2033
+        },
+        "poisson": {
+          "dev": 0.182,
+          "test": 0.2045
+        }
+      },
+      "split": {
+        "train_days": 124,
+        "development_days": 28,
+        "test_days": 28
+      },
+      "grouped_test_metrics": {
+        "city": {
+          "Bengaluru": {
+            "wape": 0.2023,
+            "bias": 0.0747,
+            "baseline_wape": 0.2017,
+            "points": 3319
+          },
+          "Delhi": {
+            "wape": 0.2041,
+            "bias": 0.0756,
+            "baseline_wape": 0.2037,
+            "points": 3318
+          },
+          "Mumbai": {
+            "wape": 0.2076,
+            "bias": 0.0781,
+            "baseline_wape": 0.2047,
+            "points": 3318
+          }
+        },
+        "category": {
+          "Beverages": {
+            "wape": 0.2066,
+            "bias": 0.072,
+            "baseline_wape": 0.206,
+            "points": 1662
+          },
+          "Breakfast": {
+            "wape": 0.2062,
+            "bias": 0.0781,
+            "baseline_wape": 0.2048,
+            "points": 1659
+          },
+          "Dairy & fresh": {
+            "wape": 0.2,
+            "bias": 0.0755,
+            "baseline_wape": 0.1983,
+            "points": 1659
+          },
+          "Home essentials": {
+            "wape": 0.2016,
+            "bias": 0.0748,
+            "baseline_wape": 0.1999,
+            "points": 1657
+          },
+          "Snacks": {
+            "wape": 0.2095,
+            "bias": 0.0782,
+            "baseline_wape": 0.2088,
+            "points": 1661
+          },
+          "Staples": {
+            "wape": 0.204,
+            "bias": 0.0758,
+            "baseline_wape": 0.2032,
+            "points": 1657
+          }
+        }
+      },
+      "prediction_intervals": {
+        "nominal_coverage": 0.8,
+        "empirical_test_coverage": 0.7721,
+        "mean_test_width_units": 9.6,
+        "calibration": "Development-period normalized absolute residual quantile; empirical coverage measured on temporal test",
+        "status": "Measured on synthetic rolling one-step holdout; scenario ranges are separate"
+      },
+      "claim": "Predictive accuracy on Mixed imported and synthetic demo data; price response is an association, not causal uplift",
+      "snapshot_id": "c0fc22c0f7bbc76f"
+    },
+    "changed_fact": {
+      "changes": {
+        "added": 1,
+        "removed": 1,
+        "previous_contribution_paise": 735843,
+        "new_contribution_paise": 730792
+      },
+      "status": "awaiting_approval",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "liability_paise": 497030,
+        "allocation": {
+          "SKU015|Bengaluru": 71,
+          "SKU019|Bengaluru": 68,
+          "SKU005|Bengaluru": 67,
+          "SKU003|Bengaluru": 66,
+          "SKU010|Bengaluru": 66,
+          "SKU016|Bengaluru": 63,
+          "SKU014|Bengaluru": 63,
+          "SKU008|Bengaluru": 60,
+          "SKU006|Bengaluru": 27
+        },
+        "checks": [
+          "item margin",
+          "discount ceiling",
+          "stock and expiry",
+          "maximum liability",
+          "overlap",
+          "channel and city",
+          "freshness"
+        ],
+        "batch_allocation": {
+          "SKU015-0-A": 71,
+          "SKU019-0-A": 68,
+          "SKU005-0-A": 67,
+          "SKU003-0-A": 66,
+          "SKU010-0-A": 66,
+          "SKU016-0-A": 63,
+          "SKU014-0-A": 63,
+          "SKU008-0-A": 60,
+          "SKU006-0-A": 27
+        },
+        "clearance_units": 551,
+        "offer_clearance_units": {
+          "e1d3028484614b": 71,
+          "bca9a725a02c1b": 68,
+          "9420f25609e44c": 67,
+          "4a4823df048216": 66,
+          "b51a50c4621644": 66,
+          "922a4c77fb8e12": 63,
+          "6ca23cccc6432a": 63,
+          "35d5d8b1aa8296": 60,
+          "32d2ebfd20abd7": 27
+        },
+        "evidence_status": "derived"
+      }
+    }
+  }
+}

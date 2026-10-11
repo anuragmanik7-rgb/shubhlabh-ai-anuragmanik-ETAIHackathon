@@ -1,0 +1,20 @@
+{
+ "scenarios": 30,
+ "repeats": 5,
+ "policies": {
+  "rules": {
+   "runs": 30,
+   "correct_rate": 0.5333,
+   "completion_rate": 1.0,
+   "useful_clarifications": 2,
+   "unneeded_clarifications": 0,
+   "false_acceptances": 12,
+   "pass_all_repeats": 0.5333,
+   "median_seconds": 22.5,
+   "cost_usd_per_plan": 0.0,
+   "degraded_runs": 0
+  }
+ },
+ "note": "Rules is deterministic (one run per scenario). Scenario checks are fixed in scripts/evaluate_agent.py. ShubhLabh's reference store; price response calibrated on FreshRetailNet-50K.",
+ "at": "2026-10-07T22:43:44"
+}

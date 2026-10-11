@@ -1,0 +1,901 @@
+{
+  "description": "ShubhLabh AI on WhatsApp (Twilio Studio, no n8n): replies, photo reads and the full plan lane",
+  "states": [
+    {
+      "name": "Trigger",
+      "type": "trigger",
+      "transitions": [
+        {
+          "event": "incomingMessage",
+          "next": "ask_shubhlabh"
+        },
+        {
+          "event": "incomingCall"
+        },
+        {
+          "event": "incomingConversationMessage"
+        },
+        {
+          "event": "incomingRequest"
+        },
+        {
+          "event": "incomingParent"
+        }
+      ],
+      "properties": {
+        "offset": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "name": "ask_shubhlabh",
+      "type": "make-http-request",
+      "transitions": [
+        {
+          "event": "success",
+          "next": "route_reply"
+        },
+        {
+          "event": "failed",
+          "next": "send_sorry"
+        }
+      ],
+      "properties": {
+        "method": "POST",
+        "url": "https://relay:REPLACE_WITH_SHUBHLABH_RELAY_TOKEN@REPLACE_WITH_SHUBHLABH_HOST/api/v2/whatsapp/inbound?format=json&wait=7",
+        "content_type": "application/x-www-form-urlencoded;charset=utf-8",
+        "add_twilio_auth": false,
+        "parameters": [
+          {
+            "key": "From",
+            "value": "{{trigger.message.From}}"
+          },
+          {
+            "key": "Body",
+            "value": "{{trigger.message.Body}}"
+          },
+          {
+            "key": "NumMedia",
+            "value": "{{trigger.message.NumMedia}}"
+          },
+          {
+            "key": "MediaUrl0",
+            "value": "{{trigger.message.MediaUrl0}}"
+          },
+          {
+            "key": "MediaContentType0",
+            "value": "{{trigger.message.MediaContentType0}}"
+          }
+        ],
+        "offset": {
+          "x": 0,
+          "y": 220
+        }
+      }
+    },
+    {
+      "name": "route_reply",
+      "type": "split-based-on",
+      "transitions": [
+        {
+          "event": "noMatch",
+          "next": "send_reply"
+        },
+        {
+          "event": "match",
+          "next": "start_plan",
+          "conditions": [
+            {
+              "friendly_name": "If value equal_to plan",
+              "arguments": [
+                "{{widgets.ask_shubhlabh.parsed.intent}}"
+              ],
+              "type": "equal_to",
+              "value": "plan"
+            }
+          ]
+        },
+        {
+          "event": "match",
+          "next": "send_reading",
+          "conditions": [
+            {
+              "friendly_name": "If value equal_to pending",
+              "arguments": [
+                "{{widgets.ask_shubhlabh.parsed.intent}}"
+              ],
+              "type": "equal_to",
+              "value": "pending"
+            }
+          ]
+        }
+      ],
+      "properties": {
+        "input": "{{widgets.ask_shubhlabh.parsed.intent}}",
+        "offset": {
+          "x": 0,
+          "y": 460
+        }
+      }
+    },
+    {
+      "name": "send_reply",
+      "type": "send-message",
+      "transitions": [
+        {
+          "event": "sent"
+        },
+        {
+          "event": "failed"
+        }
+      ],
+      "properties": {
+        "from": "{{flow.channel.address}}",
+        "to": "{{contact.channel.address}}",
+        "body": "{{widgets.ask_shubhlabh.parsed.reply}}",
+        "service": "{{trigger.message.InstanceSid}}",
+        "channel": "{{trigger.message.ChannelSid}}",
+        "offset": {
+          "x": -560,
+          "y": 720
+        }
+      }
+    },
+    {
+      "name": "send_sorry",
+      "type": "send-message",
+      "transitions": [
+        {
+          "event": "sent"
+        },
+        {
+          "event": "failed"
+        }
+      ],
+      "properties": {
+        "from": "{{flow.channel.address}}",
+        "to": "{{contact.channel.address}}",
+        "body": "🙏 Sorry, I could not answer just now. Please try again in a minute, or send *Hi* for the menu.\n🙏 Maaf kijiye, abhi jawaab nahi de paya. Ek minute baad dobara bhejiye.",
+        "service": "{{trigger.message.InstanceSid}}",
+        "channel": "{{trigger.message.ChannelSid}}",
+        "offset": {
+          "x": 520,
+          "y": 220
+        }
+      }
+    },
+    {
+      "name": "send_reading",
+      "type": "send-message",
+      "transitions": [
+        {
+          "event": "sent",
+          "next": "poll_job"
+        },
+        {
+          "event": "failed",
+          "next": "poll_job"
+        }
+      ],
+      "properties": {
+        "from": "{{flow.channel.address}}",
+        "to": "{{contact.channel.address}}",
+        "body": "{{widgets.ask_shubhlabh.parsed.reply}}",
+        "service": "{{trigger.message.InstanceSid}}",
+        "channel": "{{trigger.message.ChannelSid}}",
+        "offset": {
+          "x": -120,
+          "y": 720
+        }
+      }
+    },
+    {
+      "name": "poll_job",
+      "type": "make-http-request",
+      "transitions": [
+        {
+          "event": "success",
+          "next": "job_done"
+        },
+        {
+          "event": "failed",
+          "next": "count_job"
+        }
+      ],
+      "properties": {
+        "method": "GET",
+        "url": "https://relay:REPLACE_WITH_SHUBHLABH_RELAY_TOKEN@REPLACE_WITH_SHUBHLABH_HOST/api/v2/whatsapp/jobs/{{widgets.ask_shubhlabh.parsed.job_id}}?wait=7",
+        "content_type": "application/x-www-form-urlencoded;charset=utf-8",
+        "add_twilio_auth": false,
+        "offset": {
+          "x": -120,
+          "y": 960
+        }
+      }
+    },
+    {
+      "name": "job_done",
+      "type": "split-based-on",
+      "transitions": [
+        {
+          "event": "noMatch",
+          "next": "count_job"
+        },
+        {
+          "event": "match",
+          "next": "send_job_reply",
+          "conditions": [
+            {
+              "friendly_name": "If value equal_to done",
+              "arguments": [
+                "{{widgets.poll_job.parsed.status}}"
+              ],
+              "type": "equal_to",
+              "value": "done"
+            }
+          ]
+        }
+      ],
+      "properties": {
+        "input": "{{widgets.poll_job.parsed.status}}",
+        "offset": {
+          "x": -120,
+          "y": 1200
+        }
+      }
+    },
+    {
+      "name": "send_job_reply",
+      "type": "send-message",
+      "transitions": [
+        {
+          "event": "sent"
+        },
+        {
+          "event": "failed"
+        }
+      ],
+      "properties": {
+        "from": "{{flow.channel.address}}",
+        "to": "{{contact.channel.address}}",
+        "body": "{{widgets.poll_job.parsed.reply}}",
+        "service": "{{trigger.message.InstanceSid}}",
+        "channel": "{{trigger.message.ChannelSid}}",
+        "offset": {
+          "x": -560,
+          "y": 1440
+        }
+      }
+    },
+    {
+      "name": "count_job",
+      "type": "set-variables",
+      "transitions": [
+        {
+          "event": "next",
+          "next": "more_job"
+        }
+      ],
+      "properties": {
+        "variables": [
+          {
+            "index": "0",
+            "key": "job_polls",
+            "value": "{% if flow.variables.job_polls %}{{flow.variables.job_polls | plus: 1}}{% else %}1{% endif %}"
+          }
+        ],
+        "offset": {
+          "x": 240,
+          "y": 1440
+        }
+      }
+    },
+    {
+      "name": "more_job",
+      "type": "split-based-on",
+      "transitions": [
+        {
+          "event": "noMatch",
+          "next": "send_job_slow"
+        },
+        {
+          "event": "match",
+          "next": "poll_job",
+          "conditions": [
+            {
+              "friendly_name": "If value less_than 8",
+              "arguments": [
+                "{{flow.variables.job_polls}}"
+              ],
+              "type": "less_than",
+              "value": "8"
+            }
+          ]
+        }
+      ],
+      "properties": {
+        "input": "{{flow.variables.job_polls}}",
+        "offset": {
+          "x": 240,
+          "y": 1680
+        }
+      }
+    },
+    {
+      "name": "send_job_slow",
+      "type": "send-message",
+      "transitions": [
+        {
+          "event": "sent"
+        },
+        {
+          "event": "failed"
+        }
+      ],
+      "properties": {
+        "from": "{{flow.channel.address}}",
+        "to": "{{contact.channel.address}}",
+        "body": "⏳ Your photo is taking longer than usual. Please send it again in a minute.\n⏳ Photo padhne mein zyada samay lag raha hai. Ek minute baad dobara bhejiye.",
+        "service": "{{trigger.message.InstanceSid}}",
+        "channel": "{{trigger.message.ChannelSid}}",
+        "offset": {
+          "x": 240,
+          "y": 1920
+        }
+      }
+    },
+    {
+      "name": "start_plan",
+      "type": "make-http-request",
+      "transitions": [
+        {
+          "event": "success",
+          "next": "send_ack"
+        },
+        {
+          "event": "failed",
+          "next": "send_sorry"
+        }
+      ],
+      "properties": {
+        "method": "POST",
+        "url": "https://relay:REPLACE_WITH_SHUBHLABH_RELAY_TOKEN@REPLACE_WITH_SHUBHLABH_HOST/api/v2/whatsapp/plan",
+        "content_type": "application/x-www-form-urlencoded;charset=utf-8",
+        "add_twilio_auth": false,
+        "parameters": [
+          {
+            "key": "From",
+            "value": "{{trigger.message.From}}"
+          },
+          {
+            "key": "Body",
+            "value": "{{trigger.message.Body}}"
+          }
+        ],
+        "offset": {
+          "x": 700,
+          "y": 720
+        }
+      }
+    },
+    {
+      "name": "send_ack",
+      "type": "send-message",
+      "transitions": [
+        {
+          "event": "sent",
+          "next": "plan_started"
+        },
+        {
+          "event": "failed",
+          "next": "plan_started"
+        }
+      ],
+      "properties": {
+        "from": "{{flow.channel.address}}",
+        "to": "{{contact.channel.address}}",
+        "body": "{{widgets.start_plan.parsed.ack}}",
+        "service": "{{trigger.message.InstanceSid}}",
+        "channel": "{{trigger.message.ChannelSid}}",
+        "offset": {
+          "x": 700,
+          "y": 960
+        }
+      }
+    },
+    {
+      "name": "plan_started",
+      "type": "split-based-on",
+      "transitions": [
+        {
+          "event": "noMatch"
+        },
+        {
+          "event": "match",
+          "next": "poll_plan_1",
+          "conditions": [
+            {
+              "friendly_name": "If value equal_to started",
+              "arguments": [
+                "{{widgets.start_plan.parsed.status}}"
+              ],
+              "type": "equal_to",
+              "value": "started"
+            }
+          ]
+        }
+      ],
+      "properties": {
+        "input": "{{widgets.start_plan.parsed.status}}",
+        "offset": {
+          "x": 700,
+          "y": 1200
+        }
+      }
+    },
+    {
+      "name": "poll_plan_1",
+      "type": "make-http-request",
+      "transitions": [
+        {
+          "event": "success",
+          "next": "plan_status_1"
+        },
+        {
+          "event": "failed",
+          "next": "count_plan_1"
+        }
+      ],
+      "properties": {
+        "method": "GET",
+        "url": "https://relay:REPLACE_WITH_SHUBHLABH_RELAY_TOKEN@REPLACE_WITH_SHUBHLABH_HOST/api/v2/whatsapp/plan/{{widgets.start_plan.parsed.campaign_id}}?wait=7",
+        "content_type": "application/x-www-form-urlencoded;charset=utf-8",
+        "add_twilio_auth": false,
+        "offset": {
+          "x": 700,
+          "y": 1440
+        }
+      }
+    },
+    {
+      "name": "plan_status_1",
+      "type": "split-based-on",
+      "transitions": [
+        {
+          "event": "noMatch",
+          "next": "send_plan_1"
+        },
+        {
+          "event": "match",
+          "next": "count_plan_1",
+          "conditions": [
+            {
+              "friendly_name": "If value equal_to running",
+              "arguments": [
+                "{{widgets.poll_plan_1.parsed.status}}"
+              ],
+              "type": "equal_to",
+              "value": "running"
+            }
+          ]
+        },
+        {
+          "event": "match",
+          "conditions": [
+            {
+              "friendly_name": "If value equal_to cancelled",
+              "arguments": [
+                "{{widgets.poll_plan_1.parsed.status}}"
+              ],
+              "type": "equal_to",
+              "value": "cancelled"
+            }
+          ]
+        }
+      ],
+      "properties": {
+        "input": "{{widgets.poll_plan_1.parsed.status}}",
+        "offset": {
+          "x": 700,
+          "y": 1680
+        }
+      }
+    },
+    {
+      "name": "send_plan_1",
+      "type": "send-message",
+      "transitions": [
+        {
+          "event": "sent"
+        },
+        {
+          "event": "failed"
+        }
+      ],
+      "properties": {
+        "from": "{{flow.channel.address}}",
+        "to": "{{contact.channel.address}}",
+        "body": "{{widgets.poll_plan_1.parsed.summary}}",
+        "service": "{{trigger.message.InstanceSid}}",
+        "channel": "{{trigger.message.ChannelSid}}",
+        "offset": {
+          "x": 400,
+          "y": 1920
+        }
+      }
+    },
+    {
+      "name": "count_plan_1",
+      "type": "set-variables",
+      "transitions": [
+        {
+          "event": "next",
+          "next": "more_plan_1"
+        }
+      ],
+      "properties": {
+        "variables": [
+          {
+            "index": "0",
+            "key": "plan_polls_1",
+            "value": "{% if flow.variables.plan_polls_1 %}{{flow.variables.plan_polls_1 | plus: 1}}{% else %}1{% endif %}"
+          }
+        ],
+        "offset": {
+          "x": 860,
+          "y": 1920
+        }
+      }
+    },
+    {
+      "name": "more_plan_1",
+      "type": "split-based-on",
+      "transitions": [
+        {
+          "event": "noMatch",
+          "next": "poll_plan_2"
+        },
+        {
+          "event": "match",
+          "next": "poll_plan_1",
+          "conditions": [
+            {
+              "friendly_name": "If value less_than 8",
+              "arguments": [
+                "{{flow.variables.plan_polls_1}}"
+              ],
+              "type": "less_than",
+              "value": "8"
+            }
+          ]
+        }
+      ],
+      "properties": {
+        "input": "{{flow.variables.plan_polls_1}}",
+        "offset": {
+          "x": 860,
+          "y": 2160
+        }
+      }
+    },
+    {
+      "name": "poll_plan_2",
+      "type": "make-http-request",
+      "transitions": [
+        {
+          "event": "success",
+          "next": "plan_status_2"
+        },
+        {
+          "event": "failed",
+          "next": "count_plan_2"
+        }
+      ],
+      "properties": {
+        "method": "GET",
+        "url": "https://relay:REPLACE_WITH_SHUBHLABH_RELAY_TOKEN@REPLACE_WITH_SHUBHLABH_HOST/api/v2/whatsapp/plan/{{widgets.start_plan.parsed.campaign_id}}?wait=7",
+        "content_type": "application/x-www-form-urlencoded;charset=utf-8",
+        "add_twilio_auth": false,
+        "offset": {
+          "x": 1460,
+          "y": 1440
+        }
+      }
+    },
+    {
+      "name": "plan_status_2",
+      "type": "split-based-on",
+      "transitions": [
+        {
+          "event": "noMatch",
+          "next": "send_plan_2"
+        },
+        {
+          "event": "match",
+          "next": "count_plan_2",
+          "conditions": [
+            {
+              "friendly_name": "If value equal_to running",
+              "arguments": [
+                "{{widgets.poll_plan_2.parsed.status}}"
+              ],
+              "type": "equal_to",
+              "value": "running"
+            }
+          ]
+        },
+        {
+          "event": "match",
+          "conditions": [
+            {
+              "friendly_name": "If value equal_to cancelled",
+              "arguments": [
+                "{{widgets.poll_plan_2.parsed.status}}"
+              ],
+              "type": "equal_to",
+              "value": "cancelled"
+            }
+          ]
+        }
+      ],
+      "properties": {
+        "input": "{{widgets.poll_plan_2.parsed.status}}",
+        "offset": {
+          "x": 1460,
+          "y": 1680
+        }
+      }
+    },
+    {
+      "name": "send_plan_2",
+      "type": "send-message",
+      "transitions": [
+        {
+          "event": "sent"
+        },
+        {
+          "event": "failed"
+        }
+      ],
+      "properties": {
+        "from": "{{flow.channel.address}}",
+        "to": "{{contact.channel.address}}",
+        "body": "{{widgets.poll_plan_2.parsed.summary}}",
+        "service": "{{trigger.message.InstanceSid}}",
+        "channel": "{{trigger.message.ChannelSid}}",
+        "offset": {
+          "x": 1160,
+          "y": 1920
+        }
+      }
+    },
+    {
+      "name": "count_plan_2",
+      "type": "set-variables",
+      "transitions": [
+        {
+          "event": "next",
+          "next": "more_plan_2"
+        }
+      ],
+      "properties": {
+        "variables": [
+          {
+            "index": "0",
+            "key": "plan_polls_2",
+            "value": "{% if flow.variables.plan_polls_2 %}{{flow.variables.plan_polls_2 | plus: 1}}{% else %}1{% endif %}"
+          }
+        ],
+        "offset": {
+          "x": 1620,
+          "y": 1920
+        }
+      }
+    },
+    {
+      "name": "more_plan_2",
+      "type": "split-based-on",
+      "transitions": [
+        {
+          "event": "noMatch",
+          "next": "poll_plan_3"
+        },
+        {
+          "event": "match",
+          "next": "poll_plan_2",
+          "conditions": [
+            {
+              "friendly_name": "If value less_than 8",
+              "arguments": [
+                "{{flow.variables.plan_polls_2}}"
+              ],
+              "type": "less_than",
+              "value": "8"
+            }
+          ]
+        }
+      ],
+      "properties": {
+        "input": "{{flow.variables.plan_polls_2}}",
+        "offset": {
+          "x": 1620,
+          "y": 2160
+        }
+      }
+    },
+    {
+      "name": "poll_plan_3",
+      "type": "make-http-request",
+      "transitions": [
+        {
+          "event": "success",
+          "next": "plan_status_3"
+        },
+        {
+          "event": "failed",
+          "next": "count_plan_3"
+        }
+      ],
+      "properties": {
+        "method": "GET",
+        "url": "https://relay:REPLACE_WITH_SHUBHLABH_RELAY_TOKEN@REPLACE_WITH_SHUBHLABH_HOST/api/v2/whatsapp/plan/{{widgets.start_plan.parsed.campaign_id}}?wait=7",
+        "content_type": "application/x-www-form-urlencoded;charset=utf-8",
+        "add_twilio_auth": false,
+        "offset": {
+          "x": 2220,
+          "y": 1440
+        }
+      }
+    },
+    {
+      "name": "plan_status_3",
+      "type": "split-based-on",
+      "transitions": [
+        {
+          "event": "noMatch",
+          "next": "send_plan_3"
+        },
+        {
+          "event": "match",
+          "next": "count_plan_3",
+          "conditions": [
+            {
+              "friendly_name": "If value equal_to running",
+              "arguments": [
+                "{{widgets.poll_plan_3.parsed.status}}"
+              ],
+              "type": "equal_to",
+              "value": "running"
+            }
+          ]
+        },
+        {
+          "event": "match",
+          "conditions": [
+            {
+              "friendly_name": "If value equal_to cancelled",
+              "arguments": [
+                "{{widgets.poll_plan_3.parsed.status}}"
+              ],
+              "type": "equal_to",
+              "value": "cancelled"
+            }
+          ]
+        }
+      ],
+      "properties": {
+        "input": "{{widgets.poll_plan_3.parsed.status}}",
+        "offset": {
+          "x": 2220,
+          "y": 1680
+        }
+      }
+    },
+    {
+      "name": "send_plan_3",
+      "type": "send-message",
+      "transitions": [
+        {
+          "event": "sent"
+        },
+        {
+          "event": "failed"
+        }
+      ],
+      "properties": {
+        "from": "{{flow.channel.address}}",
+        "to": "{{contact.channel.address}}",
+        "body": "{{widgets.poll_plan_3.parsed.summary}}",
+        "service": "{{trigger.message.InstanceSid}}",
+        "channel": "{{trigger.message.ChannelSid}}",
+        "offset": {
+          "x": 1920,
+          "y": 1920
+        }
+      }
+    },
+    {
+      "name": "count_plan_3",
+      "type": "set-variables",
+      "transitions": [
+        {
+          "event": "next",
+          "next": "more_plan_3"
+        }
+      ],
+      "properties": {
+        "variables": [
+          {
+            "index": "0",
+            "key": "plan_polls_3",
+            "value": "{% if flow.variables.plan_polls_3 %}{{flow.variables.plan_polls_3 | plus: 1}}{% else %}1{% endif %}"
+          }
+        ],
+        "offset": {
+          "x": 2380,
+          "y": 1920
+        }
+      }
+    },
+    {
+      "name": "more_plan_3",
+      "type": "split-based-on",
+      "transitions": [
+        {
+          "event": "noMatch",
+          "next": "send_plan_timeout"
+        },
+        {
+          "event": "match",
+          "next": "poll_plan_3",
+          "conditions": [
+            {
+              "friendly_name": "If value less_than 8",
+              "arguments": [
+                "{{flow.variables.plan_polls_3}}"
+              ],
+              "type": "less_than",
+              "value": "8"
+            }
+          ]
+        }
+      ],
+      "properties": {
+        "input": "{{flow.variables.plan_polls_3}}",
+        "offset": {
+          "x": 2380,
+          "y": 2160
+        }
+      }
+    },
+    {
+      "name": "send_plan_timeout",
+      "type": "send-message",
+      "transitions": [
+        {
+          "event": "sent"
+        },
+        {
+          "event": "failed"
+        }
+      ],
+      "properties": {
+        "from": "{{flow.channel.address}}",
+        "to": "{{contact.channel.address}}",
+        "body": "{{widgets.start_plan.parsed.timeout_text}}",
+        "service": "{{trigger.message.InstanceSid}}",
+        "channel": "{{trigger.message.ChannelSid}}",
+        "offset": {
+          "x": 2980,
+          "y": 2160
+        }
+      }
+    }
+  ],
+  "initial_state": "Trigger",
+  "flags": {
+    "allow_concurrent_calls": true
+  }
+}

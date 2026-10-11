@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "promopilot",
+      "runtimeExecutable": "C:\\Users\\AnuragManik7\\Claude\\promopilot\\.venv\\Scripts\\python.exe",
+      "runtimeArgs": ["scripts/serve.py"],
+      "cwd": "C:\\Users\\AnuragManik7\\Claude\\promopilot",
+      "port": 8000
+    }
+  ]
+}

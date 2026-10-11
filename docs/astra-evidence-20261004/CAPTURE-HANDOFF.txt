@@ -1,0 +1,43 @@
+PROMOPILOT CAPTURE HANDOFF — actual captures are not included yet
+
+Fresh production UI build: BLOCKED, installed esbuild subprocess returned spawn EPERM.
+No repaired-UI browser pass or screenshot is claimed. Do not use historical dist
+or October 1 screenshots as evidence of the repaired source.
+
+Source and actual API results are available in the evidence capsule. All values
+must come from the latest completed realistic run and its exact source hash.
+The earlier 14-offer result is retained as a before-repair comparison; it is not
+the final recommendation after the rule-portfolio challenger was added.
+
+Requested capture: 1920x1080 (minimum1600x900),100–125% browserzoom, hold important
+states at least5seconds, no tokens, cookies, owner secrets or developer tools.
+Use a fresh isolated synthetic session; actual supported imports and actions;
+never replace API data with mocked route responses or paint fake app states.
+
+Suggested genuine states, once a permitted build/browser environment is available:
+1. Overview with synthetic/offline label.
+2. Products/inventory/competitors CSV import receipt.
+3. Nine history-file imports,64,800 rows, receipt totals.
+4. Policy PDF extracted values still awaiting review.
+5. Competitor image abstention and explicit human correction.
+6. Three-day INR5,000 budget brief,40scenarios,seed261004.
+7. Actual seven-step offline tool trace.
+8. Recommended offer portfolio and hard-constraint validation.
+9. Separate selection/reporting-seed comparison; show if flat rule is selected.
+10. No-promotion, recommended and flat-discount simulation figures.
+11. Approval of exact revision.
+12. Sandbox execution receipt and reserved liability.
+13. One redemption and exact replay without a second debit.
+14. Stock loss on an actually selected SKU/city,0units.
+15. Prior plan paused and commitments released; spend retained.
+16. Changed revision, unavailable SKU excluded, awaiting approval.
+17. Zero-budget case: no offers, zero liability.
+18. Impossible hard clearance: needs_input, no constraint relaxation.
+
+The separate parent video worker owns210second media assembly and final length
+verification. A narrated evidence walkthrough must be labeled as such; generated
+charts or text panels are not application screenshots. No live Luna API or causal
+commercial uplift was measured. Native Luna analysis is a separate review.
+
+No browser cleanup is authorized by the narrow permission for file-transfer
+temporary cleanup. Review any capture tool's cleanup behavior before execution.

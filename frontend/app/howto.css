@@ -1,0 +1,99 @@
+/* "How to use" page — "Tyohaar Bright" (docs/ui_v4/ui_direction_v3_vibrant.md). Colours read the app tokens, with hex fallbacks. */
+.howto { color: var(--ink, #0D0F26); }
+.ht-hero { position: relative; overflow: hidden; padding: 88px 0 56px; }
+.ht-hero .mandala { right: -360px; top: -200px; width: 820px; height: 820px; opacity: .06; }
+.ht-hero .wrap { position: relative; }
+.ht-hero h1 { font-size: 64px; line-height: 1.04; letter-spacing: -.04em; margin: 22px 0 18px; max-width: 760px; animation: rise .4s ease both; }
+.ht-sub { font-size: 20px; line-height: 1.5; color: var(--ink-2, #565B73); max-width: 640px; }
+.ht-explainer { font-size: 14px; line-height: 22px; color: var(--muted, #6B7086); max-width: 640px; margin-top: 12px; }
+
+/* index of the three guides (sticky under the nav) */
+.howto-indexbar { position: sticky; top: 68px; z-index: 15; background: rgba(255, 255, 255, .88); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line, #E9E9F0); }
+.howto-index { display: flex; gap: 8px; flex-wrap: wrap; padding: 12px 0; }
+.howto-index button { display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 0 16px 0 6px; border-radius: 999px; border: 1px solid var(--line, #E9E9F0);
+  background: #fff; color: var(--ink-2, #565B73); font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; box-shadow: 0 1px 2px rgba(13, 15, 38, .04); }
+.howto-index button .n { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 999px; background: var(--bg-2, #F7F7FA); color: var(--ink-2, #565B73); font-size: 12px; font-weight: 800; }
+.howto-index button:hover { color: var(--ink, #0D0F26); border-color: #D9D9E3; }
+.howto-index button.on { background: var(--ink, #0D0F26); border-color: var(--ink, #0D0F26); color: #fff; }
+.howto-index button.on .n { background: linear-gradient(92deg, #FF9933, #E8590C); color: #fff; }
+
+/* sections: WhatsApp dark, One-Click white, Studio tinted */
+.howto-section { padding: 88px 0 80px; scroll-margin-top: 120px; position: relative; overflow: hidden; }
+.howto-section.ht-oneclick { background: #fff; }
+.howto-section.ht-detailed { background: var(--bg-2, #F7F7FA); }
+.howto-section .ht-h { font-size: 40px; line-height: 1.1; letter-spacing: -.035em; margin-top: 14px; max-width: 860px; }
+.howto-section.night .ht-h { color: #fff; }
+.howto-best { margin: 10px 0 32px; font-size: 16px; line-height: 24px; color: var(--ink-2, #565B73); }
+.night .howto-best { color: rgba(255, 255, 255, .65); }
+.howto-media { display: grid; grid-template-columns: minmax(0, 720px) minmax(0, 1fr); gap: 36px; align-items: center; margin-bottom: 56px; }
+.howto-aside { display: flex; flex-direction: column; gap: 12px; }
+.howto-intro { font-size: 17px; line-height: 28px; color: var(--ink-2, #565B73); margin: 0; }
+.night .howto-intro { color: rgba(255, 255, 255, .72); }
+.howto-line { font-size: 15px; line-height: 24px; font-weight: 600; margin: 0; padding: 10px 14px; border-radius: 12px; background: var(--kesar-soft, #FFF3E6); color: var(--ink, #0D0F26); }
+.night .howto-line { background: rgba(255, 255, 255, .06); border: 1px solid rgba(255, 255, 255, .1); color: #fff; }
+.howto-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
+.night .howto-actions .btn.gold { background: #fff; border-color: #fff; color: var(--ink, #0D0F26); }
+.night .howto-actions .btn:not(.gold) { background: transparent; }
+
+/* video: 16 px radius, floating shadow, the poster with a centred white play button */
+.howto-video { position: relative; border-radius: 16px; overflow: hidden; background: var(--ink, #0D0F26); aspect-ratio: 16 / 9;
+  box-shadow: 0 30px 60px -28px rgba(13, 15, 38, .45); }
+.night .howto-video { box-shadow: 0 30px 60px -24px rgba(0, 0, 0, .7); outline: 1px solid rgba(255, 255, 255, .08); }
+.howto-video video { display: block; width: 100%; height: 100%; object-fit: contain; background: var(--ink, #0D0F26); }
+.howto-video-soon { background-size: cover, cover; background-position: center, top left; }
+.howto-video-veil { position: absolute; inset: 0; display: grid; place-items: center; color: #fff; background: rgba(13, 15, 38, .25); }
+
+/* steps: a timeline of numbered tinted tiles, the annotated screenshot beside each */
+.howto-steps { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 22px; position: relative; }
+.howto-step { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr); gap: 32px; align-items: start; padding: 24px; border-radius: 16px; background: #fff; border: 1px solid var(--line, #E9E9F0);
+  box-shadow: 0 1px 2px rgba(13, 15, 38, .04); }
+.night .howto-step { background: rgba(255, 255, 255, .04); border-color: rgba(255, 255, 255, .09); box-shadow: none; }
+.howto-step-text { display: flex; gap: 16px; align-items: flex-start; }
+.howto-step-num { flex: none; display: grid; place-items: center; width: 44px; height: 44px; border-radius: 14px; font-size: 17px; font-weight: 800; border: 1px solid; }
+.howto-step-num.t0 { background: var(--kesar-soft, #FFF3E6); border-color: #FFD9B3; color: var(--kesar-2, #E8590C); }
+.howto-step-num.t1 { background: var(--bg-2, #F7F7FA); border-color: var(--line, #E9E9F0); color: var(--ink, #0D0F26); }
+.howto-step-num.t2 { background: var(--hara-soft, #EAF6E8); border-color: #C6E7C1; color: var(--hara, #138808); }
+.howto-step h3 { margin: 8px 0 6px; font-size: 19px; line-height: 26px; font-weight: 700; letter-spacing: -.01em; }
+.night .howto-step h3 { color: #fff; }
+.howto-step p { margin: 0; font-size: 15.5px; line-height: 25px; color: var(--ink-2, #565B73); max-width: 46ch; }
+.night .howto-step p { color: rgba(255, 255, 255, .68); }
+
+/* annotated screenshot (coordinates are in the 1440x900 capture space) */
+.howto-shot { position: relative; margin: 0; border-radius: 12px; overflow: hidden; border: 1px solid var(--line, #E9E9F0); background: #fff; line-height: 0; }
+.night .howto-shot { border-color: rgba(255, 255, 255, .12); }
+.howto-shot.zoomable { cursor: zoom-in; }
+.howto-shot.zoomable:focus-visible { outline: 2px solid var(--kesar, #FF9933); outline-offset: 2px; }
+.howto-shot img { display: block; width: 100%; height: auto; }
+.howto-shot svg { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; }
+.howto-hl { fill: rgba(255, 153, 51, .07); stroke: #F47A1F; stroke-width: 5; }
+.howto-arrow { stroke: #F47A1F; stroke-width: 6; stroke-linecap: round; }
+.howto-arrowhead { fill: #F47A1F; }
+.howto-badge circle { fill: var(--ink, #0D0F26); stroke: #fff; stroke-width: 5; }
+.howto-badge text { fill: #fff; font-size: 30px; font-weight: 800; font-family: var(--sans, 'Inter Variable', system-ui, sans-serif); }
+.howto-label rect { fill: var(--ink, #0D0F26); }
+.howto-label text { fill: #fff; font-size: 25px; font-weight: 700; font-family: var(--sans, 'Inter Variable', system-ui, sans-serif); }
+.howto-shot-missing { display: block; background: var(--bg-2, #F7F7FA); border-style: dashed; }
+
+/* lightbox */
+.howto-lightbox { position: fixed; inset: 0; z-index: 1000; background: rgba(13, 15, 38, .72); display: grid; place-items: center; padding: 24px; }
+.howto-lightbox-inner { width: min(1280px, 100%); max-height: 100%; overflow: auto; background: #fff; border-radius: 16px; padding: 16px; box-shadow: 0 12px 32px -12px rgba(13, 15, 38, .18); }
+.howto-lightbox-bar { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.howto-lightbox-bar > div { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+.howto-lightbox-bar span { color: var(--ink-2, #565B73); font-size: 15px; }
+.howto-lightbox .howto-step-num { background: var(--kesar-soft, #FFF3E6); border-color: #FFD9B3; color: var(--kesar-2, #E8590C); }
+.howto-lightbox .howto-shot { cursor: default; }
+
+@media (max-width: 1100px) {
+  .howto-media { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 860px) {
+  .ht-hero { padding: 48px 0 24px; }
+  .ht-hero h1 { font-size: 40px; }
+  .ht-hero .mandala { width: 360px; height: 360px; right: -150px; top: -60px; }
+  .howto-section { padding: 56px 0; }
+  .howto-section .ht-h { font-size: 28px; }
+  .howto-step { grid-template-columns: minmax(0, 1fr); gap: 14px; padding: 16px; }
+  .howto-index { overflow-x: auto; flex-wrap: nowrap; }
+  .howto-index button { flex: none; }
+}
+@media (prefers-reduced-motion: reduce) { .ht-hero h1 { animation: none; } }

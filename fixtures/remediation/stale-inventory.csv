@@ -1,0 +1,2 @@
+sku,city,quantity,reserved,unavailable,safety_stock,quantity_basis,expiry,observed_at,currency
+SKU001,Bengaluru,113,0,0,3,physical,2026-10-06,2026-10-02T06:30:00+00:00,INR

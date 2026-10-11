@@ -1,0 +1,7 @@
+# Data, models and dependencies
+
+The grocery catalog, time series, baskets, policy PDF, competitor images and evaluation corpus were authored as original synthetic fixtures during this build. They are not Flipkart, Accenture or real retailer data. Real-world causal performance has not been measured. Codex generated and assisted with the implementation; record this assistance when requested by the organizer.
+
+The application uses FastAPI, Uvicorn, SQLAlchemy, psycopg, NumPy, scikit-learn, OR-Tools, httpx, pypdf, openpyxl, Pillow, ReportLab, React, Vite, Lucide, Recharts, TypeScript, pytest and Playwright. Their licenses and versions remain those of their upstream packages; dependency manifests are included. No proprietary retailer model or private CRM access is claimed.
+
+Default live model identifier: `gemini-3.8-flash`; optional OpenAI: `gpt-6.1-sol`. Both are configuration and require account availability. API request formats were checked against [Gemini generateContent](https://ai.google.dev/api/generate-content) and [OpenAI function calling](https://developers.openai.com/api/docs/guides/function-calling). Provider prices used for the conservative local ledger were checked during research on 1 October 2026; actual invoices remain the provider authority and can change. Server limits are guardrails, not a billing guarantee. No paid API calls were made for the supplied offline test results.

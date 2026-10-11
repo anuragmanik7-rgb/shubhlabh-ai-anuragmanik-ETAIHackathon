@@ -1,0 +1,26 @@
+{
+  "checks": [
+    {
+      "asset": "index.html",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 470,
+      "sha256": "0635456bc62ecb7f28132ebdda46119e818c3133ace085ef394eb8524fb04635"
+    },
+    {
+      "asset": "assets/app.js",
+      "http_status": 200,
+      "content_type": "text/javascript; charset=utf-8",
+      "bytes": 676781,
+      "sha256": "fa79fd4587ebe7aab5a52097666b6e79d56e367e828a51e1a6d2455a31435aad"
+    },
+    {
+      "asset": "assets/app.css",
+      "http_status": 200,
+      "content_type": "text/css; charset=utf-8",
+      "bytes": 23958,
+      "sha256": "e95dfaa9ee5f2710f5a59190c4850a56185dc2ade11742f5aa509550f95d8795"
+    }
+  ],
+  "browser_rendering": "not performed"
+}
